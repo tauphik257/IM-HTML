@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM Managment</title>
+</head>
+<body>
+        <header class="header">
+            <div class="left">
+                <!-- for logo -->
+                <img src="logo.png" alt="">
+                <div>TRY GYM</div>
+            </div>
+            <div class="center">
+                <!-- for navigation -->
+                <ul class="navbar">
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="BMI.html">Fitness Calculator</a></li>
+                    <li><a href="demosearch.php">Our Customers</a></li>
+                </ul>
+
+            </div>
+            <div class="right">
+                <button class="btnemail" onclick="location.href='contact.html'">Email us</button>
+            </div>
+        </header>
+        <div class="container">
+            <h1>WELCOME TO THE GYM</h1>
+            <form action="insert.php" method="POST">
+                <table>
+                 <tr>
+                  <td>Name :</td>
+                  <td><input class="main" placeholder="Enter Name" type="text" name="username" required></td>
+                 </tr>
+                 <tr>
+                  <td>Address :</td>
+                  <td><textarea class="main" placeholder="Enter Address" name="address" required></textarea></td>
+                 </tr>
+                 <tr>
+                  <td>Gender :</td>
+                  <td>
+                   <input type="radio" name="gender" value="M" required>Male
+                   <input type="radio" name="gender" value="F" required>Female
+                   <input type="radio" name="gender" value="O" required>Other
+                  </td>
+                 </tr>
+                 <tr>
+                  <td>Email :</td>
+                  <td><input class="main" placeholder="Enter email" type="email" name="email" required></td>
+                 </tr> 
+                 <tr>
+                  <td>Phone no :</td>
+                  <td>
+                   <select class="select" name="phoneCode" required>
+                    <option selected hidden value="">Select Code</option>
+                    <option value="91">91</option>
+                    <option value="90">90</option>
+                    <option value="92">92</option>
+                    <option value="93">93</option>
+                    <option value="94">94</option>
+                    <option value="95">95</option>
+                   </select>
+                   <input class="main" placeholder="Enter phone no." type="phone" name="phone" required>
+                  </td>
+                 </tr>
+                 <tr>
+                  <td><input class="bt" type="submit" value="Submit" name="submit"></td>&nbsp;
+                  <td><input class="bt" type="reset" value="Reset" name="reset"></td>
+                 </tr>
+                </table>
+               </form>
+        </div>
+    
+</body>
+</html>
