@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>TASK 2</title>
+    <style>
+
+        td,th{
+            border:1px solid;
+            text-align: center;
+        }
+        table{
+            border: 6px solid;
+            margin-left: 40%;
+            margin-bottom: 1REM;
+        }
+        body{
+            background-color: rgb(236, 252, 252);
+        }
+
+
+        /*TASK 2 CSS STARTING   */
+    .form{
+        margin-top:10px;
+        margin-left:30%;
+        margin-right:30%;
+        background-color: rgb(255, 255, 255);
+        border-top: 0.5rem rgb(227, 209, 44) solid;
+        padding: 20px;
+        font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+    h2{
+        text-align: center;
+    }
+    .name{
+        width: 100%;
+       display:flex ;
+    }
+    .name .fname {
+        width: 42%;
+        margin-right: 60px;
+    }
+    .name .lname{
+        width: 42%;  
+    }
+    .checkbox button{
+        background-color:rgb(227, 209, 44) ;
+        width: 100%;
+        padding: 15px;
+        color: white;
+        border: none;
+        font-size: larger;
+    }
+    input{
+        margin-top: 15px;
+        width:90%;
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 20px;
+        border: 1px solid rgb(189, 185, 185);
+    }
+    select{
+        width: 95%;
+        padding: 10px;
+        margin: 10px;
+        background-color: white;
+        border: 1px solid rgb(189, 185, 185);
+    
+    }
+    .radio{
+        padding:20px;
+    }
+    .radio input{
+        width: 15px;
+        margin-top: 20px;
+        padding-left: 15px;
+        padding-top: 20px;
+    }
+    .checkbox{
+        padding-left: 10px;
+    }
+    .checkbox input{
+        width: 30px;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+    </style>
+</head>
+<body>
+
+    <h1 style="margin-left: 10%;">TASK 1  : </h1>
+    <div class="table">
+    <table>
+       
+         <tr>
+                <th colspan="5" style="background-color: rgb(222, 225, 225);"> My Multi Level Table</th>
+        </tr>
+            <tr>
+                <th colspan="2" rowspan="2"> Column 0</th>
+                <th rowspan="2">Column 1</th>
+                <th colspan="2">Column 2</th>
+            </tr>
+        <tr>
+            <th >Column 2a</th>
+            <th >Column 2b</th>
+        </tr>
+
+        <tr>
+            <th rowspan="2">Row 1</th>
+            <th>Row 1a</th>
+            <td>123</td>
+            <td>456</td>
+            <td>789</td>
+        </tr>
+        <tr>
+            <th>Row 1b</th>
+            <td>123</td>
+            <td>456</td>
+            <td>789</td>
+        </tr>
+        <tr>
+            <th colspan="2">Row 2</th>
+            <td>123</td>
+            <td>456</td>
+            <td>789</td>
+        </tr>
+
+    </table>
+    </div>
+<!-- Task 1 Ended  -->
+
+<h1 style="margin-left: 10%;">TASK 2 : </h1>
+    
+    <!-- task 2 started -->
+    <div class="form">
+        <h2> Responsive Registration Form</h2>
+         <!-- form started -->
+         <form >
+             <div class="name">
+                 <div class="fname">
+                     <input type="text" placeholder="First Name">
+                 </div>
+                 <div class="lname">
+                     <input type="text" placeholder="Last Name">
+                 </div>
+             </div>
+             <input type="email" placeholder="Email">
+             <br>
+             <input type="password" placeholder="Password" >
+             <br>
+             <input type="password" placeholder="Re-Type Password" >
+             <br>
+             <div class="radio">
+                 <input type="radio" name="gender">Male
+                 <input type="radio" name="gender">Female
+             <br>
+         </div>
+     
+             <select name="contry" >
+                 <option>Select a country</option>
+                 <option value="India">India</option>
+                 <option value="japan">Japan</option>   
+                 <option value="China">China</option>
+             </select>
+             <br>
+     
+             <div class="checkbox">
+                 <input type="checkbox" checked> I agree with terms and conditions
+                 <br>
+                 <input type="checkbox" > I agree with terms and conditions
+                 <br>
+                 <button type="submit">Register</button>
+             </div>
+         </form>
+         </div>
+</body>
+</html>
