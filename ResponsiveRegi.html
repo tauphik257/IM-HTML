@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Responsive Registration Form </title>
+	</head>
+	
+	<body style="background-color:rgb(218, 222, 226);">
+
+		<!--------------------------------------------Table Code----------------------------------------------------->
+		<table border="1px solid black" style="border: 7px solid black; align-items:center; margin-left:25rem; margin-top:10rem;">
+	
+			<th colspan="5" style="background-color:grey;">My Multi Level Table</th>
+			
+			<tr>
+				<th rowspan="2" colspan="2"> Column 0 </th>
+				<th rowspan="2"> Column 1 </th>
+				<th colspan="2"> Column2 </th>
+			</tr>
+			
+			<tr>
+				<th>Column 2a</th>
+				<th>Column 2b</th>
+			</tr>
+			
+			<tr>
+				<th rowspan="2">Row 1</th>
+				<th>Row 1a</th>
+				<td><center> 123 </center></td>
+				<td><center> 456 </center></td>
+				<td><center> 789 </center></td>
+			</tr>
+			
+			<tr>
+				<th> Row 1b</th>
+				<td><center> 123 </center></td>
+				<td><center> 456 </center></td>
+				<td><center> 789 </center></td>
+			</tr>
+			
+			<tr>
+				<th colspan="2"> Row 2 </th>
+				<td><center> 123 </center></td>
+				<td><center> 456 </center></td>
+				<td><center> 789 </center></td>
+			</tr>
+			
+			</table>
+
+
+<!----------------------------------------Registration form code------------------------------------------------->
+
+		<form style="border-top:#E7B10A solid 5px; background-color:white; width:50%; height:95vh; margin-left:18rem; margin-top:2rem; margin-bottom:2rem;">
+			<h1 style="text-align:center;"> Responsive Registration Form </h1>
+		<div style="display:flex; ">
+			<section> 
+				<input type="text" placeholder="First Name" required maxlength="10" minlength="2" autofocus style="width:14rem; margin-left:1.3rem; padding:1rem;"/>
+			</section>
+			
+			<section>
+				<input type="text" placeholder="Last Name" required maxlength="10" minlength="2" style="width:14rem; margin-right:1rem; margin-left:2rem; padding:1rem;"/>
+			</section>
+		</div>
+
+		<input type="email" placeholder="Email" required style="width:32.2rem; margin-left:1.3rem; margin-right:1rem; margin-top:1rem; padding:1rem;"/>
+		<input type="password" placeholder="Password" id="password" maxlength="10" minlength="8" style="width:32.2rem; margin-left:1.3rem; margin-right:1rem; margin-top:1rem; padding:1rem;"/> 
+		<input type="password" placeholder="Re-type Password" id="Re-type Password"  maxlength="10" minlength="8" required style="width:32.2rem; margin-left:1.3rem; margin-right:1rem; margin-top:1rem; padding:1rem;"/>  
+		<label style="margin-left:1.3rem; margin-top:1.5rem;"><strong>Gender :</strong></label>
+		<input type="radio" value="Male" name="Gender" required style="margin-top:1rem;"/><label>Male</label>
+		<input type="radio" value="Female" name="Gender"/><label>Female</label>
+		<select required style="width:34.3rem; margin-left:1.3rem; margin-right:1rem; margin-top:1rem; padding: 1rem;">
+			<option value="Select Country">Select Country</option>
+			<option value="India">India</option>
+			<option value="Japan">Japan</option>
+			<option value="Australia">Australia</option>
+			<option value="America">America</option>
+		</select>
+
+        <input type="checkbox" id="chek1" name="chek1" value="I agree with terms and conditions" required style="margin-left:1.3rem; margin-top:1rem;">
+		<label for="chek1">I agree with terms and conditions</label><br/>
+		<input type="checkbox" id="chek2" name="chek2" value="I agree with terms and conditions" required style="margin-left:1.3rem;">
+		<label for="chek2">I agree with terms and conditions</label>
+
+		<input type="submit" value="Register" style="width:34.3rem; background-color: #E7B10A; color: white; border:none; margin-left:1.3rem; margin-right:1rem; margin-top:1rem; padding:1rem;"/>
+
+		</form>
+	</body>
+	
+</html>
