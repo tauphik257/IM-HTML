@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive Registration Form</title>
+<style>
+.head{
+	background-color: yellow;
+	}
+#submit{
+	border: none;
+	background-color: yellow;
+	width:365px;
+	height:25px;
+	color:white;
+	font-weight:bold;
+	font-size:larger;
+	}
+#list{
+	width:365px;
+	height:35px;
+	}
+.box{
+	 width:400px;
+	 height:500px;
+	}
+
+</style>
+</head>
+<body>
+<div align="center">
+
+	<div class="box" align="center">
+	<header class="head">
+	<br>
+	</header>
+	<form>
+		<h2> Responsive Registration Form </h2>
+		<br>
+		<input type="text" id="fname" name="firstname" placeholder="First Name" size="21"required maxlength="20" minlength="1"/>&nbsp; &nbsp; 
+
+		<input type="text" id="lname" name="lastname" placeholder="Last Name" size="21"required maxlength="20" minlength="1"/><br><br>
+		
+		<input type="email" id="email" name="email" placeholder="Enter Your Email" size="50" required maxlength="30" minlength="6"/><br> <br>
+		
+		<input type="password" id="pass1" name="password1" placeholder="Password" size="50" required maxlength="16" minlength="8"/> <br> <br>
+		
+		<input type="password" id="pass2" name="password2" placeholder="Re-type Password" size="50" required maxlength="16" minlength="8"/> <br> <br>
+
+		<div align=left>
+			&nbsp;&nbsp;
+			<input type="radio" id="gen" name="gen" value="male"  required/>Male &nbsp; &nbsp; 
+			<input type="radio" id="gen" name="gen" value="female"  required/>Female <br> <br>
+		</div>
+
+		<select id="list" required>
+    
+			<option disabled selected >Select a country</option>
+    			<option>india</option>
+    			<option>pakistan</option>
+    			<option>USA</option>
+		</select required> <br> <br>
+		<div align=left>
+
+			&nbsp;&nbsp;<input type="checkbox" id="checkbox1" name="checkbox" >I agree with terms and conditions <br>
+
+			&nbsp;&nbsp;<input type="checkbox" id="checkbox2" name="checkbox" >I agree with terms and conditions <br><br>
+	
+		</div>	
+		<input type="button" id="submit" name="submit" value="Register" size="50"/>
+	</form>
+
+
+</div>
+
+		<h2> Table </h2>
+<table border="10px">
+    <tr>
+        <th colspan="5" bgcolor="#999" align="center">My Multi Level Table</th>
+    </tr>
+    <tr>
+     <td colspan="2" rowspan="2">column 0</td>
+    
+    <td rowspan="2">column 1</td>
+        <td colspan="2">column 2</td>
+    </tr>
+    <tr>
+        <td>column 2a</td>
+        <td>column 2b</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Row1</td>
+        <td>Row1a</td>
+        <td>123</td>
+        <td>456</td>
+        <td>789</td>
+    </tr>
+    <tr>
+        <td>Row2a</td>
+        <td>123</td>
+        <td>456</td>
+        <td>789</td>
+    </tr>
+    <tr>
+        <td colspan="2">Row2</td>
+        <td>123</td>
+        <td>456</td>
+        <td>789</td>
+    </tr>
+    </table>
+</div>
+</body>
+</html>
