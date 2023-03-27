@@ -7,6 +7,8 @@ h2 {
   margin-bottom: 20px;
 }
 
+.article-title,
+._article-title,
 .article-title {
   color: white;
   margin: 0;
@@ -32,6 +34,15 @@ border-radius
 
 
  **/
+
+/* [#][id-name] */
+/** CSS ID slector **/
+#headingId {
+  color: blueviolet;
+}
+#headingId2 {
+  color: red;
+}
 /* Home page CSS */
 
 /* Banner section CSS */
