@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: 100%;
+}
+/* ***************************FIRST******************** */
+.first{
+    width :100vw;
+    height:4rem;
+    padding: .5rem;
+}
+.first .logo{
+    float: left;
+    font-size: 2rem;
+    display: flex;
+}
+.vl{
+    border-left: .1rem solid black;
+    height: 2.5rem;
+    margin-left: 1rem;
+}
+.first .contact{
+    float: right;
+    font-weight:bolder;
+    margin: .5rem;
+    margin-right: 3rem;
+    text-align: right;
+}
+/* *****************************SECOND********************* */
+.second{
+    width :100vw;
+    height:35rem;
+    background-color: rgb(57, 129, 237);
+    display: flex;
+    position: relative;
+}
+.second div{
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 50%;
+    padding-top: 4rem;
+    padding-left: 8rem;
+}
+.second div button{
+    width:14rem;
+    height: 4rem;
+    color: rgb(36, 36, 64);
+    font-weight: bold;
+    border-radius: .5rem;
+    background: linear-gradient(to bottom,white, #9a8bd1cc);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second form{
+    position: absolute;
+    width: 60%;
+    height: 50% ;
+    background-color: #19A7CE;;
+    top: 65%;
+    left: 20%;
+
+}
+.second form{
+    text-align: center;
+    padding: 1rem;
+}
+.second form input[type='text'],input[type='email']{
+    width: 17rem;
+    height: 2.5rem;
+    padding-left: 1rem;
+    border: none;
+    margin: .3rem;
+}
+.second form button{
+    border: none;
+    width: 14rem;
+    height: 2.5rem;
+    background-color: rgb(23, 23, 28);
+    color: white;
+}
+
+
+/* ******************************************THIRD************ */
+.third{
+    width :100vw;
+    height:20rem;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.third div{
+    margin-top: 8rem;
+    width: 70%;
+    height: 50%;
+}
+/* *********************************FOURTH************* */
+.fourth{
+    width :100vw;
+    height:25rem;
+    background-color: #19A7CE;
+    padding-top: 1.5rem;
+}
+.fourth .first{
+    width: 30rem;
+    height: 3rem;
+    background-color: white;
+    margin: auto;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.fourth .program{
+    height: 70%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+.fourth .program div{
+    width:25%;
+    padding: 1.5rem;
+    height: 100%;
+    border-right: 1px solid rgba(79, 78, 78, 0.829);
+    text-align: center;
+}
+/* **********************FIFTH*********************** */
+.fifth{
+    width :100vw;
+    height:20rem;
+    background-image: url(images/background.jpg);
+    display: flex;
+}
+.fifth .first{
+    width: 30%;
+    height: 100%;
+    text-align: left;
+    padding: 2rem;
+    line-height: 2.5rem;
+}
+.fifth .sec{
+    width: 20%;
+    height: 80%;
+    margin: 2rem;
+}
+.fifth .sec div{
+    width: 100%;
+    height: 45%;
+    display: block;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgb(117, 195, 222);
+    color:rgb(2, 96, 128);
+}
+
+/* ***************************SIXTH******************** */
+.sixth{
+    width :100vw;
+    height:25rem;
+    background-color: white;   
+    display: flex;
+    padding: 2rem 10rem;
+}
+.sixth div{
+    width: 60%;
+    height: 100%;
+    line-height: 1.5rem;
+}
+.sixth img{
+    width: 40%;
+    height:100%;
+}
+/* *******************************SEVENTH**************** */
+.seventh{
+    width :100vw;
+    height:35rem;
+    background-color:rgb(56, 56, 143);
+    padding: 2rem ;
+    text-align: center;
+    color: white;
+}
+.seventh .first{
+    width: 80%;
+    height: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.seventh .first div{
+    width: 23%;
+    height: 100%;
+    padding-top: .5rem;
+    background-color: white;
+}
+.seventh .first div img{
+    width: 10rem;
+    height: 10rem;
+}
+/* ******************************EIGHT**************************** */
+.eight{
+    width :100vw;
+    height:4rem;
+    background-color: rgb(6, 6, 91);
+    display: flex;
+    justify-content: center;
+}
+.eight p{
+    height: 80%;
+    width: 80%;
+    margin-top: 1rem;
+    text-align: center;
+    color: white;
+}
