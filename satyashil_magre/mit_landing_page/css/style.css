@@ -1,0 +1,382 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    font-family: 'Poppins', sans-serif; 
+    /* padding: opx; */
+}
+.img{
+    height: 550px;
+    width: 100%;
+    
+}
+.eyimg{
+  height:70px;
+}
+.head{
+    position: absolute;
+    top: 180px;
+    left: 150px;
+    font-size: 18px;
+    padding-top: 10px;
+    line-height: 170%;
+
+}
+.cont{
+    position: absolute;
+    font-size: 12px;
+    top: 25px;
+    right: 0;
+}
+
+.head-margin {
+    margin: 0;
+}
+.head-margin1{
+  color: white;
+}
+.btn{
+    top: 30px;
+    left: 150px;
+    font-size: 15px;
+    background-color:aqua;
+    font-family: Roboto;
+    text-align:center;
+    padding: 2px;
+    border-radius: 9px;
+    
+
+}
+
+.dwl-text {
+    background-color: #C9EEFF;
+    position: relative;
+    bottom: 15px;
+    margin-bottom: 20px;
+}
+.inp-btn{
+   background-color:aqua;
+    height: 250px;
+    width: 850px;
+    position: absolute;
+    top: 470px;
+    left: 320px;
+    text-align: center;
+    color: white;
+    
+}
+.inp-design{
+    font-size: 25px;
+    position: absolute;
+    left: 120px;
+    top: 70px;
+}
+.ibtn{
+    font-size: 10px;
+    height: 30px;
+    width: 200px;
+}
+.ibtn1 {
+    margin-left:65px;
+}
+
+.che{
+ margin-top: 95px;
+ font-size: 12px;
+ color: white;
+ text-align: center;
+ left: 175px;
+}
+.req{
+    color: white;
+    background-color: black;
+    font-size: 14px;
+    margin-top: 15px;
+    padding: 8px 25px;
+}
+
+  /* .program{
+    position: relative;
+    left: 0px;
+    top: 400px;
+    background-color: aqua;
+    height: 370px;
+    width: 1490px;
+    text-align: center;
+  } */
+
+
+  .page3{
+    width: 100%;
+    height: 450px;
+    background-color: aqua;
+    margin-top: 23rem;
+  }
+
+
+  /* .pro{
+    background-color: white;
+    background-position: center;
+    top: 100px;
+    left: 500px;
+    width: 500px;
+    text-align: center;
+  } */
+  
+  .ima{
+   position: relative;
+   right: 200px;
+   top: 100px;
+   display: inline-block;
+  }
+  .imag{
+    position: relative;
+   left: 250px;
+   top: 120px;
+   width: 100%;
+   height: auto;
+  }
+  .table-img{
+    width: 100%;
+  }
+  .pheading{
+    position: absolute;
+    left: 630px;
+    top: 1490px;
+    color:white;
+    padding: 0px;
+    font-size: 18px;
+    margin: 25px;
+  }
+  .theading{
+
+    position: absolute;
+    left: 630px;
+    top: 1550px;
+    color:white;
+    line-height: 2.5;
+    list-style-type: square;
+  }
+
+/************************************************************************* about program text ******************************************/
+  
+.about-text {
+    margin-bottom:7px;
+    color: black;
+  }
+
+  .abo{
+    margin-top: 50px;   
+    margin-right:10px;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom:20px;
+  }
+
+  /************************************************* page-3 ***********************************************/
+
+  .pro-benefit-text {
+    background-color: yellow;
+    padding: 6px 10px;
+  }
+
+  .pro1{
+    color:black;
+    position: absolute;
+    top: 1060px;
+    left: 500px;
+    background-color: white;
+    font-size: 19px;
+    padding: 12px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  
+
+/************************************************* page-4 ***********************************************/
+
+.pagethree{
+
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+  top: 115px;
+  font-size: 12px;
+  left: 100px;
+} 
+.pagethree-img{
+  height: 75px;
+}
+
+ul {
+  margin: 0.10em 0;
+  padding: 0 0em;
+  list-style: none;
+  line-height: 20px;
+}
+li:before { 
+  content: "";
+  border-color: transparent #111;
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 0.6em;
+  position: relative;
+}
+.eligility{
+  position: absolute;
+    left: 1200px;
+    top: 1470px;
+    color:#005c8b;
+    font-size: 11px;
+    margin: 25px;
+    background-color: aqua;
+    padding: 11px;
+    border-radius: 4px;
+    text-align: center;
+
+}
+
+.pfee{
+  position: absolute;
+    left: 1200px;
+    top: 1600px;
+    color:#005c8b;
+    padding: 0px;
+    font-size: 11px;
+    margin: 25px;
+    background-color: aqua;
+    text-align: center;
+    padding: 14px;
+    padding-right: 38px;
+    border-radius: 4px;
+
+}
+
+ /************************************************* page-5 ***********************************************/
+
+ .backimg{
+  position: absolute;
+  left: 900px;
+  width: 500px;
+
+ }
+ .program-text{
+  position: relative;
+  top: 50px;
+  color: #005c8b;
+  font-size: 15px;
+  left: 20px;
+ }
+/************************************************* page-6 ***********************************************/
+.faculty{
+  position: relative;
+  top: 100px;
+  background-color: blue;
+  width: 100%;
+  height: 650px;
+  
+}
+.fac{
+  position: relative;
+  color: white;
+  left: 0px;
+  top: 40px;
+  font-size:20px;
+  text-align: center;
+}
+.member1{
+  position: relative;
+  left: 140px;
+  top: 80px;
+  display: inline-block;
+
+  background-color: aliceblue;
+  height: 450px;
+  width: 290px;
+  border-radius: 20px;
+}
+.fac-img{
+  padding-left:37px;
+}.fname{
+  text-align: center;
+}
+.in-img{
+  position: absolute;
+  height: 100px;
+  top: 100px;
+  left: 150px;
+  
+}
+.act-img
+{
+  position: relative;
+  padding: 0px;
+left:90px;
+}
+.per-text{
+  text-align: center;
+  font-size: 12px;
+  margin: 10px;
+}
+
+
+
+
+
+
+
+.member2{
+  position: absolute;
+  left:0px;
+  top: 0px;
+  background-color: aliceblue;
+  height: 450px;
+  width: 290px;
+  border-radius: 20px;
+}
+.fac-img2{
+  padding-left:37px;
+}.fname2{
+  text-align: center;
+}
+.in-img2{
+  position: absolute;
+  height: 100px;
+  top: 100px;
+  left: 150px;
+  
+}
+.act-img2
+{
+  position: relative;
+  padding: 0px;
+left:90px;
+}
+.per-text2{
+  text-align: center;
+  font-size: 12px;
+  margin: 10px;
+}
+.footer{
+  color:white;
+  background-color: rgb(34, 34, 101);
+  margin-top: 6rem;
+  text-align: center;
+  padding: 2rem;
+}
+/************************************************* footer ***********************************************/
