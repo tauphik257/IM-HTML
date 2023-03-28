@@ -8,6 +8,7 @@
   <meta name="description" content="description will be here">
   <meta name="aurthor" content="">
   <title>Page title</title>
+  <link rel="stylesheet" href="./styles.css">
   <style>
     * {
       box-sizing: border-box;
@@ -19,7 +20,17 @@
       border: 1px solid black;
       border-collapse: collapse;
       text-align: center;
+      border: 2px solid red;
     }
+
+    .about-page td {
+      border: 2px solid blue;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
 
     .banner {
       background-image: url('./bg_img.jpg');
@@ -54,6 +65,10 @@
     .banner-text h2 {
       color: #444;
     }
+
+    /* h2 {
+      color: blue !important;
+    } */
   </style>
 </head>
 
@@ -73,13 +88,22 @@
         </nav>
       </header>
       <div class="banner-text">
-        <h2>Banner text for TA-NEW-BRANCHes</h2>
+        <h3>New banner text</h3>
+        <h2>New Changes Banner text for TA-NEW-BRANCH-2</h2>
         <p>Lorem ipsum dolor sit amet, cons</p>
         <p dir="rtl" lang="ar" style="color:#e0e0e0;font-size:20px;">это пример фиктивного текста 这 是一个虚拟文本的例子</p>
       </div>
     </div>
     <!-- Sementic Elements / Tags -->
-    <Header></Header> <!--  -->
+    <Header></Header> <!-- 
+
+      emp = {
+        name: 'Employee Name'
+      }
+
+      emp.name = 'Employee Name'
+
+     -->
     <nav></nav>
     <section></section>
     <article></article>
@@ -96,14 +120,79 @@
 
     <!-- article for blog -->
     <!-- About section TODO: need to update link -->
-    <article>
-      <h2>Bloo title</h2>
-      <p>blog difinition or description</p>
-      <p>blog difinition or description</p>
-      <a href="#"> external links</a>
+    <!--
+      1. Use style attributes <h2 style="css properties">
+      2. head tag <style>
+{
+  key: value
+}
+{
+  properties: value
+}
+        p{font-size: 18px}
+        
+        width{}
+        max-width
+        min-width
+        list-style-type
+
+        1. Inline CSS
+        2. Internal CSS
+        3. External CSS
+
+        Model  
+        View  
+        Controller => get the data from model => show in View
+
+        Components based structure
+        html
+        css
+
+        Rest API
+
+        #CSS Selectors
+
+        1. Internal OR External
+
+        #Type of selctors
+
+        1. Class
+        2. ID
+        3. *
+        4. p, ul, li, a, img
+        5. div.class, div#id, div p, article h2, 
+        6. attribute selector
+        7. pseudo Element
+        8. Pseudo class
+
+      </style>
+    -->
+    <article class="article-block">
+      <h2 class="22article-title active" id="headingId">This is Title heading 2</h2>
+      <div class="article-description">
+        <p style="font-size: 18px;">blog difinition or description</p>
+        <p>blog difinition or description</p>
+        <a href="#"> external links</a>
+      </div>
+    </article>
+    <article class="article-block">
+      <h2 class="article-title" id="headingId2">This is Title heading 3</h2>
+      <div class="article-description">
+        <p style="font-size: 18px;">blog difinition or description</p>
+        <p>blog difinition or description</p>
+        <a href="#"> external links</a>
+      </div>
+    </article>
+    <article class="article-block">
+      <h2 class="article-title">This is Title heading 4</h2>
+      <div class="article-description">
+        <p style="font-size: 18px;">blog difinition or description</p>
+        <p>blog difinition or description</p>
+        <a href="#"> external links</a>
+      </div>
     </article>
 
-    <details>
+    <!-- <details>
       <summary>summary of the content</summary>
       details description of the summary.
     </details>
@@ -119,7 +208,7 @@
         src="data:image/jpeg;base64,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"
         alt="image" />
       <figcaption>Fig.1 - image description </figcaption>
-    </figure>
+    </figure> -->
 
     <!-- Media elements -->
     <video style="width: 600px; height: 400px;">
