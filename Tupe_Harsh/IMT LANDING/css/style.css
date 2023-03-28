@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Roboto', sans-serif; */
+}
+.header{
+    display: flex;
+    /* margin-top: 4rem; */
+    width: 100%;
+    height: 15vh; 
+    background-color: #ededed;
+    /* border: 1px solid black; */
+}
+.logo{
+  /* border:2px solid black ; */
+  /* padding: 1rem; */
+  height: 15vh;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+.logo img{
+    height: 15vh;
+}
+.logo1{
+    border-left:2px solid rgb(107, 107, 107) ; 
+    height: 12vh;  
+    margin-top: 1rem;
+}
+.logo1 img{
+      height: 15vh;
+}
+.addr{
+    margin-left: 43rem;
+    padding-top: 2rem;
+}
+.addr h2{
+    text-align: end;
+}
+/*.................... main content strat here............... */
+.main-first{
+    height: 70vh;
+    background-image:url(img/background-1.jpg);
+    background-size: 100% 100%;
+    padding-left:10rem;  
+    padding-top: 4rem;
+}
+.main-first button{
+    padding: .5rem;
+    margin-top: 1rem;
+    background-image: linear-gradient(#ededed,#13aafc);
+    display: flex;  
+    border-radius: 1rem; 
+    border: none;
+    align-items: center;
+    /* padding-top: 2rem; */
+} 
+.main-first button img{
+    height: 5vh;
+}
+/* .main-first button p{
+    padding-top: .6rem;
+    text-decoration: none;   
+} */
+
+/*..................... form start here........................ */
+.main-form{
+    width: 60%;
+    height: 35vh;
+    background-color: #0ba7c1;
+    position:absolute;
+    left: 20rem;
+    bottom: -1rem;
+    text-align: center;
+    box-shadow: 0 20px 30px rgba(0,0 , 0, 0.2);
+
+}
+.main-form h2{
+    text-align: center;
+    margin-top: 1rem;
+    color: white;
+}
+.main-form form{
+    display: inline;
+}
+.main-form form input{
+    padding: 10px 80px 10px 10px;
+    /* margin-left: 2rem; */
+    /* width: 25%; */
+    margin: 0.2rem;
+    border-radius: 5px ;
+    border: none;
+}
+form button{
+   
+    margin-top: 1rem;
+    padding: .5rem;
+    width: 25%;
+    background-color: #0d193d;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+/* ................about program start here .................. */
+.content{
+    text-align: center;
+    margin-top: 8rem;  
+    margin-bottom: 1rem;
+}
+.content p{
+    margin-top: 1rem;
+    font-weight: 100;
+    /* font-size: small; */
+    
+}
+.info{
+    /* width: 100%; */
+    height: 70vh;
+    background-color:#0ba7c1; 
+    margin-top: 1.5rem;
+    padding-top: 2rem;
+}
+ .info-content{
+    display: flex;
+    border: 1px solid black;
+    width: 30%;
+    height: 6vh;
+    justify-content: center;
+    margin-left: 35rem; 
+    background-color: white; 
+    border: none;
+}
+.info-content button{
+    width: 100%;
+    /* margin: .5rem; */
+    margin: .5rem;
+    background-color: #f6b956;
+    border: none;
+
+}
+.info-content h3{
+    margin-top: .8rem;
+    width: 100%;
+     font-size: 15px;
+     /* padding-left: .5rem; */
+}
+.main-wrapper{
+    /* width: 100%; */
+    display: flex;
+    margin-top: 5rem;
+    margin-left: 15rem;
+    height: 40vh;
+    
+}
+.main-wrapper .wrp{
+    /* height: 10vh; */
+    margin-top: 2rem;
+}
+.main-wrapper .wrp img{
+    height: 10vh;
+    padding-left:6rem;
+}
+.main-wrapper .wrp h5{
+    color: white;
+    text-align: center;
+    margin-top: 0.5rem;
+    letter-spacing: 0.1rem;
+
+}
+.main-wrapper .wrp p{
+    color: #ffffff;
+    text-align: center;
+    padding: .5rem;
+    margin-top: .5rem;  
+    line-height: 1.5rem;
+    font-size: 15px;
+}
+.main-wrapper .wrp1{
+ height: 40vh; 
+    margin-top: 2rem;
+    border-left: 1px solid rgb(139, 139, 139);
+
+}
+.main-wrapper .wrp1 img{
+    height: 10vh;
+    padding-left:5.5rem;
+}
+.main-wrapper .wrp1 h5{
+    color: white;
+    text-align: center;
+    margin-top: .5rem;
+
+}
+.main-wrapper .wrp1 p{
+    color: #ffffff;
+    text-align: center;
+    padding: .5rem;
+    margin-top: .5rem;  
+    line-height: 1.5rem;
+    font-size: 15px;
+}
+.main-attend{
+    width: 100%;
+    height:50vh;
+     background-image:url(img/bg.jpg);
+     background-size: 100% 100%;
+}
+.main-attend .attend-first{
+    
+}
+.main-attend .attend-first h1{
+    text-align: center;
+    padding-top: 3rem;
+    color: white;
+    margin-left: 4rem;
+    
+}
+.main-attend .attend-first ul {
+    
+}
+.main-attend .attend-first ul li{
+    padding-left: 38rem;
+    color: white;
+    margin-top: 1.5rem;
+
+}
+.main-attend .attend-second{
+    float: right;
+    /* border: 2px solid black; */
+    height: 20vh;
+    position: relative;
+    right: 13rem;
+    bottom: 16rem;
+}
+.attend-second .attend-sec-div1{
+    height: 15vh;
+    border: 2px solid none;
+    background-color: #c3ebfd;
+    border-radius: .5rem;
+    padding: 1.5rem 1rem 6rem 2rem; 
+    
+}
+.attend-second .attend-sec-div2{
+    height: 15vh;
+    border: 2px solid none;
+    background-color: #c3ebfd;
+    margin-top: 1rem; 
+    border-radius: .5rem;
+    /* padding: 1rem;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem; */
+    padding: 1.5rem 1rem 6rem 2rem; 
+}
+.div-content{
+    height: 55vh;
+}
+.div-content h1{
+    color: #2e4480;
+    margin-left: 7rem;
+    margin-top: 2rem;
+}
+.div-content ul{
+    color: #2e4480;
+    /* padding: 2rem; */
+    margin-left: 8rem;
+
+}
+.div-content ul li{
+    padding: .5rem;
+}
+.div-content img{
+    position: relative;
+    height: 55vh;
+    left: 55rem;
+    bottom: 20rem;
+}
+   /*.................... main portfolio start here..................... */
+.portfolio{
+    height: 90vh;
+    background-color: #0d193d; 
+}
+.portfolio .portfolio-heading{
+    text-align: center;  
+    padding-top: 1.5rem;
+}
+.main-portfolio{
+    display: flex;
+    padding-left: 8rem;
+}
+/*................... first portfolio start here....................... */
+.main-portfolio .portfolio1{
+    width: 17%;
+    height: 60vh;
+    border: 1px solid black;
+    margin-left: 5rem;
+    margin-top: 4rem;
+    background-color: white;
+}
+.portfolio1 img{
+    height: 10vh;
+    padding-left: 5rem;
+}
+.main-portfolio .portfolio1 .div1{
+    /* border: 2px solid blue; */
+    height: 20vh;
+    margin-top: 1rem;
+    border-radius: 50%;
+    width: 60%;
+    margin-left: 2.5rem;
+    background-image: url(img/Layer\ 61.jpg);   
+    background-size: 100% 100%;
+}
+.main-portfolio .portfolio1 .icon{
+    /* border: 2px solid black; */
+    height: 6vh;
+    border-radius: 50%;
+    width: 20%;
+    position: relative;
+    left: 9rem;
+    bottom: 3rem;
+    background-image: url(img/md_5a9797d083160.png);
+    background-size: 100% 100%;
+   
+    /* background-image: url(img/Layer\ 61.jpg);   
+    background-size: 100% 100%; */
+
+}
+/*...................... second portfolio start here .............................*/
+.main-portfolio .portfolio2{
+    width: 17%;
+    height: 60vh;
+    border: 1px solid black;
+    margin-left: 3rem;
+    margin-top: 4rem;
+    background-color: white;
+}
+.portfolio2 img{
+    height: 10vh;
+    padding-left: 5rem;
+}
+.main-portfolio .portfolio2 .div2{
+    /* border: 2px solid blue; */
+    height: 20vh;
+    margin-top: 1rem;
+    border-radius: 50%;
+    width: 60%;
+    margin-left: 2.5rem;
+    background-image: url(img/Layer\ 60.jpg);   
+    background-size: 100% 100%;
+}
+.main-portfolio .portfolio2 .icon1{
+    /* border: 2px solid black; */
+    height: 6vh;
+    border-radius: 50%;
+    width: 20%;
+    position: relative;
+    left: 9rem;
+    bottom: 3rem;
+    background-image: url(img/md_5a9797d083160.png);
+    background-size: 100% 100%;
+}
+/*............................. third portfolio start here......................... */
+.main-portfolio .portfolio3{
+    width: 17%;
+    height: 60vh;
+    border: 1px solid black;
+    margin-left: 3rem;
+    margin-top: 4rem;
+    background-color: white;
+}
+.portfolio3 img{
+    height: 10vh;
+    padding-left: 5rem;
+}
+.main-portfolio .portfolio3 .div3{
+    /* border: 2px solid blue; */
+    height: 20vh;
+    margin-top: 1rem;
+    border-radius: 50%;
+    width: 60%;
+    margin-left: 2.5rem;
+    background-image: url(img/Layer\ 61.jpg);   
+    background-size: 100% 100%;
+}
+.main-portfolio .portfolio3 .icon2{
+    /* border: 2px solid black; */
+    height: 6vh;
+    border-radius: 50%;
+    width: 20%;
+    position: relative;
+    left: 9rem;
+    bottom: 3rem;
+    background-image: url(img/md_5a9797d083160.png);
+    background-size: 100% 100%;
+}
+/* ...............forth portfolio start here............................... */
+.main-portfolio .portfolio4{
+    width: 17%;
+    height: 60vh;
+    border: 1px solid black;
+    margin-left: 3rem;
+    margin-top: 4rem;
+    background-color: white;
+}
+.portfolio4 img{
+    height: 10vh;
+    padding-left: 5rem;
+}
+.main-portfolio .portfolio4 .div4{
+    /* border: 2px solid blue; */
+    height: 20vh;
+    margin-top: 1rem;
+    border-radius: 50%;
+    width: 60%;
+    margin-left: 2.5rem;
+    background-image: url(img/Layer\ 60.jpg);   
+    background-size: 100% 100%;
+}
+.main-portfolio .portfolio4 .icon3{
+    /* border: 2px solid black; */
+    height: 6vh;
+    border-radius: 50%;
+    width: 20%;
+    position: relative;
+    left: 9rem;
+    bottom: 3rem;
+    background-image: url(img/md_5a9797d083160.png);
+    background-size: 100% 100%;
+}
+ 
+/* ............................footer  start here.......................  */
+ footer{
+    background-color: #171f5b;
+    height: 10vh;
+    text-align: center;
+    padding-top:1.5rem;
+    color: white;
+}
+
+
+
