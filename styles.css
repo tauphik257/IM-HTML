@@ -1,0 +1,52 @@
+h2 {
+  color: orange;
+}
+/* [dot][class-name] */
+.article-block {
+  border: 1px solid #444;
+  margin-bottom: 20px;
+}
+
+.article-title,
+._article-title,
+.article-title {
+  color: white;
+  margin: 0;
+  background-color: #444;
+  padding: 10px 15px;
+}
+.article-description {
+  padding: 10px 15px;
+}
+
+/** padding and margin 
+
+#Order => top, right, bottom, left
+
+1. padding: 15px  => top: 15px, right: 15px, bottom: 15px, left: 15px
+2. padding: 10px 15px 10px 15px  => top: 10px, right: 15px, bottom: 10px, left: 15px
+3. padding: 10px 15px => top: 10px, right: 15px, bottom: 10px, left: 15px
+4. padding: 10px 15px 15px => top: 10px, right: 15px, bottom: 15px, left: 15px
+
+margin
+border,
+border-radius
+
+
+ **/
+
+/* [#][id-name] */
+/** CSS ID slector **/
+#headingId {
+  color: blueviolet;
+}
+#headingId2 {
+  color: red;
+}
+/* Home page CSS */
+
+/* Banner section CSS */
+
+/* Contact section css */
+
+/* About Page css */
