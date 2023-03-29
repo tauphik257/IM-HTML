@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 18vh;
+    display: flex;
+}
+.png img{
+    width: 100%;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    border: none;
+    border-right: 1px solid black;
+}
+.Eylogo img {
+    width: 100%;
+    height: 20vh;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    border: none;
+    padding-bottom: 3rem;
+
+}
+header ul{
+    margin-top: 5rem;
+    
+}
+header ul li{
+    text-align: right;
+    margin-left: 55rem;
+    font-size: 20px;
+    list-style: none;  
+}
+
+/* header compeleted */
+
+.parent{
+    width: 100%;
+    height: 69vh;
+    background-color: #0169c9;
+    background-image: url(../img/4.jpg);
+}
+.container{
+    padding-top: 7rem;
+}
+.container button {
+    margin-left: 15rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: flex;
+    background-image: linear-gradient(#ffffff,#0ba7c1);
+}
+.container button a{
+    margin-top: 2rem;
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.user{
+    width: 50%;
+    height: 35vh;
+    background-color: #0ba7c1;
+    position: relative;
+    left: 25%;
+    top: 5%;
+    padding: 5px;
+    text-align: center;
+    
+}
+h2{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+.user form input{
+    /* width: 30%; */
+    padding: 15px;
+    margin: 8px;
+    font-size: 20px;
+}
+.user form .p label{
+    /* padding-right: 5rem; */
+    font-size: 18px;
+ 
+}
+.user form button{
+    width: 40%;
+    padding: 10px;
+    background-color: #0d193d;
+    margin-top: 3rem;
+    font-size: 25px;
+    color: white;
+}
+    /* form compeleted */
+.about{
+    height: 60vh;
+    background-color: white;
+    font-size: 30px;
+    padding-top: 15rem;
+}
+.about p{
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+  
+.program{
+    width: 100%;
+    height: 65vh;
+    background-color: #0ba7c1;
+    padding-top: 3rem;
+    
+   
+}
+.index{
+    display: flex;
+    margin-top: 3rem;
+    height: 45vh;
+    padding-left: 12rem;
+
+}
+.mit{
+    border: none;
+    border-right: 1px solid #6b6b6b;
+    width: 22%;
+    padding: 8px;
+    text-align: center;
+}
+.mit img{
+    width: 25%;
+    margin-top: 2rem;
+    
+}
+.mit p{
+    font-size: 20px;
+    margin-top: 2rem;
+}
+.mit h3{
+    color: white;
+    font-size: 30px;
+    margin-top: 2rem;
+}
+
+/* -------------------- */
+.past{
+    width: 100%;
+    height: 50vh;
+    background-image: url(../img/background.jpg);
+    background-size: 100% 100%;
+    display: flex;
+
+}
+.past  ul{
+    margin-left: 50rem;
+    margin-top: 2rem;
+
+}
+.past ul li{
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+}
+.class{
+    margin-top: 5rem;
+}
+.object{
+    width: 50%;
+    height: 15vh;
+    margin-left: 1rem;
+    padding-top: 2rem;
+    border-radius: 10px;
+    margin: 5px;
+    color: #005c8b;
+    background-color: #c3ebfd;
+}
+.object p{
+    font-size: 18px;
+    padding: 5px;
+    margin-left: 1rem;
+}
+.abstract{
+    width: 80%;
+    height: 50vh;
+    color: #005c8b;
+    margin-left: 10rem;
+    margin-top: 2rem;
+    display: flex;
+}
+.abstract ul li{
+    font-size: 25px;
+    padding: 10px;
+}
+.style img{
+    width: 100%;
+    height: 50vh;
+}
+.faculty{
+    width: 100%;
+    height: 100vh;
+    background-color: #2d437f;
+}
+.instance{
+    display: flex;
+    margin-left: 10rem;
+    margin-top: 5rem;
+
+}
+.subject{
+    width: 22%;
+    height: 65vh;
+    margin-top: 4rem;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid black;
+}
+.subject .a{
+    width: 60%;
+    height: 24vh;
+    border-radius: 50%;
+    position: relative;
+    left: 5rem;
+    top: 2rem;
+    background-image: url(../img/6.jpeg);
+    background-size: 100% 100%;
+}
+.subject .icon{
+    width: 22%;
+    height: 9vh;
+    border-radius: 50%;
+    background-image: url(../img/7.png);
+    position: relative;
+    left: 17rem;
+    bottom:4rem ;
+    background-size: 100% 100%;
+}
+.subject .b{
+    width: 60%;
+    height: 24vh;
+    border-radius: 50%;
+    background-image: url(../img/8.jpeg);
+    background-size: 100% 100%;
+    position: relative;
+    left: 5rem;
+    top: 2rem;
+}
+.subject .c{
+    width: 60%;
+    height: 24vh;
+    border-radius: 50%;
+    background-image: url(../img/9.jpeg);
+    background-size: 100% 100%;
+    position: relative;
+    left: 5rem;
+    top: 2rem;
+}
+.subject .d{
+    width: 60%;
+    height: 24vh;
+    border-radius: 50%;
+    background-image: url(../img/10.jpeg);
+    background-size: 100% 100%;
+    position: relative;
+    left: 5rem;
+    top: 2rem;
+}
+.k img{
+    width: 30%;
+    height: 10vh;
+    position: relative;
+    left: 34%;
+}
+footer{
+    width: 100%;
+    height: 12vh;
+    background-color: #191970;
+}
+
+
