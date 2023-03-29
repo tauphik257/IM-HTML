@@ -5,20 +5,17 @@ h2 {
 .article-block {
   border: 1px solid #444;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .article-title,
 ._article-title,
 .article-title {
-  color: white;
+  color: blueviolet;
   margin: 0;
-  background-color: #444;
   padding: 10px 15px;
+  position: relative;
 }
-.article-description {
-  padding: 10px 15px;
-}
-
 /** padding and margin 
 
 #Order => top, right, bottom, left
@@ -37,13 +34,56 @@ border-radius
 
 /* [#][id-name] */
 /** CSS ID slector **/
-#headingId {
+/* #headingId {
   color: blueviolet;
 }
 #headingId2 {
   color: red;
+} */
+/* CSS Pseudo Selector */
+
+.article-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+  height: 2px;
+  width: 100px;
+  background-color: #444;
+  z-index: 9;
 }
-/* Home page CSS */
+.article-title::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 44px;
+  height: 8px;
+  width: 50px;
+  background-color: red;
+  z-index: 10;
+}
+
+.article-description {
+  padding: 10px 15px;
+}
+.article-description p::first-line {
+  color: red;
+}
+.article-description p::first-letter {
+  color: blue;
+  font-size: 3rem;
+}
+
+.article-block::after {
+  content: attr(data-badge); /* content: "" => "New" */
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ff0000;
+  color: #fff;
+  padding: 5px 10px;
+}
 
 /* Banner section CSS */
 
