@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:sans-serif;
 }
 
 header{
@@ -46,6 +47,21 @@ header ul li{
 .container{
     padding-top: 7rem;
 }
+.container p.nav{
+    margin-left: 15rem; 
+    font-size: 35px;
+     margin-top: 3rem;
+}
+.container p.next{
+    margin-left: 15rem;
+    color: white;
+    font-size: 20px;
+}
+.container p.phone{
+    margin-left: 15rem;
+    font-size: 35px;
+    color: white;
+}
 .container button {
     margin-left: 15rem;
     border-radius: 5px;
@@ -53,7 +69,7 @@ header ul li{
     display: flex;
     background-image: linear-gradient(#ffffff,#0ba7c1);
 }
-.container button a{
+.container button b{
     margin-top: 2rem;
     padding: 5px;
     font-weight: bold;
@@ -76,15 +92,12 @@ h2{
     font-size: 30px;
 }
 .user form input{
-    /* width: 30%; */
     padding: 15px;
     margin: 8px;
     font-size: 20px;
 }
 .user form .p label{
-    /* padding-right: 5rem; */
     font-size: 18px;
- 
 }
 .user form button{
     width: 40%;
@@ -101,6 +114,11 @@ h2{
     font-size: 30px;
     padding-top: 15rem;
 }
+.about h3.type{
+    text-align: center;
+    margin-bottom: 1rem;
+     width: 100%;
+}
 .about p{
     width: 100%;
     padding: 5px;
@@ -111,9 +129,24 @@ h2{
     width: 100%;
     height: 65vh;
     background-color: #0ba7c1;
-    padding-top: 3rem;
-    
-   
+    padding-top: 3rem;   
+}
+.always{
+    width: 30%;
+    height: 8vh; 
+    display: flex;
+    background-color: white;
+    padding: 1rem; 
+    position: relative; 
+    left: 35%;
+}
+.always h3.some{
+    background-color: orange;
+    padding: 1rem;
+}
+.always h3.unique{
+    margin-left: 2rem;
+    padding: 1rem;
 }
 .index{
     display: flex;
@@ -163,6 +196,13 @@ h2{
     padding: 10px;
     color: white;
 }
+.future h3.continue{
+    color: white;
+    font-size: 35px;
+    margin-left: 48rem;
+    padding-top: 4rem;
+
+}
 .class{
     margin-top: 5rem;
 }
@@ -176,6 +216,14 @@ h2{
     color: #005c8b;
     background-color: #c3ebfd;
 }
+.class h3{
+    margin-left: 1rem; 
+    font-size: 25px;
+}
+.object .read{
+    font-size: 25px; 
+    margin-left: 1rem;
+}
 .object p{
     font-size: 18px;
     padding: 5px;
@@ -185,13 +233,21 @@ h2{
     width: 80%;
     height: 50vh;
     color: #005c8b;
-    margin-left: 10rem;
-    margin-top: 2rem;
+    margin-left: 5rem;
+    margin-top: 5rem; 
     display: flex;
+}
+.abstract .java{
+    width: 27%;
+    font-size: 30px;
+    position: relative;
+    bottom: 10%;
+    left: 30%;
+    color:#005c8b;      
 }
 .abstract ul li{
     font-size: 25px;
-    padding: 10px;
+    padding: 5px;
 }
 .style img{
     width: 100%;
@@ -202,11 +258,38 @@ h2{
     height: 100vh;
     background-color: #2d437f;
 }
-.instance{
-    display: flex;
-    margin-left: 10rem;
-    margin-top: 5rem;
+.faculty h2{
+    padding-top: 2rem; 
+    font-size: 50px;
+}
+.faculty p{
+    font-size: 20px; 
+    margin: 5px; 
+    color: white; 
+    text-align: center;
+}
 
+.instance{
+  display: flex;
+  margin-left: 10rem;
+  margin-top: 5rem;
+}
+.instance.subject.build{
+    position: relative;
+    left: 28%;
+    bottom: 2rem;
+    font-size: 22px;
+    font-weight: bold;
+}
+.instance .subject .web{
+    position: relative;
+    left: 35%;
+    font-size: 18px;
+}
+.k .sandip{
+    font-size: 20px;
+    margin: 10px;
+    color: black;
 }
 .subject{
     width: 22%;
@@ -276,7 +359,26 @@ h2{
 footer{
     width: 100%;
     height: 12vh;
+    display: flex;
     background-color: #191970;
+}
+footer p{
+    font-size: 20px;
+    color: white;
+    
+    padding-top: 2rem;
+
+}
+footer .pa{
+    padding-left: 3rem;
+}
+footer a{
+    font-size: 22px;
+    color: wheat;
+    padding-top: 2rem;
+}
+a:hover{
+    color: blue;
 }
 
 
