@@ -5,51 +5,74 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
-
 }
 html{
     font-size: 100%;
 }
-/* ***************************FIRST******************** */
-.first{
-    width :100vw;
+        /* ***********************Header section******************** */
+.header{
+    width :100%;
     height:4rem;
     padding: .5rem;
 }
-.first .logo{
+.header .logo{
     float: left;
     font-size: 2rem;
     display: flex;
 }
-.vl{
+.header .logo h3{
+    color: orange;
+}
+.header .logo .name{
+    font-size:.7rem; 
+    margin-left: 1rem;
+}
+.vertical-line{
     border-left: .1rem solid black;
     height: 2.5rem;
     margin-left: 1rem;
 }
-.first .contact{
+.header .contact{
     float: right;
     font-weight:bolder;
     margin: .5rem;
     margin-right: 3rem;
     text-align: right;
 }
-/* *****************************SECOND********************* */
-.second{
-    width :100vw;
+.header .contact a{
+    text-decoration: none;
+    color: black;
+}
+        /* **********************brochure section********************* */
+.brochure{
+    width :100%;
     height:35rem;
     background-color: rgb(57, 129, 237);
     display: flex;
     position: relative;
 }
-.second div{
+.brochure div{
     height: 100%;
     width: 50%;
     padding-top: 4rem;
     padding-left: 8rem;
 }
-.second a{
+.brochure .first-line{
+    color: rgb(36, 36, 64); 
+    font-size: 2rem;
+}
+.brochure .second-line{
+    color: white; 
+    font-size: 1rem;
+}
+.brochure .third-line{
+    color: white; 
+    font-size: 2.3rem;
+}
+.brochure a{
     width:16rem;
     height: 4rem;
+    text-decoration: none;
     color: rgb(36, 36, 64);
     font-weight: bold;
     border-radius: .5rem;
@@ -59,7 +82,7 @@ html{
     justify-content: center;
     align-items: center;
 }
-.second form{
+.brochure form{
     position: absolute;
     width: 60%;
     height: 50% ;
@@ -68,18 +91,26 @@ html{
     left: 20%;
 
 }
-.second form{
+.brochure form{
     text-align: center;
     padding: 1rem;
 }
-.second form input[type='text'],input[type='email']{
+.brochure form p{
+    color: white;
+    font-size: 2rem; 
+    margin-bottom:.5rem;
+}
+.brochure form label{
+    color: white;
+}
+.brochure form input[type='text'],input[type='email']{
     width: 17rem;
     height: 2.5rem;
     padding-left: 1rem;
     border: none;
     margin: .3rem;
 }
-.second form button{
+.brochure form button{
     border: none;
     width: 14rem;
     height: 2.5rem;
@@ -88,28 +119,31 @@ html{
 }
 
 
-/* ******************************************THIRD************ */
-.third{
-    width :100vw;
+        /* ***************About Program section********************** */
+.about-program{
+    width :100%;
     height:20rem;
     background-color: white;
     text-align: center;
     display: flex;
     justify-content: center;
 }
-.third div{
+.about-program div{
     margin-top: 8rem;
     width: 70%;
     height: 50%;
 }
-/* *********************************FOURTH************* */
-.fourth{
-    width :100vw;
+.about-program title{
+    font-size: 2rem;
+}
+            /* ******************Program Benefit section************* */
+.program-benefit{
+    width :100%;
     height:25rem;
     background-color: #19A7CE;
     padding-top: 1.5rem;
 }
-.fourth .first{
+.program-benefit .heading{
     width: 30rem;
     height: 3rem;
     background-color: white;
@@ -118,39 +152,57 @@ html{
     display: flex;
     justify-content: center;
 }
-.fourth .program{
+.program-benefit .heading .benefits{
+    background-color:orange;
+    margin: auto; 
+    font-size: 1rem; 
+    padding: .5rem;
+}
+.program-benefit .heading .pedagogy{
+    margin: auto; font-size: 1rem;
+}
+.program-benefit .program{
     height: 70%;
     width: 80%;
     margin: auto;
     display: flex;
 }
-.fourth .program div{
+.program-benefit .program .fourth-program{
+    border-right: none;
+}
+.program-benefit .program div{
     width:25%;
     padding: 1.5rem;
     height: 100%;
     border-right: 1px solid rgba(79, 78, 78, 0.829);
     text-align: center;
 }
-/* **********************FIFTH*********************** */
-.fifth{
-    width :100vw;
+.program-benefit .program div p{
+    color:white;
+}
+        /* ******************Eligibility section******************** */
+.eligibility{
+    width :100%;
     height:20rem;
     background-image: url(images/background.jpg);
     display: flex;
 }
-.fifth .first{
+.eligibility .who-attend{
     width: 30%;
     height: 100%;
     text-align: left;
     padding: 2rem;
     line-height: 2.5rem;
 }
-.fifth .sec{
+.eligibility .who-attend i{
+    color: black;
+}
+.eligibility .fees{
     width: 20%;
     height: 80%;
     margin: 2rem;
 }
-.fifth .sec div{
+.eligibility .fees div{
     width: 100%;
     height: 45%;
     display: block;
@@ -160,58 +212,86 @@ html{
     color:rgb(2, 96, 128);
 }
 
-/* ***************************SIXTH******************** */
-.sixth{
-    width :100vw;
+        /* ******************Feature section******************** */
+.feature{
+    width :100%;
     height:25rem;
     background-color: white;   
     display: flex;
     padding: 2rem 10rem;
 }
-.sixth div{
+.feature div{
     width: 60%;
     height: 100%;
     line-height: 1.5rem;
 }
-.sixth img{
+.feature div h3{
+    color:rgb(6, 6, 91); 
+    font-size: 1.5rem;
+}
+.feature i{
+    color: #13397c;
+}
+.feature div span{
+    font-size: 1rem; 
+    color:rgb(6, 6, 91);
+}
+.feature img{
     width: 40%;
     height:100%;
 }
-/* *******************************SEVENTH**************** */
-.seventh{
-    width :100vw;
+        /* *************************faculty section**************** */
+.faculty{
+    width :100%;
     height:35rem;
     background-color:rgb(56, 56, 143);
     padding: 2rem ;
     text-align: center;
     color: white;
 }
-.seventh .first{
+.faculty h3{
+    font-size: 2rem;
+}
+.faculty .faculty-info{
     width: 80%;
     height: 85%;
     margin: auto;
     display: flex;
     justify-content: space-between;
 }
-.seventh .first div{
+.faculty .faculty-info div{
     width: 23%;
     height: 100%;
     padding-top: .5rem;
     background-color: white;
 }
-.seventh .first div img{
+.faculty .faculty-info div img{
     width: 10rem;
     height: 10rem;
+    border-radius: 50%;
 }
-/* ******************************EIGHT**************************** */
-.eight{
-    width :100vw;
+.faculty .faculty-info .faculty-name{
+    color:rgb(6, 6, 91);
+}
+.faculty .faculty-info .ceo{
+    color: gray;
+}
+.faculty .faculty-info i{
+    font-size: 2rem; 
+    color: rgb(93, 156, 229);
+}
+.faculty .faculty-info p{
+    color:rgb(6, 6, 91) ;
+}
+        /* ********************footer section**************************** */
+.footer{
+    width :100%;
     height:4rem;
     background-color: rgb(6, 6, 91);
     display: flex;
     justify-content: center;
 }
-.eight p{
+.footer p{
     height: 80%;
     width: 80%;
     margin-top: 1rem;
