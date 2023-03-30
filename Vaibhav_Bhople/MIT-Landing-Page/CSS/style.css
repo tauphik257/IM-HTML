@@ -93,7 +93,6 @@ input[type="email"] {
   color: white;
   margin: 1rem 0rem;
 }
-
 .about {
   width: 100%;
   height: 23rem;
@@ -107,6 +106,9 @@ input[type="email"] {
   margin-top: 8rem;
   width: 70%;
   height: 55%;
+}
+.about p {
+  margin-top: 1rem;
 }
 
 .service {
@@ -141,10 +143,14 @@ input[type="email"] {
 }
 .program {
   height: 70%;
-  width: 80%;
+  width: 90%;
   margin: auto;
   display: flex;
   color: white;
+  margin-top: 2rem;
+}
+.program p {
+  margin-top: 1rem;
 }
 .service .program div {
   width: 25%;
@@ -156,10 +162,10 @@ input[type="email"] {
 .info {
   width: 100%;
   height: 20rem;
-  background-image: url(assets/background.jpg);
   display: flex;
+  background-image: url(/assets/background.jpg);
 }
-.info .first {
+.left-side {
   width: 30%;
   height: 100%;
   text-align: left;
@@ -187,19 +193,27 @@ input[type="email"] {
   display: flex;
   padding: 2rem 5rem;
 }
+.feature .feature-head {
+  color: rgb(6, 6, 91);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.feature p {
+  margin-top: 1rem;
+}
 .feature div {
   width: 60%;
   height: 50%;
   line-height: 1.5rem;
 }
 .feature img {
-  width: 30%;
+  width: 40%;
   height: 80%;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 .faculty {
-  width: 95.45%;
+  width: 94.93%;
   height: 34rem;
   background-color: rgb(56, 56, 143);
   padding: 2rem;
@@ -207,15 +221,15 @@ input[type="email"] {
   color: white;
   padding-bottom: 4rem;
 }
+.badge {
+  font-size: 10px;
+}
 .sub-head {
   color: white;
   font-size: 14px;
 }
 .faculty img {
   border-radius: 50%;
-  color: rgb(6, 6, 91);
-  font-size: 12px;
-  margin: 0rem 1rem;
 }
 .name {
   color: rgb(6, 6, 91);
@@ -224,6 +238,7 @@ input[type="email"] {
 .para {
   color: rgb(6, 6, 91);
   font-size: 12px;
+  margin: 0rem 0.6rem;
 }
 .position {
   color: grey;
