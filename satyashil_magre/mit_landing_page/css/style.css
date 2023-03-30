@@ -4,15 +4,16 @@
 }
 body {
     font-family: 'Poppins', sans-serif; 
-    /* padding: opx; */
+}
+.icon{
+  border-radius: 25px;
 }
 .img{
     height: 550px;
     width: 100%;
-    
 }
 .eyimg{
-  height:70px;
+  height:80px;
 }
 .head{
     position: absolute;
@@ -21,15 +22,14 @@ body {
     font-size: 18px;
     padding-top: 10px;
     line-height: 170%;
-
-}
+   
+  }
 .cont{
     position: absolute;
     font-size: 12px;
-    top: 25px;
-    right: 0;
+    top: 28px;
+    right: 0px;
 }
-
 .head-margin {
     margin: 0;
 }
@@ -41,31 +41,27 @@ body {
     left: 150px;
     font-size: 15px;
     background-color:aqua;
-    font-family: Roboto;
     text-align:center;
     padding: 2px;
     border-radius: 9px;
     
-
-}
-
-.dwl-text {
-    background-color: #C9EEFF;
+  }
+  .dwl-text {
     position: relative;
     bottom: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .inp-btn{
    background-color:aqua;
-    height: 250px;
-    width: 850px;
-    position: absolute;
-    top: 470px;
-    left: 320px;
-    text-align: center;
-    color: white;
+   height: 250px;
+   width: 830px;
+   position: absolute;
+   top: 470px;
+   left: 320px;
+   text-align: center;
+   color: white;
     
-}
+  }
 .inp-design{
     font-size: 25px;
     position: absolute;
@@ -96,34 +92,12 @@ body {
     padding: 8px 25px;
 }
 
-  /* .program{
-    position: relative;
-    left: 0px;
-    top: 400px;
-    background-color: aqua;
-    height: 370px;
-    width: 1490px;
-    text-align: center;
-  } */
-
-
-  .page3{
+.page3{
     width: 100%;
     height: 450px;
     background-color: aqua;
     margin-top: 23rem;
   }
-
-
-  /* .pro{
-    background-color: white;
-    background-position: center;
-    top: 100px;
-    left: 500px;
-    width: 500px;
-    text-align: center;
-  } */
-  
   .ima{
    position: relative;
    right: 200px;
@@ -158,10 +132,7 @@ body {
     line-height: 2.5;
     list-style-type: square;
   }
-
-/************************************************************************* about program text ******************************************/
-  
-.about-text {
+  .about-text {
     margin-bottom:7px;
     color: black;
   }
@@ -173,15 +144,11 @@ body {
     font-size: 13px;
     margin-bottom:20px;
   }
-
-  /************************************************* page-3 ***********************************************/
-
-  .pro-benefit-text {
+.pro-benefit-text {
     background-color: yellow;
     padding: 6px 10px;
   }
-
-  .pro1{
+.pro1{
     color:black;
     position: absolute;
     top: 1060px;
@@ -191,22 +158,7 @@ body {
     padding: 12px;
   }
 
-
-
-
-
-
-
-
-
-
-
-  
-
-/************************************************* page-4 ***********************************************/
-
 .pagethree{
-
   position: relative;
   display: inline-block;
   margin: 20px;
@@ -248,10 +200,8 @@ li:before {
     padding: 11px;
     border-radius: 4px;
     text-align: center;
-
-}
-
-.pfee{
+  }
+  .pfee{
   position: absolute;
     left: 1200px;
     top: 1600px;
@@ -266,10 +216,7 @@ li:before {
     border-radius: 4px;
 
 }
-
- /************************************************* page-5 ***********************************************/
-
- .backimg{
+.backimg{
   position: absolute;
   left: 900px;
   width: 500px;
@@ -282,7 +229,6 @@ li:before {
   font-size: 15px;
   left: 20px;
  }
-/************************************************* page-6 ***********************************************/
 .faculty{
   position: relative;
   top: 100px;
@@ -302,13 +248,12 @@ li:before {
 .member1{
   position: relative;
   left: 140px;
-  top: 80px;
+  top: 90px;
   display: inline-block;
-
   background-color: aliceblue;
-  height: 450px;
+  height: 455px;
   width: 290px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .fac-img{
   padding-left:37px;
@@ -332,22 +277,6 @@ left:90px;
   text-align: center;
   font-size: 12px;
   margin: 10px;
-}
-
-
-
-
-
-
-
-.member2{
-  position: absolute;
-  left:0px;
-  top: 0px;
-  background-color: aliceblue;
-  height: 450px;
-  width: 290px;
-  border-radius: 20px;
 }
 .fac-img2{
   padding-left:37px;
@@ -379,4 +308,3 @@ left:90px;
   text-align: center;
   padding: 2rem;
 }
-/************************************************* footer ***********************************************/
