@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
     font-family: 'Roboto', sans-serif;
+
 }
 html{
     font-size: 100%;
@@ -44,8 +47,8 @@ html{
     padding-top: 4rem;
     padding-left: 8rem;
 }
-.second div button{
-    width:14rem;
+.second a{
+    width:16rem;
     height: 4rem;
     color: rgb(36, 36, 64);
     font-weight: bold;
