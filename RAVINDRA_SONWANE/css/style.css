@@ -1,0 +1,291 @@
+*{
+margin: 0; 
+padding: 0;  
+font-family:Arial, Helvetica, sans-serif;
+}
+/* header */
+
+header{
+    background-color: #ECF2FF;
+}
+.navbar .rightelement{
+    display: flex;
+    padding-top: 1rem;
+    float:right;
+}
+.navbar ul{
+    padding-top: 1rem;
+    list-style-type:none;
+   text-align: right;
+}
+.navbar img{
+    padding-left: 2rem;    ;
+}
+
+/* header end */
+
+/* page css 2 start  */
+.main{
+    background-image: url(../img/back3.jpg);
+    background-repeat: no-repeat;
+    padding: 30px 100px;
+    height: auto;
+    background-size: contain;
+}
+.main li{
+    list-style-type:none;
+    line-height:2.5rem ;
+}
+.prepare-today button{
+    background: linear-gradient(white,rgb(62, 172, 215));
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    padding: 7px;
+    border: none;
+}
+.main a{
+    padding-top: 20px;
+    text-decoration: none;
+}
+.main .prepare{
+    font-size: 25px;
+    font-size:35px; 
+}
+.main .post{
+    color:aqua; 
+    font-size:20px;
+}
+.main .data{
+    color:aqua;
+    font-size:40px;
+}
+form{
+    text-align: center;
+    margin:5% 15% 10px 15%;
+    background-color: rgb(68, 163, 177);
+    padding: 12px;        
+    color: white;                                                          
+    box-shadow:2px 2px 2px 2px rgb(191, 191, 191);
+}
+form input{
+    padding: 8px 10px 10px 5px;
+    width: 30%;
+    margin:5px -5px 5px 5px;
+    display: flex;
+    display: inline;
+}
+
+ form button{
+    margin-top: 1rem;
+   text-align: center;
+   padding: 10px 20px 10px 20px ;
+   background-color: rgb(24, 22, 89);
+   color: white;
+   border: none;
+   
+ } 
+ .program-detail{
+    font-size: 30px;
+ }
+
+/* main css end */
+
+ .about-program{
+    padding: 1rem 12rem 1rem 13rem;
+    text-align: center;
+    list-style-type: none;
+    line-height: 25px;
+    color: rgb(78, 66, 66);
+ }
+ .about-program .about{
+   font-size:35px;
+   padding-bottom:  1rem;
+ }
+
+/* page 3 css end */
+
+/* page 4 css start */
+
+.benefits-page{
+    background-color: rgb(81, 169, 183);
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+ 
+}
+.program-page{
+    align-content: center;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    align-items: baseline;
+    width: 30%;
+    margin-left: 30%;
+}
+.prog{
+    margin-right: 0;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 4%;
+    padding: 1rem;
+    background-color: #e2b81e;
+}
+.peda{
+    padding: 1rem;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 1%;
+    padding: 1rem;
+}
+.benefits{
+    margin-top: 5rem;
+    margin-bottom: 0;
+    display: flex;
+    width: 80%;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    text-align: center;
+    list-style-type: none;
+    line-height: 30px;
+    color: white;
+}
+.benefits img{
+    width:10rem;
+    height: 8rem;
+}
+.benefit{
+    border-right: 1px solid rgb(115, 86, 86); 
+    width: 25%;
+    padding: 1rem;
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+}
+.benefit4{
+    width: 25%;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+/* page 4css end  */
+
+/* page 5 css start */
+.attend-page{
+    background-image:url(../img/back2.jpg);
+    background-repeat: no-repeat;
+}
+.attend .p{
+   font-size: 35px;
+}
+.attend{
+    color: white; 
+   font-size: 25px;
+}
+.attend ul{
+    list-style-type: square;
+}
+.attendee{
+    margin-left: 38%;
+    margin-top: 0;
+    font-size: 15px;
+    padding: 20px;
+    line-height: 40px;
+    width: 60%;
+    display: flex;
+    color: whhite;
+}   
+.attend-section2{
+    display:block;
+    margin-top: 20px;  
+    width: 40%; 
+    margin-right: 180px;
+    color: #3d1881;
+    list-style-type: none;
+   
+}
+.attendee .eligibility,.program-fee{
+    background-color: #afeff3;
+    padding:0.6rem;
+    border-radius: 10px;
+    list-style-type: none;
+} 
+  /*section 5 css end  */
+.features{
+    background-image:url(../img/back4.jpg);
+    width: 100%;
+    height:70vh;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+}
+.feature .program-feature{
+    font-size: 35px;
+    padding-bottom: 15px;
+}
+.feature{
+    width:50%;
+    padding-left:120px;
+    line-height:30px;
+    color: #3d1881;
+}
+
+/* page 7 css start  */
+.about-team{
+    background-color: rgb(30, 77, 128);
+    padding: 1rem;
+    padding-left: 11rem;
+    padding-right: 11rem;
+   
+}
+.team-heading{
+    text-align: center;
+    color: white;
+    list-style-type: none;
+    padding:2rem 0 2rem 0rem;
+}
+.team-heading strong{
+    font-size:30px;
+}
+.team{
+    display: flex;
+   text-align: center;
+   padding-top: 1rem;
+   padding-bottom: 2rem;
+}
+.team img{
+    width: 50px;
+    height:20px;
+} 
+.team-details{
+    border: 1px solid;
+    background-color: white;
+    color: #33146e; 
+    padding:1rem;
+    margin-left: 20px;
+    border-radius: 5px;
+    width: fit-content;
+}  
+.team-details  .image1 img{
+    width:10rem;
+    height:10rem;
+    position: relative;
+}
+.team-details .image2 img{
+    width:2.5rem;
+    height:2.5rem;
+    border-radius: 100%;
+   position: absolute;
+   margin-top: -60px;
+   margin-left: 40px;
+}
+.team img{
+    width:7rem;
+    height:3rem;
+}
+footer{
+    background-color: rgb(8, 55, 105);
+    padding: 10px;
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-size:15px;
+}
