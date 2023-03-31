@@ -1,0 +1,687 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+.head
+{
+    width: 100%;
+    height: 110vh;
+    background-color: #0169ca;
+}
+.head .top
+{
+    width:100%;
+    height:20vh;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+.head .top p
+{   
+    font-size: 18px;
+    font-family:"Roboto, sans-serif";
+    padding-left: 27rem;
+    line-height: 25px;
+    font-weight: 700;
+}
+.head .top .logo1
+{
+    margin-left: 5rem;
+    border-right: 2px solid rgb(136, 133, 133); 
+    opacity: 0.884;
+}
+/*****************************Main****************************************/
+.main
+{   
+    width:100%;
+    font-family: "Roboto, sans-serif";
+    margin-top: 3rem;
+    display: flex;
+    line-height: 2.5rem;
+    position: relative;
+}
+.main .first
+{
+    width:60%;
+    position: relative;
+    left: 10px;
+    top: 5px;
+    margin-left: 9rem;
+}
+.main .first-para
+{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #192b65;
+    font-weight: 700;
+  
+}
+.main .second-para
+{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ededed;
+    font-weight: 400;
+   
+}
+.main .third-para
+{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #ededed;
+    font-weight: 700;
+    line-height: 2.5rem;
+}
+.main .download
+{
+    width: 15rem;
+    height: 4rem;
+    border-radius: 6px;
+    background-image: linear-gradient(0deg, #85c4ff 0%, #ffffff 100%);
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 2.5rem;
+    position:relative;
+}
+.main .pdf
+{   
+    height:24px;
+    position: absolute;
+    top:13.3rem;
+    left:0.5rem;
+}
+/*------------------------------------------about--------------------------*/
+.about
+{
+    height: 70vh;
+    width: 100%;
+    background-color: #ededed;
+    padding-top: 11rem;
+}
+.about h2{
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #3d3d3d;
+    font-weight: 500;
+}
+.about p{
+    font-family: "Roboto";
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    color: #3d3d3d;
+    line-height: 24px;
+}
+/******************************form*****************************/
+.regi-form
+{
+    width: 80%;
+    height: 50vh;
+    background-color:  #0ba7c1;
+    align-items: center;
+    position: absolute;
+    left: 7.5rem;
+    top: 31rem;
+}
+.regi-form h2
+{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 30px;
+    font-family: "Helvetica Neue LT Std";
+    text-align: center;
+    font-weight:200;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+}
+.regi-form .name
+{
+    width: 295px;
+    height: 46px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border:none;
+    padding-left:1rem;
+    margin-left: 3.5rem
+}
+.regi-form .phone
+{
+    width: 295px;
+    height: 46px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border:none;
+    padding-left:1rem;
+}
+.regi-form .location
+{
+    width: 295px;
+    height: 46px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border:none;
+    padding-left:1rem;
+}
+.regi-form .email
+{
+    width: 295px;
+    height: 46px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border:none;
+    padding-left:1rem;
+    margin-left: 11rem;
+}
+.regi-form .interest
+{
+    width: 295px;
+    height: 46px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border:none;
+    padding-left:1rem;
+}
+.regi-form .checkbox 
+{
+    margin-left: 17rem;
+}
+.regi-form label
+{
+    width: 550px;
+    height: 15px;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 400;
+    padding-left: 2px;
+}
+.regi-form .submit
+{
+    margin-left: 22rem;
+    width: 274px;
+    height: 35px;
+    border-radius: 3px;
+    background-color: #0e193d;
+    border: none;
+    color:#ffffff;
+    text-transform: uppercase;
+}
+/*-------------------------------------------Program benefits-----------------------*/
+.program-benefits
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #0ba7c1;
+}
+.program-benefits table
+{
+    background-color: #ffffff;
+    padding: 1rem 2rem 1rem 2rem;
+    margin-left: 19rem;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+.program-benefits .tableheading
+{
+    background-color: #f8b64c;
+}
+.program-benefits table th
+{
+    width: 300px;
+    height: 71px;
+    border-radius: 2px;
+    filter: drop-shadow(2.5px 4.33px 5px rgba(0,0,0,0.3));
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+.prog
+{
+    display: inline-flex;
+    padding-left: 9rem;
+    padding-right: 8rem;
+    box-sizing: border-box;
+
+}
+.prog .medal
+{
+    width: 25%;
+    height: inherit;
+    border-right: 1px solid rgb(82, 79, 79);
+    align-items: center;
+    text-align: center;
+    color:#ffffff;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.prog .medal h4
+{
+    text-transform: uppercase;
+    width: 234px;
+    height: 57px;
+    font-size: 22px;
+    font-weight: 500;
+}
+.prog .medal p
+{
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.prog .brain
+{
+    width: 25%;
+    height: inherit;
+    border-right: 1px solid rgb(82, 79, 79);
+    align-items: center;
+    text-align: center;
+    color:#ffffff;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.prog .brain h4
+{
+    text-transform: uppercase;
+    width: 234px;
+    height: 57px;
+    font-size: 22px;
+    font-weight: 500;
+}
+.prog .brain p
+{
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.prog .student
+{
+    width: 25%;
+    height: inherit;
+    border-right: 1px solid rgb(82, 79, 79);
+    align-items: center;
+    text-align: center;
+    color:#ffffff;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.prog .student h4
+{
+    text-transform: uppercase;
+    width: 234px;
+    height: 57px;
+    font-size: 22px;
+    font-weight: 500;
+}
+.prog .student p
+{
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.prog .target
+{
+    width: 25%;
+    height: inherit;
+    align-items: center;
+    text-align: center;
+    color:#ffffff;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.prog .target h4
+{
+    text-transform: uppercase;
+    width: 234px;
+    height: 57px;
+    font-size: 22px;
+    font-weight: 500;
+}
+.prog .target p
+{
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+}
+/*---------------------------eligibility--------------------------------------*/
+.eligibility
+{
+    background-image: url("../images/eligibilitybackgroundimagetiny.jpg");
+    background-repeat: no-repeat;
+    width:100%;
+    height: 50vh;
+}
+.criteria
+{
+    padding-top: 2rem;
+    margin-left: 35rem;
+    position: relative;
+}
+.criteria .heading
+{
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 3rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+}
+.criteria ul
+{
+    width: 631px;
+    height: 215px;
+    font-size: 14px;
+    line-height: 2rem;
+    color: #ffffff;
+    font-weight: 700;
+    padding-left:1rem;
+}
+.eligibilitybox
+{
+    box-sizing: border-box;
+    width: 250px;
+    height: 120px;
+    border-radius: 5px;
+    background-color: #c3ecfe;
+    float:right;
+    position: absolute;
+    left: 59rem;
+    top: 101rem;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+.eligibilitybox h3
+{
+    font-size: 34px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #005c8b;
+    font-weight: 700;
+    text-align: center;  
+}
+.eligibilitybox p
+{
+    font-size: 12px;
+    line-height: 18px;
+    color: #005c8b;
+    font-weight: 400;
+    text-align: center;
+}
+.feesbox
+{
+    box-sizing: border-box;
+    width: 250px;
+    height: 120px;
+    border-radius: 5px;
+    background-color: #c3ecfe;
+    float:right;
+    position: absolute;
+    left: 59rem;
+    top: 109rem;
+    align-items: center;
+    padding-top: 1rem;
+}
+.feesbox .fhead
+{
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #005c8b;
+    font-weight: 700;
+    text-align: center;
+}
+.feesbox .secondhead
+{
+    font-size: 28px;
+    line-height: 22px;
+    color: #005c8b;
+    font-weight: 400;
+    text-align: center;
+}
+.feesbox p
+{
+  font-size: 12px;
+  color: #005c8b;
+  text-align: center;
+}
+/*----------------program features--------------------*/
+.program
+{
+    height: 75vh;
+    width:100%;
+    display: flex;
+    padding-top:1rem;
+}
+.fetures h1
+{
+    font-size: 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #2e4480;
+    font-weight: 700;
+    margin-left:4rem;
+}
+.fetures ul
+{
+    font-size: 14px;
+    line-height: 2rem;
+    color: #17205b;
+    font-weight: 400;
+    margin-left:5rem;
+}
+/*---------------------------------Faculty----------------------------*/
+.faculty
+{
+    width:100%;
+    height:120vh;
+    background-color: #2e4480;
+}
+.faculty .headi
+{
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+    padding-top:2rem;
+}
+.faculty p
+{
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+}
+.facultyprofile
+{
+    width: 90%;
+    height: 90vh;
+    box-sizing: border-box;
+    display: flex;
+    text-align: center;
+    padding-top:5rem;
+    padding-left: 4.5rem;
+}
+.facultyprofile .profile1
+{
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-color: white;
+    margin-right: 1rem;
+}
+.profile1 .propic
+{
+    border-radius: 5rem;
+    padding-top: 5px;
+    position: relative;
+}
+.profile1 .linkedin
+{
+    position:absolute;
+    right: 63.2rem;
+    top: 160rem;
+    
+}
+.profile1 .name
+{
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 70px;
+    color: #17205b;
+    font-weight: 700;
+    text-align: center;
+}
+.profile1 p
+{
+    width: 255px;
+    font-size: 14px;
+    color: #17205b;
+    line-height: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+.facultyprofile .profile2
+{
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-color: white;
+    margin: 0 1rem 0 1rem;
+}
+.profile2 .propic
+{
+    border-radius: 5rem;
+    padding-top: 5px;
+    position: relative;
+}
+.profile2 .linkedin
+{
+    position:absolute;
+    right: 45.3rem;
+    top: 160rem;
+}
+.profile2 .name
+{
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 70px;
+    color: #17205b;
+    font-weight: 700;
+    text-align: center;
+}
+.profile2 p
+{
+    width: 255px;
+    font-size: 14px;
+    color: #17205b;
+    line-height: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+.facultyprofile .profile3
+{
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-color: white;
+    margin: 0 1rem 0 1rem;
+}
+.profile3 .propic
+{   
+    border-radius: 7rem;
+    padding-top: 5px;
+    position:relative;
+}
+.profile3 .linkedin
+{
+    position:absolute;
+    right: 27.1rem;
+    top: 160rem;
+}
+.profile3 .name
+{
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 70px;
+    color: #17205b;
+    font-weight: 700;
+    text-align: center;
+}
+.profile3 p
+{
+    width: 255px;
+    font-size: 14px;
+    color: #17205b;
+    line-height: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+.facultyprofile .profile4
+{
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 2px;
+    background-color: white;
+    margin-left: 1rem;
+}
+.profile4 .propic
+{   
+    border-radius: 7rem;
+    padding-top: 5px;
+    position:relative;
+}
+.profile4 .linkedin
+{
+    position:absolute;
+    left: 67.2rem;
+    top: 160rem;
+}
+.profile4 .name
+{
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 70px;
+    color: #17205b;
+    font-weight: 700;
+    text-align: center;
+}
+.profile4 p
+{
+    width: 255px;
+    font-size: 14px;
+    color: #17205b;
+    line-height: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+.footer
+{
+    width:100%;
+    height: 5rem;
+    background-color:#17205b;
+    align-items: center;
+    color:white;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 1.5rem;
+    font-size:12px;
+}
+.head a{
+    color:black;
+}
+.footer a{
+    color: white;
+}
+a:hover{
+    color: blue;
+}
+a:active
+{
+    color:green;
+}
