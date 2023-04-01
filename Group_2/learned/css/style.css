@@ -14,7 +14,7 @@
 width: 100%;
 height:600px;
     border: 5px solid rgb(122, 213, 30);
-    margin-top: 1%;
+    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -22,7 +22,7 @@ height:600px;
 }
 .around1{
     width:20%;
-    height:250px;
+    height:260px;
     border: 1px solid rgb(8, 8, 8);
     margin-left:9%;
     margin-top:3%; 
@@ -37,7 +37,7 @@ height:600px;
 }
 .around2{
     width:20%;
-    height:250px;
+    height:260px;
     border: 1px solid rgb(30, 189, 213);
     margin-top:3%;   
 }
@@ -51,7 +51,7 @@ height:600px;
 }
 .around3{
     width: 20%;
-    height:250px;
+    height:260px;
     border: 1px solid rgb(213, 82, 30);
     margin-top:3%;
    
@@ -66,7 +66,7 @@ height:600px;
 }
 .around4{
     width:20%;
-    height:250px;
+    height:260px;
     border: 1px solid rgb(30, 67, 213);
     margin-right:9%;
     margin-top:3%;
@@ -81,7 +81,7 @@ height:600px;
 }
 .around5{
     width:20%;
-    height:250px;
+    height:260px;
     border: 1px solid black;
     margin-left:9%;
 }
@@ -95,7 +95,7 @@ height:600px;
 }
 .around6{
     width: 20%;
-    height:250px;
+    height:260px;
     border: 1px solid rgb(213, 30, 82);
    
 }
@@ -109,7 +109,7 @@ height:600px;
 }
 .around7{
     width:20%;
-    height:250px;
+    height:260px;
     border: 1px solid rgb(30, 213, 170);
   
 }
@@ -123,7 +123,7 @@ height:600px;
 }
 .around8{
     width: 20%;
-    height:250px;   
+    height:260px;   
     border: 1px solid rgb(213, 118, 30);
     margin-right:9%;
 }
@@ -138,19 +138,160 @@ height:600px;
 /*  */
 .h1 h4{
   margin-left: 10%;
-    font-size: 30px;
+    text-align: center;
 }
 /* media qurey */
 @media only screen and ( mi-width:200px) and (max-width:767px) {
     .around{
         width: 100%; 
-flex-direction: column;
+        padding: 100%;
+        background-image: 100%;
+        font-size: 16px;
+        padding: 0%;
+
     }
 }
-
-
-
-
-
-
-
+/*  text format  */
+.around1 h4{
+  font-size: 16px;
+line-height: 20px;
+padding-left: 5px;
+color: #ffc178;
+font-weight: 500;
+text-decoration: underline;
+font-family: "Work Sans";
+}
+.around1 h5{
+ padding-left: 10px; 
+}
+.around1 p{
+  padding-left: 10px; 
+text-justify: bottom;
+}
+.around2 h4{
+  font-size: 16px;
+line-height: 20px;
+padding-left: 5px;
+color: #5a6e79;;
+font-weight: 500;
+text-decoration: underline;
+font-family: "Work Sans";
+}
+.around2 h5{
+ padding-left: 10px; 
+}
+.around2 p{
+  padding-left: 10px; 
+text-justify: bottom;
+}
+.around3 h4{
+  font-size: 16px;
+line-height: 20px;
+padding-left: 5px;
+color: #5a6e79;;
+font-weight: 500;
+text-decoration: underline;
+font-family: "Work Sans";
+}
+.around3 h5{
+ padding-left: 10px; 
+}
+.around3 p{
+  padding-left: 10px; 
+text-justify: bottom;
+}
+.around4 h4{
+  font-size: 16px;
+line-height: 20px;
+padding-left: 5px;
+color: #5a6e79;;
+font-weight: 500;
+text-decoration: underline;
+font-family: "Work Sans";
+}
+.around4 h5{
+ padding-left: 10px; 
+}
+.around4 p{
+  padding-left: 10px; 
+text-justify: bottom;
+}
+.around5 h4{
+  font-size: 16px;
+line-height: 20px;
+padding-left: 5px;
+color: #5a6e79;;
+font-weight: 500;
+text-decoration: underline;
+font-family: "Work Sans";
+}
+.around5 h5{
+ padding-left: 10px; 
+}
+.around5 p{
+  padding-left: 10px; 
+text-justify: bottom;
+}
+.around6 h4{
+  font-size: 16px;
+line-height: 20px;
+padding-left: 5px;
+color: #5a6e79;;
+font-weight: 500;
+text-decoration: underline;
+font-family: "Work Sans";
+}
+.around6 h5{
+ padding-left: 10px; 
+}
+.around6 p{
+  padding-left: 10px; 
+text-justify: bottom;
+}
+.around6 h4{
+  font-size: 16px;
+line-height: 20px;
+padding-left: 5px;
+color: #252c3a;
+font-weight: 500;
+text-decoration: underline;
+font-family: "Work Sans";
+}
+.around6 h5{
+ padding-left: 10px; 
+}
+.around6 p{
+  padding-left: 10px; 
+text-justify: bottom;
+}.around7 h4{
+  font-size: 16px;
+line-height: 20px;
+padding-left: 5px;
+color: #252c3a;
+font-weight: 500;
+text-decoration: underline;
+font-family: "Work Sans";
+}
+.around7 h5{
+ padding-left: 10px; 
+}
+.around7 p{
+  padding-left: 10px; 
+text-justify: bottom;
+}
+.around8 h4{
+  font-size: 16px;
+line-height: 20px;
+padding-left: 5px;
+color: #252c3a;
+font-weight: 500;
+text-decoration: underline;
+font-family: "Work Sans";
+}
+.around8 h5{
+ padding-left: 10px; 
+}
+.around8 p{
+  padding-left: 10px; 
+text-justify: bottom;
+}
