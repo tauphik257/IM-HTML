@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.header{
+    display: flex;
+    height: 15vh;
+    width: 100%;
+
+
+}
+.head1{
+    padding-left:3rem;
+    height: 15vh;
+   
+}
+.head1 img{
+    height: 10vh;
+    margin-top:1rem;
+
+}
+.head2{
+    height: 13vh;
+}
+.head2 img{
+    height: 10vh;
+    margin-top:1rem ;
+    border-left:2px solid rgb(59, 59, 59);
+}
+.head3{
+    margin-left: 60rem;
+   padding-top: 3rem;
+   text-align: right;
+}
+
+.main-content{
+    background-image: url(image/bg.jpg);
+    height:60vh;
+    width: 100%;
+    padding-left:5rem;
+    padding-top: 5rem;
+
+
+}
+.main-content .name{
+    color: #192765;
+   
+}
+
+.main-content h4{
+    color: white;
+    
+}
+.main-content h1{
+color: white;
+}
+
+.main-content button{
+  width: 20%;
+  height: 8vh;
+  display: flex;
+  padding-top: 1rem;
+  background-image: linear-gradient(#ededed,#13aafc );
+  border: none;
+border-radius: 1rem;
+
+
+
+}
+.main-content button img{
+    width: 15%;
+    height: 6vh;
+    padding-bottom: 1rem;
+}
+.deatails{
+    width: 45%;
+    height: 35vh;
+    background-color: #0ba7c1;
+    position: absolute;
+    top: 535px;
+    left:400PX;
+    color: white
+}
+.text{
+    width: 60%;
+    height: 35vh;
+    background-color: #0ba7c1;
+    position:absolute;
+    left: 20rem;
+    bottom: -1rem;
+    text-align: center;
+    box-shadow: 0 20px 30px rgba(0,0 , 0, 0.2);
+}
+.text h2{
+    text-align: center;
+    margin-top: 1rem;
+    color: white;
+}
+.text form{
+    display: inline;
+}
+.text form input{
+    padding: 10px 80px 10px 10px;
+    margin: 0.2rem;
+    border-radius: 5px ;
+    border: none;
+}
+.text form label{
+    color: white;
+    font-size:15px;
+}
+form button{
+    margin-top: 1rem;
+    padding: 0.5rem;
+    width: 25%;
+    background-color: #0d193d;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+.content{
+    text-align: center;
+    margin-top: 15rem;  
+    margin-bottom: 1rem;
+}
+.content p{
+    margin-top: 1rem;
+    font-weight: 100; 
+}
+.information{
+    height: 70vh;
+    background-color:#0ba7c1; 
+    margin-top: 1.5rem;
+    padding-top: 2rem;
+}
+ .info-content{
+    display: flex;
+    border: 1px solid black;
+    width: 30%;
+    height: 6vh;
+    justify-content: center;
+    margin-left: 35rem; 
+    background-color: white; 
+    border: none;
+}
+.info-content button{
+    width: 100%;
+    margin: .5rem;
+    background-color: #f6b956;
+    border: none;
+}
+.info-content h3{
+    margin-top: .8rem;
+    width: 100%;
+     font-size: 15px;
+}
+/* ............................................................. */
+.main{
+    display: flex;
+    margin-top: 3rem;
+    margin-left: 15rem;
+    height: 40vh;
+    
+}
+.main .wrapper{
+    margin-top: 2rem;
+}
+.main .wrapper img{
+    height: 10vh;
+    padding-left:7rem;
+}
+.main .wrapper h5{
+    color: white;
+    text-align: center;
+    margin-top: 0.5rem;
+    letter-spacing: 0.1rem;
+
+}
+.main .wrapper p{
+    color: #ffffff;
+    text-align: center;
+    padding: .5rem;
+    margin-top: .5rem;  
+    line-height: 1.5rem;
+    font-size: 15px;
+}
+.main .wrp-first{
+ height: 40vh; 
+    margin-top: 2rem;
+    border-left: 1px solid rgb(139, 139, 139);
+
+}
+.main .wrp-first img{
+    height: 10vh;
+    padding-left:5.5rem;
+}
+.main .wrp-first h5{
+    color: white;
+    text-align: center;
+    margin-top: .5rem;
+
+}
+.main .wrp-first p{
+    color: #ffffff;
+    text-align: center;
+    padding: .5rem;
+    margin-top: .5rem;  
+    line-height: 1.5rem;
+    font-size: 15px;
+}
+/* .............................................. */
+.attend{
+    width: 100%;
+    height:50vh;
+     background-image:url(image/background-2.jpg);
+     background-size: 100% 100%;
+}
+.attend .attend-first h1{
+    text-align: center;
+    padding-top: 3rem;
+    color: white;
+    margin-left: 4rem;
+    
+}
+.attend .attend-first ul li{
+    padding-left: 38rem;
+    color: white;
+    margin-top: 1.5rem;
+
+}
+.attend .attend-second{
+    float: right;
+    height: 20vh;
+    position: relative;
+    right: 10rem;
+    bottom: 19rem;
+}
+.attend-second .attend-div{
+    height: 15vh;
+    border: 2px solid none;
+    background-color: #c3ebfd;
+    border-radius: .5rem;
+    padding: 1.5rem 1rem 6rem 2rem; 
+    
+}
+.attend-second .attend-div h3{
+    color:#005c8b;
+    font-size:25px;
+}
+.attend-second .attend-div p{
+    color: #005c8b;
+    font-size:15px;
+}
+.attend-second .attend-sec{
+    height: 15vh;
+    border: 2px solid none;
+    background-color: #c3ebfd;
+    margin-top: 1rem; 
+    border-radius: .5rem;
+    padding: 1.5rem 1rem 6rem 2rem; 
+}
+.attend-second .attend-sec h3{
+    color:#005c8b;
+    font-size:25px;
+}
+/* .......................................... */
+.content-div{
+    height: 55vh;
+}
+.content-div h1{
+    color: #2e4480;
+    margin-left: 7rem;
+    margin-top: 2rem;
+}
+.content-div ul{
+    color: #2e4480;
+    margin-left: 8rem;
+
+}
+.content-div ul li{
+    padding: .5rem;
+}
+.content-div img{
+    position: relative;
+    height: 55vh;
+    left: 55rem;
+    bottom: 20rem;
+}
+/* .................................. */
+.portfolio{
+    height: 90vh;
+    background-color: #0d193d; 
+}
+.portfolio .portfolio-head{
+    text-align: center;  
+    padding-top: 1.5rem;
+}
+.portfolio .portfolio-head h1{
+    color: white;
+}
+.portfolio .portfolio-head p{
+    color: white;
+}
+/* .............. */
+.main-port{
+    display: flex;
+    padding-left: 8rem;
+}
+.main-port .port{
+    width: 17%;
+    height: 60vh;
+    border: 1px solid black;
+    margin-left: 5rem;
+    margin-top: 4rem;
+    background-color: white;
+}
+.port img{
+    height: 10vh;
+    padding-left: 5rem;
+}
+.main-port .port .div-one{
+    height: 20vh;
+    margin-top: 1rem;
+    border-radius: 50%;
+    width: 60%;
+    margin-left: 2.5rem;
+    background-image: url(image/port.jpg);   
+    background-size: 100% 100%;
+}
+.main-port .port .icon{
+    height: 6vh;
+    border-radius: 50%;
+    width: 20%;
+    position: relative;
+    left: 9rem;
+    bottom: 3rem;
+    background-image: url(image/logo.png);
+    background-size: 100% 100%;
+}
+.main-port h3{
+    font-size: 15px;
+    color: #0d193d;
+    padding-left:1.5rem;
+    margin-top:-1rem;
+}
+.main-port p{
+    font-size:12px;
+    color:gray;
+    padding-left:6rem;
+    margin-top:.4rem;
+}
+.main-port .paragraph{
+    font-size:12px;
+    color:#17205b;
+    text-align:center;
+    padding-right:1rem;
+    padding-left:1rem;
+}
+
+
+
+
+/*............................ third portfolio start here......................... */
+footer{
+    background-color: #171f5b;
+    height: 10vh;
+    text-align: center;
+    padding-top:1.5rem;
+    color: white;
+}
+
+
+
+
+    
+    
+
+
