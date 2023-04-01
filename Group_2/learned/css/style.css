@@ -6,57 +6,105 @@
 /*   around  the university */
 .around{
 width: 100%;
-height:500px;
+height:600px;
     border: 5px solid rgb(122, 213, 30);
     margin-top: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .around1{
-    width:25%;
-    height:100px;
-    border: 5px solid rgb(122, 213, 30);
-    margin-top: 1%;
+    width:20%;
+    height:250px;
+    border: 1px solid rgb(8, 8, 8);
+    margin-left:9%;
+    margin-top:3%; 
+}
+.a1{
+    width:100%;
+    height:150px;
+    background-image:url(../img/around1.png); 
+  background-repeat: no-repeat; 
+ background-position: center;
+  background-color: aqua;
 }
 .around2{
-    width:25%;
-    height:100px;
-    border: 5px solid rgb(122, 213, 30);
-    margin-top: 1%;
+    width:20%;
+    height:250px;
+    border: 1px solid rgb(30, 189, 213);
+    margin-top:3%;   
+}
+.a2{
+    width:100%;
+    height:150px;
+    background-image:url(../img/around1.png); 
+  background-repeat: no-repeat; 
+ background-position: center;
+  background-color: aqua;
 }
 .around3{
-    width: 25%;
-    height:100px;
-    border: 5px solid rgb(122, 213, 30);
-    margin-top: 1%;
+    width: 20%;
+    height:250px;
+    border: 1px solid rgb(213, 82, 30);
+    margin-top:3%;
+   
+}
+.a3{
+    width:100%;
+    height:150px;
+    background-image:url(../img/around1.png); 
+  background-repeat: no-repeat; 
+ background-position: center;
+  background-color: aqua;
 }
 .around4{
-    width: 25%;
-    height:100px;
-    border: 5px solid rgb(122, 213, 30);
-    margin-top: 1%;
+    width:20%;
+    height:250px;
+    border: 1px solid rgb(30, 67, 213);
+    margin-right:9%;
+    margin-top:3%;
+}
+.a4{
+    width:100%;
+    height:150px;
+    background-image:url(../img/around1.png); 
+  background-repeat: no-repeat; 
+ background-position: center;
+  background-color: aqua;
 }
 .around5{
-    width:25%;
-    height:100px;
-    border: 5px solid rgb(122, 213, 30);
-    margin-top: 1%;
+    width:20%;
+    height:250px;
+    border: 1px solid black;
+    margin-left:9%;
 }.around6{
-    width: 25%;
-    height:200px;
-    border: 5px solid rgb(122, 213, 30);
-    margin-top: 1%;
+    width: 20%;
+    height:250px;
+    border: 1px solid rgb(213, 30, 82);
+   
 }.around7{
-    width:25%;
-    height:100px;
-    border: 5px solid rgb(122, 213, 30);
-    margin-top: 1%;
+    width:20%;
+    height:250px;
+    border: 1px solid rgb(30, 213, 170);
+  
 }.around8{
-    width: 25%;
-    height:100px;
-    border: 5px solid rgb(122, 213, 30);
-    margin-top: 1%;
+    width: 20%;
+    height:250px;   
+    border: 1px solid rgb(213, 118, 30);
+    margin-right:9%;
 }
-
-
+/*  */
+.h1 h4{
+  margin-left: 10%;
+    font-size: 30px;
+}
+/* media qurey */
+@media only screen and ( mi-width:200px) and (max-width:767px) {
+    .around{
+        width: 100%; 
+flex-direction: column;
+    }
+}
 
 
 
