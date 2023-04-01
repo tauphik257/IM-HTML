@@ -5,6 +5,12 @@
 }
 /*   around  the university */
 .around{
+    background-image: url(../img/around_BG.png);
+    background-repeat: no-repeat;
+    background-position: +460%;
+ 
+}
+.around{
 width: 100%;
 height:600px;
     border: 5px solid rgb(122, 213, 30);
@@ -12,6 +18,7 @@ height:600px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 }
 .around1{
     width:20%;
@@ -37,7 +44,7 @@ height:600px;
 .a2{
     width:100%;
     height:150px;
-    background-image:url(../img/around1.png); 
+    background-image:url(../img/around2.png); 
   background-repeat: no-repeat; 
  background-position: center;
   background-color: aqua;
@@ -52,7 +59,7 @@ height:600px;
 .a3{
     width:100%;
     height:150px;
-    background-image:url(../img/around1.png); 
+    background-image:url(../img/around3.png); 
   background-repeat: no-repeat; 
  background-position: center;
   background-color: aqua;
@@ -67,7 +74,7 @@ height:600px;
 .a4{
     width:100%;
     height:150px;
-    background-image:url(../img/around1.png); 
+    background-image:url(../img/around4.png); 
   background-repeat: no-repeat; 
  background-position: center;
   background-color: aqua;
@@ -77,21 +84,56 @@ height:600px;
     height:250px;
     border: 1px solid black;
     margin-left:9%;
-}.around6{
+}
+.a5{
+    width:100%;
+    height:150px;
+    background-image:url(../img/around4.png); 
+  background-repeat: no-repeat; 
+ background-position: center;
+  background-color: aqua;
+}
+.around6{
     width: 20%;
     height:250px;
     border: 1px solid rgb(213, 30, 82);
    
-}.around7{
+}
+.a6{
+    width:100%;
+    height:150px;
+    background-image:url(../img/around6.png); 
+  background-repeat: no-repeat; 
+ background-position: center;
+  background-color: aqua;
+}
+.around7{
     width:20%;
     height:250px;
     border: 1px solid rgb(30, 213, 170);
   
-}.around8{
+}
+.a7{
+    width:100%;
+    height:150px;
+    background-image:url(../img/around7.png); 
+  background-repeat: no-repeat; 
+ background-position: center;
+  background-color: aqua;
+}
+.around8{
     width: 20%;
     height:250px;   
     border: 1px solid rgb(213, 118, 30);
     margin-right:9%;
+}
+.a8{
+    width:100%;
+    height:150px;
+    background-image:url(../img/around8.png); 
+  background-repeat: no-repeat; 
+ background-position: center;
+  background-color: aqua;
 }
 /*  */
 .h1 h4{
