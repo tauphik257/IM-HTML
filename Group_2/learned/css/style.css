@@ -3,6 +3,12 @@
     margin: 0%;
     box-sizing: border-box;
 }
+
+.ram{
+  width: 100%; 
+  min-height: 200px;
+ border: 5px solid red;
+}
 /*   around  the university */
 .around{
     background-image: url(../img/around_BG.png);
@@ -13,7 +19,6 @@
 .around{
 width: 100%;
 height:600px;
-    border: 5px solid rgb(122, 213, 30);
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -23,7 +28,7 @@ height:600px;
 .around1{
     width:20%;
     height:260px;
-    border: 1px solid rgb(8, 8, 8);
+
     margin-left:9%;
     margin-top:3%; 
 }
@@ -38,7 +43,7 @@ height:600px;
 .around2{
     width:20%;
     height:260px;
-    border: 1px solid rgb(30, 189, 213);
+
     margin-top:3%;   
 }
 .a2{
@@ -52,7 +57,7 @@ height:600px;
 .around3{
     width: 20%;
     height:260px;
-    border: 1px solid rgb(213, 82, 30);
+
     margin-top:3%;
    
 }
@@ -67,7 +72,6 @@ height:600px;
 .around4{
     width:20%;
     height:260px;
-    border: 1px solid rgb(30, 67, 213);
     margin-right:9%;
     margin-top:3%;
 }
@@ -82,7 +86,7 @@ height:600px;
 .around5{
     width:20%;
     height:260px;
-    border: 1px solid black;
+  
     margin-left:9%;
 }
 .a5{
@@ -95,9 +99,7 @@ height:600px;
 }
 .around6{
     width: 20%;
-    height:260px;
-    border: 1px solid rgb(213, 30, 82);
-   
+    height:260px;   
 }
 .a6{
     width:100%;
@@ -105,12 +107,12 @@ height:600px;
     background-image:url(../img/around6.png); 
   background-repeat: no-repeat; 
  background-position: center;
-  background-color: aqua;
+background-size: 100%;
 }
 .around7{
     width:20%;
     height:260px;
-    border: 1px solid rgb(30, 213, 170);
+   
   
 }
 .a7{
@@ -119,12 +121,13 @@ height:600px;
     background-image:url(../img/around7.png); 
   background-repeat: no-repeat; 
  background-position: center;
-  background-color: aqua;
+ background-size:100%;
+
 }
 .around8{
     width: 20%;
     height:260px;   
-    border: 1px solid rgb(213, 118, 30);
+   
     margin-right:9%;
 }
 .a8{
@@ -133,12 +136,13 @@ height:600px;
     background-image:url(../img/around8.png); 
   background-repeat: no-repeat; 
  background-position: center;
-  background-color: aqua;
+ background-size: 100%;
 }
 /*  */
 .h1 h4{
   margin-left: 10%;
     text-align: center;
+    font-size: 30px;
 }
 /* media qurey */
 @media only screen and ( mi-width:200px) and (max-width:767px) {
@@ -295,3 +299,140 @@ font-family: "Work Sans";
   padding-left: 10px; 
 text-justify: bottom;
 }
+/*----------------- footer-------------------- */
+.footer{
+  border: solid black;
+  width:100%;
+  min-height: 300px;
+  background-color:  #252c3a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  justify-content: space-around; 
+
+}
+
+.footer1{
+  width: 20%; 
+  min-height:0%;
+
+   margin-left: 5%;
+   margin-top: 1%;
+   margin-bottom: 1%;
+   background-image: url(../img/around9.png);
+   background-repeat: no-repeat;
+   background-size: 50px;
+
+} 
+.footer2{
+  width: 20%; 
+  min-height: 300%;
+ 
+  margin-bottom: 1%;
+  margin-top: 1%;
+} 
+.footer3 {
+  width: 20%; 
+  min-height: 300%;
+
+  margin-bottom: 1%;
+  margin-top: 1%;
+}.footer4{
+  width: 20%; 
+  min-height:300%;
+  margin-right: 5%;
+  margin-bottom: 1%;
+  margin-top: 1%;
+
+}
+ /*text formatig   */
+ .footer1 h3{
+color:  #969595;
+margin-left: 50px;
+font-size: 30px;
+ }
+ .footer1 p{  
+margin-top: 30px;
+margin-left: 10px;
+color:  #969595;
+ }
+ .footer1 i{  
+ margin-top: 20px;
+ margin-left: 10px;
+   }
+   .footer1 h4{
+    color: #969595;
+    margin-left: 50px;
+   font-size:10px ;
+   }
+   .footer2 h3{
+    padding-left: 10px;
+    color:  #969595;;
+   }
+.footer2 ul{
+  margin-top: 50px;
+ line-height: 30px;
+ padding-left: 10px;
+ list-style: none;
+color:  #969595;;
+}
+.footer3 h3{
+  padding-left: 20px;
+  color:  #969595;;
+ }
+.footer3 ul{
+  margin-top: 50px;
+line-height: 40px;
+padding-left: 10px;
+list-style: none;
+color:  #969595;;
+}
+
+.footer4 h3{
+  padding-left: 20px;
+  color:  #969595;;
+ }
+ .footer4 p{
+ 
+margin-top:50px;
+  padding-left: 10px;
+  list-style: none;
+  color:  #969595;;
+  }
+.footer4 input{
+  padding:10px;
+border: none;
+ margin-left: 5px;
+}
+.footer4 button{
+  padding:9px;
+  background-color: #ffc178;
+  
+}
+.span{
+  width: 100%;
+  min-height: 50px;
+  background-color: #1d232e;
+
+
+display: flex;
+}
+.span ul{
+  display: flex;
+list-style: none;
+margin-left: 40%;
+color: #6b6b6b;
+font-size: 13px;
+}
+.span ul li{
+justify-content:space-between;
+padding: 10px;
+margin-top: 5px;
+} 
+.span h3{
+  margin-left: 10px;
+  margin-top: 13px;
+  color: #6b6b6b;
+  font-size: 13px;
+}
+
