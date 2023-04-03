@@ -214,6 +214,37 @@ border-radius
 .tooltip-wrap li:hover .tooltip {
   display: block;
 }
+.link-test {
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.link-test:link {
+  color: #282828;
+}
+.link-test:visited {
+  color: orange;
+}
+.link-test:hover {
+  color: #ff0000;
+}
+.link-test:active {
+  color: green;
+}
+
+.first-case-test,
+.nth-child-test {
+  padding-bottom: 20px;
+}
+.first-case-test > p:first-child,
+.first-case-test > p:last-child {
+  color: red;
+}
+.nth-child-test {
+  list-style-type: decimal;
+}
+.nth-child-test li:nth-child(3n + 1) {
+  background-color: yellow;
+}
 /* Banner section CSS */
 
 /* Contact section css */
