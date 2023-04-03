@@ -1,1 +1,292 @@
-/*  css for learned assignment */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* *****************navbar **************/
+
+.logo{
+    position: absolute;
+    top: 0.4rem;
+    left: 9rem;
+    display: flex;
+    width: 3.3rem;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color:white;
+    position: relative;
+    left: 22rem;
+    display: inline-block;
+  }
+  
+  li {
+    float: left;
+  }
+  
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1.25rem 1rem;
+    margin-left: 2rem;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+    padding-right: 0;
+}
+
+
+.nav-bar{
+    margin-left: 7.5rem;
+    margin-top: 0.4rem;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #43cb83!important;
+  
+}
+
+
+
+
+.apply-text{
+    border-radius: 2.5rem;
+    background-color: whitesmoke;
+    color: #43cb83;
+    font-size: 0.7rem;
+    margin-top: 0.8rem;
+    padding: 0.5rem 1rem;
+} 
+
+/********** page-1 ************/
+
+.fimg{
+    position: absolute;
+    top: 9.25rem;
+    height: 28.125rem;
+    width:34.375rem ;
+    left: 0rem;
+}
+
+.ftext{
+    position: absolute;
+    top: 13.7rem;
+    left: 36rem;
+    color: #43cb83;
+    font-size: 1.7rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.ptext{
+    position: absolute;
+    top: 18.5rem;
+    left: 36rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+
+.s-text{
+  background-color: #43cb83;
+  color: aliceblue;
+  position: absolute;
+  left: 36rem;
+  font-size: 0.8rem;
+  top: 23.3rem;
+  padding: 0.7rem 1.3rem;
+  border-radius:3rem;
+}
+
+.simg{
+    position: absolute;
+    top: 20.5rem;
+    right: 2rem;
+    width: 20rem;
+
+}
+
+.full-circle {
+    position: absolute;
+    top: 2rem;
+    left: 57rem;
+    width: 37rem;
+
+}
+/************* page-2 ************/
+
+.box-one{
+  background-color:#FFB4B4;
+  position: relative;
+  height: 15rem;
+  width: 16rem;
+  top: 34.5rem;
+  left: 18rem;
+}
+.design-text{
+  font-size: 1.5rem;
+  position: relative;
+  top:  10rem;
+  left: 4.8rem;
+}
+.eng{
+  position:absolute;
+ height: 85px;
+ top: 3rem;
+ left: 5rem;
+}
+.box-two{
+  background-color:#DAF5FF;
+  position: absolute;
+  height: 15rem;
+  width: 16rem;
+  top: 42rem;
+  left: 36rem;
+}
+.eng-text1{
+   position: relative;
+  font-size: 1.5rem;
+  top: 7.5rem;
+  left: 4.7rem;
+} 
+.eng1{
+  position:absolute;
+height: 85px;
+top: 3rem;
+left: 5rem;
+} 
+.box-three{
+  background-color:#FFDEB4;
+  position: absolute;
+  height: 15rem;
+  width: 16rem;
+  top: 42rem;
+  left: 53.5rem;
+}
+ .eng-text2{
+  position: relative;
+  font-size: 1.5rem;
+  top: 7.5rem;
+  left: 4rem;
+}
+.eng2{
+  position:absolute;
+  height: 85px;
+  top: 3rem;
+  left: 5rem;
+}
+.box-four{
+  background-color: #FFDEB4;
+  position: relative;
+  height: 15rem;
+  width: 16rem;
+  top: 33rem;
+  left: 18rem;
+
+}
+.box-five{
+  position: absolute;
+  background-color:#F0EB8D;
+  height: 15rem;
+  width: 16rem;
+  top: 58rem;
+  left: 36rem;
+}
+.box-six{
+  position: absolute;
+  background-color:#B9E9FC;
+  height: 15rem;
+  width: 16rem;
+  top: 58rem;
+  left: 53.5rem;
+}
+
+
+/* sagar */
+/* page-3 */
+
+.container {
+    display: flex;
+}
+
+.full-bg {
+    width: 50%;
+}
+
+.half-circle {
+    position: absolute;
+    top: 62.5rem;
+    width: 37rem;
+}
+
+.house {
+    border-radius: 100%;
+    width: 17.5rem;
+    border: 12px solid #ebf7fb;
+    padding: 0.8rem;
+    position: absolute;
+    top: 79rem;
+    left: 18.1rem
+}
+
+.play-button {
+    width: 3.5rem;
+    position: absolute;
+    top: 87.5rem;
+    left: 26.5rem;
+    border-radius: 100%;
+}
+
+.flower {
+    width: 17rem;
+    position: absolute;
+    top: 80rem;
+    left: 10rem;
+}
+
+.para {
+    width: 28%;
+    margin-left: 43rem;
+    margin-top: 35rem;
+    font-family: sans-serif;
+    word-spacing: 2px;
+}
+
+.para-heading {
+    color: #42d07f;
+}
+
+.para-text {
+    color: #787b80;
+
+}
+
+.text-2 {
+    word-spacing: 4.5rem;
+
+}
+
+.student {
+    color: #fbbb00;
+    display: inline-block;
+}
+
+.Cources {
+    color: #ff5974;
+    display: inline-block;
+
+}
+
+.Hours {
+    color: #41c382;
+    display: inline-block;
+
+}
+
+.text-font {
+    font-size: 2rem;
+    font-weight: bold;
+}
