@@ -245,6 +245,21 @@ border-radius
 .nth-child-test li:nth-child(3n + 1) {
   background-color: yellow;
 }
+
+/** Combinator selector **/
+.first-case-test > h3 {
+  border-bottom: 4px solid #282828;
+}
+
+.first-case-test > p {
+  color: #ff0000;
+}
+
+.first-case-test > h3 ~ p {
+  color: green;
+  font-weight: 700;
+}
+
 /* Banner section CSS */
 
 /* Contact section css */
