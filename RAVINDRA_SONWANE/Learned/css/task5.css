@@ -1,0 +1,98 @@
+.sign{
+    padding-top: 5rem;
+}
+.signup-page{
+    display:flex;
+    height:25rem;
+    background-color: rgb(243, 242, 233);
+}
+.form-left{
+   padding:4rem 0rem 2rem 2rem ;
+}
+.form-caption{
+    width:70%;
+    padding-top:5rem;
+    margin-left:4rem;
+}
+.form-caption p{
+    padding-top:4rem;
+    letter-spacing: 2px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.form-caption a{
+    color: rgb(211, 70, 70);
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+.form-caption h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:300;
+}
+.form-page{
+    width: 70%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.30) 5px 10px 20px;;
+    background-image: url(../img/signupback.png);
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    position: relative;
+    height: 33rem;
+    bottom: 4rem;
+    margin-left: 5rem;
+    z-index:1; 
+    }
+form{
+    padding:12px 20px;
+    margin:8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+form h3{
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 10px;
+    color: rgb(143, 138, 132);
+}
+form strong{
+    color: #aea2a2;
+}
+
+input[type=text], input[type=password]
+, input[type=email]{
+    width: 100%;
+    background: transparent;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(188, 166, 166);
+  }
+  form button{
+    background-color: rgb(115, 217, 115);
+    border-radius:10rem 10rem;
+    padding: 1rem;
+    border: none;
+    margin:1rem;
+    color: #f2f2f2;
+  }
+  .call{
+    text-decoration:none;
+  }
+  form a{
+    color: rgb(136, 161, 142);
+    text-decoration: underline;
+  }
+  input:hover{
+   border-bottom: 2px solid rgb(179, 175, 184);
+  }
+.form-right{
+    width: 30%;
+    padding-top:8rem;
+    position: relative;
+ }  
+ .form-right img{
+    position: absolute;
+    right:70%
+ }
