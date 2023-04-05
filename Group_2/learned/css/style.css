@@ -47,7 +47,7 @@
   background-repeat: no-repeat;
   background-position: top;
   background-color: #f9703a;
-  margin-left: 13rem;
+  margin-left: 10rem;
   border-radius: 4px;
 }
 .shikshaB{
@@ -66,7 +66,7 @@
   background-repeat: no-repeat;
   background-position: top;
   background-color: #ffb258;
-  margin-right: 13rem;
+  margin-right: 10rem;
   border-radius: 4px;
 }
 /*---second portion---*/
@@ -118,7 +118,7 @@
 .information{
   width: 40%;
   min-height: 400px;
-  margin-right: 13rem;
+  margin-right: 10rem;
 }
 .information h4{
   font-size: 30px;
@@ -172,8 +172,6 @@
   color: #43cb83;
 }
 /*Snehal*/
-
-
 
 /*   around  the university */
 .around{
