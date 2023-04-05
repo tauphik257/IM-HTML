@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+}
+
+.full-bg {
+    width: 50%;
+}
+
+.half-circle {
+    width: 30rem;
+}
+
+.house {
+    border-radius: 100%;
+    width: 13rem;
+    border: 25px solid #ebf7fb;
+    padding: 0.8rem;
+    position: absolute;
+    top: 13.8rem;
+    left: 14.5rem;
+}
+
+.play-button {
+    width: 3rem;
+    position: absolute;
+    top: 21.3rem;
+    left: 21.7rem;
+    border-radius: 100%;
+}
+
+.flower {
+    width: 15rem;
+    position: absolute;
+    top: 14.7rem;
+    left: 7.5rem;
+}
+
+.para {
+    width: 28%;
+    margin-left: 5rem;
+    margin-top: 11rem;
+    font-family: sans-serif;
+}
+
+.para-heading {
+    color: #42d07f;
+}
+
+.para-text {
+    color: #787b80;
+
+}
+
+.text-2 {
+    word-spacing: 4.5rem;
+
+}
+
+.student {
+    color: #fbbb00;
+    display: inline-block;
+}
+
+.Cources {
+    color: #ff5974;
+    display: inline-block;
+
+}
+
+.Hours {
+    color: #41c382;
+    display: inline-block;
+
+}
+
+.text-font {
+    font-size: 2rem;
+    font-weight: bold;
+}
