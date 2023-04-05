@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
+
 /*Snehal*/
 /*--first portion--*/
 .department{
@@ -172,8 +172,8 @@
   color: #43cb83;
 }
 /*Snehal*/
-=======
->>>>>>> f555eeb80e2cc0378052e327855cf051b570c1ac
+
+
 
 /*   around  the university */
 .around{
@@ -195,11 +195,11 @@ height:600px;
     width:20%;
     height:260px;
 
-    margin-left:9%;
+    margin-left:10%;
     margin-top:3%; 
 }
 .a1{
-    width:100%;
+    width:80%;
     height:150px;
     background-image:url(../img/around1.png); 
   background-repeat: no-repeat; 
@@ -212,8 +212,8 @@ height:600px;
 
     margin-top:3%;   
 }
-.a2{
-    width:100%;
+.a2{  
+    width:80%;
     height:150px;
     background-image:url(../img/around2.png); 
   background-repeat: no-repeat; 
@@ -228,7 +228,7 @@ height:600px;
    
 }
 .a3{
-    width:100%;
+    width:80%;
     height:150px;
     background-image:url(../img/around3.png); 
   background-repeat: no-repeat; 
@@ -238,11 +238,11 @@ height:600px;
 .around4{
     width:20%;
     height:260px;
-    margin-right:9%;
+    margin-right:10%;
     margin-top:3%;
 }
 .a4{
-    width:100%;
+    width:80%;
     height:150px;
     background-image:url(../img/around4.png); 
   background-repeat: no-repeat; 
@@ -253,10 +253,10 @@ height:600px;
     width:20%;
     height:260px;
   
-    margin-left:9%;
+    margin-left:10%;
 }
 .a5{
-    width:100%;
+    width:80%;
     height:150px;
     background-image:url(../img/around4.png); 
   background-repeat: no-repeat; 
@@ -268,7 +268,7 @@ height:600px;
     height:260px;   
 }
 .a6{
-    width:100%;
+    width:80%;
     height:150px;
     background-image:url(../img/around6.png); 
   background-repeat: no-repeat; 
@@ -282,7 +282,7 @@ background-size: 100%;
   
 }
 .a7{
-    width:100%;
+    width:80%;
     height:150px;
     background-image:url(../img/around7.png); 
   background-repeat: no-repeat; 
@@ -294,10 +294,10 @@ background-size: 100%;
     width: 20%;
     height:260px;   
    
-    margin-right:9%;
+    margin-right:10%;
 }
 .a8{
-    width:100%;
+    width:80%;
     height:150px;
     background-image:url(../img/around8.png); 
   background-repeat: no-repeat; 
