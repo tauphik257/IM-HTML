@@ -4,16 +4,12 @@
     box-sizing: border-box;
 }
 
-.ram{
-  width: 100%; 
-  min-height: 200px;
- border: 5px solid red;
-}
+
 /*   around  the university */
 .around{
     background-image: url(../img/around_BG.png);
     background-repeat: no-repeat;
-    background-position: -460%;
+    background-position: +450%;
  
 }
 .around{
@@ -314,7 +310,7 @@ text-justify: bottom;
 .footer1{
   width: 20%; 
   min-height:3000%;
-border: 1px solid red;
+
    margin-left: 5%;
    margin-top: 1%;
    margin-bottom: 1%;
@@ -326,7 +322,7 @@ border: 1px solid red;
 .footer2{
   width: 20%; 
   min-height: 300%;
-  border: 1px solid red;  
+
   margin-bottom: 1%;
   margin-top: 1%;
 } 
