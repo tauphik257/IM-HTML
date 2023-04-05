@@ -174,12 +174,16 @@
 /*Snehal*/
 
 /*   around  the university */
-.around{
-    background-image: url(../img/around_BG.png);
-    background-repeat: no-repeat;
-    background-position: +450%;
- 
+
+.bg {
+ width: 800px;
+ height: 800px;
+ position: absolute;
+ left: 1000px;
+ top: 65rem;
+ z-index: -1;
 }
+
 .around{
 width: 100%;
 height:600px;
@@ -479,7 +483,7 @@ text-justify: bottom;
   width: 20%; 
   min-height:3000%;
 
-   margin-left: 5%;
+   margin-left: 10%;
    margin-top: 1%;
    margin-bottom: 1%;
    background-image: url(../img/around9.png);
@@ -503,7 +507,7 @@ text-justify: bottom;
 }.footer4{
   width: 20%; 
   min-height:300%;
-  margin-right: 5%;
+  margin-right: 10%;
   margin-bottom: 1%;
   margin-top: 1%;
 
