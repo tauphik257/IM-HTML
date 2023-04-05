@@ -4,11 +4,174 @@
     box-sizing: border-box;
 }
 
-.ram{
-  width: 100%; 
-  min-height: 200px;
- border: 5px solid red;
+/*Snehal*/
+/*--first portion--*/
+.department{
+  width: 100%;
+  min-height: 300px;
 }
+.department h3{
+  font-size: 30px;
+  color: #252c3a;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 1rem;
+}
+.department p{
+  font-size: 14px;
+  line-height: 24px;
+  color: #5a6e79;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.shiksha{
+  width:100%;
+  height: 60vh;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.shiksha h4{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 12rem;
+  position: relative;
+}
+.shikshaA{
+  width:20%;
+  min-height: 50vh;
+  background-image: url("../img/onlineeducationimagecpy.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #f9703a;
+  margin-left: 13rem;
+  border-radius: 4px;
+}
+.shikshaB{
+  width:20%;
+  min-height: 50vh;
+  background-image: url("../img/messagecpy.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #80be41;
+  border-radius: 4px;
+}
+.shikshaC{
+  width:20%;
+  min-height: 50vh;
+  background-image: url("../img/notepadcpy.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #ffb258;
+  margin-right: 13rem;
+  border-radius: 4px;
+}
+/*---second portion---*/
+.details{
+  width: 100%;
+  min-height: 600px;
+  padding-top: 2rem;
+  align-items: centers;
+  justify-content: space-around;
+  display:flex;
+}
+.picture{
+  width: 60%;
+  min-height: 400px;
+  padding-left: 6rem;
+  align-items: center;
+}
+.picture .shape{
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  left: -250px;
+  top: 350px;
+  z-index: -1;
+}
+.building{
+  width: 18rem;
+  height: 18rem;
+  background-color: white;
+  border: 20px solid #fdf6ee;;
+  padding: 0.8rem;
+  border-radius: 100%;
+  position: absolute;
+  left: 20rem;
+  top : 40rem;
+}
+.play{
+  position: absolute;
+  left: 27.5rem;
+  top : 47rem;
+}
+.flower-image{
+  height: 15rem;
+  width : 15rem;
+  position: absolute;
+  left: 13rem;
+  top: 40rem;
+}
+.information{
+  width: 40%;
+  min-height: 400px;
+  margin-right: 13rem;
+}
+.information h4{
+  font-size: 30px;
+  line-height: 56px;
+  color: #252c3a;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+.information p{
+  font-size: 16px;
+  line-height: 26px;
+  color: #5a6e79;
+  font-weight: 400;
+  flex-wrap: wrap;
+}
+.rating{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Montserrat";
+}
+
+.student-rating  h4{
+  font-size: 40px;
+  font-weight: 700;
+  color: #f9703a;
+}
+.student-rating  p{
+  font-size: 18px;
+  font-weight: 700;
+  color: #f9703a;
+}
+.course-rating  h4{
+  font-size: 40px;
+  font-weight: 700;
+  color: #ff5f72;
+}
+.course-rating  p{
+  font-size: 18px;
+  font-weight: 700;
+  color: #ff5f72;
+}
+.videos h4{
+  font-size: 40px;
+  font-weight: 700;
+  color: #43cb83;
+}
+.videos  p{
+  font-size: 18px;
+  font-weight: 700;
+  color: #43cb83;
+}
+/*Snehal*/
+
 /*   around  the university */
 .around{
     background-image: url(../img/around_BG.png);
