@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 /*Snehal*/
 /*--first portion--*/
 .department{
@@ -171,12 +172,14 @@
   color: #43cb83;
 }
 /*Snehal*/
+=======
+>>>>>>> f555eeb80e2cc0378052e327855cf051b570c1ac
 
 /*   around  the university */
 .around{
     background-image: url(../img/around_BG.png);
     background-repeat: no-repeat;
-    background-position: -460%;
+    background-position: +450%;
  
 }
 .around{
@@ -477,7 +480,7 @@ text-justify: bottom;
 .footer1{
   width: 20%; 
   min-height:3000%;
-border: 1px solid red;
+
    margin-left: 5%;
    margin-top: 1%;
    margin-bottom: 1%;
@@ -489,7 +492,7 @@ border: 1px solid red;
 .footer2{
   width: 20%; 
   min-height: 300%;
-  border: 1px solid red;  
+
   margin-bottom: 1%;
   margin-top: 1%;
 } 
