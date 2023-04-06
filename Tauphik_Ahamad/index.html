@@ -118,7 +118,14 @@
         }
 
         <br />
-        <img />
+        <img id="idA idB"/>
+        <img id="idB iid"/>
+        <img class="idA idB" id="idB"/>
+
+     
+        .idA{border: 2px solid red;}
+        .idB{border: 2px solid blue;}
+         #idB{border: 2px solid green;}
 
         #Pseudo Classes
         1. :hover
@@ -141,12 +148,40 @@
 
         }
 
+        #Combinators selector
+        1. Descendant space (div a span)
+        2. child slector ( > )
+        3. adjacent sibling Selector (+)
+        4. general sibling selector  ( ~ )
+
+        div.calssname p{
+
+        }
         
+        ul.classA{
+
+        }
+
+        #Attribute Selector
+        [selector][attribute]{
+          css
+        }
+        
+        0. [selector][attribute] => only attribute
+        1. [selector][attribute="value"] => match entire value
+        2. [selector][attribute~="value"] => match word
+        3. [selector][attribute^="value"] => Start with a matching word
+        4. [selector][attribute$="value"] => End with a matching word
+        5. [selector][attribute*="value"] => check for value match in entire attr value
+
+        if(a===b){
+
+        }
 
       </style>
     -->
     <!-- Tooltip -->
-    <ul class="tooltip-wrap">
+    <ul class="tooltip-wrap classA">
       <li>
         <a href="#">Tooltip top</a>
         <div class="tooltip">
@@ -166,23 +201,28 @@
 
     <!-- Pseudo class for link -->
     <div>
-      <a href="#" class="link-test" target="_blank">This is Link</a>
+      <a href="#" class="link-test" target="_blank abc">This first is Link <span></span> </a>
+      <a href="#" class="link-test" target="This first is Link abc">This is second Link <span></span> </a>
     </div>
     <div class="first-case-test">
+      <p>Before H3 tag Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+      <h3>Outer H3 tag</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
       <div>
-        <h3>fdsffds</h3>
+        <h3>Inner H3 tag</h3>
         <p>Inner P tag Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
         <p>Inner P tag Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
         <p>Inner P tag Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
         <div>
+          <h3>Inner Leve2 H3 tag</h3>
           <p>Inner P tag Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           <p>Inner P tag Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           <p>Inner P tag Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
         </div>
       </div>
+      <h3>Outer-2 H3 tag</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
     </div>
@@ -197,7 +237,20 @@
       <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</li>
       <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</li>
     </ul>
-    <article class="article-block new-blog" data-badge="New">
+    <div class="article_Kml ddw">
+      <p>1. New blog difinition or description</p>
+    </div>
+    <div class="articleMno">
+      <p>2. New blog difinition or description</p>
+    </div>
+    <div class="article-abc">
+      <p>3. New blog difinition or description</p>
+    </div>
+    <div class="article-abcd">
+      <p>4. New blog difinition or description</p>
+    </div>
+
+    <article class="article-block new-blog test" data-badge="New">
       <h2 class="article-title active" id="headingId">This is Title heading 2 </h2>
       <div class="article-description">
         <p>blog difinition or description blog difinition or description blog difinition or description blog difinition
