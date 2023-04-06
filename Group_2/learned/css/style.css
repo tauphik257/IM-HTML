@@ -212,7 +212,7 @@ nav{
   width : 15rem;
   position: absolute;
   left: 13rem;
-  top: 40rem;
+  top: 82rem;
 }
 .information{
   width: 40%;
@@ -276,10 +276,11 @@ nav{
 /*   around  the university */
 
 .bg {
-  height: 800px;
-  width: 400px;
+  height: 700px;
+  width: 350px;
   position: absolute;
-  left: 60rem;
+  left: 57rem;
+  bottom: -120rem;
   z-index: -1;
 
  
