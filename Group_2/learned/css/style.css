@@ -1,14 +1,122 @@
+
+
+
+
+
 *{ 
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
 }
+/* prathamesh section */
 
-.ram{
-  width: 100%; 
-  min-height: 200px;
- border: 5px solid red;
+
+*{
+    margin: 0;
+    padding: 0;
 }
+header{
+    width: 94.9rem;
+    background-color: #fff9f3;
+}
+nav{
+    
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    padding-left: 15rem;
+}
+ul{
+    padding-left: 10rem;
+    align-items: center;
+    display: flex;
+}
+li{
+
+    display: inline;
+    padding: 2rem 1rem;
+}
+li a{
+    text-align: center;
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+}
+li a:hover{
+    color: #fec077;
+    text-decoration: underline;
+}
+li button{
+    color: #fec077;
+    background-color: white;
+    font-weight: bold;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 5rem;
+    border: none;
+}
+li button:hover{
+    width: 7rem;
+    height: 3rem;
+
+}
+
+.main{
+    position: relative;
+    text-align: center;
+    width: 94.9rem;
+    background-color: #fff9f3;
+}
+.info{
+    width: 56.9rem;
+    height: 30rem;
+}
+.img{
+    margin-top: -.25rem;
+    width: 94.9rem;
+    background-repeat: no-repeat;
+}
+.plant_l{
+
+    position: absolute;
+    left: 5rem;
+    top: 27rem;
+    height: 22rem;
+    width: 28rem;
+}
+.plant_r{
+
+    position: absolute;
+    left: 40rem;
+    top: 10rem;
+    height: 29rem;
+    width: 36rem;
+}
+.education{
+    position: absolute;
+    left: 16rem;
+    top: 12rem;
+
+}
+.education h1{
+    color: #fec077;
+}
+.education p{
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+    color: gray;
+}
+.education button{
+    color: white;
+    background-color: #fec077;
+    height: 3rem;
+    width: 10rem;
+    border-radius: 5rem;
+    border: none;
+}
+/* Prathamesh section end */
+
+
 /*   around  the university */
 .around{
     background-image: url(../img/around_BG.png);
@@ -314,7 +422,7 @@ text-justify: bottom;
 .footer1{
   width: 20%; 
   min-height:3000%;
-border: 1px solid red;
+
    margin-left: 5%;
    margin-top: 1%;
    margin-bottom: 1%;
@@ -326,7 +434,7 @@ border: 1px solid red;
 .footer2{
   width: 20%; 
   min-height: 300%;
-  border: 1px solid red;  
+ 
   margin-bottom: 1%;
   margin-top: 1%;
 } 
