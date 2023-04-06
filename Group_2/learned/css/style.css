@@ -3,13 +3,9 @@
     margin: 0%;
     box-sizing: border-box;
 }
-
-<<<<<<< HEAD
+AD
 /*-----------------------Our department---------------------*/
-=======
 
-/*Snehal*/
->>>>>>> ab3d7a3c12e2334d490626cd9fbea0f7638ea38b
 /*--first portion--*/
 .department{
   width: 100%;
@@ -175,27 +171,25 @@
   font-weight: 700;
   color: #43cb83;
 }
-<<<<<<< HEAD
+
 /*------End of Limitless learning page------*/
-=======
->>>>>>> f555eeb80e2cc0378052e327855cf051b570c1ac
-=======
-/*Snehal*/
->>>>>>> ab3d7a3c12e2334d490626cd9fbea0f7638ea38b
+
+
 
 /*   around  the university */
 
 .bg {
- width: 800px;
- height: 800px;
- position: absolute;
- left: 1000px;
- top: 65rem;
- z-index: -1;
+  height: 800px;
+  width: 400px;
+  position: absolute;
+  left: 60rem;
+  z-index: -1;
+  bottom:-1300px;
+ 
 }
 
 .around{
-width: 100%;
+width: auto;
 height:600px;
     margin-top: 10px;
     display: flex;
@@ -231,6 +225,7 @@ height:600px;
   background-repeat: no-repeat; 
  background-position: center;
   background-color: aqua;
+  background-size: 100%;
 }
 .around3{
     width: 20%;
