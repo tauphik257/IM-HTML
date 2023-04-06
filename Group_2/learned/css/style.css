@@ -187,8 +187,8 @@ nav{
   width: 800px;
   height: 800px;
   position: absolute;
-  left: -250px;
-  top: 350px;
+  left: -256px;
+  top: 1046px;
   z-index: -1;
 }
 .building{
@@ -200,12 +200,12 @@ nav{
   border-radius: 100%;
   position: absolute;
   left: 20rem;
-  top : 40rem;
+  top : 81rem;
 }
 .play{
   position: absolute;
   left: 27.5rem;
-  top : 47rem;
+  top : 88rem;
 }
 .flower-image{
   height: 15rem;
@@ -283,7 +283,7 @@ nav{
   position: absolute;
   left: 60rem;
   z-index: -1;
-  bottom:-1300px;
+
  
 }
 
