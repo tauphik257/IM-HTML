@@ -8,7 +8,7 @@
     margin: 0%;
     box-sizing: border-box;
 }
-<<<<<<< HEAD
+
 /* prathamesh section */
 
 
@@ -116,10 +116,7 @@ nav{
     border: none;
 }
 /* Prathamesh section end */
-=======
-AD
 /*-----------------------Our department---------------------*/
-
 /*--first portion--*/
 .department{
   width: 100%;
@@ -287,8 +284,6 @@ AD
 }
 
 /*------End of Limitless learning page------*/
-
->>>>>>> 4059601abd0f2b40701e9c970f56aa584127938f
 
 
 /*   around  the university */
@@ -603,11 +598,10 @@ text-justify: bottom;
   width: 20%; 
   min-height:3000%;
 
-<<<<<<< HEAD
    margin-left: 5%;
-=======
+
    margin-left: 10%;
->>>>>>> 4059601abd0f2b40701e9c970f56aa584127938f
+
    margin-top: 1%;
    margin-bottom: 1%;
    background-image: url(../img/around9.png);
@@ -618,11 +612,8 @@ text-justify: bottom;
 .footer2{
   width: 20%; 
   min-height: 300%;
-<<<<<<< HEAD
- 
-=======
 
->>>>>>> 4059601abd0f2b40701e9c970f56aa584127938f
+
   margin-bottom: 1%;
   margin-top: 1%;
 } 
