@@ -275,10 +275,10 @@ nav{
 
 /*   around  the university */
 .bg {
-  height: 700px;
-  width: 350px;
+  height: 48rem;
+  width: 20rem;
   position: absolute;
-  left: 63rem;
+  left: 65rem;
   bottom: -120rem;
   z-index: -1;
 }
