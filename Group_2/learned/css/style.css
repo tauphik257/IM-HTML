@@ -278,7 +278,7 @@ nav{
   height: 700px;
   width: 350px;
   position: absolute;
-  left: 57rem;
+  left: 63rem;
   bottom: -120rem;
   z-index: -1;
 }
@@ -569,7 +569,7 @@ text-justify: bottom;
 }
 /*----------------- footer-------------------- */
 .footer{
-  border: solid black;
+
   width:100%;
   min-height: 300px;
   background-color:  #252c3a;
