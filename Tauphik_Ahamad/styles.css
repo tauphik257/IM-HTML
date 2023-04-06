@@ -286,6 +286,16 @@ div[class*="cle"] {
   color: #fff;
 }
 
+.fix-position {
+  background-color: blue;
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  right: -13px;
+  top: 40%;
+  transform: rotate(-90deg);
+  border-radius: 5px 5px 0px 0px;
+}
 /* Banner section CSS */
 
 /* Contact section css */
