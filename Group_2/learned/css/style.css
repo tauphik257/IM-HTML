@@ -278,7 +278,7 @@ nav{
   height: 48rem;
   width: 20rem;
   position: absolute;
-  left: 65rem;
+  left: 60.7rem;
   bottom: -120rem;
   z-index: -1;
 }
@@ -667,12 +667,12 @@ margin-top:50px;
   color:  #969595;;
   }
 .footer4 input{
-  padding:10px;
+  padding:5px;
 border: none;
  margin-left: 5px;
 }
 .footer4 button{
-  padding:9px;
+  padding:5px;
   background-color: #ffc178;
   
 }
