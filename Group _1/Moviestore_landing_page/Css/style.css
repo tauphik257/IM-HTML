@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 header{
     width: 100%;
-    height: 10vh;
+    height: 8vh;
     margin: auto;
     padding-left: 4rem;
     padding-right: 4rem;
@@ -16,10 +17,11 @@ header img{
 }
 h2{
     display: inline-block;
-    font-size: 35px;
+    font-size: 30px;
 }
 header i{
     color: red;
+    font-size: 26px;
 }
 .nav{
     margin-left: 8rem;
@@ -30,7 +32,7 @@ header i{
 }
 .nav ul li{
     list-style: none;
-    margin-left:2rem;
+    margin-left:3rem;
     width: 22%;
     padding: 5px;
     position: relative;
@@ -75,7 +77,7 @@ li:hover .tooltip{
     display: inline-block;
     background-image: url(../images/bg1.jpg);
     background-size: 100% 180%;
-    margin-left: 5rem;
+    margin-left: 18rem;
     position:relative;
     top: 12%;
 }
@@ -91,7 +93,7 @@ p{
     font-size: 20px;
     display: inline-block;
     font-size: 25px;
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 .icon {
     margin-left: 1rem;
@@ -169,3 +171,441 @@ p{
     margin-left: 3rem;
 }
         /* ------- banner end here -------*/
+/*................................. last section start here......................... */
+.wrapper{
+    height: 90vh;
+}
+.main-wrap{
+    height: 75vh;
+    
+    background-image: url(../images/bg.jpg);
+
+
+}
+.wrap-content{
+    position: absolute;
+    display: block;
+    left: 55rem;
+    top: 15rem;
+    
+   
+
+}
+.wrap-content img{
+    height: 20vh;
+
+}
+.wrap-content button{
+    padding: 0.5rem;
+    position: relative;
+    top: 2rem;
+    right: 13rem;
+    background-color: red;
+    color: white;
+    border: none;  
+}
+/*.................... main content end here............................. */
+.wrapper-head{
+    padding-top: 1rem;
+    display: flex;
+
+}
+.start-content{
+    margin-left: 3rem;
+
+}
+.start-content h2{
+    font-size: 20px;
+    color: #3f444e;
+    padding-top: 0.5rem;
+    
+}
+.middle-content{
+    margin-left: 25rem;
+
+}
+.middle-content p{
+    font-style: italic;
+    padding-top: 0.5rem;
+    color: #666666;
+    
+}
+.middle-content span{
+    margin-left: 1rem;
+    color:#b1b5ba;
+    font-style: italic;
+    padding-top: 0.5rem;
+    
+}
+.last-content{
+    margin-left: 17rem;
+    
+}
+.last-content .inp{
+    border-bottom: 1px solid black;
+   
+    padding: 0.5rem;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove; 
+}
+.last-content i{
+    position: relative;
+    right: 1.5rem;
+}
+
+
+
+table{
+    width: 100%;
+    border-spacing: 2rem;
+    table-layout: fixed;
+    margin-top: 2rem;
+
+}
+table tr{
+    height: 30vh;
+}   
+table tr,td{
+    border: 1px solid black;
+    border-radius: 5px;
+  
+}
+.wrapper-head{
+    display: flex;
+}
+.gd-wrap{
+    background-image: url(../images/galaxy.png); 
+    background-size: 100% 100%;
+    border-radius: 5px;
+    border: none;
+}
+.gd-wrap h4{
+    position: relative;
+    top: -4rem;
+    color: white;
+}
+.gd-wrap i{
+    margin-left: 1rem;
+    color: red;
+    padding-right: 0.5rem;
+}
+.gd-wrap h3{
+    margin-left: 1rem;
+    position: relative;
+    top: 4rem;
+    color: white;
+}
+.gd-wrap #icon{
+    position: relative;
+    left: 13rem;
+    bottom: 5.2rem;
+    color: white;
+}
+
+/* ........................................................................... */
+.iron{
+   box-sizing: border-box;
+}
+.iron img{
+    height: 40vh;
+    width: 100%;
+    position: relative;
+    top: 0.3rem;
+    display: inline-block;
+    opacity: 50%;
+}
+.iron h3{
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+.iron i{
+    margin-right: 1rem;
+    color: red;
+}
+.checked{
+    color: red;
+}
+.iron .date{
+    color: #666666;
+}
+.iron-icon{
+    width: 5%;
+}
+.iron-icon i{
+    position: relative;
+    left: 13.8rem;
+    border: 1px solid #3f434d;
+    background-color: #3f434d;
+    padding:0.8rem;
+    color: white;
+    border-radius: 0px 4px 0px 0px;
+}
+.iron h3,img{
+    position: relative;
+    top: -2rem;
+}
+/* ............................................................. */
+.spider-wrap{
+    background-image: url(../images/spidy.jpg);
+    background-size: 100% 100%;
+}
+.spider-wrap h4{
+    position: relative;
+    top: -5.5rem;
+    color: white;
+}
+.spider-wrap i{
+    margin-left: 1rem;
+    color: red;
+    padding-right: 0.5rem;
+}
+.spider-wrap h3{
+    margin-left: 1rem;
+    position: relative;
+    top: 3rem;
+    color: white;
+}
+.spider-icon{
+    width: 50%;
+}
+.spider-icon i {
+    position: relative;
+    left: 12rem;
+    bottom: 3.7rem; 
+    color: white ;
+    padding: 0.8rem;
+}
+/* ............................................................ */
+.hulk-wrap{
+    background-image: url(../images/hulk.jpg);
+    background-size: 100% 100%;
+}
+.hulk-wrap h4{
+    position: relative;
+    top: -5.5rem;
+    color: white;
+}
+.hulk-wrap i{
+    margin-left: 1rem;
+    color: red;
+    padding-right: 0.5rem;
+}
+.hulk-wrap h3{
+    margin-left: 1rem;
+    position: relative;
+    top: 3rem;
+    color: white;
+}
+.hulk-icon{
+    width: 50%;
+}
+.hulk-icon i {
+    position: relative;
+    left: 12rem;
+    bottom: 3.7rem; 
+    color: white ;
+    padding: 0.8rem;
+}
+/* .............................................................. */
+.cap-wrap{
+    background-image: url(../images/captain.jpg);
+    background-size: 100% 100%;
+    border: 3px solid red;
+}
+.cap-wrap h4{
+    
+    position: relative;
+    top: -5.5rem;
+    color: white;
+}
+.cap-wrap i{
+    margin-left: 1rem;
+    color: red;
+    padding-right: 0.5rem;
+}
+.cap-wrap h3{
+    margin-left: 1rem;
+   
+    position: relative;
+    top: 3rem;
+    color: white;
+}
+.icon-i{
+    width: 50%;
+
+}
+.icon-i i {
+    position: relative;
+    left: 12.8rem;
+    bottom: 4rem;
+    border-radius: 0px 4px 0px 0px;
+    color: white;
+    background-color: red;
+    padding: 0.8rem;
+}
+/* ........................................................ */
+.captain-wrap{
+    background-image: url(../images/captain.jpg);
+    background-size: 100% 100%;
+}
+.captain-wrap h4{
+    position: relative;
+    top: -5.5rem;
+    color: white;
+}
+.captain-wrap i{
+    margin-left: 1rem;
+    color: red;
+    padding-right: 0.5rem;
+}
+.captain-wrap h3{
+    margin-left: 1rem;
+    position: relative;
+    top: 3rem;
+    color: white;
+}
+.captain-icon{
+    width: 50%;
+}
+.captain-icon i{
+    position: relative;
+    left: 12rem;
+    bottom: 3.7rem; 
+    color: white ;
+    padding: 0.8rem; 
+}
+
+/* ......................................................................... */
+.thor-wrap{
+    background-image: url(../images/thorbg.jpg);
+    background-size: 100% 100%;
+}
+.thor-wrap i{
+    position: relative;
+    top: 5rem;
+    left: 1rem;
+    font-size: 2rem;
+    color: white;
+}
+.thor-wrap input{
+    background-color: red;
+    width: 80%;
+    margin-left: 1rem;
+    position: relative;
+    top: 5rem;
+    left: 1rem;
+    
+}
+/* ......................................................................... */
+.harry-wrap{
+    background-image: url(../images/harrypoter.jpg);
+    background-size: 100% 100%;
+}
+/* .......................................................................... */
+.wrap-data h3{
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+.wrap-data i{
+    margin-right: 1rem;
+    color: red;
+}
+.checked{
+    color: red;
+}
+.wrap-data .date{
+    color: #666666;
+}
+.data-icon{
+    width: 5%;
+}
+.data-icon i{
+    position: relative;
+    left: 13.8rem;
+    top:-0.8rem;
+    border: 1px solid #3f434d;
+    background-color: #3f434d;
+    padding:0.8rem;
+    color: white;
+    border-radius: 0px 4px 0px 0px;
+    
+}
+.wrap-data h3,img{
+    position: relative;
+    top: -2rem;
+}
+/* ............................................................................ */
+.spidy-wrap{
+    background-image: url(../images/spiderman.jpg);
+    background-size: 100% 110%;
+}
+/* ....................................................................... */
+.volvorin{
+   
+   box-sizing: border-box;
+   
+}
+.volvorin img{
+    height: 40vh;
+    width: 100%;
+    position: relative;
+    top: 0.3rem;
+    display: inline-block;
+    opacity: 50%;
+}
+.volvorin h3{
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+.volvorin i{
+    margin-right: 1rem;
+    color: red;
+}
+.checked{
+    color: red;
+}
+.volvorin .date{
+    color: #666666;
+}
+.volvorin-icon{
+    width: 5%;
+}
+.volvorin-icon i{
+    position: relative;
+    left: 13.8rem;
+    border: 1px solid #3f434d;
+    background-color: #3f434d;
+    padding:0.8rem;
+    color: white;
+    border-radius: 0px 4px 0px 0px;
+    
+}
+.volvorin h3,img{
+    position: relative;
+    top: -2rem;
+}
+/* ............................................................................. */
+.footer{
+    width: 100%;
+    height: 8vh;
+    position:relative;
+    top: -5.5rem;
+    color: white;
+    opacity: 0.6;
+    background-color: black;
+    display: flex;
+    padding: 1rem;
+    
+}
+.footer i{
+    margin-right: 1rem;
+}
+.footer .footer-icon{
+    margin-left: 55rem;
+    
+}
+
+
+
