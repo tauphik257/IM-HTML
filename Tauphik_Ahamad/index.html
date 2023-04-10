@@ -183,13 +183,14 @@
       
       1. Static => Elements positioned static by default
       2. Relative => Elements Positioned relative to it's normal position
-      3. Absolute => 
+      3. Absolute => Elements Positioned relative to it's nearest element which is set to either relative || absolute (if didn't get any parent element then by default it will take reference of body)
       4. Fixed => Elements positioned to viewport
 
       </style>
     -->
     <!-- Position Fixed -->
     <span class="fix-position">contact us</span>
+
 
     <!-- Tooltip -->
     <ul class="tooltip-wrap classA">
@@ -210,6 +211,19 @@
       </li>
     </ul>
 
+    <!-- Center a Div -->
+    <div class="center-div-wrapper">
+      <div class="center-div">
+        Center Div Block
+      </div>
+    </div>
+
+    <div class="custon-radio">
+      <input type="radio" name="gender" id="maleRadio" /> <label for="maleRadio">Male radion button</label>
+      <input type="radio" name="gender" id="femaleRadio" /> <label for="femaleRadio">Female radion button</label>
+
+    </div>
+
     <!-- Pseudo class for link -->
     <div>
       <a href="#" class="link-test" target="_blank abc">This first is Link <span></span> </a>
@@ -226,8 +240,12 @@
         <p>Inner P tag Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
         <p>Inner P tag Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
         <p>Inner P tag Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-        <div>
+        <div style="position: relative;">
           <h3>Inner Leve2 H3 tag</h3>
+          <!-- Position Absolute -->
+          <span class="fix-absolute">
+            Absolute button
+          </span>
           <p>Inner P tag Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           <p>Inner P tag Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           <p>Inner P tag Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
