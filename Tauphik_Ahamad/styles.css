@@ -296,6 +296,78 @@ div[class*="cle"] {
   transform: rotate(-90deg);
   border-radius: 5px 5px 0px 0px;
 }
+.fix-absolute {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+.fix-absolute::before {
+  content: "";
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background: #444;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/** Center a div **/
+.center-div-wrapper {
+  width: 300px;
+  height: 300px;
+  border: 2px solid;
+  margin: 20px 0;
+  position: relative;
+}
+.center-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.custon-radio {
+  padding: 20px 0 30px;
+}
+.custon-radio label {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 30px;
+}
+.custon-radio label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 3px solid #2c98e2;
+}
+.custon-radio label::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #2c98e2;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+}
+.custon-radio input {
+  display: none;
+}
+.custon-radio input:checked + label::before {
+  transform: scale(1);
+}
+
 /* Banner section CSS */
 
 /* Contact section css */
