@@ -211,13 +211,47 @@
       </li>
     </ul>
 
-    <!-- Center a Div -->
-    <div class="center-div-wrapper">
+    <!--
+      1. color name
+      2. rgb(red, green, blue)
+      3. rgba(red, green, blue, alpha)
+      4. HEX => #RRGGBB => #ffffff => #fff => white
+      5. HSL => Hue, saturation, lightness => hsl(0, 50%, 60%)
+
+      margin: 10px 15px ==> top: 10px,   bottom: 10px,  right: 15px,  left: 15px
+      margin: 10px 15px 15px ==> top: 10px , bottom: 15px,  right: 15px,  left: 15px
+
+    -->
+
+    <!-- Center a Div and color -->
+    <div class="center-div-wrapper zIndex">
       <div class="center-div">
-        Center Div Block
+        Center Div Block 1
+      </div>
+      <div class="center-div">
+        Center Div Block 2
+      </div>
+      <div class="center-div">
+        Center Div Block 3
       </div>
     </div>
+    <!-- Center a Div and color -->
+    <!--
+      1. color name
+      2. rgb(red, green, blue)
+      3. rgba(red, green, blue, alpha)
+      4. HEX => #RRGGBB => #ffffff => #fff => white
+      5. HSL => Hue, saturation, lightness => hsl(0, 50%, 60%)
 
+      margin: 10px 15px ==> top: 10px,   bottom: 10px,  right: 15px,  left: 15px
+      margin: 10px 15px 15px ==> top: 10px , bottom: 15px,  right: 15px,  left: 15px
+
+    -->
+    <div class="center-div-wrapper color-name">
+      <div class="center-div">
+        with color name
+      </div>
+    </div>
     <div class="custon-radio">
       <input type="radio" name="gender" id="maleRadio" /> <label for="maleRadio">Male radion button</label>
       <input type="radio" name="gender" id="femaleRadio" /> <label for="femaleRadio">Female radion button</label>
