@@ -91,6 +91,9 @@ h2{
     background-color:rgb(81, 80, 80);
     color: white;
   }
+  .custom_checkbox label i{
+    margin-bottom: 2rem;
+  }
   .custom_checkbox input:checked + label {
     background:linear-gradient(to bottom right,rgb(232, 44, 76), rgb(218, 157, 44));
     color :white;
