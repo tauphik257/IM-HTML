@@ -58,7 +58,7 @@ h2{
   border-radius: .5rem;
   box-shadow:1px 1px 5px  blueviolet;
 }
-.custom_radio input:checked + label >p {
+.custom_radio input:checked + label {
  color: blueviolet;
 }
 .custom_radio input:checked + label >.fa-brands {
