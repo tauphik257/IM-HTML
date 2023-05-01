@@ -1,0 +1,945 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+button {
+    border: none;
+}
+
+/* header */
+header {
+    font-family: Fantasy;
+    display: flex;
+    background-color: black;
+    background-image: linear-gradient(90deg, #008894 51%, #fe4604);
+    color: white;
+}
+
+/* left section */
+.cont_list {
+    margin-top: 1rem;
+    margin-left: 6rem;
+}
+
+.cont_list ul li {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+}
+
+.cont_list ul li:hover {
+    color: #fe4604;
+    transform: scale(1.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.cont_list ul {
+    margin-left: 10px;
+}
+
+/* mid section */
+.logo {
+    color: red;
+    margin-top: .7rem;
+    margin-left: 23rem;
+    font-size: 35px;
+    font-weight: bolder;
+    text-shadow: -4px 4px 1px black;
+}
+
+.logo:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.4);
+
+}
+
+/* right section */
+.sign_in {
+    margin-left: 29rem;
+}
+
+.sign_in ul li {
+    text-decoration: none;
+    padding: 1rem;
+    display: inline-block;
+}
+
+.sign_in ul li:nth-child(1):hover {
+    color: #008894;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.5);
+}
+
+.sign_in ul li button {
+    background-color: red;
+    font-family: Fantasy;
+    color: white;
+    height: 3rem;
+    width: 6rem;
+    font-size: large;
+    border-radius: 1rem;
+}
+
+.sign_in ul li button:hover {
+    transform: translate(5px, -5px);
+    box-shadow: -4px 4px 6px #008894;
+    color: #008894;
+    transition: all 0.3s ease-in-out;
+}
+
+/* comic book section */
+.comic_books {
+    position: relative;
+    height: 43rem;
+    width: 100%;
+    background-image: url(../images/Marvel_Comics/4789237.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.comic_books h1 {
+    text-shadow: -20px 20px black;
+}
+
+.comic_books div {
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+.comic_books div h1:hover {
+    transform: translate(5px, -5px);
+    text-shadow: -25px 20px 6px black;
+
+}
+
+.comic_books div:nth-child(1) h1 {
+    margin-left: 2rem;
+    color: #008894;
+    font-family: fantasy;
+    font-size: 15rem;
+}
+
+.comic_books div:nth-child(2) h1 {
+    font-family: fantasy;
+    color: #fe4604;
+    font-size: 15rem;
+    margin-top: 3rem;
+
+}
+
+.slide_show {
+    width: 13%;
+    height: 19rem;
+    position: absolute;
+    top: 2rem;
+    left: 70rem;
+    overflow: hidden;
+    border: 25px solid black;
+    border-radius: .5rem;
+    box-shadow: 5px 5px 30px #fe4604, -5px -5px 30px #fe4604;
+}
+
+.slide_show:hover {
+    transform: scale(1.2);
+}
+
+.slides {
+    width: 100%;
+    height: 100%;
+    animation: comic 20s infinite;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes comic {
+    0% {
+        transform: translatex(0);
+    }
+
+    5% {
+        transform: translatex(0);
+    }
+
+    10% {
+        transform: translatex(-100%);
+    }
+
+    15% {
+        transform: translatex(-100%);
+    }
+
+    20% {
+        transform: translatex(-200%);
+    }
+
+    25% {
+        transform: translatex(-200%);
+    }
+
+    30% {
+        transform: translatex(-300%);
+    }
+
+    35% {
+        transform: translatex(-300%);
+    }
+
+    40% {
+        transform: translatex(-400%);
+    }
+
+    45% {
+        transform: translatex(-400%);
+    }
+
+    50% {
+        transform: translatex(-500%);
+    }
+
+    55% {
+        transform: translatex(-500%);
+    }
+
+    60% {
+        transform: translatex(-600%);
+    }
+
+    65% {
+        transform: translatex(-600%);
+    }
+
+    70% {
+        transform: translatex(-700%);
+    }
+
+    75% {
+        transform: translatex(-700%);
+    }
+
+    80% {
+        transform: translatex(-800%);
+    }
+
+    85% {
+        transform: translatex(-800%);
+    }
+
+    90% {
+        transform: translatex(-900%);
+    }
+
+    95% {
+        transform: translatex(-900%);
+    }
+
+    100% {
+        transform: translatex(0);
+    }
+}
+
+.characters {
+    flex-direction: column;
+    width: 50rem;
+    height: 21rem;
+    display: grid;
+    margin-right: 8rem;
+
+}
+
+.characters div {
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    place-content: center;
+
+}
+
+.characters div ul li {
+    float: left;
+    display: flex;
+    height: 7rem;
+    width: 10rem;
+
+}
+
+.characters div ul li img {
+    border: 5px solid black;
+    border-radius: 50%;
+    width: 70%;
+    height: 80%;
+    box-shadow: -5px 5px 10px black;
+
+}
+
+.half {
+    animation: character_half 2s infinite;
+    animation-timing-function: linear;
+}
+
+.full {
+    animation: character_full 2s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes character_full {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+@keyframes character_half {
+    0% {
+        transform: scale(.5);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(.5);
+    }
+
+}
+
+.characters div ul li img:hover {
+    transition: all 0.3s ease-in-out;
+    box-shadow: -5px 5px 10px black;
+    animation: circle .2s linear;
+}
+
+@keyframes circle {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* second section  */
+
+.secand {
+    display: flex;
+}
+
+.secand div {
+    height: 13rem;
+    display: flex;
+    width: 50%;
+    padding-left: 2rem;
+}
+
+.left {
+    background-color: #fe4604;
+    position: relative;
+}
+
+.left::after {
+    content: "";
+    width: 0%;
+    height: 0%;
+    border-top: 53px solid black;
+    border-left: 198px solid transparent;
+    position: absolute;
+    left: 784px;
+    bottom: 115px;
+    transform: translateX(-50%) rotate(-90deg);
+    z-index: 1;
+}
+
+.right {
+    background-color: #008894;
+    position: relative;
+}
+
+.right::after {
+    content: "";
+    width: 0%;
+    height: 0%;
+    border-top: 53px solid black;
+    border-left: 198px solid transparent;
+    position: absolute;
+    left: -26px;
+    bottom: 72px;
+    transform: translateX(-50%) rotate(-270deg);
+    z-index: 1;
+
+}
+
+.secand div img {
+    height: 14rem;
+    width: 13rem;
+    bottom: 2rem;
+    border: 5px solid black;
+    transform: translateY(-2rem);
+}
+
+.secand div img:hover {
+    transform: translateY(-2.5rem);
+}
+
+.left img:hover {
+    box-shadow: -5px 5px #008894;
+}
+
+.right img:hover {
+    box-shadow: -5px 5px #fe4604;
+}
+
+.secand div div:nth-child(2) {
+    flex-direction: column;
+    place-content: center;
+    margin-left: -8rem;
+    font-size: large;
+}
+
+.secand div div:nth-child(2) p {
+    font-style: italic;
+}
+
+.secand div div:nth-child(2) h3 {
+    padding-bottom: .7rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.left div:nth-child(2) a {
+    color: #008894;
+    font-size: larger;
+    text-decoration: none;
+    font-weight: bolder;
+    padding-top: .8rem;
+
+}
+
+.left div:nth-child(2) a:hover {
+    text-shadow: -2px 2px 2px black;
+    transform: translate(4px, -4px);
+}
+
+.right div:nth-child(2) a {
+    color: #fe4604;
+    font-size: larger;
+    text-decoration: none;
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+.right div:nth-child(2) a:hover {
+    text-shadow: -2px 2px 2px black;
+    transform: translate(4px, -4px);
+}
+
+/* section three */
+
+.section_three {
+    position: relative;
+    background-color: orangered;
+    height: 45rem;
+    width: 100%;
+    display: flex;
+}
+
+.section_three div {
+    margin-right: 3rem;
+    background-color: black;
+    height: 45rem;
+    width: 4rem;
+}
+
+.section_three div:nth-child(1) {
+    margin-left: 10rem;
+
+}
+
+.section_three div:nth-child(5) {
+    margin-right: 3rem;
+    background-color: #008894;
+    height: 15rem;
+    width: 4rem;
+}
+
+.section_three div:nth-child(6) {
+    margin-right: 25rem;
+    background-color: #008894;
+    height: 11rem;
+    width: 4rem;
+}
+
+.section_three div:nth-child(7) {
+    background-color: #008894;
+    height: 11rem;
+    width: 4rem;
+    position: absolute;
+    bottom: 0;
+    left: 82rem;
+}
+
+.section_three div:nth-child(8) {
+    background-color: #008894;
+    height: 16rem;
+    width: 4rem;
+    position: absolute;
+    bottom: 0;
+    left: 89rem;
+}
+
+.section_three div:nth-child(3) img {
+    z-index: 1;
+    position: absolute;
+    height: 25rem;
+    width: 18rem;
+    top: 5rem;
+    left: 18rem;
+    border: 2rem solid white;
+}
+
+.section_three div:nth-child(3) img:hover {
+    box-shadow: -15px 15px 25px #008894;
+    transform: translate(5px, -5px);
+}
+
+.section_three div:nth-child(4) img {
+    z-index: 1;
+    position: absolute;
+    height: 25rem;
+    width: 18rem;
+    top: 15rem;
+    left: 31rem;
+    border: 2rem solid white;
+}
+
+.section_three div:nth-child(4) img:hover {
+    box-shadow: -15px 15px 25px #008894;
+    transform: translate(5px, -5px);
+}
+
+.right_section_three {
+    position: absolute;
+    height: 28rem;
+    width: 24rem;
+    top: 73rem;
+    left: 58rem;
+}
+
+.right_section_three p:nth-child(1) {
+    color: #008894;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.right_section_three p:nth-child(1):hover {
+    transform: translate(4px, -4px);
+    font-weight: bold;
+}
+
+.right_section_three p:nth-child(2) {
+    font-family: fantasy;
+    font-size: 3rem;
+
+}
+
+.right_section_three p:nth-child(2):hover {
+    animation: new_marvel 1s linear infinite;
+}
+
+@keyframes new_marvel {
+    from {
+        color: #008894;
+        text-shadow: -3px 3px 3px black;
+    }
+
+    to {
+        color: black;
+        text-shadow: -3px 3px 3px #008894;
+    }
+}
+
+.right_section_three p:nth-child(3) {
+    margin-top: 1rem;
+    font-size: large;
+    color: gray;
+    margin-bottom: 1rem;
+}
+
+.right_section_three p:nth-child(3):hover {
+    color: black;
+    transform: translate(4px, -4px);
+}
+
+.right_section_three button {
+    color: white;
+    background-color: #008894;
+    height: 4rem;
+    width: 12rem;
+    border-radius: .5rem;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    font-weight: bold;
+    box-shadow: -5px 5px 2px black;
+}
+
+.right_section_three button:hover {
+    box-shadow: -5px 5px 2px black;
+    transform: translate(4px, -4px);
+}
+
+/* section four marvel games */
+.marvel_game {
+    position: relative;
+    background-color: #008894;
+    height: 45rem;
+    text-align: center;
+}
+
+.marvel_game p:nth-child(1) {
+    color: #fe4604;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin-left: -2rem;
+}
+
+.marvel_game p:nth-child(1):hover {
+    transform: scale(1.3);
+}
+
+.marvel_game p:nth-child(2) {
+    color: black;
+    font-size: 5rem;
+    margin-left: -2rem;
+    font-family: fantasy;
+    font-weight: bolder;
+}
+
+.marvel_game p:nth-child(2):hover {
+    transform: scaleX(1.3);
+}
+
+.marvel_game .img {
+    width: 100%;
+    height: 20rem;
+}
+
+.marvel_game .img img {
+    width: 18%;
+    height: 100%;
+    margin-right: 3rem;
+    border: 2rem solid #fe4604;
+}
+
+.marvel_game .img img:hover {
+    transform: scale(1.1);
+    box-shadow: -5px 5px 5px black;
+}
+
+.marvel_game button {
+    position: absolute;
+    top: 39rem;
+    left: 43rem;
+    color: white;
+    font-weight: bold;
+    box-shadow: -4px 4px 1px black;
+    height: 3rem;
+    width: 9rem;
+    font-size: large;
+    border-radius: .5rem;
+    background-color: #fe4604;
+}
+
+.marvel_game button:hover {
+    transform: translate(4px, -4px);
+    box-shadow: -5px 5px 5px black;
+}
+
+/* section five order comic */
+.section_five {
+    position: relative;
+}
+
+.order {
+    position: relative;
+    height: 45rem;
+    width: 100%;
+    background-color: #fe4604;
+    display: flex;
+}
+
+.order div {
+    height: 45rem;
+    width: 3rem;
+    margin-right: 2rem;
+    background-color: #008894;
+    opacity: 50%;
+}
+
+.order div:nth-child(1) {
+    margin-left: 53rem;
+}
+
+.left_order {
+    position: absolute;
+    top: 10rem;
+    left: 8rem;
+    width: 40%;
+    height: 25rem;
+}
+
+.left_order p:nth-child(1) {
+    font-size: larger;
+    color: #008894;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 1rem;
+}
+
+.left_order p:nth-child(1):hover {
+    font-size: 1.4rem;
+}
+
+.left_order p:nth-child(2) {
+    font-size: 5rem;
+    color: black;
+    font-weight: bolder;
+    font-family: fantasy;
+    font-weight: bold;
+    margin-bottom: 1;
+}
+
+.left_order p:nth-child(2):hover {
+    text-shadow: -6px 6px 2px #008894;
+    transform: translate(4px, -4px);
+}
+
+.left_order p:nth-child(3) {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    font-style: italic;
+    color: #008894;
+}
+
+.left_order p:nth-child(3):hover {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.left_order p:nth-child(4) {
+    font-family: fantasy;
+    font-size: 6rem;
+    margin-left: 5rem;
+    animation: price .5s linear infinite;
+}
+
+@keyframes price {
+    0% {
+        color: blue;
+    }
+
+    25% {
+        color: red;
+    }
+
+    50% {
+        color: yellow;
+    }
+
+    75% {
+        color: green;
+    }
+
+    100% {
+        color: pink;
+    }
+}
+
+.left_order p:nth-child(4):hover {
+    transform: scaleX(1.1);
+}
+
+.left_order button {
+    height: 3rem;
+    width: 9rem;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    border-radius: .5rem;
+    background-color: #008894;
+
+    box-shadow: -5px 5px 2px black;
+}
+
+.left_order button:hover {
+    transform: translate(4px, -4px);
+    box-shadow: -8px 8px 1px black;
+}
+
+.right_order {
+    position: absolute;
+    top: 10rem;
+    left: 45rem;
+
+}
+
+.right_order img {
+    border: 2rem solid black;
+    height: 24rem;
+    width: 15rem;
+    margin-right: 4rem;
+    animation: border 1s ease-in infinite;
+}
+
+.right_order img:hover {
+    transform: scale(1.1);
+    animation: imghover .2s linear;
+}
+
+@keyframes imghover {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    33% {
+        transform: rotate(-25deg);
+    }
+
+    66% {
+        transform: rotate(25deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
+}
+
+@keyframes border {
+    0% {
+        border-top-color: blue;
+        border-right-color: red;
+        border-bottom-color: greenyellow;
+        border-left-color: orange;
+    }
+
+    25% {
+        border-left-color: blue;
+        border-top-color: red;
+        border-right-color: greenyellow;
+        border-bottom-color: orange;
+    }
+
+    50% {
+        border-bottom-color: blue;
+        border-left-color: red;
+        border-top-color: greenyellow;
+        border-right-color: orange;
+    }
+
+    75% {
+        border-right-color: blue;
+        border-bottom-color: red;
+        border-left-color: greenyellow;
+        border-top-color: orange;
+    }
+
+    100% {
+        border-top-color: blue;
+        border-right-color: red;
+        border-bottom-color: greenyellow;
+        border-left-color: orange;
+    }
+}
+
+/* footer section */
+
+footer {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 17rem;
+}
+
+.insider {
+    background-color: black;
+    width: 50%;
+    padding-left: 2rem;
+}
+
+.insider p:nth-child(1) {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    color: #fe4604;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+.insider p:nth-child(2) {
+    font-family: fantasy;
+    font-weight: normal;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.insider p:nth-child(3) {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    font-size: medium;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.insider button {
+    color: white;
+    background-color: #fe4604;
+    height: 2.5rem;
+    width: 6rem;
+    border-radius: .5rem;
+    font-weight: bold;
+}
+
+.insider button:hover {
+    box-shadow: -5px 5px 1px white;
+    transform: translate(4px, -4px);
+}
+
+.insider_logo {
+    background-image: url(/images/Marvel_Comics/insider_bag.png);
+    background-size: 100% 100%;
+    width: 50%;
+}
+
+.insider_logo img {
+    position: absolute;
+    top: 3rem;
+    left: 55rem;
+}
+
+.insider_logo img:hover {
+    transform: scale(1.1);
+}
