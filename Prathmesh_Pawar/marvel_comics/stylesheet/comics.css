@@ -97,7 +97,7 @@ header {
     position: relative;
     height: 43rem;
     width: 100%;
-    background-image: url(../images/Marvel_Comics/main_bag.jpg)
+    background-image: url(../images/Marvel_Comics/main_bag.jpg);
     background-size: 100% 100%;
     background-attachment: fixed;
 }
@@ -725,7 +725,6 @@ header {
     font-weight: bolder;
     font-family: fantasy;
     font-weight: bold;
-    margin-bottom: 1;
 }
 
 .left_order p:nth-child(2):hover {
