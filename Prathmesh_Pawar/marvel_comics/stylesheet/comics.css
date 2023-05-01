@@ -97,7 +97,7 @@ header {
     position: relative;
     height: 43rem;
     width: 100%;
-    background-image: url(../images/Marvel_Comics/4789237.jpg);
+    background-image: url(../images/Marvel_Comics/main_bag.jpg)
     background-size: 100% 100%;
     background-attachment: fixed;
 }
@@ -929,7 +929,7 @@ footer {
 }
 
 .insider_logo {
-    background-image: url(/images/Marvel_Comics/insider_bag.png);
+    background-image: url(../images/Marvel_Comics/insider_bag.png);
     background-size: 100% 100%;
     width: 50%;
 }
