@@ -509,6 +509,32 @@ div[class*="cle"] {
   color: #fff;
 }
 
+@media screen and (max-width: 767px) {
+  .grow-shrink-basis {
+    flex-wrap: wrap;
+  }
+  .grow-shrink-basis li {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 767px) {
+  .grow-shrink-basis {
+    flex-wrap: wrap;
+  }
+  .grow-shrink-basis li {
+    width: 32%;
+  }
+}
+/** 479 => 0 to 478 **/
+@media screen and (max-width: 479px) {
+  .grow-shrink-basis {
+    flex-wrap: wrap;
+  }
+  .grow-shrink-basis li {
+    width: 100%;
+  }
+}
+
 .transition-css {
   padding: 0;
   margin: 20px 0;
