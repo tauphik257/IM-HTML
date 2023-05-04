@@ -1,0 +1,29 @@
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+   text-align: center;
+
+  }
+
+  th
+  {
+        background-color: #cb9100;
+ }
+td
+ {
+       background-color: #e8ea68;
+}
+
+  table{
+    margin :100px ;
+    margin-left: 300px;
+    border-top: 10px solid  rgb(143, 116, 116);
+    border-left: 10px solid  rgb(143, 116, 116);
+    border-bottom: 10px solid  rgb(69, 53, 53);
+    border-right: 10px solid  rgb(52, 39, 39);
+  }
+
+  caption{
+    font-size: 30px;
+  }

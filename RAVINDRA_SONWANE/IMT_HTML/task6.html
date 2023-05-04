@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /*  tooltip */ 
+        .tooltip{
+            margin-left: 20%;
+        } 
+        /*tool*/
+        .tool{
+            font-size: 20px;
+            cursor:pointer;
+            padding:10px;
+            border:1px solid;
+            width:10%;
+            margin-top: 20px;;
+            align-items: center;
+        }
+         /*   tooltip top    */
+        .tool:hover .top{
+            visibility:visible
+        }
+         /*   tooltip right   */
+        .tool:hover .right{
+            visibility:visible
+        }
+         /*   tooltip bottom    */
+        .tool:hover .bottom{
+            visibility:visible
+        }
+         /*   tooltip left    */
+        .tool:hover .left{
+            visibility:visible
+        }
+       
+            .top{
+                visibility:hidden;
+                border-radius:5px;
+                background-color:black;
+                color:aqua;
+                padding:5px;
+                font-size:10px;
+                position:relative;
+
+            }
+
+    .right{
+        visibility:hidden;
+        border-radius:5px;
+        background-color:black;
+        color:aqua;
+        padding:5px;
+        font-size:10px;
+        position:absolute;
+    }
+
+    .bottom{
+        visibility:hidden;
+        border-radius:5px;
+        background-color:black;
+        color:aqua;
+        padding:5px;
+        font-size:10px;
+        position:relative;
+    }
+    
+    .left{
+        visibility:hidden;
+        border-radius:5px;
+        background-color:black;
+        color:aqua;
+        padding:5px;
+        font-size:10px;
+        position:relative;
+    }
+
+</style>
+    <title>Tooltips</title>
+</head>
+<body>
+    <div class="tooltip">
+        
+    <h1>Tool Tips</h1>
+  
+        <div class="tool">
+            Tooltip Top
+            <span class="top"> Tooltip Top</span>
+        </div>
+        <div class="tool">
+            Tooltip Right
+            <span class="right"> Tooltip Rigth</span>
+        </div>
+        <div class="tool">
+            Tooltip Bottom
+            <span class="bottom"> Tooltip Bottom</span>
+        </div>
+        <div class="tool">
+            Tooltip Left
+            <span class="left"> Tooltip Left</span>
+        </div>
+    </div>
+</body>
+</html>

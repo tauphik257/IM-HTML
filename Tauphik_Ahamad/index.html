@@ -118,7 +118,14 @@
         }
 
         <br />
-        <img />
+        <img id="idA idB"/>
+        <img id="idB iid"/>
+        <img class="idA idB" id="idB"/>
+
+     
+        .idA{border: 2px solid red;}
+        .idB{border: 2px solid blue;}
+         #idB{border: 2px solid green;}
 
         #Pseudo Classes
         1. :hover
@@ -141,12 +148,52 @@
 
         }
 
+        #Combinators selector
+        1. Descendant space (div a span)
+        2. child slector ( > )
+        3. adjacent sibling Selector (+)
+        4. general sibling selector  ( ~ )
+
+        div.calssname p{
+
+        }
         
+        ul.classA{
+
+        }
+
+        #Attribute Selector
+        [selector][attribute]{
+          css
+        }
+        
+        0. [selector][attribute] => only attribute
+        1. [selector][attribute="value"] => match entire value
+        2. [selector][attribute~="value"] => match word
+        3. [selector][attribute^="value"] => Start with a matching word
+        4. [selector][attribute$="value"] => End with a matching word
+        5. [selector][attribute*="value"] => check for value match in entire attr value
+
+        if(a===b){
+
+        }
+
+      #CSS Position Property
+      CSS Position => 
+      
+      1. Static => Elements positioned static by default
+      2. Relative => Elements Positioned relative to it's normal position
+      3. Absolute => Elements Positioned relative to it's nearest element which is set to either relative || absolute (if didn't get any parent element then by default it will take reference of body)
+      4. Fixed => Elements positioned to viewport
 
       </style>
     -->
+    <!-- Position Fixed -->
+    <span class="fix-position">contact us</span>
+
+
     <!-- Tooltip -->
-    <ul class="tooltip-wrap">
+    <ul class="tooltip-wrap classA">
       <li>
         <a href="#">Tooltip top</a>
         <div class="tooltip">
@@ -164,7 +211,292 @@
       </li>
     </ul>
 
-    <article class="article-block new-blog" data-badge="New">
+    <!--
+      1. color name
+      2. rgb(red, green, blue)
+      3. rgba(red, green, blue, alpha)
+      4. HEX => #RRGGBB => #ffffff => #fff => white
+      5. HSL => Hue, saturation, lightness => hsl(0, 50%, 60%)
+
+      margin: 10px 15px ==> top: 10px,   bottom: 10px,  right: 15px,  left: 15px
+      margin: 10px 15px 15px ==> top: 10px , bottom: 15px,  right: 15px,  left: 15px
+
+    -->
+
+    <!-- list of display
+      1. inline --- ?
+      2. inline-block
+      3. block
+      4. table
+      5. table-cell
+      6. flex
+      7. inline-flex
+      8. grid
+      9. inline-grid
+    -->
+
+    <!-- Display flex properties
+    
+      1. flex
+      2. flex-direction
+      3. flex-wrap
+      4. align-items (verticle)  => flex-start, flex-end, center, space-around, space-between, space evenly
+      5. justify-content (Horizontal) => flex-start, flex-end, center, space-around, space-between, space evenly
+      
+      6. align-self
+      7. align-content
+      8. flex-flow
+
+      9. flex-grow
+      10.flex-basis
+      11. flex-shrink
+      12. flex => grow shrink basis => 1
+      
+
+      
+    -->
+
+    <!--
+      CSS Background
+
+      1. background-image
+      2. background-color
+      3. background-position
+      4. background-repeat
+      5. background-size
+      6. backgriund-attachment
+      7. background: url('../') no-repeate 100%
+
+
+      Start React App
+
+      1. Node js
+      2. npx create-react-app react-app-name
+      3. cd react-app-name
+      4. npm start
+
+    -->
+    <ul class="background-css">
+      <li>
+        <h6>background Block-1</h6>
+      </li>
+    </ul>
+
+    <!--
+      CSS media Query => @media [media-type] [media-feature] [AND] [media-feature] {}
+      @media screen and (max-width/min-width: 767px){
+
+      }
+
+      max-width: 767px => [viewport] less than  767px  => 0 to max 767px (portrait and landscape)
+      min-width: 768px => [viewport] more than  767px => upper => 767px to max-upper-limit
+      min-width: 991px => 
+      mobile devices portrait width => less than 480px (max-width: 479px) => target screen => mobile devices portrait
+
+      @media screen and (max-width: 800px){}
+      @media screen and (max-width: 600px){}
+      @media screen and (max-width: 400px){}
+      @media screen and (max-width: 350px){}
+
+      iPad (tablet) => 768px (portrait) * 1024 (landscape)
+
+      #[media-type]
+      
+      1. screen => Colored screen
+      2. print => print preview
+      
+      3. speech => screenreader
+      4. all => All Devices
+      5. projection
+      6. tty
+      7. tv
+      8. handheld
+
+      #[media-feature]
+      
+      1. 
+    -->
+
+    <ul class="grow-shrink-basis">
+      <li>
+        <h6>Block-1</h6>
+      </li>
+      <li>
+        <h6>Block-2</h6>
+      </li>
+      <li>
+        <h6>Block-3</h6>
+      </li>
+      <li>
+        <h6>Block-4</h6>
+      </li>
+      <li>
+        <h6>Block-5</h6>
+      </li>
+      <li>
+        <h6>Block-6</h6>
+      </li>
+    </ul>
+
+    <!--
+      CSS Transform
+
+      1. Translate => translateX, translateY, translate(X, Y), translate(X,Y,Z)
+      2. Scale => scaleX, scaleY, scaleZ => scale(XYZ)
+      3. Rotate => rotateX() => rotateY() => rotateZ() => rotate3d()
+      4. skew => skewX() => skewY() => skew(X, Y)
+
+    -->
+    <ul class="transform-css">
+      <li>
+        <h6>Transform Block-1</h6>
+      </li>
+    </ul>
+
+    <!--
+      CSS transition
+
+    -->
+    <ul class="transition-css">
+      <li>
+        <h6>Transition Block-1</h6>
+      </li>
+    </ul>
+    <!--
+      CSS Animation
+
+    -->
+    <ul class="animation-css">
+      <li>
+        <h6>Animation Block-1</h6>
+      </li>
+    </ul>
+
+    <ul class="display-items">
+      <li>
+        <h6>Block-1</h6>
+      </li>
+      <li>
+        <h6>Block-2</h6>
+      </li>
+      <li>
+        <h6>Block-3</h6>
+      </li>
+      <li>
+        <h6>Block-4</h6>
+      </li>
+      <li>
+        <h6>Block-5</h6>
+      </li>
+      <li>
+        <h6>Block-6</h6>
+      </li>
+      <li>
+        <h6>Block-7</h6>
+      </li>
+    </ul>
+
+    <!-- Center a Div and color -->
+    <div class="center-div-wrapper zIndex">
+      <div class="center-div">
+        Center Div Block 1
+      </div>
+      <div class="center-div">
+        Center Div Block 2
+      </div>
+      <div class="center-div">
+        Center Div Block 3
+      </div>
+    </div>
+    <!-- Center a Div and color -->
+    <!--
+      1. color name
+      2. rgb(red, green, blue)
+      3. rgba(red, green, blue, alpha)
+      4. HEX => #RRGGBB => #ffffff => #fff => white
+      5. HSL => Hue, saturation, lightness => hsl(0, 50%, 60%)
+
+      margin: 10px 15px ==> top: 10px,   bottom: 10px,  right: 15px,  left: 15px
+      margin: 10px 15px 15px ==> top: 10px , bottom: 15px,  right: 15px,  left: 15px
+
+
+      left => 1, 5,9,13 :nth-child()
+      (4n) => 0,4,8,12
+    -->
+    <div class="center-div-wrapper color-name">
+      <div class="center-div">
+        with color name
+      </div>
+    </div>
+    <div class="custon-radio">
+      <input type="radio" name="gender" id="maleRadio" /> <label for="maleRadio">Male radion button</label>
+      <input type="radio" name="gender" id="femaleRadio" /> <label for="femaleRadio">Female radion button</label>
+
+    </div>
+
+    <div class="custon-checkbox">
+      <input type="checkbox" id="check1" /> <label for="check1">Male radion button</label>
+      <input type="checkbox" id="check2" /> <label for="check2">Female radion button</label>
+      <input type="checkbox" id="check3" /> <label for="check3">Male radion button</label>
+      <input type="checkbox" id="check4" /> <label for="check4">Female radion button</label>
+    </div>
+
+    <!-- Pseudo class for link -->
+    <div>
+      <a href="#" class="link-test" target="_blank abc">This first is Link <span></span> </a>
+      <a href="#" class="link-test" target="This first is Link abc">This is second Link <span></span> </a>
+    </div>
+    <div class="first-case-test">
+      <p>Before H3 tag Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+      <h3>Outer H3 tag</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+      <div>
+        <h3>Inner H3 tag</h3>
+        <p>Inner P tag Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+        <p>Inner P tag Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+        <p>Inner P tag Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+        <div style="position: relative;">
+          <h3>Inner Leve2 H3 tag</h3>
+          <!-- Position Absolute -->
+          <span class="fix-absolute">
+            Absolute button
+          </span>
+          <p>Inner P tag Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          <p>Inner P tag Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+          <p>Inner P tag Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+        </div>
+      </div>
+      <h3>Outer-2 H3 tag</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+    </div>
+    <h3>Nth Child case</h3>
+    <ul class="nth-child-test">
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</li>
+    </ul>
+    <div class="article_Kml ddw">
+      <p>1. New blog difinition or description</p>
+    </div>
+    <div class="articleMno">
+      <p>2. New blog difinition or description</p>
+    </div>
+    <div class="article-abc">
+      <p>3. New blog difinition or description</p>
+    </div>
+    <div class="article-abcd">
+      <p>4. New blog difinition or description</p>
+    </div>
+
+    <article class="article-block new-blog test" data-badge="New">
       <h2 class="article-title active" id="headingId">This is Title heading 2 </h2>
       <div class="article-description">
         <p>blog difinition or description blog difinition or description blog difinition or description blog difinition

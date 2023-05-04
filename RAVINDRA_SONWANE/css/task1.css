@@ -1,0 +1,265 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.main{
+    margin: 0;
+    padding: 0;   
+}
+section{
+    background-size: 100% 100%;
+}
+header p::first-letter {
+    color: #8A2BE2;
+  }
+
+header{
+    display: flex;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.9;
+    padding-left: 100px;
+}
+.heading{
+    width: 60%;
+}
+
+ .heading nav ul li{
+    display:flex;
+    display: inline;
+    padding-left: 10px;
+    margin-left: 2rem;
+ }
+ .section1{
+    color: rgb(239, 248, 248);
+    padding-top: 8rem;
+    padding-left: 100px;
+ }
+.get{
+    float: right;
+ }
+
+ section{
+    width:100% ;
+    background-repeat: no-repeat;
+ }
+
+
+ section .section1 .sectiontext{
+    padding-top: 100px;
+    font-size: 60px; 
+}
+section .section1 .sectiontext p{
+    padding-top: 0px;
+    font-size: 50px; 
+}
+.text3{
+    padding-top: 50px;
+    line-height: 30px;
+    padding-bottom: 50px;
+}
+.section1 button{
+    padding: 10px;
+    margin-bottom: 100px;
+    background-color: white;
+    border: none;
+    margin-left: 0;
+}
+.page2{
+    width: 100%;
+    display: flex;
+    padding-left: 100px;
+    margin-bottom: 100px;
+}
+.content1{
+    width: 50%;
+    line-height: 30px;
+    margin-top: 200px;
+}
+.content1 button{
+   padding: 15px;
+   background-color:rgb(112, 189, 219);
+   color: aliceblue;
+   margin-top: 100px;
+   border: none;
+   margin-bottom: 100px;
+   margin-left: 0;
+}
+
+ .content2{
+    width: 40%;
+    display: flex;
+    margin-top: 80px;
+    margin-right: 300px;
+}
+.page{
+    width: 100%;
+    display: flex;
+}
+.page31{
+    height: 500px;
+    width: 50%;
+    background-image: url("../img/surgery.png");  
+}
+.page31 p{
+    text-align: center;
+    padding: 32%;
+    background-color: #bcd2d1 ;
+    width:36%;
+    opacity: 0.4;
+    height: 25%;
+    margin:0%;
+}
+.page32 ul{
+    list-style-type: none;
+    padding-top: 160px;
+    color: rgb(237, 251, 251);
+}
+
+.page32{
+    height: 500px;
+    width: 50%;
+    text-align: center;
+    background-color: #79bbda;
+}
+.page34{
+    height: 500px;
+    width: 50%;
+    background-image: url("../img/student.png");  
+}
+.page3c{
+    width: 100%;
+    display: flex;
+}
+.page33{
+    height: 500px;
+    width: 50%;
+}
+.page34{
+    height: 500px;
+    width: 50%;
+}
+.page4{
+    padding-top: 80px;
+    padding-left: 250px;
+    display: flex;
+    height: 300px;
+    width: 100%;
+}
+.page4 ul{
+    list-style-type: none;
+    text-align: center;
+    line-height: 20px;
+}
+.page5{
+   padding-left: 250px;
+    display: flex;
+    height: 400px;
+    width: 100%;
+}
+.page5 ul{
+    list-style-type: none;
+    text-align: center;
+    line-height: 20px;
+}
+.page6{
+    background-color: #c5f1f0;
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+.page6{
+    list-style-type: none;
+    padding-left: 10px;
+    display: flex;
+    align-items:center ;
+    padding-left: 300px;
+}
+.page6 img{
+    padding-left: 20px;
+}
+.page7{
+    background-color: #c5f1f0;
+    padding-top: 60px;
+}
+.page7 img{
+    padding-left: 20px;
+}
+.page8{
+    padding-top: 0px;
+}
+.page9{
+    width: 100%;
+    background-color: #79bbda;
+    align-content: center;
+    padding-left: 25%;
+    margin-right: 25%;
+    padding-top: 80px;
+    font-family:fantasy;
+}
+.page91 .page91 p{
+    padding-top: 20px;
+    line-height: 20px; 
+    color: aqua;
+}
+.page91 img{
+    border-radius: 100%;
+    padding-left: 10px;
+}
+.form{
+    width: 50%;
+    display: flex;
+    margin-left: 10%;
+    padding-top: 50px;
+}
+input{
+    width: 100%;
+    line-height: 30px;
+    margin-top: 30px;
+    margin-left: 150px;
+}
+textarea{
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 150px;
+}
+button{
+    margin-left: 350px;
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #79bbda;
+    background-color: #fcfdfd;
+    border:1px solid;
+    border-color: #79bbda;
+}
+
+.map{
+    border: 1px solid;
+    margin-left: 200px;
+    margin-bottom: 50px;
+}
+footer{
+    background-color:rgb(35, 44, 62);
+    padding-left: 100px;
+    display: flex;
+    width: 100%;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    float: right;
+    padding-left: 10%;
+    padding-top: 100px;
+    color: white;
+}
+.h1,.newyork,.london{
+    padding-left: 100px;
+}
+.footer .p{
+    color: rgb(153, 146, 138) ;
+}
+
