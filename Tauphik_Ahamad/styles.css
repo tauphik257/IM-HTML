@@ -473,6 +473,7 @@ div[class*="cle"] {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .grow-shrink-basis li {
   height: 120px;
@@ -509,27 +510,33 @@ div[class*="cle"] {
   color: #fff;
 }
 
-@media screen and (max-width: 767px) {
-  .grow-shrink-basis {
-    flex-wrap: wrap;
+@media screen and (max-width: 1199px) {
+  .grow-shrink-basis li {
+    width: 18%;
   }
+}
+@media screen and (max-width: 991px) {
+  .grow-shrink-basis li {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .grow-shrink-basis li {
     width: 48%;
   }
 }
-@media screen and (min-width: 767px) {
+/* @media screen and (min-width: 767px) {
   .grow-shrink-basis {
     flex-wrap: wrap;
   }
   .grow-shrink-basis li {
     width: 32%;
   }
-}
+} */
 /** 479 => 0 to 478 **/
 @media screen and (max-width: 479px) {
-  .grow-shrink-basis {
-    flex-wrap: wrap;
-  }
+  /* 0 to 479px */
   .grow-shrink-basis li {
     width: 100%;
   }
