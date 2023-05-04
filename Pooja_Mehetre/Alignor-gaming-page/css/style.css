@@ -188,21 +188,11 @@ button:nth-child(2) {
     color: #fff;
     font-size: 40px;
   }
-/*     
-}
-.rating span {
-    padding-left: 0.3rem;
-    font-size: 30px;
-}
-.rating span:hover{
-    color: #ff5b08;
-} */ 
  .rate i, .rate i:hover ~ i {
     color: #222;
     text-shadow: none;
     transition: color 200ms,
                 text-shadow 200ms;
-    transition-delay: 0;
   }
   .rate:hover i {
     color: #fc0;
@@ -224,8 +214,6 @@ button:nth-child(2) {
   .rate:hover i:nth-child(5) {
     transition-delay: 120ms;
   }
-  
-  /* Miscellaneous styles. */
   .rate i {
     cursor: pointer;
     font-style: normal;
@@ -278,7 +266,7 @@ button:nth-child(2) {
     background-color: #6f6a68;
     font-weight: bolder;
     font-size: 10px;
-    box-shadow: gray;
+    box-shadow: 3px 8px 38px rgb(79, 78, 78);
 }
 .data-wrap {
     padding-left: 2rem;
@@ -449,7 +437,6 @@ resize: none;
     font-weight: 900;
     font-size: large;
 }
-/* footer........................... */
 footer{
     width: 100%;
     z-index: 5;
