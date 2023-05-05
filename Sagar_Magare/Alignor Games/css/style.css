@@ -1,3 +1,4 @@
+
 body {
   width: 70%;
   height: 100%;
@@ -167,7 +168,7 @@ body {
   justify-content: center;
   text-align: center;
   padding-top: 1.25rem;
-  margin-top: 0;
+  margin-top: -4px;
 }
 
 .section2 div {
@@ -187,29 +188,25 @@ body {
 }
 
 hr {
-  width: 90%;
+  width: 100%;
   height: 1px;
 }
 
-.section2 button {
+.section2 a {
   padding: .6rem .25rem;
   margin: .4rem 1.8rem;
   border-radius: 5px;
   border: none;
-  box-shadow: 0 2px 0 2px rgba(16, 16, 16, 0.3);
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4);
   color: #fff;
   font-weight: bold;
   background-color: rgb(40, 174, 33);
   cursor: pointer;
-}
-
-.section2 a {
   text-decoration: none;
-
+  font-size: 13px;
 }
 
-
-button:nth-child(2) {
+a:nth-child(2) {
   background-color: #ff5b08;
 }
 
@@ -223,6 +220,7 @@ button:nth-child(2) {
 
 .section2 textarea {
   margin: .5rem 2rem 1rem;
+  resize: none;
 }
 
 /****************** buttons *****************/
@@ -238,7 +236,7 @@ button:nth-child(2) {
 }
 
 
-.buttons button:nth-child(1) {
+.buttons a:nth-child(1) {
   margin-bottom: 40px;
   padding: 15px 30px;
   border-radius: 5px;
@@ -247,11 +245,13 @@ button:nth-child(2) {
   background-color: #ff5b08;
   font-weight: bolder;
   font-size: 15px;
+  text-align: center;
+  text-decoration: none;
 
 }
 
 
-.buttons button:nth-child(2) {
+.buttons a:nth-child(2) {
   margin: 0 50px;
   padding: 10px 30px;
   border-radius: 5px;
@@ -260,6 +260,8 @@ button:nth-child(2) {
   background-color: #6f6a68;
   font-weight: bolder;
   font-size: 10px;
+  text-align: center;
+  text-decoration: none;
 
 }
 
@@ -268,8 +270,16 @@ button:nth-child(2) {
 .foot p {
   color: #fff;
   background-color: rgba(26, 26, 26, 0.834);
-  margin-top: 0;
+  margin-top: 0rem;
   font-size: 14px;
+}
+
+.foot-3 p{
+  color: #fff;
+  background-color: rgba(26, 26, 26, 0.834);
+  margin-top: -3.9rem;
+  font-size: 14px;
+
 }
 
 
@@ -319,11 +329,10 @@ button:nth-child(2) {
 }
 
 
-.star-rating input:checked+,
+.star-rating input:checked+
 .star-rating input:checked+label {
   color: #ffda0a;
-  transform: scale(1);
-
+  transform: scale(1); 
 }
 
 
@@ -398,105 +407,138 @@ button:nth-child(2) {
 
 /* page3 */
 
-.img-btn img:nth-child(1){
+.lg-mount {
+  top: 17rem;
+  width: 23.5%;
   position: absolute;
-  left: 42.5rem;
-  bottom: 6.2rem;
-  width: 4%;
-
-}
-
-.img-btn img:nth-child(2){
-  position: absolute;
-  right: 31rem;
-  bottom: 5rem;
-  width: 23%;
-
+  right: 29rem;
 }
 
 
-
-.img-btn button{
-  position: absolute;
-  right: 16rem;
-  bottom: 15.5rem;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: none;
-  background-color: #ff5b08;
-
-}
-
-.img-btn a {
-  text-decoration: none;
-}
-
-.img-btn h3{
+.text {
   position: absolute;
   left: 33rem;
   bottom: 4rem;
   color: green;
-
+  width: 100px;
+  line-height: 0.8;
+  font-size: 28px;
 }
 
-.img-btn span {
-  font-size: .8rem;
+.text span {
+  font-size: 18px;
 }
-
-
-.text p:nth-child(1) {
+.container div:nth-child(1) {
   position: absolute;
-  top: 18rem;
-  right: 20rem;
-  border-top: 1px dotted grey;
+  border-top: 2px dotted grey;
+  padding-left: 7.5rem;
+  top: 38.2rem;
+  right: 16.5rem;
+}
+.container div:nth-child(2) {
+  position: absolute;
+  border-top: 2px dotted grey;
+  padding-left: 5.5rem;
+  top: 36.5rem;
+  right: 16.5rem;
+}
+.container div:nth-child(3) {
+  position: absolute;
+  border-top: 2px dotted grey;
   padding-left: 6.5rem;
-  font-size: .8rem;
+  top: 29.5rem;
+  right: 16.5rem;
 }
-
-.text p:nth-child(2) {
+.container div:nth-child(4) {
   position: absolute;
+  border-top: 2px dotted grey;
+  padding-left: 7.9rem;
+  top: 22.7rem;
+  right: 16.5rem;
+  
+}
+.container div:nth-child(5) {
+  position: absolute;
+  border-top: 2px dotted grey;
+  padding-left: 8rem;
   top: 19.5rem;
-  right: 20rem;
-  border-top: 1px dotted grey;
-  padding-left: 8.5rem;
-  font-size: .8rem;
+  right: 16.5rem;
+  
+}
+.container div:nth-child(6) {
+  position: absolute;
+  border-top: 2px dotted grey;
+  padding-left: 5rem;
+  top: 18rem;
+  right: 16.5rem;
 }
 
-.text p:nth-child(3) {
-  position: absolute;
-  bottom: 19.8rem;
-  right: 20.3rem;
-  border-top: 1px dotted grey;
-  padding-left: 8rem;
-  font-size: .8rem;
+.step1 {
+  position: relative;
+  left: 45rem;
+  top: -70.7rem;
+  height: 60px;
+  width: 60px;
+  visibility: hidden;
 }
 
-.text p:nth-child(4) {
-  position: absolute;
-  bottom: 13rem;
-  right: 20rem;
-  border-top: 1px dotted grey;
-  padding-left: 8rem;
-  font-size: .8rem;
+.step2 {
+  position: relative;
+  left: 34.5rem;
+  top: -53.3rem;
+  height: 60px;
+  width: 60px;
+  visibility: hidden;
 }
 
-.text p:nth-child(5) {
-  position: absolute;
-  bottom: 6.2rem;
-  right: 19.8rem;
-  border-top: 1px dotted grey;
-  padding-left: 5.7rem;
-  font-size: .8rem;
+.step3 {
+  position: relative;
+  left: 28rem;
+  top: -50rem;
+  height: 60px;
+  width: 60px;
+  visibility: hidden;
 }
 
-.text p:nth-child(6) {
+.step4 {
+  position: relative;
+  left: 21rem;
+  top: -43.5rem;
+  height: 60px;
+  width: 60px;
+  visibility: hidden;
+}
+
+.step5 {
+  position: relative;
+  left: 14rem;
+  top: -36.5rem;
+  height: 60px;
+  width: 60px;
+  visibility: hidden;
+}
+
+.step6 {
+  position: relative;
+  left: 8rem;
+  bottom: 6rem;
+  height: 60px;
+  width: 60px;
+}
+
+
+.more-coaching {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  border: none;
+  color: white;
+  background-color: #ff5b08;
   position: absolute;
-  bottom: 4.5rem;
-  right: 19.7rem;
-  border-top: 1px dotted grey;
-  padding-left: 7rem;
-  font-size: .8rem;
+  top: 24rem;
+  right: 15rem;
+  text-decoration: none;
+  text-align: center;
 }
 
 
@@ -540,14 +582,16 @@ button:nth-child(2) {
 
 .banner img {
   position: absolute;
-  top: 14.4rem;
-  right: 14.5rem;
-  width: 50.7rem;
-  height: 5.5rem;
+  top: 14.2rem;
+  right: 1.8rem;
+  width: 63.5rem;
+  height: 20rem;
 }
 
 .banner textarea {
   position: absolute;
   left: 35rem;
   bottom: 7rem;
+  resize: none;
 }
+
