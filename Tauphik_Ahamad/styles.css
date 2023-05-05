@@ -466,15 +466,12 @@ div[class*="cle"] {
   font-size: 24px;
 }
 
-.grow-shrink-basis {
+/* .grow-shrink-basis {
   padding: 0;
   margin: 20px 0 80px;
   list-style-type: none;
-  display: flex;
   width: 100%;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
+} */
 .grow-shrink-basis li {
   height: 120px;
   width: 23%;
@@ -515,9 +512,20 @@ div[class*="cle"] {
     width: 18%;
   }
 }
-@media screen and (max-width: 991px) {
+/* @media screen and (max-width: 991px) {
   .grow-shrink-basis li {
     width: 32%;
+  }
+} */
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .grow-shrink-basis li {
+    width: 32%;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .grow-shrink-basis li {
+    width: 18%;
   }
 }
 
