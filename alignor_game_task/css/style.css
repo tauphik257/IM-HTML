@@ -1,0 +1,569 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'calibri';
+}
+.master-page{
+    width: 100%;
+    height: 140vh;
+    border: 2px solid black;
+}
+.header{
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(73, 70, 70);
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    position: sticky;
+}
+.header ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0rem 1rem 0rem 1rem;
+}
+.header #cancel:hover{
+  color: black;
+  background-color: red;
+  cursor: pointer;
+}
+.vertical-block{
+  width: 20%;
+  height: 130vh;
+  background-color: #d9d9d9;
+  position:sticky;
+}
+.vertical-block .man-image{
+  height: 50vh;
+  background: url('../images/mans.png') no-repeat ;
+}
+.buttons{
+  height: 25vh;
+}
+.buttons #restart{
+  width: 13rem;
+  height: 2rem;
+  background-color: hsl(140, 79%, 41%);
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px 2px grey;
+  margin: 1rem;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.buttons #coaching-preference{
+  width: 13rem;
+  height: 2rem;
+  background-color: hsl(36, 100%, 50%);
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px 2px grey;
+  margin: 1rem ;
+  border: none;
+  color:white;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.buttons hr{
+  height: .2rem;
+  width: 15rem;
+  background-color:white;
+  margin-left: .5rem;
+}
+.rating{
+  height: 15vh; 
+}
+.rating h3{
+  color: grey;
+  text-transform: capitalize;
+  text-align: center;
+  padding-top: 1rem;
+}
+.star{
+  align-items: center;
+  padding: 1rem 3rem 0rem 3.5rem;
+}
+.rating .fa fa-star{
+  display: inline-block;
+  display: flex;
+}
+.star span:hover{
+  color: yellow;
+}
+.textarea{
+  width: 12rem;
+  height: 8rem;
+  margin: 2rem 1.5rem;
+  border-radius: 2px;
+}
+
+.below-header{
+  width: 80%;
+  height: 35vh;
+  display: flex;
+  float: right;
+  align-items: center;
+  background-color: hsl(0, 0%, 95%);
+  flex-wrap: wrap;
+  position: sticky;
+}
+.information{
+  padding-left: 10rem;
+}
+.information #totalscore{
+color: #545454;
+font-size: 20px;
+font-weight: 700;
+text-transform: uppercase;
+padding: .5rem 0rem 0rem 1rem;
+}
+.information #score{
+color:rgb(12, 12, 165);
+font-size: 38px;
+font-weight: 900;
+padding: 1rem 0rem 0rem 1rem;
+}
+.information #maximum{
+color:grey;
+font-weight: 800;
+font-size: 18px;
+padding: 0rem 0rem 0rem 1rem;
+}
+.proficiency{
+padding: 1rem 0rem 0rem 15rem;
+}
+.proficiency #your-proficiency{
+color: #545454;
+font-size: 20px;
+font-weight: 700;
+text-transform: uppercase;
+}
+.proficiency #level{
+color: hsl(140, 84%, 37%);
+font-size: 20px;
+font-weight: 900;
+text-transform: uppercase;
+}
+.proficiency #mastered{
+color:hsl(140, 84%, 37%);
+font-size: xx-large;
+font-weight: bolder;
+text-transform:uppercase;
+} 
+.proficiency #level-scale{
+color:grey;
+font-weight: 800;
+font-size: 18px;
+}
+.tooltip:hover{
+  width:15%;
+  height: 23vh;
+  border: 1px solid grey;
+  position: absolute;
+  left: 13rem;
+  top: 2rem;
+  background-color: hsl(30, 100%, 80%);
+  display: block;
+  border-radius: 2px;
+  padding-left: 5px;
+  padding-top: 5px;
+  text-decoration: none;
+}
+.tooltip span::after{
+  content: "";
+  border-top: 25px solid hsl(30, 100%, 80%);
+  border-right: 30px solid transparent;
+  position: absolute;
+  left: -1.6rem;
+  bottom: 2rem;
+  transform: rotate(-180deg);
+}
+.main{
+  width: 80%;
+  height: 95vh;
+  float: right;
+  overflow-y: scroll;
+}
+.access{
+  height: 30vh;
+  width: 30rem;
+  margin: 15% 25%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.access #coaching{
+  width: 25rem;
+  height: 4rem;
+  background-color: hsl(36, 100%, 50%);
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px 2px grey;
+  margin: 1rem;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.access #later{
+  width: 13rem;
+  height: 2rem;
+  background-color: grey;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px 2px grey;
+  margin: 1rem ;
+  border: none;
+  color:white;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.info{
+  padding: 10rem 0rem 0rem 2rem;
+}
+.info h3{
+  color: rgb(103, 99, 99);
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+}
+.info p{
+  color: rgb(103, 99, 99);
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+.selection{
+  padding: 2rem 0rem 1rem 2rem;
+}
+.selection h3{
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+.radio{
+  font-size: 20px;
+  color: black;
+}
+label{
+  display: block;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+label span{
+  padding: 10px 20px 10px 10px;
+  border-radius: 8px;
+  transition: .25s ease;
+}
+label span:hover{
+  background-color: beige;
+}
+label span::before{
+  content: "";
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: .25s ease;
+  box-shadow: inset 0 0;
+}
+/*above code is ramaining of radio button in selection div*/
+.submit-button{
+  margin-top: 8rem;
+  width: 7rem;
+  height: 2rem;
+  background-color: hsl(36, 100%, 50%);
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px 2px grey;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.climb-mountain{
+  width: 80%;
+  height: 100vh;
+  margin-top: 10rem;
+}
+.mountain img{
+  height: 30rem;
+  margin-left:17rem;
+}
+.peak{
+  position: relative;
+  left: 34rem;
+  bottom: 28.8rem;
+}
+.peak hr{
+  border-style: dashed;
+  color: grey;
+  width: 25rem;
+}
+.peak p{
+  padding-left: 3rem;
+  color: grey;
+  font-weight: bolder;
+}
+.exploral{
+  position: relative;
+  left: 36rem;
+  bottom: 28.0rem;
+}
+.exploral hr{
+  border-style: dashed;
+  color: grey;
+  width: 23rem;
+}
+.exploral p{
+  padding-left: 3rem;
+  color: black;
+  font-weight: bolder;
+}
+.spot{
+  position: relative;
+  left: 36rem;
+  bottom: 25.2rem;
+}
+.spot hr{
+  border-style: dashed;
+  color: grey;
+  width: 23rem;
+}
+.spot p{
+  padding-left: 4rem;
+  color: grey;
+  font-weight: bolder;
+}
+.far{
+  position: relative;
+  left: 36rem;
+  bottom: 17.3rem;
+}
+.far hr{
+  border-style: dashed;
+  color: grey;
+  width: 23rem;
+}
+.far p{
+  padding-left: 6rem;
+  color: grey;
+  font-weight: bolder;
+ }
+ .short{
+  position: relative;
+  left: 36rem;
+  bottom: 9.5rem;
+ }
+.short hr{
+  border-style: dashed;
+  color: grey;
+  width: 23rem;
+}
+.short p{
+  padding-left: 9rem;
+  color: grey;
+  font-weight: bolder;
+}
+.gaveup{
+  position: relative;
+  left: 36rem;
+  bottom: 8.5rem;
+}
+.gaveup hr{
+  border-style: dashed;
+  color: grey;
+  width: 23rem;
+}
+.gaveup p{
+  padding-left: 12rem;
+  color: grey;
+  font-weight: bolder;
+}
+.man2 img{
+  height: 7rem;
+  position: relative;
+  bottom: 20rem;
+  left: 2rem;
+  transform: rotate(-20deg);
+}
+.percentile{
+  color: rgb(62, 245, 62);
+  padding-left: 5rem;
+  position: relative;
+  bottom: 22rem;
+}
+.percentile p:first-child{
+  font-size: 3rem;
+  font-weight: 900;
+}
+.percentile p:last-child{
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+.more-coaching{
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid orange;
+  border-radius: 50%;
+  background-color: orange;
+  position: relative;
+  left: 53rem;
+  bottom: 43rem;
+}
+.more-coaching p{
+  color: white;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+  padding-top: 1rem;
+}
+.video{
+  width: 80%;
+  height: 100%;
+  background-image: url('../images/video\ of\ man.jpg');
+  background-repeat: no-repeat;
+  background-position:50%;
+  background-size: 100% 70%;
+  margin:5rem 0rem 0rem 7rem;
+}
+.video p,h3{
+  text-align: right;
+}
+.video p{
+  color:#aba7a7;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.video h3{
+  color: black;
+  font-size: 2rem;
+  font-weight: 900;
+}
+.more-coaching2{
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid orange;
+  border-radius: 50%;
+  background-color: orange;
+  position: relative;
+  left: 49.4rem;
+  bottom: -8rem
+}
+.more-coaching2 p{
+  color: white;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+  padding-top: 1rem;
+}
+.paragraph{
+  margin-top: 17rem;
+ 
+  justify-content: space-around;
+  background-color:#DEDEA7;
+  text-align: center;
+  font-size:15px;
+  font-weight: 400;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height:40%;
+}
+.para1{
+width:32%;
+margin-top: 5px;
+margin-bottom: 5px;
+background-color:white;
+}
+.para2{  
+width: 32%;
+margin-top: 5px;
+margin-bottom: 5px;
+background-color:white;
+}
+.para3{
+  width:32%;
+  background-color:white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.video img{
+width: 20px;
+margin-left:85%;
+border-radius: 30px;
+padding-top: 5rem;
+}
+.end{
+  width:80%;
+  min-width:1rem;
+  background-color:#393646;
+}
+.end ul{
+display: flex;
+justify-content: space-around;
+color: aliceblue;
+font-size: 15px;
+list-style: none;
+}
+.end ul button{
+  padding: 10%;
+  font-size: 10px;
+  background-color: #58af3b;
+  border-style: none;
+  font-weight: 300;
+}
+.ending-page{
+  width: 100%;
+  height:40rem;
+  margin-top:10%;
+  border:0.1px solid rgb(245, 242, 242);
+  background-image: url('../images/Human\ Being.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.back-pic{
+width: 100%;
+min-height:20rem;
+margin-top:30%;
+background-color: #DEDEA7;
+display: flex;
+justify-content: space-around;
+}
+.content{
+  width: 90%;
+  height:10rem;
+  margin-top:10%;
+  margin-bottom: 3%;
+  background-color: white;
+ text-transform: capitalize;
+}
+.content #abc{
+  color:#545454;
+  text-align: left;
+  padding-left: 1rem;
+}
+.footer{
+  height: 1.5rem;
+  background-color:#393646;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  padding-left: 1rem;
+  align-items: center;
+  position: sticky;
+}
