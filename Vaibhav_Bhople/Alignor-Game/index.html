@@ -1,225 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="Assets/mountain.png" />
-    <link rel="stylesheet" href="./css/style.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/x-icon" href="Assets/mountain.png">
+  <link rel="stylesheet" href="./CSS/style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Alignor Game</title>
-  </head>
-  <body>
-    <div class="exit-bar">
-      <p>increasing your leverage when buyers has leverage</p>
-      <div class="close">
-        <p>EXIT</p>
-        <span>&#10006;</span>
-      </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com" >
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" >
+
+  <title>Alignor Game</title>
+</head>
+
+<body>
+  <div class="exit-bar">
+    <p>increasing your leverage when buyers has leverage</p>
+    <div class="close">
+      <p>EXIT</p>
+      <span>X</span>
     </div>
-    <div class="bars">
-      <aside>
-        <div class="man">
-          <img src="Assets/man.png" alt="man-image" />
-          <div class="tooltip-one">
-            <p>Okay, I'll be your coach for this game</p>
-          </div>
-          <div class="tooltip-two">
-            <p>
-              Wow, you're really exploring in the game! Very cool! Think about
-              what it would take to jum into the top proficiency level! You
-              would need to select first the choices that deliver the 100 score
-              AND after that try all the other choices! Based on what I'm
-              seeing, I think you can do it!"
-            </p>
-          </div>
+  </div>
+  <div class="bars">
+    <aside>
+      <div class="man">
+        <img src="Assets/man.png" alt="man-image">
+        <div class="tooltip-one">
+          <p>Okay, I'll be your coach for this game</p>
         </div>
-        <div class="restart-game">
-          <button class="game-button">Restart Game</button>
-          <button class="preferences-button">Your Coaching Preferences</button>
-          <div class="horizontal-line"></div>
-          <p>Please Rate The Game</p>
-          <div class="rating">
-            <a href="#" class="fa fa-star s1"></a>
-            <a href="#" class="fa fa-star s2"></a>
-            <a href="#" class="fa fa-star s3"></a>
-            <a href="#" class="fa fa-star s4"></a>
-            <a href="#" class="fa fa-star s5"></a>
-          </div>
-          <textarea
-            name="message"
-            cols="30"
-            rows="3"
-            placeholder="Your feedback"
-          ></textarea>
+        <div class="tooltip-two">
+          <p>
+            Wow, you're really exploring in the game! Very cool! Think about
+            what it would take to jum into the top proficiency level! You
+            would need to select first the choices that deliver the 100 score
+            AND after that try all the other choices! Based on what I'm
+            seeing, I think you can do it!"
+          </p>
         </div>
-      </aside>
-      <section>
-        <header>
-          <div class="score">
-            <p>TOTAL SCORE</p>
-            <h3>120</h3>
-            <p>(180 maximum)</p>
+      </div>
+      <div class="restart-game">
+        <button class="game-button">Restart Game</button>
+        <button class="preferences-button">Your Coaching Preferences</button>
+        <div class="horizontal-line"></div>
+        <p>Please Rate The Game</p>
+        <div class="rating">
+          <a href="#" class="fa fa-star s1"></a>
+          <a href="#" class="fa fa-star s2"></a>
+          <a href="#" class="fa fa-star s3"></a>
+          <a href="#" class="fa fa-star s4"></a>
+          <a href="#" class="fa fa-star s5"></a>
+        </div>
+        <textarea name="message" cols="30" rows="3" placeholder="Your feedback"></textarea>
+      </div>
+    </aside>
+    <section>
+      <header>
+        <div class="score">
+          <p>TOTAL SCORE</p>
+          <h3>120</h3>
+          <p>(180 maximum)</p>
+        </div>
+        <div class="proficiency">
+          <div>
+            <p>YOUR PROFICIENCY</p>
+            <h4>LEVEL 6</h4>
+            <h3>Mastered</h3>
+            <p>(6-level scale)</p>
           </div>
-          <div class="proficiency">
-            <div>
-              <p>YOUR PROFICIENCY</p>
-              <h4>LEVEL 6</h4>
-              <h3>Mastered</h3>
-              <p>(6-level scale)</p>
-            </div>
-            <img src="Assets/mountain.png" alt="mountain" height="150" />
-          </div>
-        </header>
-        <div class="section-body">
-          <!-- first page section -->
-          <div class="button-section">
-            <button class="get-button">Get Coaching</button>
-            <button class="later-button">Maybe Later</button>
-          </div>
+          <img src="Assets/mountain.png" alt="mountain" height="150">
+        </div>
+      </header>
+      <div class="section-body">
+        <!-- first page section -->
+        <div class="button-section">
+          <button class="get-button">Get Coaching</button>
+          <button class="later-button">Maybe Later</button>
+        </div>
 
-          <div class="experiance">
-            <h3>SELECT YOUR PERSONALISE COACHING EXPERIENCE</h3>
+        <div class="experiance">
+          <h3>SELECT YOUR PERSONALISE COACHING EXPERIENCE</h3>
+          <p>
+            We will personalize your coaching experience based on your
+            learning objective and preference. The information you enter here
+            about you objectives and preference will only be available to you
+            and will not be shared. You can change you selection at any time
+          </p>
+          <h3>SELECT ONE OF THE FOLLOWING OPTIONS:</h3>
+          <form action="#">
+            <input type="radio" name="select" id="own"><label for="own">I am doing this learning on my own</label>
+            <input type="radio" name="select" id="team"><label for="team">I am doing this learning as a part of a
+              team</label>
+            <button type="submit">SUBMIT</button>
+          </form>
+        </div>
+
+        <div class="info">
+          <div class="more-coaching">More Coaching</div>
+          <div class="page-climb">
             <p>
-              We will personalize your coaching experience based on your
-              learning objective and preference. The information you enter here
-              about you objectives and preference will only be available to you
-              and will not be shared. You can change you selection at any time
+              <span class="big">95</span><sup>th</sup> <br>
+              Percentile
             </p>
-            <h3>SELECT ONE OF THE FOLLOWING OPTIONS:</h3>
-            <form action="#">
-              <input type="radio" name="select" id="own" /><label for="own"
-                >I am doing this learning on my own</label
-              >
-              <input type="radio" name="select" id="team" /><label for="team"
-                >I am doing this learning as a part of a team</label
-              >
-              <button type="submit">SUBMIT</button>
-            </form>
-          </div>
+            <div class="climb-main">
+              <div class="climb">
+                <img src="./Assets/manSticker.png" alt="" width="35" height="30">
+                <img src="./Assets/mountain.png" alt="" height="250" width="250">
+              </div>
 
-          <div class="info">
-            <div class="more-coaching">More Coaching</div>
-            <div class="page-climb">
-              <p>
-                <span class="big">95</span><sup>th</sup> <br />
-                Percentile
-              </p>
-              <div class="climb-main">
-                <div class="climb">
-                  <img
-                    src="./Assets/manSticker.png"
-                    alt=""
-                    width="35"
-                    height="30"
-                  />
-                  <img
-                    src="./Assets/mountain.png"
-                    alt=""
-                    height="250"
-                    width="250"
-                  />
-                </div>
-
-                <div class="climb-position">
-                  <ul>
-                    <li class="peak">
-                      <img
-                        src="./Assets/manSticker.png"
-                        alt=""
-                        width="35"
-                        height="30"
-                      />
-                      Only 5% have reached the peak
-                    </li>
-                    <li class="explored-beyond">
-                      <img
-                        src="./Assets/manSticker.png"
-                        alt=""
-                        width="35"
-                        height="30"
-                      />
-                      Only 5% explored beyond
-                    </li>
-                    <li class="got-spot">
-                      <img
-                        src="./Assets/manSticker.png"
-                        alt=""
-                        width="35"
-                        height="30"
-                      />
-                      46% got to this spot
-                    </li>
-                    <li class="far">
-                      <img
-                        src="./Assets/manSticker.png"
-                        alt=""
-                        width="35"
-                        height="30"
-                      />
-                      35% made it this far
-                    </li>
-                    <li class="stopped">
-                      <img
-                        src="./Assets/manSticker.png"
-                        alt=""
-                        width="35"
-                        height="30"
-                      />
-                      5% stopped
-                    </li>
-                    <li class="short">
-                      <img
-                        src="./Assets/manSticker.png"
-                        alt=""
-                        width="35"
-                        height="30"
-                      />
-                      short 4% gave up
-                    </li>
-                  </ul>
-                </div>
+              <div class="climb-position">
+                <ul>
+                  <li class="peak">
+                    <img src="./Assets/manSticker.png" alt="" width="35" height="30" >
+                    Only 5% have reached the peak
+                  </li>
+                  <li class="explored-beyond">
+                    <img src="./Assets/manSticker.png" alt="" width="35" height="30" >
+                    Only 5% explored beyond
+                  </li>
+                  <li class="got-spot">
+                    <img src="./Assets/manSticker.png" alt="" width="35" height="30">
+                    46% got to this spot
+                  </li>
+                  <li class="far">
+                    <img src="./Assets/manSticker.png" alt="" width="35" height="30">
+                    35% made it this far
+                  </li>
+                  <li class="stopped">
+                    <img src="./Assets/manSticker.png" alt="" width="35" height="30">
+                    5% stopped
+                  </li>
+                  <li class="short">
+                    <img src="./Assets/manSticker.png" alt="" width="35" height="30">
+                    short 4% gave up
+                  </li>
+                </ul>
               </div>
             </div>
-            <div class="video">
-              <iframe
-                width="600"
-                height="350"
-                src="https://www.youtube.com/embed/VozPNrt-LfE"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-            </div>
+          </div>
+          <div class="video">
+            <iframe width="600" height="350" src="https://www.youtube.com/embed/VozPNrt-LfE"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
 
-            <div class="last">
-              <img src="Assets/manBanner.png" alt="man-banner" />
+          <div class="last">
+            <img src="Assets/manBanner.png" alt="man-banner">
 
-              <textarea
-                name="message"
-                cols="100"
-                rows="6"
-                placeholder="How to might this play out in your real-life interaction? What would you do next?"
-              ></textarea>
-            </div>
+            <textarea name="message" cols="100" rows="6"
+              placeholder="How to might this play out in your real-life interaction? What would you do next?"></textarea>
           </div>
         </div>
-      </section>
-    </div>
-    <footer>
-      <p>&copy; Copyright 2020 Alignor, LLC. All right reserved</p>
-    </footer>
-  </body>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; Copyright 2020 Alignor, LLC. All right reserved</p>
+  </footer>
+</body>
+
 </html>
