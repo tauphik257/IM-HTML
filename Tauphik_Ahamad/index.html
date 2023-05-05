@@ -8,6 +8,7 @@
   <meta name="description" content="description will be here">
   <meta name="aurthor" content="">
   <title>Page title</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./styles.css">
 </head>
 
@@ -293,6 +294,8 @@
       min-width: 991px => 
       mobile devices portrait width => less than 480px (max-width: 479px) => target screen => mobile devices portrait
 
+      min-width: 768px and max-width: 1024
+
       @media screen and (max-width: 800px){}
       @media screen and (max-width: 600px){}
       @media screen and (max-width: 400px){}
@@ -313,11 +316,24 @@
       8. handheld
 
       #[media-feature]
-      
+
       1. 
     -->
 
-    <ul class="grow-shrink-basis">
+    <div class="d-flex w-100 py-5 justify-content-between">
+      <button type="button" class="btn btn-primary btn-lg">Primary</button>
+      <button type="button" class="btn btn-secondary btn-lg">Secondary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-light">Light</button>
+      <button type="button" class="btn btn-dark">Dark</button>
+
+      <button type="button" class="btn btn-link">Link</button>
+    </div>
+
+    <ul class="d-flex flex-wrap grow-shrink-basis justify-content-between">
       <li>
         <h6>Block-1</h6>
       </li>
@@ -858,6 +874,8 @@
 
     <!-- <input value="test" />  -->
   </div>
+
+  <!-- Add Script here -->
 </body>
 
 </html>
