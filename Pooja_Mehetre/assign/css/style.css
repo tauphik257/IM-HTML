@@ -27,7 +27,7 @@ header ul li{
     color: white;  
 }
 .first-div {
-    background-image: url(/images/dogchecked.png);
+    background-image: url(../images/dogchecked.png);
     height:36rem;
     text-align: center;
     padding-top: 100px;
@@ -82,7 +82,7 @@ list-style-type:none;
 }
 
 .third-div {
-    background-image: url(/images/dogeat.png);
+    background-image: url(../images/dogeat.png);
     background-size: 100% 100%;
     height: 80vh;
     color: white;
@@ -107,7 +107,7 @@ list-style-type:none;
         list-style-type: none;
     }
 /* page 4 */
-.title4{
+.page-four{
     width: 100%;
     height: 35rem;
     display: flex;
@@ -116,20 +116,17 @@ list-style-type:none;
     color: white;
     padding: 0 12rem;
 }
-.title4 div{
-    width: 50%;
-}
-.title4 div p:nth-child(1){
+
+.page-four .div-2 p:nth-child(1){
     font-size: 4rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
 }
-.title4 div p:nth-child(2){
+.page-four .div-2 p:nth-child(2){
     margin-bottom: 1.5rem;
 }
-.title4 div button:nth-child(3){
-    background-color: rgb(179, 179, 13);
-    color: white;
+.page-four .div-2 button:nth-child(3){
+    background-color: hsl(60, 82%, 48%);
     font-size: 1.3rem;
     font-weight: bold;
     width: 14rem;
@@ -138,7 +135,7 @@ list-style-type:none;
     margin-top: 1rem;
     border: none;
 }
-.title4 div img{
+.page-four .div-1 img{
     width: 80%;
     border-radius: 50%;
     margin-left: 2rem;
