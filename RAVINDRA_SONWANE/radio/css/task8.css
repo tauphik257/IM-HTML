@@ -1,0 +1,106 @@
+body{
+    padding: 10px;
+    background-color: hsl(0, 100%, 100%)100%, 100%);
+    font-family:Arial, Helvetica, sans-serif;
+}
+.task{
+    text-align: center;
+    background-color: rgb(255, 253, 249);
+    margin: 100px;
+    padding: 20px;
+}
+.custom-radio label{
+    font-weight: 100;
+    padding: 20px 20px 10px 30px;
+    margin: 10px;
+    position:relative;
+    display: inline-block;
+    background-color: #f9f5f5;
+    border-radius: 20px;
+}
+
+.custom-radio label::after{
+    content:"";
+    position:absolute;
+    left:10px;
+    top: 10px;
+    width:20px;
+    height:20px;
+    border:3px solid #d57527;
+    border-radius:100%;
+}
+.custom-radio label::before{
+    content:"";
+    position:absolute;
+    left: 10px;
+    top: 12px;
+    width:22px;
+    height: 22px;
+    background-color:#e6b574;
+    border-radius:100%;
+    transition: all 0.4s ease-in-out;
+    transform: scale(0);
+}
+.custom-radio input{
+    display: none;
+}
+.custom-radio input:checked + label::before{
+    transform:scale(1);
+}
+.custom-radio input:checked + label{
+background-color: #ffffff;
+border: 1px solid;
+}
+.custom-radio label:hover{
+    background-color: #9fd8e7;
+}
+
+/* checkbox */
+.custom-checkbox label{
+    font-weight: 100;
+    padding:20px 20px 10px 40px;
+    position:relative;
+    display: inline-block;
+    background-color:rgb(255, 252, 252);
+    border-radius: 5px;
+    border: 1px solid;
+    margin: 10px;
+    color: #251b1b;
+    box-shadow: 0px -2px 10px 2px rgb(0 0 0/28%);
+}
+
+.custom-checkbox label::after{
+    content:"";
+    position:absolute;
+    left:10px;
+    top: 10px;
+    width:20px;
+    height:20px;
+
+    border: radius 20px;;
+}
+.custom-checkbox label::before{
+    content:"\2713";
+    position:absolute;
+    left: 120px;     
+    top: 8px;
+    width:30px;
+    height:30px;
+    border-radius:100%;
+    background-color: #2f85ba;
+    transition: all 0.4s ease-in-out;
+    transform: scale(0);
+}
+.custom-checkbox input{
+    display: none;
+}
+.custom-checkbox input:checked + label::before{
+    transform:scale(1);
+}
+.custom-checkbox input:checked + label{
+border: 3px solid  #2f85ba ;
+}
+.custom-checkbox label:hover{
+    background-color:  #e7e6e2;
+
+}
