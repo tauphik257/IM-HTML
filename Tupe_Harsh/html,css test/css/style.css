@@ -1,0 +1,239 @@
+
+ *{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+header .head {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    background-color:rgba(46, 124, 187, 0.3);
+  }
+  header{
+      height: 40rem;
+      background: linear-gradient(rgba(38,115,175,0.8),rgba(38,115,175,0.5)), url(/images/dogchecked.png);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      text-align: center;
+  
+  }
+  header .head .logo {
+    width: 20%;
+  
+  }
+  .logo img{
+      width: 6rem;
+      height: 3rem;
+      margin-left: 4rem;
+      margin-top: 1rem;
+  
+  }
+  nav {
+    width: 80%;
+  }
+  nav ul {
+    float: right;
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    margin-right: 1rem;
+  }
+  nav ul li i{
+      color: #fff;
+  }
+  nav ul li {
+    margin-right: 2rem;
+    list-style: none;
+    padding: 5px 15px;
+    font-size: 18px;
+    color: #fff;
+  }
+  header h1{
+      margin-top: 9rem;
+      font-size: 50px;
+      color: #fff;
+      margin-bottom: 1rem;
+  }
+  header p {
+  
+      font-size: 18px;
+      color: #fff;
+  }
+   button{
+      margin-top: 1rem;
+      font-size: 15px;
+      padding: 10px 50px;
+      border-radius: 50px;
+      border: none;
+      color: #fff;
+      font-weight: bold;
+      background-color: #FBC400;
+  }
+/* first section */
+.main-section {
+    width: 100%;
+    height: 35rem;
+    background-image: linear-gradient(#2F58CD,#241E92);
+    text-align: center;
+    color: white;
+    padding: 3rem 0;
+     
+}
+.main-section p {
+    width: 60%;
+    margin: auto;
+}
+.main-section p:nth-child(1) {
+    font-size: 4rem;
+    font-weight: bold;
+}
+.main-section p:nth-child(2) {
+    font-size: 1.2rem;
+}
+.main-section .sec-div {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+.main-section .sec-div div {
+    width: 20%;
+}
+
+.main-section .sec-div div img {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.main-section .sec-div div p:nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.main-section .sec-div div p:nth-child(3) {
+    font-size: 1rem;
+}
+/* second section */
+.second-div{
+    height: 35rem;
+    padding: 1rem 2rem 0rem 2rem;
+    background:linear-gradient(rgba(299,178,0,0.5),rgba(299,178,0,0.9)),url(/images/dogeating.png);
+    background-size: 100% 100%;
+    margin-top: 0;
+}
+.second-div h2{
+    text-align: center;
+    color: #fff;
+    padding-top: 2rem;
+    font-size: 50px;
+}
+
+.second-div p{
+    text-align:center;
+    color: #fff;
+    padding-top: 2rem;
+    font-size: 20px;
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-right: 2rem;
+}
+.circle-1{
+    border: 5px solid white;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    margin:5rem 0rem 0rem 8rem;
+
+}
+.circle-1 h4{
+    font-size: 40px;
+    color: white;
+    margin: 0;
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+}
+.circle-1 label{
+    font-size: 15px;
+    color: white;
+    margin-left:2rem ;
+}
+.third-div{
+    height: 30rem;
+    background-image: linear-gradient(#0039d4,#4038d8);
+    display: flex;
+}
+.third-div .div{
+    position: relative;
+    left: 20rem;
+    top: 10rem;
+}
+.third-div h2{ 
+    color: #fff;
+    font-size: 50px;
+}
+.third-div p{ 
+    color: #fff;
+    margin-top: 1rem; 
+}
+.dog-port{
+    width: 20%;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+    left: 40rem;
+    bottom: -6rem;
+    background-image: url(/images/dogcheck.png);
+    background-size: 100% 100%;
+}
+/* fourth section */
+.fourth-div{
+    height: 30rem;
+    background-image: linear-gradient(#0039d4,#4038d8);
+    display: flex;
+}
+.fourth-div .div2{
+    position: relative;
+    left: 40rem;
+    top: 10rem;
+    color: #fff;
+}
+.fourth-div .div2 h2{
+    color: #fff;
+    font-size: 50px;
+}
+.fourth-div .div2 p{
+    color: #fff;
+    padding-top: 1rem;
+}
+.dog-port2{
+    width: 20%;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+    left: 20rem;
+    bottom: -6rem; 
+    background-image: url(/images/dogcheck.png);
+    background-size: 100% 100%;
+}
+/* fifth section */
+.fifth-div{
+    height: 30rem;
+    background-image: linear-gradient(#2F58CD,#241E92);
+}
+.fifth-div h1{
+    color: #fff;
+    text-align: center;
+    padding-top: 2rem;
+}
+.fifth-div p{
+    color: #fff;
+    text-align: center;
+    padding-top: 2rem;
+}
+
