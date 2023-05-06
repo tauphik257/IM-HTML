@@ -1,154 +1,315 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Roboto', sans-serif;
-    height: 100vh;
-    background:linear-gradient(rgba(215, 212, 212,0.6), rgba(49, 49, 185, 0.6)),
-              url(../images/tree.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;   
-    background-position: center center;           
+    background-image: url(../images/background.jpg);
 }
-/* *****navbar****** */
-nav{
-    width:100%;
-    height: 10vh;
-    padding: 1rem 2rem;
+
+/* *********first section*********** */
+.first {
+    width: 100%;
+    height: 35rem;
+    background: linear-gradient(rgba(4, 4, 141, 0.7), rgba(21, 21, 111, 0.5)),
+        url(../images/background-first.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    text-align: center;
+    color: white;
+}
+
+.first nav {
+    width: 100%;
+    height: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgba(49, 49, 226, 0.2);
+    padding: 0.5rem 5rem;
 }
-nav ul{
-    width: auto;
-    height: 2.5rem;
-    border-radius: 0.3rem;
+
+.first nav ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right:1rem;
-    background-color: white;
 }
-nav ul li{
-    height: 5vh;
-    display: grid;
-    place-items: center;
+
+.first nav ul li {
     list-style: none;
-    margin-left: 1.5rem;
-    padding-right: 1rem;
-    border-right: 1px solid rgb(222, 211, 211);
+    margin-left: 5rem;
 }
-nav ul .login{
-    border-right:none ;
-}
-nav ul li a{
+
+.first nav ul li a {
+    color: white;
+    font-weight: bold;
     text-decoration: none;
-    color: black;
 }
-/* *****text***** */
-section{
+
+.first p:nth-child(2) {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 7rem;
+}
+
+.first p:nth-child(3) {
+    margin-top: 1rem;
+}
+
+.first button:nth-child(4) {
+    background-color: rgb(202, 202, 7);
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 14rem;
+    height: 3rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    border: none;
+}
+
+/* ***************title************** */
+.title {
     width: 100%;
-    height: 60vh;
+    height: 30rem;
+    text-align: center;
+    color: white;
+    padding: 3rem 0;
+    margin-bottom: 8rem;
+}
+
+.title .heading {
+    width: 60%;
+    margin: auto;
+}
+
+.title .heading p:nth-child(1) {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.ttile .heading p:nth-child(2) {
+    font-size: 1.2rem;
+
+}
+
+.title .cards {
     display: flex;
-    padding-top: 10rem;
-    justify-content: flex-start;
-    margin:0 4rem;
-    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 4rem;
 }
-section .box{
-    width:23%;
-    height: 28rem;
-    background-color: white;
-    opacity: 0.6;
-    border-radius: 4%;
+.title .cards div {
+    width: 20%;
 }
-section .box img{
+
+.title .cards div img {
     border-radius: 50%;
     margin-bottom: 1rem;
-    margin: 2rem 2rem;
 }
-section .box p:nth-child(2){
-    font-size: 2rem;
-    margin: 0rem 1rem 4rem 2rem;
+.title .cards div p:nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
-section .box p:nth-child(3){
+
+.title .cards div p:nth-child(3) {
     font-size: 1rem;
-    margin-left:2rem;
-    margin-right: 6rem;
 }
-section .box p:nth-child(3) a{
-    color: black;
-}
-section .box hr{
+
+/* ***************title2************** */
+.title2 {
     width: 100%;
-    margin-top: 3rem;
-}
-section .box button{
-    background-color: blue;
-    width: 12rem;
-    height: 3rem;
-    border: none;
-    font-size: 1.5rem;
-    border-radius: 5rem ;
-    opacity: 0.6;
-    margin-top: 1rem;
-    margin-left: 4rem;
+    height: 35rem;
+    text-align: center;
+    background-image: linear-gradient(rgba(120, 120, 4, 0.8),rgba(112, 112, 5, 0.8)),
+    url(../images/doctor-with-pet.jpg);
     color: white;
+    padding: 3rem 0;
+    margin-top: 5rem;
 }
-section .text{
+
+.title2 .heading {
     width: 60%;
-    margin-left: 5rem;
-    color: white;
+    margin: auto;
 }
-section .text p:nth-child(1){
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-section .text p:nth-child(2){
+
+.title2 .heading p:nth-child(1) {
     font-size: 4rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-section .text p:nth-child(3){
-    font-size: 5rem;
     font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-section .text p:nth-child(4){
+
+.ttile2 .heading p:nth-child(2) {
     font-size: 1.2rem;
-    font-weight: bolder;
-    margin-bottom: 0.5rem;
 }
-section .text p:nth-child(5){
-    font-weight: bold;
-    margin-bottom: 2rem;
+
+.title2 .cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 8rem;
+    z-index: 1;
 }
-section .text button:nth-child(6){
-    background-color: blue;
+
+.title2 .cards div {
     width: 10rem;
-    height: 3rem;
-    border: none;
-    font-size: 1.5rem;
-    border-radius: 0.5rem ;
-    font-weight: bold;
-    color: white;
+    height: 10rem;
+    border-radius: 50%;
+    border: 5px solid white;
+    display: grid;
+    place-content: center;
 }
-section .text button:nth-child(7){
-    width: 12rem;
+.title2 .cards div P:nth-child(1){
+    font-size: 3rem;
+    font-weight: bold;
+}
+.title2 .cards div P:nth-child(2){
+    font-size: 1.3rem;
+}
+/* ***titile 3**** */
+.title3{
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    background-color: rgb(88, 88, 207);
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 12rem;
+}
+.title3 div{
+    width: 50%;
+}
+.title3 div p:nth-child(1){
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+.title3 div p:nth-child(2){
+    margin-bottom: 1.5rem;
+}
+.title3 div button:nth-child(3){
+    background-color: rgb(179, 179, 13);
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 14rem;
     height: 3rem;
-    font-size: 1rem;
-    border: 1px solid white;
-    font-size: 1.5rem;
-    background-color:none;
+    border-radius: 2rem;
     margin-top: 1rem;
-    margin-left: 1rem;
-    opacity: 1;
-    color: black;
+    border: none;
 }
-section .text a:nth-child(8){
+.title3 div img{
+    width: 80%;
+    border-radius: 50%;
+    margin-left: 2rem;
+}
+/* ***titile4**** */
+.title4{
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: white;
-    font-size: 1.2rem;
+    padding: 0 12rem;
+}
+.title4 div{
+    width: 50%;
+}
+.title4 div p:nth-child(1){
+    font-size: 4rem;
     font-weight: bold;
-    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+.title4 div p:nth-child(2){
+    margin-bottom: 1.5rem;
+}
+.title4 div button:nth-child(3){
+    background-color: rgb(179, 179, 13);
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 14rem;
+    height: 3rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    border: none;
+}
+.title4 div img{
+    width: 80%;
+    border-radius: 50%;
+    margin-left: 2rem;
+}
+/* ******titile 5 **** */
+.title5 {
+    width: 100%;
+    height: 40rem;
+    text-align: center;
+    color: white;
+    padding: 3rem 0;
+    margin-bottom: 8rem;
+    background-color: rgb(88, 88, 207);
+}
+
+.title5 .heading {
+    width: 60%;
+    margin: auto;
+}
+
+.title5 .heading p:nth-child(1) {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.ttile5 .heading p:nth-child(2) {
+    font-size: 1.2rem;
+
+}
+
+.title5 .cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+
+.title5 .cards div {
+    width: 20%;
+    background-color: white;
+    padding: 1rem;
+}
+.title5 .cards div p:nth-child(1){
+    color: #739ee3;
+    font-size: 2rem;
+}
+
+.title5 .cards div img {
+    border-radius: 50%;
+    margin: 1.3rem;
+}
+
+.title5 .cards div p:nth-child(3) {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #739ee3;
+    margin-bottom: 1rem;
+}
+
+.title5 .cards div p:nth-child(4) {
+    font-size: 1rem;
+    color: #739ee3;
+}
+.title5 .cards div p:nth-child(4) {
+    font-size: 1rem;
+    color: #739ee3;
+}
+.title5 .cards div button{
+    background-color: rgb(202, 202, 7);
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 14rem;
+    height: 3rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    border: none;
 }
