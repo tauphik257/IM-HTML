@@ -1,0 +1,618 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+header{
+    height: 7vh;
+    background-color: rgb(24, 24, 24);
+    color:white;
+    display: flex;
+    padding: 1rem;
+}
+.exit{
+    padding-left: 58rem;
+}
+.exit span{
+    margin-left: 1rem;
+}
+.container{
+     width: 100%;
+     height: 90vh; 
+    display: flex; 
+    border: 1px solid black;
+   
+}
+.left-container{
+    width: 20%;
+    height: 90vh;
+    background-color: rgb(170, 169, 169);
+}
+.left-container img{
+    width: 100%;
+    height: 50%;
+}
+
+.left-container button{
+    width: 70%;
+    border: none;
+    border-radius:0.5rem;
+    background-color: rgb(58, 148, 26);
+    color:white;
+    cursor: pointer;
+    padding: 0.6rem;
+    margin-top: 1rem;
+    margin-left: 2.5rem;
+    box-shadow: 5px 10px 8px #888888;
+    
+}
+.left-container .btn{
+    background-color: orange;
+}
+.left-container hr{
+    width: 90%;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+.left-container h3{
+    text-align: center;
+    margin-top: 1.5rem;
+    
+}
+.left-container textarea{
+    margin-left: 2.8rem;
+    margin-top: 1rem;
+    resize: none;
+
+}
+.right-container{
+    width: 80%;
+    height: 90vh;
+ 
+}
+ 
+.left-container .star{
+    margin-left: 5.5rem;
+}
+.left-container .star span{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.data{
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    background-color: #F4F4F4;
+    border-bottom: 1px solid rgb(60, 60, 60);
+    
+}
+.first-data{
+    margin-left: 10rem;
+    margin-top: 1rem;
+}
+.first-data h1{
+    padding-top: 2rem;
+    color: #535252;
+}
+.first-data h2{
+    padding-top: 2rem;
+    font-size: 3rem;
+    color: blue;
+}
+.first-data p{
+    color: gray;
+}
+.data-wrap{
+    margin-left: 15rem;
+
+}
+.data-wrap h1{
+    padding-top: 3rem;
+    color: #535252;
+}
+.data-wrap h2{
+    padding-top: 1rem;
+    color: green;
+}
+.data-wrap h3{
+    color:green;
+    font-size: 2rem;
+}
+.data-wrap img{
+    position: relative;
+    left: 20rem;
+    bottom: 10rem;
+    width: 60%;
+}
+.right-container .get{
+    width: 25%;
+    padding: 0.7rem;
+    text-align: center;
+    border-radius: 5px;
+    background-color: orange;
+    color: white;
+    border: none;
+    margin-top: 10rem;
+    margin-left: 25rem;
+}
+.right-container .butt{
+    width: 20%;
+    padding: 0.8rem;
+    border-radius: 5px;
+    background-color:gray;
+    color: white;
+    border: none;
+    margin-top: 1.5rem;
+    margin-left: 27rem;
+    text-align: center;
+}
+.right-container .tool{
+    width: 20%;
+    height: 20vh;
+    position: relative;
+    bottom:30rem;
+    left: -6rem;
+    background-color:  rgb(225 220 220);
+    padding: 1rem;
+    
+   
+}
+.right-container .tip{
+    position: relative;
+    bottom:34rem;
+    left: -8rem;
+    background-color:  rgb(225 220 220);
+    clip-path: polygon(50% 0%, 0 38%, 51% 39%);
+    width: 4rem;
+    height: 5rem;
+   
+   
+}
+.left-container img:hover + .right-container .tool{
+    display: block;
+}
+
+.tool:hover .tool, .tip:hover .tooltip-sec{
+    visibility: visible;
+}
+.left-container .bttn{
+    background-color: orange;
+    opacity: 40%;
+}
+/* second div...................................... */
+
+.second-div{
+    margin-top: 1rem;
+}
+.second-div h3{
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+.second-div p{
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
+.second-div h4{
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+.second-div .label-radio {
+    margin-left: 1rem;
+}
+.second-div .label-radio input {
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+}
+.second-div .label-radio label {
+    margin-left: 1rem;
+}
+.submit{
+    width: 15%;
+    padding: 0.7rem;
+    border-radius: 5px;
+    background-color:orange;
+    color: white;
+    border: none;
+    margin-top: 4rem;
+    margin-left: 3rem;
+    text-align: center;
+}
+
+.tool-sec{
+    width: 20%;
+    height: 20vh;
+   
+    position: relative;
+    bottom:36rem;
+    left: -6rem;
+    background-color:  rgb(225 220 220);
+    padding: 1rem;
+    
+}
+.tip-sec{
+    position: relative;
+    bottom:39rem;
+    left: -8rem;
+    background-color:  rgb(225 220 220);
+    clip-path: polygon(50% 0%, 0 38%, 51% 39%);
+    width: 4rem;
+    height: 5rem;
+   
+}
+.tool-third{
+    width: 20%;
+    height: 20vh;
+  
+    position: relative;
+    bottom:20rem;
+    left: -6rem;
+    background-color:  rgb(225 220 220);
+    padding: 1rem;
+}
+.tip-third{
+    position: relative;
+    bottom:25rem;
+    left: -8rem; 
+    background-color:  rgb(225 220 220);
+    clip-path: polygon(50% 0%, 0 38%, 51% 39%);
+    width: 4rem;
+    height: 5rem;
+   
+}
+.tool-four{
+    width:25%;
+    height: 25vh;
+    
+    position: relative;
+    bottom:14rem;
+    left: 3rem; 
+    background-color:  rgb(225 220 220);
+    padding: 1rem;
+}
+.tip-four{
+    clip-path: polygon(45% 0, 100% 100%, 100% 69%);
+    position: relative;
+    width: 15rem;
+    height: 8rem;
+    bottom:30.5rem;
+    left: -11.5rem;  
+    background-color:  rgb(225 220 220);
+   
+}
+.mountain{
+    width: 20%;
+}
+.mountain p{
+    color: green;
+    font-size: 30px;
+    position: relative;
+    top: -2rem;
+    left: 5rem;
+
+
+}
+.mountain img{
+    position: relative;
+    top: -25rem;
+    left: 23rem;
+    width: 40%;
+    height: 50vh;
+    width: 35%;
+
+} 
+.mount img{
+    position: absolute;
+     width: 30%;
+     height: 50vh;
+    right: 27rem;
+    bottom:2rem;
+}
+.percent {
+    position: absolute;
+    top: 21.3rem;
+    left: 58rem;
+}
+.percent div {
+    font-size: small;
+    border-top-style: dotted;
+    text-align: right;
+    width: 25rem;
+    padding-right: .5rem;
+    position: relative;
+}
+.percent div:nth-child(2){
+    font-size: small;
+    border-top-style: dotted;
+    text-align: right;
+    width: 25rem;
+    padding-right: .5rem;
+    position: relative;
+    top: 0.5rem;
+}
+.percent div:nth-child(3){
+    margin-top: 2.5rem;
+    font-size: small;
+    border-top-style: dotted;
+    text-align: right;
+    width: 21rem;
+    margin-left: 4rem;
+
+}
+.percent div:nth-child(4){
+    margin-top: 5.5rem;
+    font-size: small;
+    border-top-style: dotted;
+    text-align: right;
+    width: 20rem;
+    margin-left:5rem;
+
+}
+.percent div:nth-child(5){
+    margin-top: 6rem;
+    font-size: small;
+    border-top-style: dotted;
+    text-align: right;
+    width: 18rem;
+    margin-left: 8rem;
+
+}
+.percent div:nth-child(6){
+    margin-top: 0.5rem;
+    font-size: small;
+    border-top-style: dotted;
+    text-align: right;
+    width: 15rem;
+    margin-left: 10.5rem;
+
+}
+.percent div:hover p {
+    font-weight: bold;
+}
+
+.percent  img{
+    position: absolute;
+     width: 120%;
+     height: 50vh;
+    right: -25rem;
+    top: -6rem;
+}
+.pro-one{
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    font-size: large;
+    font-weight: bold;
+    background-color: #ff5b08;
+    box-shadow: 5px 5px 3px rgb(128, 120, 120);
+    color: white;
+    border: none;
+    position: sticky;
+    top: 30rem;
+    left: 85rem;
+    z-index: 5;
+}
+.tool-five{
+    width: 15%;
+    height: 15vh;
+   
+    position: relative;
+    bottom:34rem;
+    left: -6rem;
+    background-color:  rgb(225 220 220);
+    padding: 1rem;
+}
+.tip-five{
+    position: relative;
+    bottom:38rem;
+    left:-7.5rem; 
+    background-color:  rgb(225 220 220);
+    clip-path: polygon(50% 0%, 0 38%, 51% 39%);
+    width: 4rem;
+    height: 5rem;
+   
+}
+.tool-six{
+    width:25%;
+    height: 20vh;
+   
+    position: relative;
+    bottom:32rem;
+    left: 3rem; 
+    background-color:  rgb(225 220 220);
+    padding: 1rem;
+}
+.tip-six{
+    clip-path: polygon(45% 0, 100% 100%, 100% 69%);
+    position: relative;
+    width: 15rem;
+    height: 8rem;
+    bottom:46.5rem;
+    left: -11.5rem;  
+    background-color:  rgb(225 220 220);
+   
+}
+.tip-six::before {
+    content: '';
+    position: absolute;         
+} 
+.video-head{
+    height: 3vh;
+    text-align: end;
+    position: relative;
+    top: 2rem;
+    right: 18.7rem;
+
+}
+.video-head span{
+    color: #888888;
+}
+.right-container iframe{
+    position: relative;
+    top: 4rem;
+    left: 8rem;
+
+}
+.four-head{
+    color: blue;
+}
+.data-wrap .level{
+    color: red;
+}
+.tool-sev{
+    width: 15%;
+    height: 15vh;
+   
+    position: relative;
+    bottom:42rem;
+    left: -6rem;
+    background-color:  rgb(225 220 220);
+    padding: 1rem;
+}
+.tip-sev{
+    position: relative;
+    bottom:45rem;
+    left: -7.5rem; 
+    background-color:  rgb(225 220 220);
+    clip-path: polygon(50% 0%, 0 38%, 51% 39%);
+    width: 4rem;
+    height: 5rem;
+   
+}
+
+.tool-eig{
+    width:25%;
+    height: 20vh;
+   
+    position: relative;
+    bottom:41rem;
+    left: 3rem; 
+    background-color:  rgb(225 220 220);
+    padding: 1rem;
+}
+.tip-eig{
+    clip-path: polygon(45% 0, 100% 100%, 100% 69%);
+    position: relative;
+    width: 18rem;
+    height: 8rem;
+    bottom:55.5rem;
+    left: -14.8rem;  
+    background-color:  rgb(225 220 220);
+   
+}
+.pro-two{
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    font-size: large;
+    font-weight: bold;
+    background-color: #ff5b08;
+    box-shadow: 5px 5px 3px rgb(128, 120, 120);
+    color: white;
+    border: none;
+    position: relative;
+    top: -14rem;
+    left: 67rem;
+}
+.last{
+    position: relative;
+
+    width:100%;
+    background-color: #d7d0aa;
+    height: 24.5rem;
+}
+.last img{
+    width: 100%;
+    height: 15rem;
+}
+.last textarea{
+    position: absolute;
+    background-color: white;
+    resize: none;
+    top: 16rem;
+    left: 13rem;
+    padding-top: 1rem;
+
+}
+footer{
+    width: 100%;
+    height: 3vh;
+    background-color: rgb(53, 53, 53);
+    color: white;
+    padding-left: 2rem;
+}
+
+.man{
+    width: 100%;
+    height: 50%;
+}
+ .man img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.tooltip {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    background: #edebdf;
+    color: black;
+    padding: 10px 5px;
+    font-size: 11px;
+    height: 8rem;
+    width: 13rem;
+    z-index: 99;
+    font-size: 1rem;
+    display: none;
+  }
+  .tooltip::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 80px solid #edebdf;
+    position: absolute;
+    right: 95%;
+    top: 60px;
+    transform: translatex(50%) rotate(-120deg);
+  }
+.man:hover .tooltip{
+    display: block;
+  }
+  .tooltip2 p{
+    background-color: #edebdf;
+    position: relative;
+    padding: 1rem;
+  }
+  .tooltip2 {
+    position: absolute;
+    top: 40%;
+    left: 22%;
+    background: #edebdf;
+    color: #fff;
+    padding: 10px 5px;
+    font-size: 11px;
+    height: 15rem;
+    width: 20rem;
+    font-size: 1.2rem;
+    color: black;
+    z-index: 1;
+    display: none;
+  }
+  .tooltip2::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 250px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 40px solid #edebdf;
+    position: absolute;
+    right: 100%;
+    top: -18px;
+    transform: translatex(50%) rotate(30deg);
+  }
+   .man:hover .tooltip2{
+    display: block;
+  }
