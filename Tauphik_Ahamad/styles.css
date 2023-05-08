@@ -689,3 +689,8 @@ if(totalMarkes > 60){
 
 
 */
+
+/** CSS units **/
+.css-units-inner {
+  width: 60%;
+}
