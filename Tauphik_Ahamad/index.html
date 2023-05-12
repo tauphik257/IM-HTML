@@ -8,7 +8,7 @@
   <meta name="description" content="description will be here">
   <meta name="aurthor" content="">
   <title>Page title</title>
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./styles.css">
 </head>
 
@@ -342,7 +342,55 @@
       em => relative to parent
       rem => relative to Root element 
 
+      gutter-width: 10;
+      .row => 
+      margin-left:  gutter-width * -0.5 = -5px
+      margin-right:  gutter-width * -0.5 = -5px
+
+
+    75 + 85 => 160 
+
+    for(var i=0; i<=10; i++){
+
+    }
+
+    while(i<=10){
+      code
+      i++
+    }
+
+
     -->
+    <div class="custom-class">
+      <div class="w-100">
+        <div class="w-100">
+          <div class="row">
+            <div class="col-sm-6 mb-2">
+              <div class="d-flex bg-secondary">
+                <div class="col-4 bg-info">
+                  <h6 class="m-0 p-4">Column-1</h6>
+                </div>
+                <div class="col-4 bg-warning">
+                  <h6 class="m-0 p-4">Column-2</h6>
+                </div>
+                <div class="col-4 bg-success">
+                  <h6 class="m-0 p-4">Column-3</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-2">
+              <h6 class="m-0 p-4 bg-secondary">Column</h6>
+            </div>
+            <div class="col-sm-6 mb-2">
+              <h6 class="m-0 p-4 bg-secondary">Column</h6>
+            </div>
+            <div class="col-sm-6 mb-2">
+              <h6 class="m-0 p-4 bg-secondary">Column</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="css-units d-flex w-100 py-5">
       <div class="css-units-inner bg-info">
         <h3>Css units text
