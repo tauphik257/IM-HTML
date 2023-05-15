@@ -1,0 +1,629 @@
+body{
+    padding: 0%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+nav{
+    background-image: linear-gradient(to right, rgb(135, 79, 195) , rgb(246, 133, 34));
+    display:flex;
+    padding: 0px 100px 0px 100px; 
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+nav .logo{
+    margin-top: 30px;
+    font-size: 30px;
+    color: white;
+    display: flex;
+ 
+}
+nav .logo .circle1{
+    width: 15px;
+    height: 15px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+    border-radius: 100%;
+    opacity: 20%; 
+}
+nav .logo .circle2{
+    width: 15px;
+    height: 15px;
+    background-color: rgb(183, 165, 200);
+    margin-top: 16px;
+    margin-left:-15px;
+    border-radius: 100%;
+    opacity: 30%;
+}
+
+nav .logo span:nth-child(3){
+     width: 5px;
+    height: 5px;
+    background-color: rgb(183, 165, 200);
+}
+nav ul{
+    list-style-type: none;
+    display:flex;
+}
+nav ul li{
+    padding:0px 20px 0px 20px;
+    justify-content: center;
+    color: white;
+    line-height: 70px;
+    font-size: 25px;
+}
+nav button{
+    height: 30px;
+    margin-top: 20px;
+    padding: 20px 20px 40px 30px;
+    margin-left: 100px;
+    justify-content: center;
+    border-radius:5px;  
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+nav ul li:hover{
+    background-color: rgb(46, 21, 51);
+    border-radius: 10px;
+}
+nav button:hover{
+    background-color: rgb(76, 50, 93);
+    color: white;
+}
+nav img:hover{
+   border: 1px white solid;
+}
+.page-first{
+    background-image: linear-gradient(to right, rgb(104, 60, 152) , rgb(153, 152, 205), rgb(153, 152, 205));
+    height: 45rem;
+}
+.page-first .circle{
+    width: 100px;
+    height: 100px;
+    color: white;
+    margin: 100px;
+}
+.page-first{
+    padding-top: 150px;
+    display: flex;
+    width: 100%;
+}
+/* pink css  */
+.pink {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    width: 20%;
+    animation: mymove 1.9s  infinite alternate;
+}
+@keyframes mymove {
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(45deg);
+      }
+    } 
+
+
+/* pink css end  */
+
+
+.content{
+    padding:80px 100px 10px 100px;
+    width: 50%;
+    color: white; 
+    
+}
+.content .welcome{
+    background-color: rgb(102, 46, 148);
+    padding-left:10px;
+    border-radius: 5px;
+    color: white;
+    width: fit-content;
+    font-size:15px;
+}
+.content button:nth-child(1){
+    background-color: rgb(234, 233, 129);
+    padding:15px 20px 15px 20px;
+    border-radius: 5px;
+    border: none;
+}
+.content button:nth-child(1):hover{
+    background: rgb(56, 37, 37);
+    color: white;
+    
+}
+.content p:nth-child(2){
+    font-size: 40px; 
+}
+.content p:nth-child(3){
+    line-height: 30px; 
+}
+.content .get-started{
+    background: none;
+    padding:20px 30px;
+    border-radius: 5px;
+    color: white;
+    border: 2px solid white;
+}
+.content .get-started:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.mobile{
+    width: 50%;
+    position: relative;
+    padding:0px 100px 100px 100px;
+    z-index: 0;
+}
+.mobile img:nth-child(1){
+    position: relative;
+    animation:updown 5s linear infinite ;
+    box-shadow: 30px 20px 100px rgb(121, 99, 99);
+    border-radius: 50px;
+    z-index: 1;    
+    width:250px; 
+    height:500px;
+}
+.mobile img:nth-child(2){
+    width:150px;
+    height:200px;
+}
+
+.mobile img:nth-child(3){
+    position: relative;
+    animation:rotate 7s linear infinite ;
+    margin-left: 200px;
+    width:150px;
+    height:200px;
+}
+
+@keyframes updown{
+    0%{
+        top: 0;
+        bottom: 0;
+    }
+    50%{
+        top: 3rem;
+        bottom: 0;
+    }
+    100%{
+        top: 0;
+        bottom: 3rem;
+    }
+}
+
+.mobile img:nth-child(2){
+    z-index:0; 
+    position: relative;
+    animation:rotate 5s linear infinite ;
+    margin-bottom: 100px;
+    margin-left: -350px;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(280deg);
+      }
+      to {
+        transform: rotate(350deg);
+      }
+    } 
+
+.mobile div:nth-child(1){
+    width:100px;
+    height: 100px;
+    position: relative;
+    border-radius: 100%;
+    background-image:linear-gradient(to right, rgb(88, 60, 179),rgb(197, 47, 174),rgb(65, 72, 165));
+    border: 1px solid blue;
+    animation: right 5s linear infinite;
+}
+
+/* circle started  */
+@keyframes right{
+    0%{
+        left: 0;
+        top: 0;
+    }
+    25%{
+        left: 100px;
+        right: 200px;
+        top: 200px;
+    }
+    50%{
+        left: 0px;
+        right: 100px;
+        top: 0px;
+    }
+    75%{
+        left: 100px;
+        right: 100px;
+        top: 50px;
+    }
+    100%{
+        left: 200px;
+        right: 100px;
+        top: 100px;
+    }
+}
+
+/* page second start  */
+.features{
+    padding: 50px 200px 10px 200px;
+}
+.shape img{
+    width:50px;
+    height:50px;
+}
+.shape p{
+    text-align: center;
+    margin-bottom: -1em;
+} 
+    .shape p:nth-child(1){
+    color: rgb(203, 34, 34);
+    font-size: 20px;
+    }
+    .shape p:nth-child(2){
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .willget{
+        display: flex;
+        font-size: 20px;
+        padding:100px 250px 10px 250px;
+        justify-content: space-between;
+    }
+
+.shape .willget p{
+    font-size: 15px;
+}
+.willget img{
+    width: 100px;
+    height: 100px;
+    border-radius:100%;
+}
+.willget div{
+    border: 1px solid rgb(211, 202, 202);
+    padding:20px 30px 50px 30px;
+    box-shadow:0px 5px 5px rgb(206, 202, 202);
+    transition: transform .2s;
+}
+.willget div:hover{
+    box-shadow:5px 5px 20px 5px rgb(195, 190, 190);   
+    transform: scale(1.1);
+}
+.features{ 
+    display: flex;
+}
+.features .chat img{
+    height:550px;
+    width:500px;
+    animation:updown 10s linear infinite;
+    position: relative;
+}
+.checkout{
+    margin: 120px 120px;
+}
+
+.checkout p:nth-child(1){
+color: rgb(207, 59, 59);
+margin-bottom: -2em;
+font-size: 15px;
+
+}
+.checkout p:nth-child(2){
+    font-size:35px;
+    font-weight: bold;
+}
+.checkout img{
+    position: absolute;
+    border-radius: 100%;
+}
+.checkout div p,h4{
+    margin-left: 100px;
+    line-height: 30px;
+    color: rgb(118, 124, 129);
+}
+h4{
+    font-size: 20px;
+    margin-bottom: -0.5em;
+    color: rgb(31, 34, 36);
+}
+.checkout button{
+    padding:20px 40px 20px 40px;
+    background-image: linear-gradient(to right,rgb(216, 20, 102),rgb(255, 132, 0) 90%);
+    border-radius: 5px;
+    border:none;
+    color: white;
+    font-size: 20px;
+    margin-top: 50px;
+    transition: all 5s ease-in-out;
+
+
+}
+
+.checkout button:hover{
+    background-image: linear-gradient(to right,rgb(255, 132, 0),rgb(216, 20, 102) 90% );
+}
+.pump{
+    animation: mymove 3.0s  infinite alternate; 
+    float: right;
+    position: relative;
+}
+.pagethird{
+    display: flex;
+    padding: 10px 50px 100px 250px;
+}
+.appfeature{
+   
+}
+.appfeature p:nth-child(1){
+    font-size: 15px;
+    margin-bottom: -1.5em;
+    color: rgb(192, 20, 69);
+}
+.appfeature p:nth-child(2){
+    font-size: 40px;
+    font-weight:bold;   
+    margin-bottom: -.1em;
+}
+.appfeature p:nth-child(3){
+    font-size: 15px;
+    font-weight:bold;
+    color: rgb(138, 128, 128);
+    line-height: 30px;   
+}
+.appfeature button{
+    padding:20px 40px 20px 40px;
+    background-image: linear-gradient(to right,rgb(216, 20, 102),rgb(255, 132, 0) 90%);
+    border-radius: 5px;
+    border:none;
+    color: white;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.appfeature button:hover{
+    background-image: linear-gradient(to right,rgb(255, 132, 0),rgb(216, 20, 102) 90% );
+}
+
+.feedback{
+    justify-content: space-around;
+    margin: 0px 200px 10px 200px;
+    display: flex;
+}
+.feedback span{
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    border-radius: 100%;
+    display: flex;
+    position: relative;
+}
+.contact{
+    width: 45%;
+}
+.feedback div{
+    padding :15px;
+}
+.contact div:nth-child(2) span,.contact div:nth-child(3) span,.contact div:nth-child(4) span{
+    color: white;
+}
+.contact div:nth-child(2) span{
+    background-image: linear-gradient(to right,rgb(26, 91, 124),rgb(27, 177, 157) 90%);
+}
+.feedback div:nth-child(3) span{
+    background-image: linear-gradient(to right,rgb(124, 26, 103),rgb(168, 85, 179) 90%);
+}
+.feedback div:nth-child(4) span{
+    background-image: linear-gradient(to right,rgb(216, 20, 102),rgb(255, 132, 0) 90%);
+}
+.feedback h4{
+    margin: -70px 10px 10px 80px;
+    font-size: 15px;
+}
+.contact p{
+    margin: 0px 0px 20px 80px;
+    color: rgb(96, 96, 96);
+    font-size: 17px;
+}
+.message{
+    width: 50%;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.message input[type="text"],.message select,.message textarea{
+    border: none;
+    background-color: rgb(237, 239, 243);
+    margin: 5px;
+    padding:5px 12px;
+    font-size: 15px;
+}
+.message input:hover{
+    background-color: #dee1e2;
+}
+.message p:nth-child(1)
+{
+color: rgb(187, 63, 63);
+font-size: 20px;
+margin-bottom: -25px;
+}
+.message p:nth-child(2)
+{
+color: rgb(21, 16, 16);
+font-size: 30px;
+font-weight: bold;
+}
+.message input[type="text"]{
+    width:43%;
+    height:40px;
+}
+.message select{
+    width:47%; 
+    padding:0px 5px;
+    height: 50px;
+    color: rgb(106, 108, 109);
+}
+
+.message textarea{
+    width: 93%;
+    height:100px;
+    resize: none;
+    color: rgb(142, 147, 151);
+}
+.message button{
+    padding: 20px 40px 20px 40px;
+    background-image: linear-gradient(to right,rgb(216, 20, 102),rgb(255, 132, 0) 90%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+.message button:hover{
+    background-image: linear-gradient(to right,rgb(255, 132, 0),rgb(216, 20, 102) 90% );
+}
+
+footer{
+    background-color: #152432;
+    padding: 50px 200px;
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+}
+
+.footer-content  p,ul{
+color: rgb(167, 166, 164);
+font-size: 20px;
+}
+.footer-content li:hover{
+    color: rgb(255, 255, 255);
+    
+    }
+
+.footer-content h3{
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+    justify-content: center;
+}
+.footer-content ul{
+    list-style-type: none;
+    font-size:15px;
+    line-height: 30px;
+  }
+.about h3{
+    margin-left: 40px;
+}
+
+  .zimed{
+    width: 100%;
+}
+.zimed p{
+    font-size: 15px;
+    line-height: 25px;
+}
+.zimed p:nth-child(3),p:nth-child(4){
+    color: rgb(189, 104, 104);
+    line-height: 15px;
+}
+  .about div{
+    display: flex;
+    margin-right: 50px;
+  }
+  .Subscribe{
+    /* margin-left: 100px; */
+  }
+  .Subscribe input,.Subscribe button{
+    border: none;
+    border-radius: 5px;
+  }
+  .Subscribe input{
+    padding: 20px 80px;
+    margin: 9px;
+  }
+  .Subscribe button{
+    padding: 20px 100px;
+    margin:  10px;
+    background-image: linear-gradient(to right,rgb(216, 20, 102),rgb(255, 132, 0) 90%);
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .social-media hr{
+    border: 1px solid;
+    color:rgb(71, 66, 83);
+    margin-top: 50px;
+  }
+  .social-media span span,.contact div:nth-child(3) span,.contact div:nth-child(4) span{
+    color: white;
+}
+
+.social-media span{
+    background-image: linear-gradient(to right,rgb(26, 91, 124),rgb(27, 177, 157) 90%);
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+.fa {
+    padding: 15px;
+    font-size: 20px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+  .social-media a{
+    border-radius: 100%;
+  }
+  .Subscribe button:hover{
+    background-image: linear-gradient(to right,rgb(255, 132, 0),rgb(216, 20, 102) 90% );
+}
+
