@@ -1,0 +1,134 @@
+/* radio button css */
+.back {
+    position: relative;
+    top: 0rem;
+    left: 18rem;
+    border: 4px gold;
+    height: 32rem;
+    width: 52rem;
+    z-index: -3;
+    background-image: linear-gradient(90deg, red, blue);
+}
+.back h1 {
+    padding-top: 1rem;
+    text-align: center;
+
+}
+
+.radio {
+    position: absolute;
+    left: 20rem;
+    top: 5rem;
+}
+
+.radio label {
+    cursor: pointer;
+    margin: 15px;
+    position: relative;
+    padding-right: 21rem;
+}
+
+.radio label img {
+    border: solid 20px rgb(18, 68, 232);
+    position: absolute;
+    height: 20rem;
+    width: 20rem;
+    top: 2.40rem;
+    left: 0.6rem;
+}
+
+.radio input {
+    display: none;
+}
+
+.radio label::after {
+    content: '';
+    position: absolute;
+    top: 34.1px;
+    left: 8.12px;
+    border: 5px solid mediumorchid;
+    height: 22rem;
+    width: 22rem;
+}
+
+.radio label::before {
+    content: '';
+    position: absolute;
+    top: 2.5rem;
+    left: 0.8rem;
+    width: 22rem;
+    height: 22rem;
+    opacity: 50%;
+    background-size: 100% 100%;
+    background-image: url(../images/stamp.png);
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0);
+}
+
+.radio input:checked+label::before {
+    transform: scale(1);
+}
+
+
+/* checkbox css */
+.check {
+    position: relative;
+    top: 0;
+    width: 93rem;
+    height: 23rem;
+    background-color: black;
+    background-image: linear-gradient(90deg, red, blue, rgb(13, 177, 248), green, black, purple);
+    border: solid red;
+    padding-top: 2rem;
+}
+
+.check h1 {
+    text-align: center;
+    color: white;
+
+}
+
+.check th {
+    position: absolute;
+    left: 1rem;
+    width: 88rem;
+
+}
+
+.check td {
+    position: relative;
+    height: 16rem;
+    width: 14.9rem;
+    border: 3px solid rgb(96, 27, 225);
+}
+
+.check img {
+
+    height: 16rem;
+    width: 14.9rem;
+
+}
+
+.check input {
+    display: none;
+}
+
+.check label::before {
+    content: '';
+    position: absolute;
+    top: 0.5rem;
+    left: -0.2rem;
+    width: 15rem;
+    height: 16rem;
+    opacity: 50%;
+    background-size: 100% 100%;
+    background-image: url(../images/stamp.png);
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0);
+}
+
+.check input:checked+label::before {
+    transform: scale(1);
+}
