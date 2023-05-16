@@ -4,24 +4,85 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-  <div style="width: 100%; max-width: 900px;margin: 0 auto;">
+  <div style="width: 100%; max-width: 900px;margin: 0 auto;    background: #eee;
+  padding: 20px;">
     <h2>Page Main Title</h2>
-    <!-- HTML Heading -->
-    <h1>test Data 1</h1> <!-- 1-time only -->
-    <h2>test Data 2</h2> <!-- 2 -time only -->
-    <h3>test Data 3</h3> <!-- any time -->
-    <h4>test Data 4</h4> <!-- any time -->
-    <h5>test Data 5</h5> <!-- any time -->
-    <h6>test Data 6</h6> <!-- any time -->
 
-    <p>Paragraph tag</p>
-    <a href="abc" target="_blank">Link</a>
+    <div class="faq-wrapper my-3">
+      <ul class="p-0 w-100 list-unstyled">
+        <li class="bg-white p-2 shadow-sm w-100 mb-3">
+          <h4>FAQ title 1</h4>
+          <div class="description">
+            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et
+              dolore magna aliqua.</p>
+          </div>
+        </li>
+        <li class="bg-white p-2 shadow-sm w-100 mb-3">
+          <h4>FAQ title 2</h4>
+          <div class="description">
+            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et
+              dolore magna aliqua.</p>
+          </div>
+        </li>
+        <li class="bg-white p-2 shadow-sm w-100 mb-3">
+          <h4>FAQ title 3</h4>
+          <div class="description">
+            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et
+              dolore magna aliqua.</p>
+
+          </div>
+        </li>
+      </ul>
+    </div>
+
 
     <!-- <input value="test" />  -->
+    <!-- Add Script here -->
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script>
+      // var title = 'Confirm Message ?';
+      // alert(title);
+      // confirm(title);
+      // console.log(title)
+
+      /*
+        jQuery Selectors
+        
+        1. class => $('.btn-primary')
+        2. id => $('#btn-primary')
+        3. attribute => $(input[btn-primary])
+        4. element  => $('p')
+        5. combinator   => $('div button')
+        6. nth child   => $('ul li:nth-child(1)')
+        7. pseudo class   => $('p:active')
+        8. pseudo element    => $('p::after')
+        9. 
+      
+      **/
+
+      // $('.btn-primary').click(function () {
+      //   console.log('Clicked run');
+      // });
+      $('.faq-wrapper h4').click(function () {
+        if ($(this).parent().hasClass('active')) { // if (condition) is true 1 === 1 => true, 1 === 2 => false
+          $(this).parent().removeClass('active');
+          $(this).parent().find('.description').slideUp();
+        } else {
+          $(this).parent().addClass('active');
+          $(this).parent().find('.description').slideDown();
+        }
+
+      })
+
+    </script>
   </div>
 </body>
 

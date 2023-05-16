@@ -985,7 +985,9 @@
     // });
 
     $('.justify-content-between button').click(function () {
-      if ($(this).hasClass('active')) {
+      console.log('QQ', $(this).hasClass('active')); // selector has the defined class or not, it will always return either: true or false
+
+      if ($(this).hasClass('active')) { // if (condition) is true 1 === 1 => true, 1 === 2 => false
         $(this).removeClass('active');
       } else {
         $(this).addClass('active');
