@@ -712,3 +712,12 @@ if(totalMarkes > 60){
 }
 .modal-css {
 }
+.faq-wrapper h4 {
+  cursor: pointer;
+}
+.faq-wrapper li.active {
+  background: #b3dad9 !important;
+}
+.description {
+  display: none;
+}

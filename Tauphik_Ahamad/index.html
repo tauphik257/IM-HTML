@@ -321,16 +321,16 @@
     -->
 
     <div class="d-flex w-100 py-5 justify-content-between">
-      <button type="button" class="btn btn-primary btn-lg">Primary</button>
-      <button type="button" class="btn btn-secondary btn-lg">Secondary</button>
-      <button type="button" class="btn btn-success">Success</button>
-      <button type="button" class="btn btn-danger">Danger</button>
-      <button type="button" class="btn btn-warning">Warning</button>
-      <button type="button" class="btn btn-info">Info</button>
-      <button type="button" class="btn btn-light">Light</button>
-      <button type="button" class="btn btn-dark">Dark</button>
+      <button type="button" class="btn btn-primary btn-lg">button type: Primary</button>
+      <button type="button" class="btn btn-secondary btn-lg">button type: Secondary</button>
+      <button type="button" class="btn btn-success">button type: Success</button>
+      <button type="button" class="btn btn-danger">button type: Danger</button>
+      <button type="button" class="btn btn-warning">button type: Warning</button>
+      <button type="button" class="btn btn-info">button type: Info</button>
+      <button type="button" class="btn btn-light">button type: Light</button>
+      <button type="button" class="btn btn-dark">button type: Dark</button>
 
-      <button type="button" class="btn btn-link">Link</button>
+      <button type="button" class="btn btn-link">button type: Link</button>
     </div>
 
     <!--
@@ -358,6 +358,14 @@
       code
       i++
     }
+
+    var activeSong = 'A'
+    var activeSong = 'B'
+
+    fucntion startAc = {
+
+    }
+
 
 
     -->
@@ -950,6 +958,46 @@
   </div>
 
   <!-- Add Script here -->
+  <script src="./js/jquery-3.7.0.min.js"></script>
+  <script>
+    // var title = 'Confirm Message ?';
+    // alert(title);
+    // confirm(title);
+    // console.log(title)
+
+    /*
+      jQuery Selectors
+      
+      1. class => $('.btn-primary')
+      2. id => $('#btn-primary')
+      3. attribute => $(input[btn-primary])
+      4. element  => $('p')
+      5. combinator   => $('div button')
+      6. nth child   => $('ul li:nth-child(1)')
+      7. pseudo class   => $('p:active')
+      8. pseudo element    => $('p::after')
+      9. 
+    
+    **/
+
+    // $('.btn-primary').click(function () {
+    //   console.log('Clicked run');
+    // });
+
+    $('.justify-content-between button').click(function () {
+      console.log('QQ', $(this).hasClass('active')); // selector has the defined class or not, it will always return either: true or false
+
+      if ($(this).hasClass('active')) { // if (condition) is true 1 === 1 => true, 1 === 2 => false
+        $(this).removeClass('active');
+      } else {
+        $(this).addClass('active');
+      }
+      console.log('Mouse Enter On: ', $(this).text());
+    });
+
+
+  </script>
+
 </body>
 
 </html>
