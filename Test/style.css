@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    border: 2px solid black;
+    background-color: #246ee4;
+    background-image: url('./images/first-background-image.jpg');
+    background-color: #246ee4;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.header{
+    width: 100%;
+    height: 15vh;
+    background-color: #537fc1;
+    opacity: 0.502;
+}
+.header nav{
+    height: 15vh;
+    align-items: center;
+}
+.header ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style-type: none;
+    text-transform: capitalize;
+    color: white;
+}
+.header ul li{
+    justify-content: space-evenly;
+    padding-right: 5rem;
+    margin-top: -4rem;
+}
+.logo{
+    height: 15vh;
+    padding-left: 5rem;
+}
+.paragraph{
+    height: 25rem;
+    width: 55rem;
+    text-align: center;
+    margin: 5rem 10rem 10rem 15rem;
+}
+.paragraph h1{
+    font-size: 75px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Poppins";
+    text-align: center;
+    text-transform: capitalize;
+}
+.paragraph p{
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Nunito";
+    text-align: center;
+}
+.order-button{
+    width: 322px;
+    height: 65px;
+    border-radius: 32px;
+    background-color: #edc315;
+    margin-top: 5rem;
+    border: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.title-page{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid brown;
+}
