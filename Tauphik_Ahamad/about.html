@@ -40,6 +40,24 @@
 
           </div>
         </li>
+        <li class="bg-white p-2 shadow-sm w-100 mb-3">
+          <h4>FAQ title 4</h4>
+          <div class="description">
+            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et
+              dolore magna aliqua.</p>
+
+          </div>
+        </li>
+        <li class="bg-white p-2 shadow-sm w-100 mb-3">
+          <h4>FAQ title 5</h4>
+          <div class="description">
+            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et
+              dolore magna aliqua.</p>
+
+          </div>
+        </li>
       </ul>
     </div>
 
@@ -68,10 +86,53 @@
       
       **/
 
+      /** 
+       Traversing
+
+       1. from selected element to top
+        - parent() => imidiate parent
+        - parents() => till root
+        - parentsUntil() => till specific element, class, or ID
+       
+       2. From selctor to bottom
+        - find() => find the selctor => element, class, or id, in selector children 
+        - children() => return all children on the selected element
+
+       3. Siblings
+        - siblings() => return all siblings of the selected element
+        - next()  => 
+        - nextAll() =>
+        - prev() =>
+        - prevAll() =>
+
+       *  **/
+
       // $('.btn-primary').click(function () {
       //   console.log('Clicked run');
       // });
       $('.faq-wrapper h4').click(function () {
+
+        // console.log('1. Parent', $(this).parent('div'));
+
+        // console.log('2. Parents', $(this).parents('div'));
+
+        // console.log('3. Parents Untill', $(this).parentsUntil('div'));
+
+        // console.log('4. Parents closest', $(this).closest('div'));
+
+
+        // console.log('1. child find', $(this).parent().find('p'));
+
+        // console.log('2. child', $(this).parent().children());
+
+        console.log('1. siblings', $(this).parent().siblings());
+        // console.log('2. Next', $(this).parent().next());
+        // console.log('3. Prev', $(this).parent().prev());
+
+        console.log('2. NextAll', $(this).parent().nextAll());
+        console.log('3. PrevALL', $(this).parent().prevAll());
+
+
         if ($(this).parent().hasClass('active')) { // if (condition) is true 1 === 1 => true, 1 === 2 => false
           $(this).parent().removeClass('active');
           $(this).parent().find('.description').slideUp();
