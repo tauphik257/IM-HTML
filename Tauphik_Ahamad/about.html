@@ -12,7 +12,22 @@
   <div style="width: 100%; max-width: 900px;margin: 0 auto;    background: #eee;
   padding: 20px;">
     <h2>Page Main Title</h2>
-
+    <ul class="list-unstyled p-0 overflow-hidden position-relative slider-wrap w-100">
+      <li class="w-100 active">
+        <img src="./image/banner01.jpg" alt="img" />
+      </li>
+      <li class="w-100 ">
+        <img src="./image/banner02.jpg" alt="img" />
+      </li>
+      <li class="w-100">
+        <img src="./image/banner03.jpg" alt="img" />
+      </li>
+      <li class="w-100">
+        <img src="./image/banner01.jpg" alt="img" />
+      </li>
+      <span class="next btn btn-primary">Next</span>
+      <span class="prev btn btn-primary">Prev</span>
+    </ul>
     <div class="faq-wrapper my-3">
       <ul class="p-0 w-100 list-unstyled">
         <li class="bg-white p-2 shadow-sm w-100 mb-3">
@@ -33,6 +48,24 @@
         </li>
         <li class="bg-white p-2 shadow-sm w-100 mb-3">
           <h4>FAQ title 3</h4>
+          <div class="description">
+            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et
+              dolore magna aliqua.</p>
+
+          </div>
+        </li>
+        <li class="bg-white p-2 shadow-sm w-100 mb-3">
+          <h4>FAQ title 4</h4>
+          <div class="description">
+            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et
+              dolore magna aliqua.</p>
+
+          </div>
+        </li>
+        <li class="bg-white p-2 shadow-sm w-100 mb-3">
+          <h4>FAQ title 5</h4>
           <div class="description">
             <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
               labore et
@@ -68,18 +101,70 @@
       
       **/
 
-      // $('.btn-primary').click(function () {
-      //   console.log('Clicked run');
-      // });
-      $('.faq-wrapper h4').click(function () {
-        if ($(this).parent().hasClass('active')) { // if (condition) is true 1 === 1 => true, 1 === 2 => false
-          $(this).parent().removeClass('active');
-          $(this).parent().find('.description').slideUp();
-        } else {
-          $(this).parent().addClass('active');
-          $(this).parent().find('.description').slideDown();
-        }
+      /** 
+       Traversing
 
+       1. from selected element to top
+        - parent() => imidiate parent
+        - parents() => till root
+        - parentsUntil() => till specific element, class, or ID
+       
+       2. From selctor to bottom
+        - find() => find the selctor => element, class, or id, in selector children 
+        - children() => return all children on the selected element
+
+       3. Siblings
+        - siblings() => return all siblings of the selected element
+        - next()  => 
+        - nextAll() =>
+        - prev() =>
+        - prevAll() =>
+
+       *  **/
+
+      /**
+       * total length = 4
+       * currentIndex = 3 + 1 = 4
+       *   **/
+      $(document).ready(function () {
+        $('.faq-wrapper h4').click(function () {
+          // console.log('1. Parent', $(this).parent('div'));
+          // console.log('2. Parents', $(this).parents('div'));
+          // console.log('3. Parents Untill', $(this).parentsUntil('div'));
+          // console.log('4. Parents closest', $(this).closest('div'));
+          // console.log('1. child find', $(this).parent().find('p'));
+          // console.log('2. child', $(this).parent().children());
+          // console.log('1. siblings', $(this).parent().siblings());
+          // console.log('2. Next', $(this).parent().next());
+          // console.log('3. Prev', $(this).parent().prev());
+          // console.log('2. NextAll', $(this).parent().nextAll());
+          // console.log('3. PrevALL', $(this).parent().prevAll());
+
+          if ($(this).parent().hasClass('active')) {
+            $(this).parent().removeClass('active');
+            $(this).parent().find('.description').slideUp();
+          } else {
+            $(this).parent().addClass('active');
+            $(this).parent().find('.description').slideDown();
+          }
+
+        });
+
+        $('.slider-wrap .next').click(function () {
+          const totalLength = $(this).parent().find('li').length;
+          const activeSlide = $(this).parent().find('.active').index();
+          console.log('QQ', $(this).parent().find('li'));
+          console.log('QQ', $(this).parent().find('.active').index());
+          if (totalLength !== activeSlide + 1) {
+            const selctor = $(this).parent().find('.active');
+            $(selctor).next().addClass('active');
+            $(selctor).removeClass('active').addClass('left-slide');
+            $(selctor).prevAll().addClass('left-slide');
+          }
+        });
+        $('.slider-wrap .prev').click(function () {
+
+        });
       })
 
     </script>
