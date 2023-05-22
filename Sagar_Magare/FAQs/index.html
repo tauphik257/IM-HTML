@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+
+    <!-- font awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="section1">
+        <h1>AnimeVerse</h1>
+        <div class="faq">
+            <h3>Dragon Ball Super</h3>
+            <div class="question">
+                <div class="answer">
+                    <p>A midquel to Toriyama's original Dragon Ball manga, it follows the adventures of Goku and friends
+                        during the ten-year timeskip after the defeat of Majin Buu. It began serialization in Shueisha's
+                        monthly shōnen manga magazine V Jump in June 2015. The series' plot begins showing the aftermath
+                        of the Majin Buu Saga, then proceeds to retell and alter the stories of Dragon Ball Z: Battle of
+                        Gods and Dragon Ball Z: Resurrection ‘F’ as new story arcs. The next part of Super following
+                        this takes place in the Universe 6 with the Dragon Team searching for the Super Dragon Balls.
+                    </p>
+                    <img src="./images/dbs.webp" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="faq">
+            <h3>Naruto</h3>
+            <div class="question">
+                <div class="answer">
+                    <p>Twelve years before the start of the series, the Nine-Tails attacked Konohagakure destroying much
+                        of the village and taking many lives. The leader of the village, the Fourth Hokage, sacrificed
+                        his life to seal the Nine-Tails into a newborn, Naruto Uzumaki. Orphaned by the attack, Naruto
+                        was shunned by the villagers, who out of fear and anger, viewed him as the Nine-Tails itself.
+                        Though the Third Hokage outlawed speaking about anything related to the Nine-Tails, the children
+                        — taking their cues from their parents — inherited the same animosity towards Naruto.
+                    </p>
+                    <img src="./images/naruto.jfif" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="faq">
+            <h3>One Punch Man</h3>
+            <div class="question">
+                <div class="answer">
+                    <p>
+                        Saitama, a bored and bald superhero, can defeat any opponent with a single punch.
+                        Despite his incredible strength, he suffers from existential crisis and lacks recognition.
+                        He joins the Hero Association and encounters various eccentric heroes and villains.
+                        Genos, a cyborg disciple, becomes Saitama's loyal companion.Together, they battle powerful
+                        enemies and
+                        uncover a conspiracy within the Hero Association.Saitama's effortless victorieslead to a lack of
+                        fulfillment and he yearns for a challenging opponent.
+                    </p>
+                    <img src="./images/opm.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="faq">
+            <h3>Demon Slayer</h3>
+            <div class="question">
+                <div class="answer">
+                    <p>Tanjiro Kamado, a kind-hearted boy, becomes a Demon Slayer after his family is slaughtered by
+                        demons.
+                        He embarks on a quest to find a cure for his sister Nezuko, who has been turned into a demon.
+                        Joined by loyal companions Zenitsu and Inosuke, they train and battle demons to protect
+                        humanity.
+                        Tanjiro's Water Breathing techniques and determination make him a formidable opponent.
+                        He confronts powerful demons, including the Twelve Kizuki and their leader, Muzan Kibutsuji.
+                        Tanjiro's journey is fraught with tragedy, sacrifice, and personal growth.
+                        His unwavering love for his sister drives him forward as he fights to restore her humanity and
+                        eradicate the demons.
+                    </p>
+                    <img src="./images/ds.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="faq">
+            <h3>My Hero Academia</h3>
+            <div class="question">
+                <div class="answer">
+                    <p>In a world where almost everyone has superpowers known as "Quirks," Izuku Midoriya, a Quirkless
+                        boy, idolizes the greatest hero, All Might.
+                        After impressing All Might with his bravery, Izuku inherits his power, One For All, and enrolls
+                        in U.A. High School to become a hero.
+                        Alongside his classmates, including fiery Katsuki Bakugo and talented Ochaco Uraraka, Izuku
+                        faces challenges and villains to prove himself.
+                        They participate in intense training, thrilling battles, and develop their unique Quirks.
+                        The League of Villains, led by Tomura Shigaraki, poses a constant threat, aiming to disrupt the
+                        balance between heroes and villains.
+                    </p>
+                    <img src="./images/mha.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+
+        $('.faq h3').click(function () {
+            $(this).next('.question').slideToggle();
+            $(this).parent().toggleClass('active');
+            $(this).parent().siblings().children('.question').slideUp();
+            $(this).parent().siblings().removeClass('active');
+        });
+
+    </script>
+</body>
+
+</html>

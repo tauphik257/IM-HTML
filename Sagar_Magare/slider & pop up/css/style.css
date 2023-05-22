@@ -1,0 +1,68 @@
+
+
+.container {
+    width: 640px;
+    margin: 40px auto;
+    overflow: auto;
+}
+
+
+.slide-image {
+    width: 580px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    padding: 3px;
+    border: 1px solid;
+    transition: .5s ease-in-out;
+}
+
+.slide-image img {
+    display: none;
+    width: 580px;
+    height: 400px;
+    transition: .5s ease-in-out;
+
+}
+
+.slide-image img.active{
+    display: inline-block;
+    transition: 1s ease-in-out;
+
+}
+
+.prev {
+    position: relative;
+    margin-top: 200px;
+    margin-right: -45px;
+    z-index: 100;
+    cursor: pointer;
+    float: left;
+}
+
+.next {
+    position: relative;
+    margin-top: 210px;
+    margin-left: -32px;
+    z-index: 100;
+    cursor: pointer;
+    float: left;
+}
+
+
+.mybtn {
+    width: 10rem;
+    margin: 3% 45%;
+}
+
+.messege {
+    border: 1px solid black;
+    width: 30%;
+    margin: auto;
+}
+
+.close-messege {
+    float: right;
+    cursor: pointer;
+}
