@@ -755,3 +755,17 @@ if(totalMarkes > 60){
 .slider-wrap li.active {
   left: 0;
 }
+
+/** Modal pop up **/
+.modal-wrapper {
+  background: rgb(68 68 68 / 57%);
+  z-index: 99;
+  display: none;
+}
+.modal-wrapper.show {
+  display: flex;
+}
+.modal-content-wrap {
+  width: 100%;
+  max-width: 35rem;
+}
