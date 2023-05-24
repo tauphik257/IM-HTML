@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/faq.css">
+</head>
+<body>
+<div class="container">
+	<div class="row bg-info card my-4 mb-3 pd-l-2">
+		<h3>
+		    <span class="fa fa-question-circle text-white"></span>
+		    Frequently asked questions
+		</h3>
+	</div>
+	
+	<div class="row">
+	    <p class="col-sm-6 col-md-12">
+	    Frequently Asked Questions 
+	    </p>
+	    <ul id="accordion" class="col-sm-6 col-md-12">
+	        <li>
+	            <div class="choose" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
+	                FAQ QUESTION 1?
+	                <span class="fa fa-chevron-up fa-1x text-info pull-right"></span>
+	            </div>
+	            <div id="collapse" class="collapse show"  data-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.              
+                </div>
+	        </li>
+	        <li>
+	            <div class="collapsed choose" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+	                FAQ QUESTION 2?
+	                <span class="fa fa-chevron-down fa-1x text-info pull-right"></span>
+	            </div>
+                <div id="collapse" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  </div>
+                </div>
+	        </li>
+	        <li>
+	            <div class="collapsed choose" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    FAQ QUESTION 3?
+	                <span class="fa fa-chevron-down fa-1x text-info pull-right"></span>
+	            </div>
+                <div id="collapse" class="collapse" data-parent="#accordion">
+                  <div class="card-body">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  </div>
+                </div>
+	        </li> 
+	    </ul>
+	</div>
+</div>
+
+<script src="./js/jquery-3.7.0.min.js"></script>
+<script>
+     $('.choose').click(function () {
+        if ($(this).parent().hasClass('active')) { 
+          $(this).parent().removeClass('active');
+          $(this).parent().find('.collapse').slideUp();
+         
+        } else {
+          $(this).parent().addClass('active');
+          $(this).parent().find('.collapse').slideDown();
+        }
+
+      })
+
+</script>
+    
+</body>
+</html>
