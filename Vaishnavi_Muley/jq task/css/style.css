@@ -6,6 +6,7 @@
     display: none;
 }
 /* accordian */
+
 .list-group{
     cursor:pointer;
 }
@@ -20,18 +21,15 @@
 h4{
     font-size: 1.2rem;
 }
-.fa-angle-down, .fa-angle-up{
-    margin-left: 20rem;
-}
 
-.faq, .accordian-btn .btn-danger{
+.faq,.accordian-btn .btn-danger{
     display: none;
 }
 
 /* ****pop up model**** */
 .login-form .card{
     display: none;
-    position:absolute;
+    position:fixed;
     z-index: 9;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -40,6 +38,9 @@ h4{
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: black;
+}
+textarea{
+    resize: none;
 }
 .login-form .active{
     animation: slidedown 1s ;
