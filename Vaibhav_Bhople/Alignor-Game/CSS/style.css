@@ -1,0 +1,515 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.exit-bar {
+  width: 100%;
+  height: 3rem;
+  background-color: rgb(49, 47, 47);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.exit-bar p {
+  color: white;
+  display: inline-block;
+}
+.exit-bar .close {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+  float: right;
+}
+.close span {
+  margin-left: 1rem;
+}
+.bars {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 0;
+}
+.bars aside {
+  width: 20%;
+  height: 85%;
+  background-color: #cbcbcb;
+}
+.bars aside .man {
+  width: 100%;
+  height: 36%;
+}
+.bars aside .man img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.tooltip-one {
+  position: absolute;
+  top: 10%;
+  left: 14%;
+  background: #edebdf;
+  color: black;
+  padding: 1rem 0.5rem;
+  font-size: 11px;
+  height: 8rem;
+  width: 10rem;
+  z-index: 99;
+  font-size: 0.8rem;
+  display: none;
+}
+.tooltip-one::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 80px solid #edebdf;
+  position: absolute;
+  right: 95%;
+  top: 60px;
+  transform: translatex(50%) rotate(-120deg);
+}
+.bars aside .man:hover .tooltip-one {
+  display: block;
+}
+.tooltip-two p {
+  background-color: #edebdf;
+  position: relative;
+  padding: 1rem;
+}
+.tooltip-two {
+  position: absolute;
+  top: 40%;
+  left: 21%;
+  background: #edebdf;
+  color: #fff;
+  font-size: 11px;
+  height: 10rem;
+  width: 20rem;
+  font-size: 0.8rem;
+  color: black;
+  z-index: 1;
+  display: none;
+}
+.tooltip-two::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 250px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 40px solid #edebdf;
+  position: absolute;
+  right: 100%;
+  top: -18px;
+  transform: translatex(50%) rotate(30deg);
+}
+.bars aside .man:hover .tooltip-two {
+  display: block;
+}
+
+.bars aside .restart-game {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  color: rgb(88, 88, 88);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bars aside .restart-game button {
+  cursor: pointer;
+  display: block;
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  height: 2rem;
+  width: 85%;
+  margin: 1rem 0 0;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.bars aside .restart-game .game-button {
+  background-color: #3ab44a;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.bars aside .restart-game .preferences-button {
+  background-color: #ff7800;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.bars aside .restart-game .horizontal-line {
+  background-color: white;
+  height: 1.5px;
+  width: 15rem;
+  margin: 0.5rem;
+}
+
+.rating aside .restart-game .rating label {
+  margin-left: 3rem;
+}
+.rating {
+  top: 62%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  direction: rtl;
+}
+.rating a {
+  font-size: 1em;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.5s;
+  margin: 4px;
+}
+.rating a:hover {
+  color: gold;
+  transform: scale(1.3);
+}
+.s1:hover ~ a {
+  color: gold;
+}
+.s2:hover ~ a {
+  color: gold;
+}
+.s3:hover ~ a {
+  color: gold;
+}
+.s4:hover ~ a {
+  color: gold;
+}
+.s5:hover ~ a {
+  color: gold;
+}
+.bars aside .restart-game textarea {
+  margin: 2em;
+  border: 1px solid;
+  resize: none;
+}
+.bars section {
+  width: 80%;
+}
+.bars section header {
+  width: 100%;
+  height: 10rem;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5rem;
+  align-items: center;
+  padding-left: 10rem;
+  padding-right: 5rem;
+  border-bottom: 2px solid #d3cdcd;
+}
+.bars section header .score p:first-child {
+  color: rgb(57, 56, 56);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bolder;
+}
+.bars section header .score p:last-child {
+  color: rgb(178, 177, 177);
+  font-weight: bold;
+}
+.bars section header .score h3 {
+  color: blue;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.bars section header .proficiency {
+  display: flex;
+  align-items: center;
+}
+.bars section header .proficiency p:first-child {
+  font-weight: bold;
+  color: rgb(57, 56, 56);
+  margin-bottom: 1rem;
+}
+.bars section header .proficiency h3,
+h4 {
+  color: green;
+}
+.bars section header .proficiency h3 {
+  font-size: 2rem;
+}
+.bars section header .proficiency p:last-child {
+  font-weight: bold;
+  color: rgb(178, 177, 177);
+}
+.section-body {
+  height: 35rem;
+  overflow-y: scroll;
+}
+
+.section-body .button-section {
+  margin-top: 9%;
+}
+.section-body .button-section button {
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.6rem;
+  font-weight: bolder;
+}
+.section-body .button-section .get-button {
+  width: 30rem;
+  height: 4rem;
+  background-color: #ff7800;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  font-size: 2rem;
+  margin-left: 30%;
+  display: block;
+}
+.section-body .button-section .later-button {
+  width: 15rem;
+  height: 3rem;
+  background-color: rgb(164, 162, 162);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
+  margin-top: 4rem;
+  margin-left: 40%;
+}
+
+.section-body .experiance {
+  width: 100%;
+  margin-top: 10rem;
+  text-align: left;
+  padding: 4rem;
+}
+.section-body .experiance :nth-child(1) {
+  color: gray;
+  margin-bottom: 1rem;
+}
+.section-body .experiance p {
+  color: gray;
+  font-size: 1rem;
+}
+.section-body .experiance :nth-child(3) {
+  margin: 2rem 0 1rem 0;
+}
+.section-body .experiance input {
+  display: none;
+}
+.section-body .experiance label {
+  display: block;
+  position: relative;
+  margin-top: 1rem;
+  padding-left: 30px;
+}
+.section-body .experiance label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 3px solid orange;
+}
+.section-body .experiance label::before {
+  content: "";
+  position: absolute;
+  left: 4.5px;
+  top: 4.5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: orange;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+}
+.section-body .experiance input:checked + label::before {
+  transform: scale(1);
+}
+.section-body .experiance button {
+  cursor: pointer;
+  width: 8rem;
+  height: 2.5rem;
+  display: block;
+  margin-top: 2.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: orange;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  color: white;
+  border: none;
+}
+
+.section-body .info {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.section-body .info .more-coaching {
+  height: 6rem;
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1.3rem;
+  background-color: orange;
+  color: white;
+  border-radius: 50%;
+  font-size: 1rem;
+  position: sticky;
+  top: 30%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  left: 85%;
+  cursor: pointer;
+}
+
+.page-climb {
+  display: flex;
+  margin-left: 10rem;
+  margin-top: 5rem;
+}
+
+.page-climb tool {
+  width: 10px;
+  border: 100px;
+}
+.page-climb .tooltip {
+  visibility: visible;
+  width: 250px;
+  height: 200px;
+  position: relative;
+  background-color: antiquewhite;
+  margin-left: 0rem;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+.big {
+  font-size: 25px;
+}
+
+.page-climb p {
+  margin-top: 12.5rem;
+  color: #48c22a;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: -150px;
+}
+.climb-main {
+  display: flex;
+  position: relative;
+  margin-left: 6rem;
+}
+.climb {
+  position: absolute;
+}
+.climb-position ul {
+  margin-top: 14px;
+  margin-left: 12rem;
+  font-size: 14px;
+  font-weight: bold;
+  color: #6f7679;
+}
+.climb-position ul li {
+  cursor: pointer;
+  list-style-type: none;
+  border-top: 1px dashed;
+  text-align: right;
+  padding-left: 13rem;
+}
+.climb-position ul .peak {
+  color: #6f7679;
+}
+.climb-position ul .explored-beyond {
+  color: #141616;
+  padding-bottom: 7px;
+}
+.climb-position ul .got-spot {
+  padding-bottom: 56px;
+}
+.climb-position ul .far {
+  padding-bottom: 55px;
+}
+.climb-position ul .stopped {
+}
+.climb-position ul .short {
+}
+.climb-position img {
+  position: absolute;
+  visibility: hidden;
+}
+.climb-position ul .peak:hover img {
+  visibility: visible;
+  transform: translate(-238px, -22px);
+}
+.climb-position ul .explored-beyond:hover img {
+  visibility: visible;
+  transform: translate(-306px, -20px);
+}
+.climb-position ul .got-spot:hover img {
+  visibility: visible;
+  transform: translate(-368px, -20px);
+}
+.climb-position ul .far:hover img {
+  visibility: visible;
+  transform: translate(-395px, -20px);
+}
+.climb-position ul .stopped:hover img {
+  visibility: visible;
+  transform: translate(-486px, -28px);
+}
+.climb-position ul .short:hover img {
+  visibility: visible;
+  transform: translate(-502px, -20px);
+}
+
+.section-body .info iframe {
+  margin: 0;
+  margin: 9rem 0rem 9rem 12rem;
+}
+
+.section-body .info .last {
+  width: 100%;
+  height: 35rem;
+  background-color: #dfdcb3;
+  margin-top: 5rem;
+}
+.section-body .info .last img {
+  width: 100%;
+  height: 50%;
+}
+.section-body .info .last div {
+  width: 70%;
+  height: 20%;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  margin: 5rem 0 0 10rem;
+  padding: 1rem;
+}
+
+.last textarea {
+  display: block;
+  margin: 6rem auto;
+  border: 1px solid;
+  resize: none;
+}
+
+footer {
+  width: 100%;
+  height: 3rem;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  margin-top: -12.7rem;
+  z-index: 1;
+  position: absolute;
+}

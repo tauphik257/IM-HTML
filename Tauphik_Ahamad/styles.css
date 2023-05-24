@@ -5,6 +5,22 @@ body {
   font-size: 14px;
 }
 
+p {
+  font-size: 16px;
+}
+h1 {
+}
+h2 {
+}
+h3 {
+}
+h4 {
+}
+h5 {
+}
+h6 {
+}
+
 table,
 th,
 td {
@@ -466,14 +482,12 @@ div[class*="cle"] {
   font-size: 24px;
 }
 
-.grow-shrink-basis {
+/* .grow-shrink-basis {
   padding: 0;
   margin: 20px 0 80px;
   list-style-type: none;
-  display: flex;
   width: 100%;
-  justify-content: space-between;
-}
+} */
 .grow-shrink-basis li {
   height: 120px;
   width: 23%;
@@ -509,27 +523,44 @@ div[class*="cle"] {
   color: #fff;
 }
 
-@media screen and (max-width: 767px) {
-  .grow-shrink-basis {
-    flex-wrap: wrap;
+@media screen and (max-width: 1199px) {
+  .grow-shrink-basis li {
+    width: 18%;
   }
+}
+/* @media screen and (max-width: 991px) {
+  .grow-shrink-basis li {
+    width: 32%;
+  }
+} */
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .grow-shrink-basis li {
+    width: 32%;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .grow-shrink-basis li {
+    width: 18%;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .grow-shrink-basis li {
     width: 48%;
   }
 }
-@media screen and (min-width: 767px) {
+/* @media screen and (min-width: 767px) {
   .grow-shrink-basis {
     flex-wrap: wrap;
   }
   .grow-shrink-basis li {
     width: 32%;
   }
-}
+} */
 /** 479 => 0 to 478 **/
 @media screen and (max-width: 479px) {
-  .grow-shrink-basis {
-    flex-wrap: wrap;
-  }
+  /* 0 to 479px */
   .grow-shrink-basis li {
     width: 100%;
   }
@@ -674,3 +705,67 @@ if(totalMarkes > 60){
 
 
 */
+
+/** CSS units **/
+.css-units-inner {
+  width: 60%;
+}
+.modal-css {
+}
+.faq-wrapper h4 {
+  cursor: pointer;
+}
+.faq-wrapper li.active {
+  background: #b3dad9 !important;
+}
+.description {
+  display: none;
+}
+
+/** Slider **/
+.slider-wrap {
+  height: 300px;
+}
+.slider-wrap li {
+  position: absolute;
+  height: 100%;
+  left: 101%;
+  top: 0;
+  z-index: 19;
+  transition: all 0.5s ease-in-out;
+}
+.slider-wrap li img {
+  width: 100%;
+}
+.slider-wrap span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100px;
+  z-index: 20;
+}
+.slider-wrap .next {
+  right: 0;
+  left: auto;
+}
+.slider-wrap li.left-slide {
+  left: -101%;
+}
+.slider-wrap li.active {
+  left: 0;
+}
+
+/** Modal pop up **/
+.modal-wrapper {
+  background: rgb(68 68 68 / 57%);
+  z-index: 99;
+  display: none;
+}
+.modal-wrapper.show {
+  display: flex;
+}
+.modal-content-wrap {
+  width: 100%;
+  max-width: 35rem;
+}

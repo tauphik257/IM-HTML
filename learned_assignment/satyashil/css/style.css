@@ -1,0 +1,169 @@
+
+
+
+
+.logo{
+    position: absolute;
+    left: 11.25rem;
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:white;
+    position: relative;
+    left: 23.75rem;
+    display: inline-block;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1.25rem 1.563rem;
+    text-decoration: none;
+    font-size: 1.188rem;
+    font-family: "Source Sans Pro", "Arial", sans-serif;;
+  }
+
+a:hover {
+    text-decoration: underline;
+    color: #43cb83!important;
+  }
+  .apply-text{
+    border-radius: 2.5rem;
+    background-color: whitesmoke;
+    color: #43cb83;
+  }  
+  .fimg{
+    position: absolute;
+    top: 9.25rem;
+    height: 28.125rem;
+    width:34.375rem ;
+    left: 0rem;
+  }
+  .ftext{
+    position: absolute;
+    top: 14.375rem;
+    left: 37.5rem;
+    color: #43cb83;
+    font-size: 2.188rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.ptext{
+    position: absolute;
+    top: 20.625rem;
+    left: 37.5rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+}
+.simg{
+    position: absolute;
+    top: 19rem;
+    right: 0px;
+    height: 18rem;
+
+}
+.s-text{
+  background-color: #43cb83;
+  color: aliceblue;
+  position: absolute;
+  left: 37.5rem;
+  font-size: 0.8rem;
+  top: 25.5rem;
+  padding: 1rem;
+  border-radius:3rem;
+}
+.box-one{
+  background-color:#FFB4B4;
+  position: relative;
+  height: 15rem;
+  width: 16rem;
+  top: 38.3rem;
+  left: 18rem;
+}
+.design-text{
+  font-size: 1.5rem;
+  position: relative;
+  top:  10rem;
+  left: 4.8rem;
+}
+.eng{
+  position:absolute;
+ height: 85px;
+ top: 3rem;
+ left: 5rem;
+}
+.box-two{
+  background-color:#DAF5FF;
+  position: absolute;
+  height: 15rem;
+  width: 16rem;
+  top: 45.3rem;
+  left: 36rem;
+}
+.eng-text1{
+   position: relative;
+  font-size: 1.5rem;
+  top: 7.5rem;
+  left: 4.5rem;
+} 
+.eng1{
+  position:absolute;
+height: 85px;
+top: 3rem;
+left: 5rem;
+} 
+.box-three{
+  background-color:#FFDEB4;
+  position: absolute;
+  height: 15rem;
+  width: 16rem;
+  top: 45.3rem;
+  left: 53.5rem;
+}
+ .eng-text2{
+  position: relative;
+  font-size: 1.5rem;
+  top: 7.5rem;
+  left: 4rem;
+}
+.eng2{
+  position:absolute;
+  height: 85px;
+  top: 3rem;
+  left: 5rem;
+}
+.box-four{
+  background-color: #FFDEB4;
+  position: relative;
+  height: 15rem;
+  width: 16rem;
+  top: 37.5rem;
+  left: 18rem;
+
+}
+.box-five{
+  position: absolute;
+  background-color:#F0EB8D;
+  height: 15rem;
+  width: 16rem;
+  top: 62rem;
+  left: 36rem;
+}
+.box-six{
+  position: absolute;
+  background-color:#B9E9FC;
+  height: 15rem;
+  width: 16rem;
+  top: 62rem;
+  left: 53.5rem;
+}

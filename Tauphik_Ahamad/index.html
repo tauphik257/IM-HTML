@@ -8,6 +8,7 @@
   <meta name="description" content="description will be here">
   <meta name="aurthor" content="">
   <title>Page title</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./styles.css">
 </head>
 
@@ -290,12 +291,131 @@
 
       max-width: 767px => [viewport] less than  767px  => 0 to max 767px (portrait and landscape)
       min-width: 768px => [viewport] more than  767px => upper => 767px to max-upper-limit
-
+      min-width: 991px => 
       mobile devices portrait width => less than 480px (max-width: 479px) => target screen => mobile devices portrait
 
+      min-width: 768px and max-width: 1024
+
+      @media screen and (max-width: 800px){}
+      @media screen and (max-width: 600px){}
+      @media screen and (max-width: 400px){}
+      @media screen and (max-width: 350px){}
+
+      iPad (tablet) => 768px (portrait) * 1024 (landscape)
+
+      #[media-type]
+      
+      1. screen => Colored screen
+      2. print => print preview
+      
+      3. speech => screenreader
+      4. all => All Devices
+      5. projection
+      6. tty
+      7. tv
+      8. handheld
+
+      #[media-feature]
+
+      1. 
     -->
 
-    <ul class="grow-shrink-basis">
+    <div class="d-flex w-100 py-5 justify-content-between">
+      <button type="button" class="btn btn-primary btn-lg">button type: Primary</button>
+      <button type="button" class="btn btn-secondary btn-lg">button type: Secondary</button>
+      <button type="button" class="btn btn-success">button type: Success</button>
+      <button type="button" class="btn btn-danger">button type: Danger</button>
+      <button type="button" class="btn btn-warning">button type: Warning</button>
+      <button type="button" class="btn btn-info">button type: Info</button>
+      <button type="button" class="btn btn-light">button type: Light</button>
+      <button type="button" class="btn btn-dark">button type: Dark</button>
+
+      <button type="button" class="btn btn-link">button type: Link</button>
+    </div>
+
+    <!--
+      difference B/w => px, em, rem
+
+      1. absolute units (fixed) => px,  // pc (1pc = 12pt), pt, in, cm, mm,
+      2. Relative units => em, rem, vh, vw, %
+
+      em => relative to parent
+      rem => relative to Root element 
+
+      gutter-width: 10;
+      .row => 
+      margin-left:  gutter-width * -0.5 = -5px
+      margin-right:  gutter-width * -0.5 = -5px
+
+
+    75 + 85 => 160 
+
+    for(var i=0; i<=10; i++){
+
+    }
+
+    while(i<=10){
+      code
+      i++
+    }
+
+    var activeSong = 'A'
+    var activeSong = 'B'
+
+    fucntion startAc = {
+
+    }
+
+
+
+    -->
+    <div class="custom-class">
+      <div class="w-100">
+        <div class="w-100">
+          <div class="row">
+            <div class="col-sm-6 mb-2">
+              <div class="d-flex bg-secondary">
+                <div class="col-4 bg-info">
+                  <h6 class="m-0 p-4">Column-1</h6>
+                </div>
+                <div class="col-4 bg-warning">
+                  <h6 class="m-0 p-4">Column-2</h6>
+                </div>
+                <div class="col-4 bg-success">
+                  <h6 class="m-0 p-4">Column-3</h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-2">
+              <h6 class="m-0 p-4 bg-secondary">Column</h6>
+            </div>
+            <div class="col-sm-6 mb-2">
+              <h6 class="m-0 p-4 bg-secondary">Column</h6>
+            </div>
+            <div class="col-sm-6 mb-2">
+              <h6 class="m-0 p-4 bg-secondary">Column</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="css-units d-flex w-100 py-5">
+      <div class="css-units-inner bg-info">
+        <h3>Css units text
+          <span class="d-block"> Span text css units </span>
+        </h3>
+      </div>
+    </div>
+
+    <!-- 
+      Modal pop up
+    -->
+
+    <div class="modal-css">
+      <h3>Modal content</h3>
+    </div>
+
+    <ul class="d-flex flex-wrap grow-shrink-basis justify-content-between">
       <li>
         <h6>Block-1</h6>
       </li>
@@ -307,6 +427,12 @@
       </li>
       <li>
         <h6>Block-4</h6>
+      </li>
+      <li>
+        <h6>Block-5</h6>
+      </li>
+      <li>
+        <h6>Block-6</h6>
       </li>
     </ul>
 
@@ -830,6 +956,48 @@
 
     <!-- <input value="test" />  -->
   </div>
+
+  <!-- Add Script here -->
+  <script src="./js/jquery-3.7.0.min.js"></script>
+  <script>
+    // var title = 'Confirm Message ?';
+    // alert(title);
+    // confirm(title);
+    // console.log(title)
+
+    /*
+      jQuery Selectors
+      
+      1. class => $('.btn-primary')
+      2. id => $('#btn-primary')
+      3. attribute => $(input[btn-primary])
+      4. element  => $('p')
+      5. combinator   => $('div button')
+      6. nth child   => $('ul li:nth-child(1)')
+      7. pseudo class   => $('p:active')
+      8. pseudo element    => $('p::after')
+      9. 
+    
+    **/
+
+    // $('.btn-primary').click(function () {
+    //   console.log('Clicked run');
+    // });
+
+    $('.justify-content-between button').click(function () {
+      console.log('QQ', $(this).hasClass('active')); // selector has the defined class or not, it will always return either: true or false
+
+      if ($(this).hasClass('active')) { // if (condition) is true 1 === 1 => true, 1 === 2 => false
+        $(this).removeClass('active');
+      } else {
+        $(this).addClass('active');
+      }
+      console.log('Mouse Enter On: ', $(this).text());
+    });
+
+
+  </script>
+
 </body>
 
 </html>

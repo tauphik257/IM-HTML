@@ -4,24 +4,234 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-  <div style="width: 100%; max-width: 900px;margin: 0 auto;">
+  <div style="width: 100%; max-width: 900px;margin: 0 auto;    background: #eee;
+  padding: 20px;">
     <h2>Page Main Title</h2>
-    <!-- HTML Heading -->
-    <h1>test Data 1</h1> <!-- 1-time only -->
-    <h2>test Data 2</h2> <!-- 2 -time only -->
-    <h3>test Data 3</h3> <!-- any time -->
-    <h4>test Data 4</h4> <!-- any time -->
-    <h5>test Data 5</h5> <!-- any time -->
-    <h6>test Data 6</h6> <!-- any time -->
+    <ul class="list-unstyled p-0 overflow-hidden position-relative slider-wrap w-100">
+      <li class="w-100 active">
+        <img src="./image/banner01.jpg" alt="img" />
+      </li>
+      <li class="w-100 ">
+        <img src="./image/banner02.jpg" alt="img" />
+      </li>
+      <li class="w-100">
+        <img src="./image/banner03.jpg" alt="img" />
+      </li>
+      <li class="w-100">
+        <img src="./image/banner01.jpg" alt="img" />
+      </li>
+      <li class="w-100">
+        <img src="./image/banner03.jpg" alt="img" />
+      </li>
+      <span class="next btn btn-primary">Next</span>
+      <span class="prev btn btn-primary">Prev</span>
+    </ul>
+    <div class="faq-wrapper my-5 pb-5">
+      <div class="w-100 py-3 text-end">
+        <button class="btn btn-primary add-new-faq" onclick="handleModelShow()">Add New FAQ</button>
+      </div>
+      <ul class="p-0 w-100 list-unstyled mb-5">
+        <li class="bg-white p-2 shadow-sm w-100 mb-3">
+          <h4>FAQ title 1</h4>
+          <div class="description">
+            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et
+              dolore magna aliqua.</p>
+          </div>
+        </li>
+        <li class="bg-white p-2 shadow-sm w-100 mb-3">
+          <h4>FAQ title 2</h4>
+          <div class="description">
+            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et
+              dolore magna aliqua.</p>
+          </div>
+        </li>
+        <li class="bg-white p-2 shadow-sm w-100 mb-3">
+          <h4>FAQ title 3</h4>
+          <div class="description">
+            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et
+              dolore magna aliqua.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
 
-    <p>Paragraph tag</p>
-    <a href="abc" target="_blank">Link</a>
+    <div
+      class="align-items-center h-100 justify-content-center modal-wrapper overflow-hidden position-fixed start-0 top-0 w-100">
+      <div class="bg-white modal-content-wrap p-4">
+        <form>
+          <div class="form-group mb-3">
+            <label class="form-label">FAQ Title</label>
+            <input type="text" class="form-control" placeholder="Enter FAQ Title">
+          </div>
+          <div class="form-group mb-3">
+            <label class="form-label">Description</label>
+            <textarea class="form-control" placeholder="Enter FAQ Description"></textarea>
+          </div>
+          <button type="button" class="btn btn-secondary me-3 modal-close" onclick="handleModelShow()">Cancel</button>
+          <button type="button" class="btn btn-primary btn-submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
 
     <!-- <input value="test" />  -->
+    <!-- Add Script here -->
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script>
+      function handleModelShow() {
+        if ($('.modal-wrapper').hasClass('show')) {
+          $('.modal-wrapper').removeClass('show');
+        } else {
+          $('.modal-wrapper').addClass('show');
+        }
+      }
+      // var title = 'Confirm Message ?';
+      // alert(title);
+      // confirm(title);
+      // console.log(title)
+
+      /*
+        jQuery Selectors
+        
+        1. class => $('.btn-primary')
+        2. id => $('#btn-primary')
+        3. attribute => $(input[btn-primary])
+        4. element  => $('p')
+        5. combinator   => $('div button')
+        6. nth child   => $('ul li:nth-child(1)') => $('ul li:first') => $('ul li').eq(0)
+        7. pseudo class   => $('p:active')
+        8. pseudo element    => $('p::after')
+        9. 
+      
+      **/
+
+      /** 
+       Traversing
+
+       1. from selected element to top
+        - parent() => imidiate parent
+        - parents() => till root
+        - parentsUntil() => till specific element, class, or ID
+       
+       2. From selctor to bottom
+        - find() => find the selctor => element, class, or id, in selector children 
+        - children() => return all children on the selected element
+
+       3. Siblings
+        - siblings() => return all siblings of the selected element
+        - next()  => 
+        - nextAll() =>
+        - prev() =>
+        - prevAll() =>
+
+       *  **/
+
+      /**
+       * total length = 4
+       * currentIndex = 3 + 1 = 4
+       * 
+       * input functions
+       * 
+       * 1. focus => in editing state
+       * 2. blur => click out side
+       * 3. onchange => when we change the input value
+       * 4. keyup => when keyboard key up trigger
+       * 5. keydown => 
+       * 6. keypress => 
+       * 
+       * 
+       * Jquery Get functions
+       * 
+       * 1. text()
+       * 2. html()
+       * 3. attr()
+       * 4. val()
+       * 5. append()
+       * 6. prepand()
+       * 
+       * 
+       * 
+       *   **/
+      $(document).ready(function () {
+
+        // $('.faq-wrapper h4').click(function () {
+        $(document).on('click', '.faq-wrapper h4', function () {
+          // console.log('1. Parent', $(this).parent('div'));
+          // console.log('2. Parents', $(this).parents('div'));
+          // console.log('3. Parents Untill', $(this).parentsUntil('div'));
+          // console.log('4. Parents closest', $(this).closest('div'));
+          // console.log('1. child find', $(this).parent().find('p'));
+          // console.log('2. child', $(this).parent().children());
+          // console.log('1. siblings', $(this).parent().siblings());
+          // console.log('2. Next', $(this).parent().next());
+          // console.log('3. Prev', $(this).parent().prev());
+          // console.log('2. NextAll', $(this).parent().nextAll());
+          // console.log('3. PrevALL', $(this).parent().prevAll());
+
+          // console.log('1. Parent:', $(this).parent().html()); // $(this).parent().attr('href')
+          // $(this).parent().attr('data-attribute', 'custom');
+          // console.log('Value:', $(this).parent().attr('class'));
+          // $(this).text('FAQ new title');
+          // const data = $(this).parent().html();
+          // $(this).parents('ul').append("<li class='bg-white p-2 shadow-sm w-100 mb-3'> " + data + " </li>");
+
+          if ($(this).parent().hasClass('active')) {
+            $(this).parent().removeClass('active');
+            $(this).parent().find('.description').slideUp();
+          } else {
+            $(this).parent().addClass('active');
+            $(this).parent().find('.description').slideDown();
+          }
+
+        });
+
+        $('.slider-wrap .next').click(function () {
+          const totalLength = $(this).parent().find('li').length;
+          const activeSlide = $(this).parent().find('.active').index();
+          const selctor = $(this).parent().find('.active');
+          console.log('QQ', $(this).parent().find('li'));
+          console.log('QQ', $(this).parent().find('.active').index());
+          if (totalLength !== activeSlide + 1) {
+            $(selctor).next().addClass('active');
+            $(selctor).removeClass('active').addClass('left-slide');
+            $(selctor).prevAll().addClass('left-slide');
+          } else {
+            $(this).parent().find('li').removeClass('left-slide').removeClass('active');
+            $(this).parent().find('li').eq(0).addClass('active');
+          }
+        });
+        $('.slider-wrap .prev').click(function () {
+          const totalLength = $(this).parent().find('li').length;
+          const activeSlide = $(this).parent().find('.active').index();
+          const selctor = $(this).parent().find('.active');
+          if (activeSlide === 0) {
+            $(this).parent().find('li').removeClass('active');
+            $(this).parent().find('li').eq(totalLength - 1).addClass('active');
+          } else {
+            $(selctor).prev().removeClass('left-slide').addClass('active');
+            $(selctor).removeClass('active');
+          }
+        });
+
+        /** Modal pop up JS **/
+        $(document).on('click', '.btn-submit', function () {
+          const title = $('form input').val();
+          const descrptn = $('form textarea').val();
+          $('ul').append("<li class='bg-white p-2 shadow-sm w-100 mb-3'> <h4> " + title + " </h4> <div class='description'> <p class='m-0'> " + descrptn + " </p> </div> </li>");
+          $('.modal-wrapper').removeClass('show');
+        });
+
+      })
+
+    </script>
   </div>
 </body>
 

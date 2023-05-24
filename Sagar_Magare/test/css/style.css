@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #537fc1;
+    height: 100px;
+    opacity: 0.8;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    margin: 50px;
+    margin-top: 50px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav img {
+    width: 100px;
+    height: 100px;
+    padding-left: 100px;
+    padding-bottom: 10px;
+}
+
+.fa-solid {
+    margin: 50px;
+}
+
+
+.section-1 img {
+    width: 100vw;
+}
+
+.text h1 , p{
+    position: relative;
+    bottom: 580px;
+    color: #fff;
+    text-align: center;
+}
+
+.text h1 {
+    position: relative;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.text p {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.text a {
+    background-color: #edc315;
+    padding: 10px 70px;
+    border-radius: 20px;
+    position: absolute;
+    top: 35rem;
+    left: 40rem;
+}
+
+.section-2 {
+    background-color: #5b9de7;
+    height: 120vh;
+}
+
+
+.back-ground {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -134px;
+}
+
+.text2 h1,p{
+    position: relative;
+    bottom: 580px;
+    color: #fff;
+    text-align: center;
+}
+
+.text2 h1 {
+    position: relative;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.text2 p {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+
+.services div img {
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.services div {
+    position: relative;
+    top: -28rem;
+    color: #fff;
+}
+
+.services p {
+    position: absolute;
+    top: 26rem;
+}
+
+.section-3 {
+    background-color: #edc315;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.section-3 img {
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.3;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+}
+
+.text3 h1,p{
+    position: relative;
+    bottom: 580px;
+    color: #fff;
+    text-align: center;
+}
+
+.text3 h1 {
+    position: relative;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.text3 p {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.stat {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stat h2 {
+    border: 2px solid black;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    text-align: center;
+
+}
+
