@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+
+p {
+  font-size: 16px;
+}
+/** CSS units **/
+.css-units-inner {
+  width: 60%;
+}
+
+.faq-wrapper h4 {
+  cursor: pointer;
+}
+.faq-wrapper li.active {
+  background: #eff6f4 !important;
+
+}
+.description {
+  display: none;
+}
+h1{
+  text-align: center;
+}
+/** Modal pop up **/
+.modal-wrapper {
+  background: rgb(68 68 68 / 57%);
+  z-index: 99;
+  display: none;
+  
+}
+h3{
+  text-align:center;
+}
+.modal-wrapper.show {
+  display: flex;
+  
+}
+.modal-content-wrap {
+  width: 100%;
+  max-width: 35rem;
+  border: 2px solid black;
+}

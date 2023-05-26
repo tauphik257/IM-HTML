@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./styles.css">
+
+  </head>
+  <body>
+    <div
+      style="width: 100%; max-width: 900px;margin: 0 auto;    background: #eee;
+    padding: 20px;">
+      <h1>Frequently Asked Question</h1>
+      <div class="faq-wrapper my-10 pb-5">
+        <div class="w-100 py-3 text-end">
+          <button class="btn btn-primary add-new-faq clear"
+            onclick="handleModelShow()">Add New FAQ</button>
+        </div>
+        <ul class="p-0 w-100 list-unstyled mb-5">
+          <li class="bg-white p-2 shadow-sm w-100 mb-3">
+            <h4>1.What Is an FAQ Page?</h4>
+            <div class="description">
+              <p class="m-0">1.An FAQ, or Frequently Asked Questions, page
+                allows for visitors to find answers to all their questions in
+                one place.</p>
+            </div>
+          </li>
+          <li class="bg-white p-2 shadow-sm w-100 mb-3">
+            <h4>2.Benefits of FAQ Pages</h4>
+            <div class="description">
+              <p class="m-0">It Saves Your Customer/Prospects Time by Putting
+                Answers in One Place.
+                Our clients and customers are busy people. They simply don’t
+                have time to browse through web page after web page or post
+                after post to find information about who you are, what you
+                provide, and how much your products or services cost.</p>
+            </div>
+          </li>
+          <li class="bg-white p-2 shadow-sm w-100 mb-3">
+            <h4>3.Where Should I Put My FAQ Page?</h4>
+            <div class="description">
+              <p class="m-0">If your organization prioritizes customer service,
+                then a full support center is a good idea. These “help desks”
+                act as the middle man before your customers reach out to a
+                service rep. You’ll want to host a thorough knowledge management
+                system, FAQ included, in this case.</p>
+            </div>
+          </li>
+
+          <li class="bg-white p-2 shadow-sm w-100 mb-3">
+            <h4>4.Where Should I Put My FAQ Page?</h4>
+            <div class="description">
+              <p class="m-0">If your organization prioritizes customer service,
+                then a full support center is a good idea. These “help desks”
+                act as the middle man before your customers reach out to a
+                service rep. You’ll want to host a thorough knowledge management
+                system, FAQ included, in this case.</p>
+            </div>
+          </li>
+
+          <li class="bg-white p-2 shadow-sm w-100 mb-3">
+            <h4>5.Where Should I Put My FAQ Page?</h4>
+            <div class="description">
+              <p class="m-0">If your organization prioritizes customer service,
+                then a full support center is a good idea. These “help desks”
+                act as the middle man before your customers reach out to a
+                service rep. You’ll want to host a thorough knowledge management
+                system, FAQ included, in this case.</p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <div
+        class="align-items-center h-100 justify-content-center modal-wrapper overflow-hidden position-fixed start-0 top-0 w-100">
+        <div class="bg-white modal-content-wrap p-4">
+          <form id="form">
+            <div class="form-group mb-3">
+              <h3>Add New Faq</h3>
+              <label class="form-label">FAQ Title</label>
+              <input type="text" class="form-control" id="textbox-clear"
+                placeholder="Enter  Title">
+            </div>
+            <div class="form-group mb-3">
+              <label class="form-label">Description</label>
+              <textarea class="form-control" id="textarea-clear"
+                placeholder="Enter  Description"></textarea>
+            </div>
+            <button type="button" class="btn btn-danger me-3 modal-close"
+              onclick="handleModelShow()">Cancel</button>
+            <button type="button" class="btn btn-primary btn-submit" disabled>Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- <input value="test" />  -->
+      <!-- Add Script here -->
+      <script src="./js/jquery-3.7.0.min.js"></script>
+      <script>
+      function handleModelShow() {
+        if ($('.modal-wrapper').hasClass('show')) {
+          $('.modal-wrapper').removeClass('show');
+        } else {
+          $('.modal-wrapper').addClass('show');
+        }
+      }
+
+      $(document).ready(function () {
+
+        $(document).on('click', '.faq-wrapper h4', function(){
+          if ($(this).parent().hasClass('active')) {
+            $(this).parent().removeClass('active');
+            $(this).parent().find('.description').slideUp();
+          } else {
+            $(this).parent().addClass('active');
+            $(this).parent().find('.description').slideToggle("500");
+            $(this).parent().siblings().find('.description ').slideUp();
+          }
+
+        });
+
+
+        /**  JS started **/
+        $(document).on('click', '.btn-submit', function () {
+          const title = $('form input').val();
+          const descrptn = $('form textarea').val();
+          if(title && descrptn.trim()===''){
+            $('.btn-submit').prop('disabled', content === '');
+          }
+          else{
+            confirm('Do you want to add');
+          $('ul').append("<li class='bg-white p-2 shadow-sm w-100 mb-3'> <h4> " + title + " </h4> <div class='description'> <p class='m-0'> " + descrptn + " </p> </div> </li>");
+          alert('FAQ added Suceesfully');
+          $('.modal-wrapper').removeClass('show');
+          
+        }
+        });
+
+        var checkInput = (e) => {
+          const content = $(".form-control").val().trim();
+          $('.btn-submit').prop('disabled', content === '');
+        };
+        $(document).on('keyup', '.form-control', checkInput);
+
+        $('.clear').click(function () {
+          $('#textbox-clear').val("");
+          $('#textarea-clear').val("");
+
+        });
+
+      });
+
+    </script>
+    </div>
+  </body>
+
+</html>
