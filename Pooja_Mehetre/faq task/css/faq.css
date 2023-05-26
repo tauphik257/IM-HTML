@@ -1,3 +1,6 @@
+body{
+    font-family: 'PT Sans', sans-serif;
+}
 .pd-2{
     padding:2%;
 }
@@ -13,9 +16,7 @@
 .pd-b-2{
     padding-bottom:2%;
 }
-body{
-    font-family: 'PT Sans', sans-serif;
-}
+
 h1,h2,h3,h4,h5,.lead,div[data-toggle="collapse"]{
     font-family: 'Oswald', sans-serif;
 }
@@ -30,4 +31,34 @@ div[data-toggle="collapse"]{
 }
 .collapse{
     background:#F5F5F5;
+}
+.modal-wrapper{
+    /* width: 100%; */
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative; 
+    z-index: 99;
+    
+}
+
+.modal-content{
+    max-width: 30rem;
+    background-color: rgb(247, 247, 247);
+    position: absolute;
+    left: 35rem;
+    top: 8rem;
+    display: none;
+
+}
+.active{
+    display: block;
+}
+.collapse{
+    margin-left: 4rem;
+}
+.form-group{
+    margin: 1rem 1rem 1rem ;
+}
+textarea{
+    resize: none;
+    margin-left: 0;
 }

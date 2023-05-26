@@ -4,6 +4,37 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+.modal-wrapper{
+    /* width: 100%; */
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative; 
+    z-index: 99;
+    width: 10%;
+}
+
+.modal-content{
+    /* max-width: 30rem; */
+    background-color: rgb(247, 247, 247);
+    position: absolute;
+    left: 35rem;
+    top: 8rem;
+    display: none;
+
+}
+.active{
+    display: block;
+}
+.collapse{
+    margin-left: 4rem;
+}
+.form-group{
+    margin: 1rem 1rem 1rem ;
+}
+textarea{
+    resize: none;
+    margin-left: 0;
+}
+
 header{
     display: flex;
     padding: 10px 20px 10px 200px;
@@ -139,4 +170,8 @@ list-style-type:none;
     width: 80%;
     border-radius: 50%;
     margin-left: 2rem;
-}
+} 
+    
+
+
+

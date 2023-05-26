@@ -7,9 +7,29 @@
     <title>Document</title>
     <link href="./css/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/faq.css">
-</head>
+ </head>
 <body>
-<div class="container">
+	
+	<div class="w-100 py-3 text-end">
+		<button class="btn btn-warning add-btn">Add New FAQ</button>
+	</div>
+	<div class="modal-wrapper">
+		<div class="modal-content">
+			<form>
+				<div class="form-group">
+					<label>Add FAQ</label>
+					<input type="text" class="form-control " placeholder="Add FAQ here">
+				</div>
+				<div class="form-group">
+					<label>Add Description</label>
+					<textarea class="form-control" cols="30" rows="5"></textarea>
+				</div>
+				<button type="button" class="btn btn-light close ">Cancel</button>
+				<button type="button" class="btn btn-primary submit">Submit</button>
+			</form>
+		</div>
+	</div>
+<div class="container mt-5" >
 	<div class="row bg-info card my-4 mb-3 pd-l-2">
 		<h3>
 		    <span class="fa fa-question-circle text-white"></span>
@@ -23,32 +43,33 @@
 	    </p>
 	    <ul id="accordion" class="col-sm-6 col-md-12">
 	        <li>
-	            <div class="choose" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
+	            <div class="choose" >
 	                FAQ QUESTION 1?
 	                <span class="fa fa-chevron-up fa-1x text-info pull-right"></span>
 	            </div>
-	            <div id="collapse" class="collapse show"  data-parent="#accordion">
+	            <div id="collapse" class="collapse show" >
                   <div class="card-body">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.              
                 </div>
+				</div>
 	        </li>
 	        <li>
-	            <div class="collapsed choose" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+	            <div class="collapsed choose" >
 	                FAQ QUESTION 2?
 	                <span class="fa fa-chevron-down fa-1x text-info pull-right"></span>
 	            </div>
-                <div id="collapse" class="collapse" data-parent="#accordion">
+                <div id="collapse" class="collapse" >
                   <div class="card-body">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   </div>
                 </div>
 	        </li>
 	        <li>
-	            <div class="collapsed choose" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+	            <div class="collapsed choose">
                     FAQ QUESTION 3?
 	                <span class="fa fa-chevron-down fa-1x text-info pull-right"></span>
 	            </div>
-                <div id="collapse" class="collapse" data-parent="#accordion">
+                <div id="collapse" class="collapse" >
                   <div class="card-body">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   </div>
@@ -60,8 +81,11 @@
 
 <script src="./js/jquery-3.7.0.min.js"></script>
 <script>
-     $('.choose').click(function () {
-        if ($(this).parent().hasClass('active')) { 
+	$(document).on('click','.choose',function(){
+
+	
+    //  $('.choose').click(function () {
+        if ($(this).parent().hasClass('active')) {  
           $(this).parent().removeClass('active');
           $(this).parent().find('.collapse').slideUp();
          
@@ -70,7 +94,25 @@
           $(this).parent().find('.collapse').slideDown();
         }
 
-      })
+      }); 
+	  $('.add-btn').click(function(){
+		$('.modal-content').show();
+	  }); 
+	  $('.close').click(function(){
+		$('.modal-content').hide();
+	  }); 
+
+	$(document).on('click', '.submit',function(){
+		var a = $("input[type='text']").val();
+		var b = $('.form-control').val();
+		var title = $("input[type=text]").val();
+		var desc = $('textarea').val();
+		if(a != 0 && b != 0){
+			$('#accordion').append("<li><div class='choose'>"+ title +"<span class='fa fa-chevron-down fa-1x text-info pull-right'></span></div><div id='collapse' class='collapse'><div class='card-body'>"+ desc +"</div></div></li>");
+				$('.modal-content').hide();
+			}
+		}); 
+	 
 
 </script>
     
