@@ -1,0 +1,597 @@
+
+body {
+  width: 70%;
+  height: 100%;
+  margin: 1rem auto 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-right: 2px solid #e3e2e1;
+}
+
+
+.header {
+  position: relative;
+}
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  background-color: rgba(26, 26, 26, 0.834);
+  padding-left: .9rem;
+  padding-right: .6rem;
+}
+
+
+.section1 {
+  display: flex;
+}
+
+.part1 img {
+  position: relative;
+  width: 105.5%;
+}
+
+.part2 {
+  display: flex;
+  background-color: rgb(246, 241, 236);
+  box-shadow: 0 0 2px 0 rgba(56, 56, 56, 0.834);
+  justify-content: space-around;
+  width: 100%;
+  height: 10rem;
+  color: grey;
+}
+
+.heading1,
+.heading2 {
+  margin-top: .8rem;
+  font-size: 1rem;
+}
+
+.heading1 {
+  transform: translateX(50px);
+}
+
+.heading2 {
+  transform: translateX(220px);
+}
+
+.part2 div {
+  line-height: .5rem;
+}
+
+.part2 img {
+  width: 80%;
+  transform: translateX(70px);
+}
+
+.heading1 p:nth-child(2) {
+  color: blue;
+  font-size: 2.5rem;
+  margin-bottom: .5em;
+  font-weight: bold;
+}
+
+.heading2 p:nth-child(2) {
+  color: rgb(8, 242, 8);
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+.heading2 p:nth-child(3) {
+  color: rgb(8, 242, 8);
+  font-size: 1.7em;
+  font-weight: bold;
+  margin: 0.8em 0;
+}
+
+
+/****************** tooltip ***************/
+
+.tooltip{
+  position: absolute;
+  top: 10%;
+  left: 28%;
+  background-color: rgb(225, 220, 220);
+  color: #111;
+  text-align: center;
+  width: 200px;
+  padding: 10px;
+  z-index: 2;
+  visibility: hidden;
+}
+
+.tooltip p {
+  margin: 0;
+}
+
+.tooltip::before {
+  content: "";
+  width: 3%;
+  height: 3%;
+  border-top: 20px solid  rgb(225, 220, 220);
+  border-right: 20px solid transparent;
+  position: absolute;
+  top: 88px;
+  left: -7px;
+  transform: translateX(-50%) rotate(180deg);
+  overflow: hidden;
+}
+
+.part1:hover .tooltip{
+  visibility: visible;
+
+}
+
+.tooltip-2{
+  position: absolute;
+  top: 140%;
+  left: 35%;
+  background-color: rgb(225, 220, 220);
+  color: #111;
+  text-align: center;
+  width: 270px;
+  padding: 10px;
+  z-index: 2;
+  visibility: hidden;
+}
+
+.tooltip-2 p {
+  margin: 0;
+}
+
+.tooltip-2::before {
+  content: "";
+  width: 3%;
+  height: 3%;
+  border-top: 20px solid  rgb(225, 220, 220);
+  border-right: 130px solid transparent;
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  transform: translateX(-50%) rotate(220deg);
+  overflow: hidden;
+}
+
+.part1:hover .tooltip-2{
+  visibility: visible;
+
+}
+/******************** section2 ********************/
+
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(182, 181, 180, 0.744);
+  width: 24.5%;
+  justify-content: center;
+  text-align: center;
+  padding-top: 1.25rem;
+  margin-top: -4px;
+}
+
+.section2 div {
+  display: flex;
+  justify-content: center;
+}
+
+.section2 div p {
+  width: 7%;
+  font-size: 1.5rem;
+  margin: 0 .7rem;
+  cursor: pointer;
+}
+
+.section2 div p:hover {
+  color: yellow;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+}
+
+.section2 a {
+  padding: .6rem .25rem;
+  margin: .4rem 1.8rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-weight: bold;
+  background-color: rgb(40, 174, 33);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+a:nth-child(2) {
+  background-color: #ff5b08;
+}
+
+.section2 p {
+  font-size: .8rem;
+  margin-top: .3rem;
+  margin-bottom: 0;
+  color: rgb(99, 98, 98);
+  font-weight: bold;
+}
+
+.section2 textarea {
+  margin: .5rem 2rem 1rem;
+  resize: none;
+}
+
+/****************** buttons *****************/
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  width: 17rem;
+  position: absolute;
+  bottom: 230px;
+  left: 750px;
+  padding-bottom: 20px;
+}
+
+
+.buttons a:nth-child(1) {
+  margin-bottom: 40px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: #ff5b08;
+  font-weight: bolder;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+
+.buttons a:nth-child(2) {
+  margin: 0 50px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: #6f6a68;
+  font-weight: bolder;
+  font-size: 10px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+/******************* footer **********************/
+
+.foot p {
+  color: #fff;
+  background-color: rgba(26, 26, 26, 0.834);
+  margin-top: 0rem;
+  font-size: 14px;
+}
+
+.foot-3 p{
+  color: #fff;
+  background-color: rgba(26, 26, 26, 0.834);
+  margin-top: -3.9rem;
+  font-size: 14px;
+
+}
+
+
+
+
+
+/********************** star rating ******************/
+
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  position: relative;
+  color: rgb(0, 0, 0);
+  margin: 8px;
+  font-size: 25px;
+}
+
+
+.star-rating label::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 8px;
+  border-radius: 50%;
+
+
+}
+
+
+.star-rating label::before {
+  content: "";
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  left: 0px;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+}
+
+.star-rating input:checked+label {
+  color: #ffda0a;
+}
+
+
+.star-rating input:checked+
+.star-rating input:checked+label {
+  color: #ffda0a;
+  transform: scale(1); 
+}
+
+
+
+/************** page2 *******************/
+
+.radio-section {
+  position: absolute;
+  top: 15rem;
+  right: 14rem;
+  display: flex;
+  flex-direction: column;
+  width: 52%;
+}
+
+/***************** custom radio-button *****************/
+
+.radio-section input {
+  display: none;
+}
+
+.radio-section label {
+  position: relative;
+  left: 2rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+.radio-section label:after {
+  position: absolute;
+  left: -30px;
+  content: "";
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ff5b08;
+  border-radius: 50%;
+}
+
+.radio-section label::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -25.7px;
+  height: 13px;
+  width: 13px;
+  background-color: #ff5b08;
+  border-radius: 50%;
+  transform: scale(0);
+}
+
+.radio-section input:checked + label::before {
+  transform: scale(1);
+}
+
+/* end */
+
+.radio-section button {
+  position: absolute;
+  bottom: -8rem;
+  padding: .3rem 2rem;
+  background-color: #ff5b08;
+  border: none;
+  box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.3);
+}
+
+.radio-section a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+/* page3 */
+
+.lg-mount {
+  top: 17rem;
+  width: 23.5%;
+  position: absolute;
+  right: 29rem;
+}
+
+
+.text {
+  position: absolute;
+  left: 33rem;
+  bottom: 4rem;
+  color: green;
+  width: 100px;
+  line-height: 0.8;
+  font-size: 28px;
+}
+
+.text span {
+  font-size: 18px;
+}
+.container div:nth-child(1) {
+  position: absolute;
+  border-top: 2px dotted grey;
+  padding-left: 7.5rem;
+  top: 38.2rem;
+  right: 16.5rem;
+}
+.container div:nth-child(2) {
+  position: absolute;
+  border-top: 2px dotted grey;
+  padding-left: 5.5rem;
+  top: 36.5rem;
+  right: 16.5rem;
+}
+.container div:nth-child(3) {
+  position: absolute;
+  border-top: 2px dotted grey;
+  padding-left: 6.5rem;
+  top: 29.5rem;
+  right: 16.5rem;
+}
+.container div:nth-child(4) {
+  position: absolute;
+  border-top: 2px dotted grey;
+  padding-left: 7.9rem;
+  top: 22.7rem;
+  right: 16.5rem;
+  
+}
+.container div:nth-child(5) {
+  position: absolute;
+  border-top: 2px dotted grey;
+  padding-left: 8rem;
+  top: 19.5rem;
+  right: 16.5rem;
+  
+}
+.container div:nth-child(6) {
+  position: absolute;
+  border-top: 2px dotted grey;
+  padding-left: 5rem;
+  top: 18rem;
+  right: 16.5rem;
+}
+
+.step1 {
+  position: relative;
+  left: 45rem;
+  top: -70.7rem;
+  height: 60px;
+  width: 60px;
+  visibility: hidden;
+}
+
+.step2 {
+  position: relative;
+  left: 34.5rem;
+  top: -53.3rem;
+  height: 60px;
+  width: 60px;
+  visibility: hidden;
+}
+
+.step3 {
+  position: relative;
+  left: 28rem;
+  top: -50rem;
+  height: 60px;
+  width: 60px;
+  visibility: hidden;
+}
+
+.step4 {
+  position: relative;
+  left: 21rem;
+  top: -43.5rem;
+  height: 60px;
+  width: 60px;
+  visibility: hidden;
+}
+
+.step5 {
+  position: relative;
+  left: 14rem;
+  top: -36.5rem;
+  height: 60px;
+  width: 60px;
+  visibility: hidden;
+}
+
+.step6 {
+  position: relative;
+  left: 8rem;
+  bottom: 6rem;
+  height: 60px;
+  width: 60px;
+}
+
+
+.more-coaching {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  border: none;
+  color: white;
+  background-color: #ff5b08;
+  position: absolute;
+  top: 24rem;
+  right: 15rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+/* page4 */
+
+.red-man {
+  width: 22%;
+}
+
+
+.i-frame {
+  position: absolute;
+  left: 39rem;
+  bottom: 5rem;
+}
+
+.page-4heading p:nth-child(2) {
+  color: red;
+}
+
+.page-4heading p:nth-child(3) {
+  color: red;
+}
+
+.img-btn div p:nth-child(1){
+  position: absolute;
+  top: 14rem;
+  right: 22.7rem;
+  color: #6f6a68;
+}
+
+.img-btn div p:nth-child(2){
+  position: absolute;
+  top: 15.5rem;
+  right: 22.5rem;
+  font-weight: bold;
+}
+
+
+/* page5 */
+
+.banner img {
+  position: absolute;
+  top: 14.2rem;
+  right: 1.8rem;
+  width: 63.5rem;
+  height: 20rem;
+}
+
+.banner textarea {
+  position: absolute;
+  left: 35rem;
+  bottom: 7rem;
+  resize: none;
+}
+

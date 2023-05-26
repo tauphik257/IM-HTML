@@ -1,0 +1,199 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #111;
+    color: rgb(53, 155, 244);
+}
+
+.custom {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.custom input {
+    display: none;
+}
+
+.custom label {
+    position: relative;
+    color: rgb(53, 155, 244);
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(11, 160, 180);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+
+.custom label::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 8px;
+    border-radius: 50%;
+    
+   
+}
+
+
+.custom label::before {
+    content: "";
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 0px;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0);
+}
+
+.custom input:checked + label {
+    background-color: rgb(53, 155, 244);
+    box-shadow: 0 0 12px rgb(53, 155, 244);
+}
+
+.custom input:hover + label {
+    box-shadow: 0 0 12px rgb(53, 155, 244);
+
+}
+.custom input:checked + i,
+.custom input:checked + label {
+    color: #fff;
+    transform: scale(1);
+
+}
+
+/*************************************************************************************************************/
+
+
+.custom-cb {
+    position: absolute;
+    top: 42%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+}
+
+.custom-cb input {
+    position: relative;
+    top: 35px;
+    left: 110px;
+    width: 65px;
+    height: 32px;
+    display: flex;
+    -webkit-appearance: none;
+    background: #c6c6c6;
+    outline: none;
+    border-radius: 20px;
+    transition: .5s;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+}
+
+.custom-cb label {
+    position: relative;
+    color: rgb(53, 155, 244);
+    margin: 20px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+input:checked {
+    background: rgb(53, 155, 244);
+}
+
+
+.custom-cb input::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    transition: .5s;
+}
+
+.custom-cb input:checked::before {
+    left: 40px;
+}
+
+
+.custom-cb input:checked + label::before {
+    transform: scale(1);
+
+}
+
+
+/**************************************************************************************************************************/
+
+
+.custom-cb {
+    position: absolute;
+    top: 42%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+}
+
+.custom-cb input {
+    position: relative;
+    top: 35px;
+    left: 110px;
+    width: 65px;
+    height: 32px;
+    display: flex;
+    -webkit-appearance: none;
+    background: #c6c6c6;
+    outline: none;
+    border-radius: 20px;
+    transition: .5s;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+}
+
+.custom-cb label {
+    position: relative;
+    color: rgb(53, 155, 244);
+    margin: 20px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+input:checked {
+    background: rgb(53, 155, 244);
+}
+
+
+.custom-cb input::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    transition: .5s;
+}
+
+.custom-cb input:checked::before {
+    left: 40px;
+}
+
+
+.custom-cb input:checked + label::before {
+    transform: scale(1);
+
+}
+
+

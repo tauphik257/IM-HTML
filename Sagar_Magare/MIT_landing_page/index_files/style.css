@@ -1,0 +1,388 @@
+body {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/********************************************************************* navbar*******************************************************************/
+.main-logo {
+  width: 350px;
+  background-color: grey;
+  position: absolute;
+  left: 50px;
+  margin-top: 15px;
+
+}
+
+.navbar {
+  background-color: #ededed;
+  width: 100%;
+  height: 100px;
+  margin: 0;
+}
+
+.nav-text {
+  display: inline-block;
+  position: absolute;
+  right: 80px;
+  font-size: 15px;
+  margin-top: 35px
+
+}
+
+
+
+
+
+
+/********************************************************************* section-1*******************************************************************/
+.bold {
+  color: #192b65;
+}
+
+.bg-color {
+  color: #fff;
+}
+
+.btn {
+  padding-right: 6px;
+  border-radius: 5px;
+  background-image: linear-gradient(#fff, #537FE7);
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn-img {
+  height: 35px;
+}
+
+.bg-image-1 {
+  width: 100%;
+}
+
+.dwl-txt {
+  position: relative;
+  bottom: 12px;
+}
+
+.heading {
+  font-size: 30px;
+  position: absolute;
+  top: 50px;
+  margin: 140px 0 200px 260px;
+}
+
+.text-space {
+  margin: 0;
+}
+
+/****************************************************************** table form **********************************************************************/
+.form {
+  background-color: #0ba7c1;
+  position: absolute;
+  left: 330px;
+  top: 500px;
+  padding: 5px 30px 10px;
+  margin: 40px 0 0 80px;
+  text-align: center;
+}
+
+.form-title {
+  color: #fff;
+  margin: 12px 0 5px;
+}
+
+.form-box {
+  width: 800px;
+  height: 60px;
+  margin-bottom: 30px;
+  margin-left: 5px;
+}
+
+.box-space {
+  border-radius: 3px;
+  height: 35px;
+  width: 250px;
+}
+
+.box-space-2 {
+  margin: 5px 0;
+}
+
+.term-condi-text {
+  color: #fff;
+  margin-top: 5px;
+}
+
+.req-info-btn {
+  background-color: #192b65;
+  color: #fff;
+  border-radius: 2px;
+  margin-top: 10px;
+  margin-bottom: 13px;
+  padding: 6px 25px;
+}
+
+/******************************************************************* section-2 *****************************************************************/
+.about-paragraph {
+  margin: 100px 250px 100px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+/******************************************************************* section-3 *********************************************************************/
+.sec-3-background {
+  background-color: #0ba7c1;
+  height: 400px;
+  width: 100%;
+}
+
+.sec-3-heading {
+  background-color: #fff;
+  font-weight: bolder;
+  position: relative;
+  top: 15px;
+  text-align: center;
+  margin: 0 620px;
+  padding: 1px;
+}
+
+.bg-yellow {
+  background-color: #EBB02D;
+  padding: 7px 10px;
+}
+
+.info {
+  height: 0
+}
+
+.info-1 {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  bottom: 310px;
+  left: 300px;
+  padding: 25px;
+  color: #fff;
+}
+
+.info-margin {
+  margin-top: 0;
+}
+
+.logo-img {
+  width: 60px;
+}
+
+.vertical-line-1 {
+  border-left: 1px solid grey;
+  height: 250px;
+  position: absolute;
+  left: 590px;
+  margin-left: -3px;
+  top: 1090px;
+}
+
+.vertical-line-2 {
+  border-left: 1px solid grey;
+  height: 250px;
+  position: absolute;
+  left: 865px;
+  margin-left: -3px;
+  top: 1090px;
+}
+
+.vertical-line-3 {
+  border-left: 1px solid grey;
+  height: 250px;
+  position: absolute;
+  left: 1150px;
+  margin-left: -3px;
+  top: 1090px;
+}
+
+/******************************************************************* section-4 ********************************************************************/
+.sec-4-bg {
+  height: 310px;
+  width: 100%;
+}
+
+.ul1 {
+  color: #fff;
+  margin: 0.75em 0;
+  padding: 0 1em;
+  list-style: none;
+  line-height: 25px;
+  font-weight: normal;
+}
+
+.li1:before {
+  content: "";
+  border-color: transparent #fff;
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 0.9em;
+  position: relative;
+}
+
+.list-info {
+  display: inline-block;
+  position: relative;
+  left: 635px;
+  bottom: 310px;
+  margin-right: 600px;
+}
+
+.li-heading {
+  color: #fff;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.eligibility {
+  border-radius: 6px;
+  color: #005c8b;
+  background-color: #c3ebfd;
+  position: relative;
+  bottom: 550px;
+  left: 470px;
+  margin: 0 800px 0 600px;
+  padding: 20px 0 20px 30px;
+  text-align: left;
+}
+
+.eligibility-h2 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.program-fee {
+  border-radius: 6px;
+  color: #005c8b;
+  background-color: #c3ebfd;
+  position: relative;
+  bottom: 544px;
+  left: 470px;
+  margin: 0 800px 0 600px;
+  padding: 20px 0 20px 30px;
+  text-align: left;
+}
+
+.program-fee-h2 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/******************************************************************* section-5 ******************************************************************/
+.li2:before {
+  border-color: transparent #192b65;
+}
+
+.sec-5-text {
+  color: #192b65;
+}
+
+.sec-5-list {
+  display: inline-block;
+  position: relative;
+  bottom: 480px;
+  left: 150px;
+}
+
+.sec-5-img {
+  width: 480px;
+  position: relative;
+  bottom: 335px;
+  left: 860px;
+}
+
+/******************************************************************* section-6 *********************************************************************/
+.sec-6-bg {
+  background-color: #2d437f;
+  height: 600px;
+  width: 100%;
+  position:absolute;
+  top: 2150px;
+  text-align: center;
+  color: #fff;
+
+}
+
+
+.ceo-info {
+  background-color: #fff;
+  height: 440px;
+  width: 250px;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 4px;
+
+}
+
+.ceo-img {
+  width: 170px;
+}
+
+.link-in-1 {
+  width: 40px;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 350px;
+  left: 470px;
+}
+
+.link-in-2 {
+  width: 40px;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 350px;
+  left: 740px;
+}
+
+.link-in-3 {
+  width: 40px;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 350px;
+  right: 630px;
+}
+
+.link-in-4 {
+  width: 40px;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 350px;
+  right: 355px;
+}
+
+/********************************************************************** footer *****************************************************************/
+
+.footer {
+  background-color: #17205b;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  bottom: 200px;
+
+
+}
+
+.footer-text {
+  color: #fff;
+  margin: 0;
+  padding-top: 20px;
+  text-align: center;
+}

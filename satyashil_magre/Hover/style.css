@@ -1,0 +1,167 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.img{
+    width: 100%;
+    height: 35rem;
+}
+
+.e{
+    color: purple;
+    animation: animate 3s linear infinite;
+}
+.eco{
+    font-size: 25px;
+    padding-left:50px;
+    padding-top: 15px;
+    position: absolute;
+    top: 2px;
+    color: white;
+}
+.nav{
+
+    position: absolute;
+    top: 1rem;
+    left: 55rem;
+    
+    display: inline-block;
+    color: black;
+}
+.button{
+    border: 2px solid;
+    border-radius: 5px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    left: 29rem;
+    top: 1.5rem;
+    display: inline-block;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1.25rem 1.563rem;
+    text-decoration: none;
+    font-size: 1.188rem;
+  }
+
+  a:hover { 
+    text-decoration-line:underline;
+    color:#FF6969!important;
+  }
+  .sign-text{
+  background-color:white;
+  color:purple;
+  padding: 14px 20px;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  }
+  .text{
+    position: absolute;
+    left: 7rem;
+    top: 20rem;
+    line-height: 1.5;
+    font-size: 20px;
+  }
+  .btn{
+    position: absolute;
+    left: 6.5rem;
+    top: 27rem;
+    background-color:purple;
+  color:white;
+  padding: 14px 20px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  }
+  .btn2{
+    position: absolute;
+    left: 14.5rem;
+    top: 27rem;
+    background-color:white;
+  color:purple;
+  padding: 14px 20px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  }
+  .btn:hover{
+    color: aqua;
+    background-color: white;
+  }
+  .btn2:hover{
+    background-color: #05BFDB;
+    color: aliceblue;
+  }
+  .video{
+    position: absolute;
+    top: 15rem;
+    left: 45rem;
+    height: 15rem;
+    border-radius: 5px;
+}
+.img2{
+  position: absolute;
+  top: 8rem;
+  left: 60rem;
+  height: 20rem;
+  animation: animate 3s linear infinite;
+
+}
+.ser{
+  line-height:0;
+  text-align: center;
+}
+.h4{
+  padding-left: 5px;
+}
+.fle{
+  display:flex;
+   margin-left: 20rem;
+  margin-top:3rem;
+
+}
+.flex{
+  width: 185px;
+  height: 160px;
+  background-color: #FF6969;
+  margin-left: 50px;
+  border-radius: 3px;
+  /* padding-top: 40px; */
+  /* align-items: center; */
+  /* text-align: right; */
+  padding: 20px;
+
+}
+.img3{
+  height: 100px;
+  width: 100px;
+  padding: 30px;  
+  animation: animate 3s linear infinite;
+}
+.flex:hover{
+  background-color: aqua;
+  cursor: pointer;
+}
+@keyframes animate{
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}

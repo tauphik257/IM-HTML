@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: #f1f6f9;
+}
+.radio-container {
+  background-color: #acb1d6;
+  padding: 2rem 3rem 3rem 1rem;
+  margin: 1rem;
+  border-radius: 3rem;
+}
+.social-options {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+.social-options input {
+  display: none;
+}
+.social-options label {
+  cursor: pointer;
+  height: 6rem;
+  width: 10rem;
+  font-size: 1rem;
+  font-weight: 400;
+  display: inline-block;
+  position: relative;
+  margin: 0.5rem;
+  color: rgb(151, 151, 151);
+  background-color: white;
+  padding-top: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+.social-options label::before {
+  content: "\2713";
+  position: absolute;
+  color: green;
+  left: 77%;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 1rem;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+  text-align: center;
+  padding: 0;
+}
+.social-options input:checked + label::before {
+  background-color: #8294c4;
+  transform: scale(1);
+}
+.social-options input:checked + label {
+  border: 3px solid #8294c4;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 5px #8294c4;
+  border-radius: 1rem;
+}
+.social-options input:checked + label {
+  color: #8294c4;
+}
+.social-options input:checked + label > .fa-brands {
+  color: #8294c4 !important;
+}
+
+.social-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.social-checkbox input {
+  display: none;
+}
+.social-checkbox label {
+  height: 7rem;
+  width: 12rem;
+  font-size: 1rem;
+  font-weight: 200;
+  position: relative;
+  margin: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+}
+.social-checkbox label i {
+  margin-bottom: 2rem;
+}
+.social-checkbox input:checked + label {
+  background: #8294c4;
+  color: white;
+}
