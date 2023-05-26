@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/Fakeera_Rathod/bootstrap-5.3.0-alpha3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="FAQ.css">
+    <title>FAQ</title>
+</head>
+
+<body>
+    <button type="button" class="btn btn-outline-primary that">Add FAQ</button>
+    <div class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label>Name</label>
+                            <input type="text" class="form-control" name="name" id="name">
+                        </div>
+                        <div class="mb-3">
+                            <label class="w-100">Description</label>
+                            <textarea name="text" class="form-control" cols="30" rows="3"></textarea>
+                        </div>
+                        <button type="button" class="sub btn btn-primary float-end">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="header text-center ">Frequently Asked Question</h1>
+        <div class="row">
+            <div class="col-lg-12 bg-primary-subtle  headline">
+                <h2>FAQ
+                    <span class="float-end"><i class="fa-solid fa-angle-up fa-1x"></i></span>
+                </h2>
+                <div class="discrip">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                </div>
+            </div>
+            <div class="col-lg-12 bg-danger headline">
+                <h2>FAQ
+                    <span class="float-end"><i class="fa-solid fa-angle-up fa-1x"></i></span>
+                </h2>
+                <div class="discrip">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                </div>
+            </div>
+
+            <div class="col-lg-12 bg-success-subtle headline">
+                <h2>FAQ
+                    <span class="float-end"><i class="fa-solid fa-angle-up fa-1x"></i></span>
+                </h2>
+                <div class="discrip">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                </div>
+            </div>
+
+            <div class="col-lg-12 bg-info headline">
+                <h2>FAQ
+                    <span class="float-end"><i class="fa-solid fa-angle-up fa-1x"></i></span>
+                </h2>
+                <div class="discrip">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/Fakeera_Rathod/JS/jquery-3.7.0.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+        $(document).on('click',' h2',function(){
+            if ($(this).parent().hasClass('active')) {
+                $(this).parent().removeClass('active');
+                $(this).parent().find('.discrip').slideUp();
+                $(this).parent().find('.fa-angle-up').css('rotate','0deg');
+
+
+            } else {
+                $(this).parent().addClass('active');
+                $(this).parent().find('.discrip').slideDown();
+                $(this).parent().siblings().find('.discrip').slideUp();
+                $(this).parent().find('.fa-angle-up').css('rotate','180deg');
+
+            }
+        });
+        $('.that').click(function(){
+            $('.modal').show();
+        })
+   
+        $(".sub").click(function(){
+            var a = $('input[type="text"]').val().length;
+            var b = $('textarea').val().length;
+            var title =$('input[type="text"]').val();
+            var desc =$('textarea').val();
+
+            if( a != 0 && b !=0){
+                $(".row").append( "<div class='col-lg-12 bg-light headline'><h2>"+ title +"<span class='float-end'><i class='fa-solid fa-angle-up fa-1x'></i></span> </h2><div class='discrip' ><p>"+desc+"</p></div></div>");
+                $(".modal").hide();
+
+                $('input[type="text"]').val("");
+                $('textarea').val("");
+
+            }
+            else{
+                alert("Enter details");
+            }
+        
+        });
+    });
+    </script>
+</body>
+</html>
