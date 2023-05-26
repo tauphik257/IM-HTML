@@ -769,3 +769,14 @@ if(totalMarkes > 60){
   width: 100%;
   max-width: 35rem;
 }
+
+/** Form edit and update css **/
+.update-edit-text input {
+  width: 70%;
+}
+.btn-list {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
