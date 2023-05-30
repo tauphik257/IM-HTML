@@ -233,7 +233,7 @@
 
         /** Modal pop up JS **/
         $(document).on('click', '.btn-submit', function () {
-          console.log('QQ', $('form'));
+          console.log('QQ', $('form').serializeArray());
           const title = $('form input').val();
           const descrptn = $('form textarea').val();
           $('ul').append("<li class='bg-white p-2 shadow-sm w-100 mb-3'> <h4> " + title + " </h4> <div class='description'> <p class='m-0'> " + descrptn + " </p> </div> </li>");
@@ -262,6 +262,9 @@
             $(inputField).show(); // will set the data
 
             /** get and set data **/
+            const sessionData = sessionStorage.getItem('updatedValue');
+            const slocalData = localStorage.getItem('localStorage');
+            console.log('QQ', sessionData, slocalData);
             $(inputField).val($(textElement).text());
           }
           if (getAction === 'update') {
@@ -271,6 +274,10 @@
 
             /** get and set data **/
             $(textElement).text($(inputField).val());
+
+            sessionStorage.setItem('updatedValue', $(inputField).val());
+
+            localStorage.setItem('localStorage', $(inputField).val());
           }
 
         });
@@ -285,6 +292,17 @@
         //   /** get and set data **/
         //   $(textElement).text($(inputField).val());
         // });
+
+        /** LocalStorage and session Storage 
+        
+        1. LocalStorage => no expiration date (until user will clear the storage)
+        2. sessionStorage => Session storage will be there in browser untill tab is active
+
+        sessionStorage.setItem([key], value/data)
+
+        **/
+
+
 
       })
 
