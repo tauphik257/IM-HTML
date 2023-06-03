@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* ***************student record***** */
+.student_record{
+    display: flex;
+    flex-direction: column;
+    padding:2rem 2rem;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 12rem;
+    height: auto;
+    padding: 0.3rem 0;
+    border-radius: 2rem;
+    margin-bottom: 0.5rem;
+    align-self: flex-end;
+}
+.data{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    width: 20rem;
+    height: 25rem;
+    margin-right: 1rem;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+.card img{
+    width: 8rem;
+    height: 8rem;
+}
+.card p{
+    margin-top: 0.3rem;
+}
+/* ***************FORM********************* */
+main{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-top: 2rem;
+}
+.hide_form{
+    display: none;
+}
+form{
+    height: auto;
+    width: 33rem;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+    background-color: white;
+    box-shadow: 0 1px 3px 0.173px ;
+    text-align: left;
+}
+label{
+    font-weight: bold;
+}
+input{
+    padding: .4rem;
+}
+.firstrow{
+    display: flex;
+    justify-content: space-between;
+}
+.firstrow input{
+    margin-top: .4rem;
+    width: 14rem;
+}
+select{
+    padding: .5rem;
+    margin-top: .4rem;
+    width: 14rem;
+}
+.address, .gender, .dob, .email, .pass, .btn, .photo, .skills{
+    margin-top: .7rem;
+}
+textarea{
+    height: 2rem;
+    width: 100%;
+    margin-top: .4rem;
+}
+.dob input{
+    margin-top: .5rem;
+    width: 100%;
+}
+.email input{
+    margin-top: .4rem;
+    width: 100%;
+}
+.pass input{
+    margin-top: .4rem;
+    width: 100%;
+}
+.btn{
+    text-align: center;
+}
+.btn  [type=submit]{
+    background-color: orange;
+    padding: .7rem;
+    color: white;
+    border: none;
+}

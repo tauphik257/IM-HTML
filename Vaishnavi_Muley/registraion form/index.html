@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Student Registration form</title>
+</head>
+
+<body>
+    <div class="student_record">
+        <button>Add Student Record</button>
+        <div class="data">
+        </div>
+    </div>
+    <main class="hide_form">
+        <h2>STUDENT REGISTRATION FORM</h2>
+        <form action="#" id="myform">
+
+            <div class="firstrow">
+                <div>
+                    <label>Full Name:</label><br>
+                    <input type="text" name="name" required autofocus>
+                </div>
+                <div class="state">
+                    <label>State:</label><br>
+                    <select name="state">
+                        <option value="">--select--</option>
+                        <option value="maharashtra">Maharashtra</option>
+                        <option value="gujrat">Gujrat</option>
+                        <option value="goa">Goa</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="address">
+                <label>Address:</label><br>
+                <textarea name="address" cols="10" rows="1" required></textarea>
+            </div>
+
+            <div class="skills">
+                <label>Skills:</label>
+                <input type="checkbox" id="html" name="html" value="HTML">
+                <label for="html">HTML</label>
+                <input type="checkbox" id="css" name="css" value="CSS">
+                <label for="css">CSS</label>
+                <input type="checkbox" id="js" name="js" value="JS">
+                <label for="js">JS</label>
+                <input type="checkbox" id="react" name="react" value="REACT">
+                <label for="react">REACT</label>
+            </div>
+
+            <div class="gender">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="Male" checked>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </div>
+
+            <div class="dob">
+                <label>DOB:</label><br>
+                <input type="date" required min="2000-01-01" name="dob" max="2010-01-01">
+            </div>
+
+            <div class="email">
+                <label>Email:</label><br>
+                <input type="email" name="emailid" required>
+            </div>
+
+            <div class="pass">
+                <label>Password:</label><br>
+                <input type="password" name="pass" required>
+            </div>
+
+            <div class="photo">
+                <label>Select Photo:</label>
+                <input type="file" name="photo" id="files" >
+            </div>
+            <div class="btn">
+                <input type="button" value="Submit">
+            </div>
+
+        </form>
+    </main>
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('button').click(function () {
+                $('main').removeClass('hide_form');
+            });
+
+            $(document).on('click', 'input[type="button"]', function () {
+                $('main').addClass('hide_form');
+
+                var name=$("form input[type='text']").val();
+                var state=$('select option:selected').text();
+                var address=$("form textarea").val();
+                var skill_value=new Array();
+                $("form input[type='checkbox']").map(function(){
+                    if(this.checked){
+                        skill_value.push(this.name);
+                    }
+                });
+                var skills=(skill_value.join()); 
+                var gender=$('input[type="radio"]').prop('checked', true).val();
+                var dob=$('input[type="date"]').val();
+                var email=$('input[type="email"]').val();
+                var password=$('input[type="password"]').val();
+                var props=$('#files').prop('files');
+                file=props[0];
+                
+                $('.data').append('\
+                    <div class="card">\
+                    <img src="images/'+file.name+'" alt="student photo">\
+                    <p class="card_name"><b>Name:</b>'+name+'</p>\
+                    <p class="card_gender"><b>Gender:</b>'+gender+'</p>\
+                    <p class="card_dob"><b>DOB:</b>'+dob+'</p>\
+                    <p class="card_skills"><b>Skills:</b>'+skills+'</p>\
+                    <p class="card_email"><b>Email id:</b>'+email+'</p>\
+                    <p class="card_password"><b>Password:</b>'+password+'</p>\
+                    <p class="card_state"><b>State:</b>'+state+'</p>\
+                    <p class="card_address"><b>Address:</b>'+address+'</p>\
+                    </div>\
+                ');
+                $( 'form' ).each(function(){
+                  this.reset();
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
