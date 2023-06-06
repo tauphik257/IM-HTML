@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FaQ</title>
+  <!-- bootstrap link -->
+   <link rel="stylesheet" href="./css/css/bootstrap.css"> 
+   <!-- css link -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="modal-wrapper  ">
+    <div class="modal-content  ">
+      <form>
+        <div class="form-group mt-4">
+          <label>Add FAQ</label>
+          <input type="text" class="form-control mt-1" placeholder="Add FAQ here">
+        </div>
+        <div class="form-group mt-4">
+          <label>Add Description</label>
+          <textarea class="form-control mt-1"  cols="30" rows="5">
+          </textarea>
+        </div>
+        <button type="button" class="btn btn-light mt-3 mb-2 close">Cancel</button>
+        <button type="button" class="btn btn-primary mt-3 mb-2 submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <div class="container w-70 h-100">
+    <div class="w-100 py-3 text-end">
+      <button class="btn btn-light add-btn">Add New FAQ</button>
+    </div>
+    <div class="header">
+      <h1>Frequently Asked Questions About PUBG Mobile Game. </h1>
+     </div>
+     <div class="row">
+    <!-- first faq -->
+    <div class=" mt-2 bg-gray">
+      <h2 class="header">
+        <button class="btn">
+          What Are The Ways To Login In to Battlegrounds Mobile India?
+        </button>
+      </h2>
+      <div class="collapse">
+        <div class="body">
+          <p>Currently, there are 3 ways to login into Battlegrounds Mobile India that are Facebook, Twitter, and Google Play Games.</p>
+        </div>
+      </div>
+    </div>
+    <!-- second faq -->
+    <div class=" mt-2 ">
+      <h2 class="header">
+        <button class="btn">
+          How Much Data BGMI Consume In 1 Hour?
+        </button>
+      </h2>
+      <div class="collapse">
+        <div class="body">
+          <p>In my test, I have found that BGMI Consumes 60-70 MB in 1 hour at normal graphic settings.</p>
+        </div>
+      </div>
+    </div>
+ <!-- third faq -->
+    <div class=" mt-2">
+      <h2 class="header">
+        <button class="btn">
+          Total Money Spent On BGMI By Players?
+        </button>
+      </h2>
+      <div class="collapse">
+        <div class="body">
+          <p>The data can’t be accurate because there are more than 10M players and each of them spends on various items whereas some don’t
+             spend anything. But if we calculate an average it could be more than ₹1Crore/month.</p>
+        </div>
+      </div>
+    </div>
+<!-- fourth faq -->
+    <div class=" mt-2">
+      <h2 class="header">
+        <button class="btn">
+          What Is The Number Of Users Of BGMI?
+         </button> 
+      </h2>
+      <div class="collapse">
+        <div class="body">
+          <p>50M+ If we go through Google Play Store installation data, currently it has 50M+ users and each day it is increasing.</p>
+        </div>
+      </div>
+    </div>
+    <!-- fifth faq -->
+    <div class=" mt-2">
+      <h2 class="header">
+        <button class="btn">
+          How To Make My Unlimited Health In BGMI?
+         </button> 
+      </h2>
+      <div class="collapse">
+        <div class="body">
+          <p>You can use Medkit to make unlimited health in BGMI. More Medikit you have more quickly you can boost your full health.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+  <!--............... script..................... -->
+  <script src="./js/jquery-3.7.0.min.js"></script>
+  <script>
+
+    $(document).ready(function(){
+      $(document).on('click','.header',function(){
+        if ($(this).parent().hasClass('active')) { 
+          $(this).parent().removeClass('active');
+          $(this).parent().find('.collapse').slideUp();
+         
+        } else {
+          $(this).parent().addClass('active');
+          $(this).parent().find('.collapse').slideDown();
+        }
+      });
+        
+        $('.add-btn').click(function(){
+          $('.modal-content').addClass('active');
+
+        });
+        $('.close').click(function(){
+          $('.modal-content').removeClass('active');
+
+        });
+        $('.submit').click(function(){
+          var a = $("input[type='text']").val().length;
+          var b = $('textarea').val().length;
+          var title = $("input[type='text']").val();
+          var descrip = $('textarea').val();
+          if(a != 0 && b != 0){
+            $('.row').append("<div class='mt-2 bg-gray'><h2 class='header'> <button class='btn'>"+ title +"</button></h2> <div class='collapse'><div class='body'><p>"+ descrip +"</p></div></div></div>");
+            $('.modal-content').hide();
+          }
+        
+        });
+   
+      }); 
+  </script>
+</body>
+</html>

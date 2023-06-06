@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    /* background-color: rgb(244, 233, 233); */
+}
+p{
+    font-weight: 700;
+}
+.container{
+    position: absolute;
+}
+.header{
+    margin-left: 2rem;
+}
+.modal-wrapper{
+    /* width: 100%; */
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative; 
+    z-index: 99;
+}
+
+.modal-content{
+    max-width: 30rem;
+    background-color: rgb(247, 247, 247);
+    position: absolute;
+    left: 35rem;
+    top: 8rem;
+    display: none;
+
+}
+.active{
+    display: block;
+}
+.collapse{
+    margin-left: 4rem;
+}
+.form-group{
+    margin: 1rem 1rem 1rem ;
+}
+textarea{
+    resize: none;
+    margin-left: 0;
+}
