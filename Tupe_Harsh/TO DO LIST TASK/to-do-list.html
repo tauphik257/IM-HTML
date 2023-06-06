@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-LIST</title>
+    <link rel="stylesheet" href="/CSS/css/bootstrap.css">
+    <link rel="stylesheet" href="/CSS/to-do-list.css">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <!--....................... todolist btn ..........................-->
+    <div class="container mt-5  heading-section">
+        <div class="row bg-">
+            <div>
+                <button class="btn btn-info  m-3 add-btn">ADD TO DO LIST</button>
+                <button class="btn btn-dark m-3 reset">RESET TO DO LIST</button>
+            </div>
+        </div>
+    </div>
+    <!--............................Modal -1............................ -->
+    <div class="modal-wrapper  border">
+        <div class="modal-content  ">
+            <form>
+                <div class="form-group mt-4">
+                    <h3>Add Dashboard</h3>
+                    <input type="text" class="form-control mt-1 shadow-none" placeholder="Add title"
+                        id="dashboardtitle">
+                </div>
+                <div class="image">
+                    <img src="todo.jpg" alt="">
+                </div>
+                <button type="button" class="btn btn-light mt-3 mb-2 close">Cancel</button>
+                <button type="button" class="btn btn-primary mt-3 mb-2 submit">ADD </button>
+            </form>
+        </div>
+    </div>
+     <!-- ...........................modal - 2....................... -->
+     <div class="modal-wrap w-25 border m-2 p-2 bg-light">
+        <div class="modal-data ">
+            <form>
+                <button type="button" class="close float-end btn-light w-10  closed" >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                <div class="form">
+                    <h3>Add TASK</h3>
+                    <input type="text" class="form-control mt-1 shadow-none" placeholder="Add task">
+                </div>
+                <button type="button" class="btn btn-primary mt-2">ADD</button>
+            </form>
+        </div>
+    </div>
+    <!-- .............................todo list............................. -->
+    <div class="container ">
+        <div class=" w-100 ">
+            <ul>
+                <!-- <li class="rounded task-box bg-light ">
+                    <div class="dash rounded-top">
+                        <input type="text" placeholder="DASHBOARD" id="dash_heading">
+                        <button class="btn trashed"><i class='fa fa-trash fs-3'></i> </button>
+                    </div> -->
+
+                <!-- <div class="task mt-3 border-bottom bg-light ">
+                        <div class="icon fs-5  ">
+                        <input type="text" class="shadow-none bg-light " placeholder="Add Task Here">
+                        <i class="fa fa-check "></i>
+                        <i class='fa fa-edit'></i>
+                        <i class='fa fa-trash '></i>
+                        </div> -->
+                <!-- </div> -->
+                <!-- <div class="add-task rounded-circle bg-light">
+                        <i class="fa fa-plus fs-4 text-dark"></i>
+                    </div> -->
+                <!-- </li> -->
+            </ul>
+        </div>
+    </div>
+    <script src="/JS/jquery-3.7.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.add-btn').click(function () {
+                $('.modal-content').fadeIn("fast");
+            })
+            $('.close').click(function () {
+                $('.modal-content').fadeOut("fast");
+            })
+            // click trash delete task menu
+            $(document).on('click', '.trashed', function () {
+                $(this).parent().parent().remove();
+            });
+            // add button and open task menu
+            $(document).on('click','.submit', function () {
+                var title = $('#dash_heading').val();
+                var dash = $('input[type="text"]').val();
+                if (dash != 0) {
+                    $('ul').append("<li class='rounded task-box bg-light '><div class='dash rounded-top'><input type='text' placeholder=" + dash + " id='dash_heading'><button class='btn trashed'><i class='fa fa-trash fs-3'></i></button></div><div class='add-task rounded-circle bg-light'><i class='fa fa-plus fs-4 text-dark'></i></div></li>");
+                    $('.modal-content').fadeOut();
+                    $('input[type="text"]').val("");
+                }
+            });
+
+            $(document).on('click','.add-task', function () {
+                $(this).parent().append("<div class='task border-bottom bg-light'><div class='icon fs-5'><input type='text' class='shadow-none abc bg-light' placeholder='Add Task Here'><i class='fa fa-check'></i><i class='fa fa-edit'></i><i class='fa fa-trash tr '></i></div></div>");
+            });
+
+            $(document).on("click",".fa-check",function(){
+                // $(this).parent().find('input').addClass('strik');
+                $(this).parent().find('input').attr('disabled', 'disabled');
+            });
+
+            $(document).on("click",".tr",function(){
+                $(this).parent().find('input').addClass('strik');
+                // $(this).parent().remove();
+            });
+            $(document).on("dblclick",".tr",function(){
+                // $(this).parent().find('input').addClass('strik');
+                $(this).parent().remove();
+            });
+
+            $(document).on("click",".fa-edit",function(){
+                $(this).parent().find('input').removeClass('strik');
+                $(this).parent().find('input').removeAttr('disabled', 'disabled');
+            });
+            $(document).on("click",".reset",function(){
+                $("li").remove();
+
+            });
+            
+
+
+        });
+    </script>
+</body>
+</html>
