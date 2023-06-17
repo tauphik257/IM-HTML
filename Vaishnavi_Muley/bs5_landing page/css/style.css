@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eee4cd;
+}
+.navbar{
+    z-index: 3;
+}
+.navbar-brand img{
+    width: 3rem;
+    height: 3rem;
+}
+/* first section */
+.first-section{
+    height: 30rem;
+}
+.first-section div p:nth-child(1){
+    font-size: 5rem;
+}
+.first-section div button{
+    background-color: rgb(241, 93, 34);
+    width: 8rem;
+    height: 3rem;
+}
+.first-section .custom-table-img{
+    position: relative;
+}
+.first-section .custom-table-img img{
+    position: absolute;
+}
+.first-section .custom-table-img img:nth-child(1){
+    height: 14rem;
+    top: -6rem;
+    left: 32rem;
+}
+.first-section .custom-table-img img:nth-child(2){
+    bottom: -4rem;
+    left: 4rem;
+}
+.first-section .custom-table-img img:nth-child(3){
+    width: 55rem;
+    bottom: -4rem;
+    left: 0;
+    z-index: 1;
+}
+.first-section .custom-table-img img:nth-child(4){
+    left: 15rem;
+    top: 2rem;
+}
+.first-section .custom-table-img img:nth-child(5){
+    left: 40rem;
+    top: 2rem;
+}
+
+/* delicious section */
+.delicious-section{
+    margin-top: 10rem;
+}
+.delicious-section .row p:nth-child(1){
+    color: rgb(241, 93, 34);
+}
+.delicious-section .col-md-3{
+    background-color: #f9f8ef;
+}
+.delicious-section .col-md-3 img{
+    height: 8rem;
+    width: 8rem;
+}
+.delicious-section div button{
+    background-color: #21ba9b;
+    width: 10rem;
+    height: 3rem;
+}
+/* protocol section */
+.protocol{
+    margin-top: 10rem;
+    height: 40rem;
+    position: relative;
+    overflow: hidden;
+}
+.protocol p:nth-child(1){
+    color: #21ba9b;
+}
+.protocol button{
+    background-color: #21ba9b;
+    width: 10rem;
+}
+.protocol img{
+    position: absolute;
+    height: 15rem;
+    width: 25rem;
+}
+.protocol img:nth-child(4){
+    top: 0;
+    left: -8rem;
+}
+.protocol img:nth-child(5){
+    top: 0;
+    right: -8rem;
+}
+.protocol img:nth-child(6){
+    top: 20rem;
+    left: 7rem;
+}
+.protocol img:nth-child(7){
+    top: 20rem;
+    right: 7rem;
+}
+.protocol img:nth-child(8){
+    height:18rem;
+    width: 35rem;
+    top: 18rem;
+    right: 30rem;
+}
+/* story section*/
+
+.fifth-section{
+    height: 30rem;
+    margin-top: 8rem;
+}
+.fifth-section div p:nth-child(1){
+    color: rgb(241, 93, 34);
+
+}
+.fifth-section div button{
+    background-color: rgb(241, 93, 34);
+    width: 8rem;
+    height: 3rem;
+}
+.fifth-section .custom-table-img{
+    position: relative;
+}
+.fifth-section .custom-table-img img{
+    position: absolute;
+}
+.fifth-section .custom-table-img img:nth-child(1){
+    height: 3rem;
+    top: 0rem;
+    left: 40rem;
+}
+.fifth-section .custom-table-img img:nth-child(2){
+    height: 5rem;
+    top: 2rem;
+    left: 4rem;
+
+}
+.fifth-section .custom-table-img img:nth-child(3){
+    width: 50rem;
+    height: 22rem;
+    bottom: -2rem;
+    left: 0;
+}
+
+/* ingredient section */
+.ingredient-section{
+    margin-top: 8rem;
+    height: 30rem;
+}
+.ingredient-section div:nth-child(3) p:nth-child(1){
+    color: rgb(241, 93, 34);
+}
+.ingredient-section div button{
+    background-color: #21ba9b;
+    width: 9rem;
+    height: 3rem;
+}
+
+/* words by chef */
+.chefswords{
+    background-color:#f9f8ef ;
+    margin: 8rem 0;
+}
+.chefswords div p:nth-child(1){
+    color: #21ba9b; 
+}
+.chefswords button{
+    background-color: #21ba9b;
+    width: 8rem;
+    height: 3rem;
+}
+.chefswords div:nth-child(2){
+    position: relative;
+}
+.chefswords div img:nth-child(2){
+    position: absolute;
+    top: 4rem;
+    left: 12rem;
+}
+/* subscribe */
+.subscribe{
+    position: relative;
+}
+.subscribe p:nth-child(1){
+    color: #21ba9b; 
+}
+.subscribe input, .subscribe textarea{
+    background-color: #d1c3a3;
+}
+.subscribe textarea{
+    resize: none;
+}
+.subscribe img{
+    position: absolute;
+}
+.subscribe img:nth-child(6){
+    top: 0;
+    left: 4rem;
+}
+.subscribe img:nth-child(7){
+    top: 0;
+    right: 10rem;
+    
+}
+.subscribe img:nth-child(8){
+    bottom:0;
+    left: 10rem;
+    
+}.subscribe img:nth-child(9){
+    bottom: 0;
+    right: 4rem;
+}
+/* footer */
+.footer{
+    background-color: #ff9f1c;
+    height: auto;
+}
+.footer div:nth-child(4) input{
+    background-color: #ff9f1c;
+}
+.footer div:nth-child(4) span div{
+    width: 4rem;
+    height: 4rem;
+}
+.footer img{
+    width: 3rem;
+    height: 3rem;
+}
