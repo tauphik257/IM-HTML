@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    color: #fff;
+}
+h1 {
+    font-size: 3.5rem;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+/* default css end */
+
+p {
+    margin: 0;
+}
+
+/* section-1 */
+
+.section-1 {
+    height: 550px
+}
+
+.title-text h1{
+    font-size: 6rem;
+}
+
+.indo-cuisine {
+    transform: translate(20px , 40px);
+}
+
+.para {
+    width: 75%;
+    margin-left: 5rem;
+}
+
+/* section-2 */
+
+.img-star {
+    width: 80px;
+    margin: 3rem 0 2rem;
+}
+
+/* section-3 */
+
+.img-chef {
+    width: 250px;
+    border: 1px solid grey;
+    padding: 20px 20px 0 20px;
+}
+
+
+/* section-5 */
+.dish-img {
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:415px) { 
+    .section-1 {
+        width: 100%;
+    }
+    .col img {
+        transform: translateX(-75px);
+    }
+}

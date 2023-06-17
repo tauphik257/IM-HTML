@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  color: antiquewhite;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+  font-size: 16px;
+}
+
+
+
+/** CSS units **/
+.css-units-inner {
+  width: 60%;
+}
+.modal-css {
+}
+.faq-wrapper h4 {
+  cursor: pointer;
+}
+.faq-wrapper li.active {
+  background: #0d6efd  !important;
+}
+.description {
+  display: none;
+  border-top  : 1px solid;
+}
+
+/** Slider **/
+.slider-wrap {
+  height: 300px;
+}
+.slider-wrap li {
+  position: absolute;
+  height: 100%;
+  left: 101%;
+  top: 0;
+  z-index: 19;
+  transition: all 0.5s ease-in-out;
+}
+.slider-wrap li img {
+  width: 100%;
+}
+.slider-wrap span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100px;
+  z-index: 20;
+}
+.slider-wrap .next {
+  right: 0;
+  left: auto;
+}
+.slider-wrap li.left-slide {
+  left: -101%;
+}
+.slider-wrap li.active {
+  left: 0;
+}
+
+/** Modal pop up **/
+.modal-wrapper {
+  background: rgb(68 68 68 / 57%);
+  z-index: 99;
+  display: none;
+}
+.modal-wrapper.show {
+  display: flex;
+}
+.modal-content-wrap {
+  width: 100%;
+  max-width: 35rem;
+}

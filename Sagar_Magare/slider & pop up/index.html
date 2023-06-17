@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="slider">
+            <i class="fa-solid fa-circle-chevron-left fa-2xl prev" style="color: blue;"></i>
+            <div class="slide-image">
+                <img src="./images/img-1.jpg" alt="" class="active">
+                <img src="./images/img-2.jpg" alt="">
+                <img src="./images/img-3.jpg" alt="">
+                <img src="./images/img-4.jpg" alt="">
+                <img src="./images/img-5.jpg" alt="">
+            </div>
+            <i class="fa-solid fa-circle-chevron-right fa-2xl next" style="color: blue;"></i>
+        </div>
+    </div>
+
+
+
+    <button class="mybtn">Click here</button>
+    <div class="popup-model">
+        <div class="messege">
+            <div class="close-messege">
+                <h6>close x</h6>
+            </div>
+            <p>hello 🖐 my Name is Sagar🤗 and i'm a developer.</p>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('.next').on('click', function () {
+                var currentImg = $('.active');
+                var nextImg = currentImg.next();
+
+                if (nextImg.length) {
+                    currentImg.removeClass('active').css('z-index', -10);
+                    nextImg.addClass('active').css('z-index', -10);
+                }
+            });
+
+            $('.prev').on('click', function () {
+                var currentImg = $('.active');
+                var prevImg = currentImg.prev();
+
+                if (prevImg.length) {
+                    currentImg.removeClass('active').css('z-index', -10);
+                    prevImg.addClass('active').css('z-index', -10);
+                }
+            });
+
+
+            // pop-model
+
+            $('.mybtn').click(function () {
+                $('.popup-model').show();
+            })
+            $('.close-messege').click(function () {
+                $('.popup-model').hide();
+            })
+
+        });
+
+
+
+    </script>
+</body>
+
+</html>

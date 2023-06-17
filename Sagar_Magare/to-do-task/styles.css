@@ -1,0 +1,30 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(#4E65FF , #92EFFD);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+
+.container {
+    width: 450px;
+    height: 200px;
+    background-color:azure;
+    position: absolute;
+    top: 200px;
+    left: 35%;
+}
+
+.task-input input {
+    background-color: azure;
+}
+
+.task-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow: hidden;
+}
