@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div style="width: 100%; max-width: 900px;margin: 0 auto;    background: #eeeeee;
+    padding: 20px;">
+
+    <h1 class="text-center text-primary">Accordian</h1>
+    <div class="faq-wrapper my-5 pb-5">
+      <div class="w-100 py-3 text-end">
+        <button class="btn btn-primary add-new-faq clear" onclick="handleModelShow()">Add New FAQ</button>
+      </div>
+
+      <ul class="p-0 w-100 list-unstyled mb-5">
+        <li class="bg-primary p-2 shadow-sm w-100 mb-3">
+          <h4>FAQ title 1</h4>
+          <div class="description">
+            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et
+              dolore magna aliqua.</p>
+          </div>
+        </li>
+        <li class="bg-primary p-2 shadow-sm w-100 mb-3">
+          <h4>FAQ title 2</h4>
+          <div class="description">
+            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et
+              dolore magna aliqua.</p>
+          </div>
+        </li>
+        <li class="bg-primary p-2 shadow-sm w-100 mb-3">
+          <h4>FAQ title 3</h4>
+          <div class="description">
+            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et
+              dolore magna aliqua.</p </div>
+        </li>
+      </ul>
+      
+    </div>
+
+    <div
+      class="align-items-center h-100 justify-content-center modal-wrapper overflow-hidden position-fixed start-0 top-0 w-100">
+      <div class="bg-primary modal-content-wrap p-4">
+        <form id="form">
+          <div class="form-group mb-3">
+            <label class="form-label">FAQ Title</label>
+            <input type="text" class="form-control" id="textbox-clear" placeholder="Enter FAQ Title">
+          </div>
+          <div class="form-group mb-3">
+            <label class="form-label des-border">Description</label>
+            <textarea class="form-control" id="textarea-clear" placeholder="Enter FAQ Description"></textarea>
+          </div>
+          <button type="button" class="btn btn-secondary me-3 modal-close" onclick="handleModelShow()">Cancel</button>
+          <button type="button" class="btn btn-success   btn-submit" disabled>Submit</button>
+        </form>
+      </div>
+    </div>
+
+
+    <!-- <input value="test" />  -->
+    <!-- Add Script here -->
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script>
+      function handleModelShow() {
+        if ($('.modal-wrapper').hasClass('show')) {
+          $('.modal-wrapper').removeClass('show');
+        } else {
+          $('.modal-wrapper').addClass('show');
+        }
+      }
+
+      $(document).ready(function () {
+
+        // $('.faq-wrapper h4').click(function () {
+        $(document).on('click', '.faq-wrapper h4', function () {
+
+
+          if ($(this).parent().hasClass('active')) {
+            $(this).parent().removeClass('active');
+            $(this).parent().find('.description').slideUp();
+          } else {
+            $(this).parent().addClass('active');
+            $(this).parent().find('.description').slideDown();
+          }
+
+        });
+
+
+        /** Modal pop up JS **/
+        $(document).on('click', '.btn-submit', function () {
+          const title = $('form input').val();
+          const descrptn = $('form textarea').val();
+          $('ul').append("<li class='bg-primary p-2 shadow-sm w-100 mb-3'> <h4> " + title + " </h4> <div class='description'> <p class='m-0'> " + descrptn + " </p> </div> </li>");
+          $('.modal-wrapper').removeClass('show');
+        });
+
+        var checkInput = (e) => {
+          const content = $(".form-control").val().trim();
+          $('.btn-submit').prop('disabled', content === '');
+        };
+
+        $(document).on('keyup', '.form-control', checkInput);
+
+
+        $('.clear').click(function () {
+          $('#textbox-clear').val("");
+          $('#textarea-clear').val("");
+
+        });
+
+      });
+
+    </script>
+  </div>
+</body>
+
+</html>

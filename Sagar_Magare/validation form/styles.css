@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+
+body {
+    background-color: rgb(204, 204, 204);
+}
+
+.container {
+    max-width: 55rem;
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.container .logo,
+.container .reg-log {
+    width: 100%;
+    height: 120%;
+    padding: 30px;
+
+}
+
+.container .logo img{
+    display: block;
+    width: 455px;
+    margin: -1.9rem 0;
+    background-color: grey;
+
+}
+
+.container .reg-log {
+    background-color: rgb(234, 234, 234);
+}
+
+.container .reg-log ul li {
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.container .reg-log ul li.active {
+    border-bottom: 2px solid black;
+}
+
+.Custom-font {
+    font-size: 10px;
+}

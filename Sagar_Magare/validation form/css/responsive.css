@@ -1,0 +1,97 @@
+@media (max-width: 1280px) and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media (max-width: 1280px){
+    .headerNav ul li{padding: 0 0 0 1em;}
+    .headerNav ul.socialNavHead {width: 5em;}
+    .featuredBottom_content{padding: 1em 2em;}
+    .featuredBottom_content img{width: 8em;}
+    .customerService_sec ul li h5{margin-top: 1em;}
+}
+
+@media (max-width: 1199px){
+    h2, h1{font-size: 3em;}
+    h4{font-size: 1.5em;}
+    .headerNav ul.headerNav_list{width: 100%;padding-left: 1em;}
+    .headerTop .logo{width: 20%;}
+    .headerTop .col-sm-14{width: 80%;}
+    .headerNav ul li {padding: 0 0 0 0.5em;}
+    .customerService_sec p {font-size: 1em;line-height: 1.3em;}
+    .newsLetter_sec h5{font-size: 1.2em;}
+    .footerSec .col-sm-offset-1 {margin-left: 2%;}
+    .footerSec .col-sm-2 {width: 15.5%;}
+    .BannerContent_box{max-width: 28em;}
+    .headerBanner_content p {margin-bottom: 1em;}
+    .featuredBottom_content img {width: 4em;}
+    .featuredBottom_content {padding: 1em 1em;}
+    .featuredBottom_content p{padding: 0.7em 0;}
+    
+    /** Product details page **/
+    .productDetailsNav ul li a{padding: 8px 15px;font-size: 1em;}
+    .productCategory_list li {width: 48%;}
+}
+
+@media (max-width: 991px){
+    h3{font-size: 1.5em;}
+    h2{font-size: 2em;}
+    header{padding: 0.5em 0 0.5em;}
+    .headerTop .logo {width: 30%;}
+    .headerNav ul.socialNavHead{display: none;}
+    .mobileNav_Btn{display: block;}
+    .headerNav ul.headerNav_list{display: none;position: absolute;top: 100%;right: 0;background-color: #888e5c;width: 100%;min-width: 20em;z-index: 99;padding-left: 0;}
+    .headerNav ul.headerNav_list li{width: 100%;float: left;padding: 0.8em !important;border-bottom: 1px solid #6a6f47;text-align: left;}
+    .headerNav ul.headerNav_list li a{width: 100%;float: left;font-size: 1em;color: #000;}
+    .owl-carousel .owl-item img{display: none;}
+    .headerBanner_content{position: relative;padding: 1em 1em 3em;background-color: #b3c054;transform: none;top: auto;left: auto;}
+    .headerBanner_sec .owl-dots{bottom: 0.3em;}
+    .leafHeading::before{background-position: center -24px;}
+    
+    
+}
+
+@media (max-width: 767px){
+    .headerBanner_sec{background-color: #b3c054;}
+    .headerBanner_sec li::after{display: none;}
+    .headerTop{flex-wrap: wrap;}
+    .headerTop .logo{width: 11em;text-align: left;}
+    header.stickey .logo {padding-bottom: 0;}
+    .headerTop .col-sm-14{width: calc(100% - 11em);float: right;}
+    .featuredCat {padding: 2em 0;}
+    .featuredBottom {padding: 3em 0 1em;}
+    .featuredBottom li{margin-bottom: 2em;}
+    .featuredBottom li:last-child{margin-bottom: 0;}
+    .featuredCat_imges li{margin-bottom: 2em;}
+    .featuredCat_imges li:last-child{margin-bottom: 0;}
+    .featuredCat_imges {padding-top: 2em;}
+    .ourBest_seller {padding: 2em 0;}
+    .customerService_sec ul li{display: flex;display: -moz-flex;display: -ms-flex;display: -webkit-flex;display: -o-flex;flex-wrap: wrap-reverse;}
+    .customerService_sec ul li img{margin-bottom: 1em;}
+    .customerService_sec {padding: 2em 0 0;}
+    .customerService_sec ul{padding-top: 1em;}
+    .customerService_sec .owl-dots{left: 50%;transform: translateX(-50%);}
+    .newsLetter_sec{margin-top: 1em;}
+    .newsLetter_sec .vAlign{flex-wrap: wrap;}
+    .newsLetter_sec div[class^="col"]:first-child{padding-top: 3.5em;}
+    .newsLetter_sec div[class^="col"] {padding-top: 1em;}
+    .footerSec {padding: 2em 0 1em;}
+    .footerSec {flex-wrap: wrap;}
+    .footerSec .footer-col4{width: 100%;margin-left: 0;padding-top: 2em;}
+    .footerSec .col-sm-2{width: 48%;margin-left: 0;margin-bottom: 2em;}
+    .contactPage{flex-wrap: wrap;}
+    .contactPage_left{width: 100%;padding: 1em 1em;min-height: auto;}
+    .contactPage_right{width: 100%;min-height: auto;}
+    .contactPage_right::before{display: none;}
+    .contact_content {width: calc(100% - 3em);}
+    .contact_content p{word-wrap: break-word;}
+    .headerNav ul li a::after{display: none;}
+    .contactPage_sec {padding: 2em 0;}
+    .featuredCat_imges li img{width: 13em;height: 13em;}
+    
+}
+
+@media (max-width: 479px){
+    .productCategory_list li {width: 100%;}
+}

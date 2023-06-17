@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>start page</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div>
+        <h3 class="text-center p-3 bg-warning">ONLINE MOCK TEST</h3>
+        <div>
+            <h5 class="mx-5 my-5">RULES :</h5>
+            <ul class="mx-5 fs-5" style="line-height: 45px;">
+                <li>Test have total 20 marks</li>
+                <li>Each question have 2 marks</li>
+                <li>you will have 20 second for each question</li>
+                <li>minimum 12 marks needed to pass the test</li>
+                <li>At the end of test , your total score will be displayed</li>
+            </ul>
+        </div>
+        <button class="test-start btn-primary btn-lg px-5 py-2 mt-5" style="margin-left: 45%;">start</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $(document).on('click', '.test-start', function () {
+                window.location.replace('mcq.html');
+            })
+
+        })
+    </script>
+</body>
+
+</html>
