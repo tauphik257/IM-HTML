@@ -1,57 +1,76 @@
 // var test = 10;  => global Scope
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
-const students = [
-  {
-    name: "Ravindra",
-    age: 22,
-    address: "pune",
-  },
-  {
-    name: "Vaishanvi",
-    age: 21,
-    address: "pune 2",
-  },
-  {
-    name: "Harsh",
-    age: 23,
-    address: "pune 3",
-  },
-  {
-    name: "Yogesh",
-    age: 20,
-    address: "Mandwa",
-  },
-  {
-    name: "Prathmesh",
-    age: 24,
-    address: "Mumbai",
-  },
-  {
-    name: "Sagar",
-    age: 25,
-    address: "Delhi",
-  },
-  {
-    name: "Ram kisan",
-    age: 24,
-    address: "West Mumbai",
-  },
-  {
-    name: "Snehal",
-    age: 26,
-    address: "South Mumbai",
-  },
-  {
-    name: "Pooja",
-    age: 25,
-    address: "East Mumbai",
-  },
-];
+// const students = [
+//   {
+//     name: "Ravindra",
+//     age: 22,
+//     address: "pune",
+//   },
+//   {
+//     name: "Vaishanvi",
+//     age: 21,
+//     address: "pune 2",
+//   },
+//   {
+//     name: "Harsh",
+//     age: 23,
+//     address: "pune 3",
+//   },
+//   {
+//     name: "Yogesh",
+//     age: 20,
+//     address: "Mandwa",
+//   },
+//   {
+//     name: "Prathmesh",
+//     age: 24,
+//     address: "Mumbai",
+//   },
+//   {
+//     name: "Sagar",
+//     age: 25,
+//     address: "Delhi",
+//   },
+//   {
+//     name: "Ram kisan",
+//     age: 24,
+//     address: "West Mumbai",
+//   },
+//   {
+//     name: "Snehal",
+//     age: 26,
+//     address: "South Mumbai",
+//   },
+//   {
+//     name: "Pooja",
+//     age: 25,
+//     address: "East Mumbai",
+//   },
+// ];
 
 const Banner = () => {
-  const [studentList, setStudentList] = useState(students);
+  const [studentList, setStudentList] = useState([]);
+  const [initialData, setInitialData] = useState([]);
+
+  useEffect(() => {
+    // Run when component load
+
+    axios
+      .get("http://localhost:3000/students")
+      .then(function (response) {
+        // handle success
+        setStudentList(response.data);
+        setInitialData(response.data);
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      });
+  }, []); // Dependency Array
+
   // var test; //declaration
   // string let data = 'variable value'
   // let stringData = "variable value";
@@ -280,13 +299,6 @@ const Banner = () => {
    * OR => if anyone condition true => then it will be true
    */
 
-  const onlyDelhi = students.filter((element) => {
-    // console.log("element: ", element);
-    if (element.address === "Delhi" || element.address === "Mumbai") {
-      return element;
-    }
-  });
-
   // console.log("QQ", onlyDelhi);
 
   /**
@@ -305,7 +317,7 @@ const Banner = () => {
 
   const handleChange = (event) => {
     if (event.target.value !== "") {
-      const updatedList = students.filter((item) => {
+      const updatedList = initialData?.filter((item) => {
         const stName = item.name.toLocaleLowerCase();
         const inputValue = event.target.value?.toLocaleLowerCase();
         if (stName.indexOf(inputValue) !== -1) {
@@ -314,7 +326,7 @@ const Banner = () => {
       });
       setStudentList(updatedList);
     } else {
-      setStudentList(students);
+      setStudentList(initialData);
     }
   };
 
@@ -322,27 +334,28 @@ const Banner = () => {
     //jsx
     <div className="d-flex flex-wrap justify-content-center my-5 w-100">
       <div className="w-100 mb-4 d-flex justify-content-center">
-        <div className="mb-3 col-8">
-          <label class="form-label">Search Name</label>
+        {/* <div className="mb-3 col-8">
+          <label className="form-label">Search Name</label>
           <input type="text" className="form-control" onChange={handleChange} />
-        </div>
+        </div> */}
       </div>
-      {studentList.map((obj, index) => (
-        <div className="card col-8 mb-3 position-relative">
-          <div className="card-body">
-            <h4> {obj.name} </h4>
-            <p>
-              <strong>Age:</strong> {obj.age}
-            </p>
-            <p className="m-0">
-              <strong>Address:</strong> {obj.address}
-            </p>
-            <span class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger">
-              {index + 1}
-            </span>
+      {/* {studentList.length > 0 &&
+        studentList.map((obj, index) => (
+          <div className="card col-8 mb-3 position-relative" key={index}>
+            <div className="card-body">
+              <h4> {obj.name} </h4>
+              <p>
+                <strong>Age:</strong> {obj.age}
+              </p>
+              <p className="m-0">
+                <strong>Address:</strong> {obj.address}
+              </p>
+              <span className="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger">
+                {index + 1}
+              </span>
+            </div>
           </div>
-        </div>
-      ))}
+        ))} */}
     </div>
   );
 };
