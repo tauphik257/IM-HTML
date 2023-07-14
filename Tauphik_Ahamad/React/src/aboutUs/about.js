@@ -6,7 +6,7 @@ const About = () => {
   const [inputValue, setInputValue] = useState("");
 
   useEffect(() => {
-    getProductList();
+    // getProductList();
   }, []);
 
   const getProductList = () => {
@@ -245,8 +245,40 @@ const About = () => {
   let whileNum = 1;
 
   while (whileNum <= 10) {
-    console.log("QQ while Num: ", whileNum);
+    // console.log("QQ while Num: ", whileNum);
     whileNum++;
+  }
+
+  /**
+   * Error Handling
+   *
+   *
+   *
+   */
+
+  const empData = {
+    name: "employee name",
+    age: 32,
+    // edu: {
+    //   first: "First Education",
+    //   second: "Second Education",
+    // },
+  };
+
+  // let dataVal = 10;
+
+  // if (dataVal === 10) throw "Data Value throw if Condition";
+  // else throw "Data Value throw Else Condition";
+
+  try {
+    const name = empData.name;
+    const age = empData.age;
+    const address = empData.address; // undefined
+    console.log("QQ Try block", empData.edu.first);
+  } catch (err) {
+    console.log("QQ Error block run", err);
+  } finally {
+    console.log("QQ Finally block run");
   }
 
   return (
