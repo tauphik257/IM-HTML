@@ -31,6 +31,16 @@
       <span class="next btn btn-primary">Next</span>
       <span class="prev btn btn-primary">Prev</span>
     </ul>
+    <!-- Form Edit and update -->
+    <div class="bg-white p-2 position-relative shadow-sm update-edit-text w-100">
+      <h4>Title will update here</h4>
+      <input class="form-control shadow-none" type="text" name="title" placeholder="Enter title"
+        style="display: none" />
+      <div class="btn-list d-flex">
+        <button type="button" class="btn btn-link shadow-none me-2 edit-title" data-action="edit">Edit</button>
+        <button type="button" class="btn btn-link shadow-none update-title" data-action="update">Update</button>
+      </div>
+    </div>
     <div class="faq-wrapper my-5 pb-5">
       <div class="w-100 py-3 text-end">
         <button class="btn btn-primary add-new-faq" onclick="handleModelShow()">Add New FAQ</button>
@@ -69,11 +79,11 @@
         <form>
           <div class="form-group mb-3">
             <label class="form-label">FAQ Title</label>
-            <input type="text" class="form-control" placeholder="Enter FAQ Title">
+            <input type="text" name="title" class="form-control" placeholder="Enter FAQ Title">
           </div>
           <div class="form-group mb-3">
             <label class="form-label">Description</label>
-            <textarea class="form-control" placeholder="Enter FAQ Description"></textarea>
+            <textarea class="form-control" name="description" placeholder="Enter FAQ Description"></textarea>
           </div>
           <button type="button" class="btn btn-secondary me-3 modal-close" onclick="handleModelShow()">Cancel</button>
           <button type="button" class="btn btn-primary btn-submit">Submit</button>
@@ -223,11 +233,97 @@
 
         /** Modal pop up JS **/
         $(document).on('click', '.btn-submit', function () {
+          console.log('QQ', $('form').serializeArray());
           const title = $('form input').val();
           const descrptn = $('form textarea').val();
           $('ul').append("<li class='bg-white p-2 shadow-sm w-100 mb-3'> <h4> " + title + " </h4> <div class='description'> <p class='m-0'> " + descrptn + " </p> </div> </li>");
           $('.modal-wrapper').removeClass('show');
         });
+
+        /**
+         * 1. on initial load show the title and edit and update button
+         * 2. we have to add an input field for the edit mode (initially it will be hidden)
+         * 3. When user click on edit button
+         *  - We need to hide the normal text (h4 element) 
+         *  - Show the input field => and get the data from the text element and set in to this input field (as field value)
+         *  - 
+         * 4. When User click on update button
+         *    - We need to hide the input field
+         *    - show the text element => and get the value of input field and set into the text element.
+         * **/
+
+        $('.update-edit-text button').click(function () {
+          const getAction = $(this).attr('data-action');
+          const textElement = $(this).parents('.update-edit-text').find('h4');
+          const inputField = $(this).parents('.update-edit-text').find('input');
+          if (getAction === 'edit') {
+            /** Show and hide element **/
+            $(textElement).hide(); //will get the data
+            $(inputField).show(); // will set the data
+
+            /** get and set data **/
+            const sessionData = sessionStorage.getItem('updatedValue');
+            const slocalData = localStorage.getItem('localStorage');
+            console.log('QQ', sessionData, slocalData);
+            $(inputField).val($(textElement).text());
+          }
+          if (getAction === 'update') {
+            /** Show and hide element **/
+            $(textElement).show();
+            $(inputField).hide();
+
+            /** get and set data **/
+            $(textElement).text($(inputField).val());
+
+            sessionStorage.setItem('updatedValue', $(inputField).val());
+
+            localStorage.setItem('localStorage', $(inputField).val());
+          }
+
+        });
+
+        // $('.update-title').click(function () {
+        //   const textElement = $(this).parents('.update-edit-text').find('h4');
+        //   const inputField = $(this).parents('.update-edit-text').find('input');
+        //   /** Show and hide element **/
+        //   $(textElement).show();
+        //   $(inputField).hide();
+
+        //   /** get and set data **/
+        //   $(textElement).text($(inputField).val());
+        // });
+
+        /** LocalStorage and session Storage 
+        
+        1. LocalStorage => no expiration date (until user will clear the storage)
+        2. sessionStorage => Session storage will be there in browser untill tab is active
+
+        sessionStorage.setItem([key], value/data)
+
+        **/
+
+        /** JavaScript 
+         * 
+         * Datatypes => variables declaration 
+         * function =>
+         * HTML5 API, (functions)
+         * Method
+         * build
+         * where toinclude in html page
+         * 
+         
+          var, let, const, function a(), a = ()=>{}, a = 5
+          const b = 10
+
+         * (a+b) = a2 + b2 + 2ab => out put
+          
+            (a - b) = 
+
+
+         * 
+         * **/
+
+
 
       })
 
