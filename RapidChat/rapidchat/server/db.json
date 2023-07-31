@@ -1,0 +1,14 @@
+{
+  "messages": [
+    {
+      "id": 1,
+      "senderName":"",
+      "receiverName":"",
+      "sender":["Hey","I'am great what about you?","actually i am having part at my place and i want you to come.",
+      "There will be only my friends. not like exactly party but it is just small get together for all us to meet after long time.",
+      "Anytime between 4 to 6","Dont worry about it. I have covered everything","bye have a great day"],
+      "receiver": ["hello, how are you","I am also great thanks for asking. means a lot","O wow thats great. Who else are coming?",
+      "alright. what will be the time?","Do I need to come their before time for any help if you need.","Okay, lets meet then bye..."]
+    }
+  ]
+}
