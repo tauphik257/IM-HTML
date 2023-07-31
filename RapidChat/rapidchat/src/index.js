@@ -4,12 +4,14 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Home from './components/homepage/home';
 import Main from './components/friendlist/Main';
+import Login from './components/loginpage/Login.js';
+import Signup from './components/signuppage/signin';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <div className='container-fluid'>
+    {/* <div className='container-fluid'>
       <div className='row vh-100'>
         <div className='col-3 p-0'>
           <Main />
@@ -18,7 +20,11 @@ root.render(
           <Home />
         </div>
       </div>
-    </div>
+    </div> */}
+    <>
+    <Signup/>
+    {/* <Login/> */}
+    </>
   </React.StrictMode>
 );
 
