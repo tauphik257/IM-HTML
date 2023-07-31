@@ -1,13 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Home from './components/homepage/home';
+import Main from './components/friendlist/Main';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <div className='container-fluid'>
+      <div className='row vh-100'>
+        <div className='col-3 p-0'>
+          <Main />
+        </div>
+        <div className='col-9'>
+          <Home />
+        </div>
+      </div>
+    </div>
   </React.StrictMode>
 );
 

@@ -14,7 +14,7 @@ const Home = () => {
             });
     }, []);
     return (
-        <div className="main-screen container-fluid vh-100 m-0">
+        <div className="main-screen container-fluid vh-100 m-0 p-0">
             <div className="row shadow-lg h-100">
                 <div className="currentchat px-4 ">
                     <div>

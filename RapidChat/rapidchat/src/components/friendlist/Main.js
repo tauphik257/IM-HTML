@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import '../App.css';
+import './main.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import axios from 'axios';
-import ChatDisplay from './ChatDisplay';
 
 const Main = () => {
 
@@ -11,7 +10,7 @@ const Main = () => {
 
     useEffect(() => {
         axios
-            .get("http://localhost:3000/data")
+            .get("http://localhost:3004/data")
             .then(function (response) {
                 setData(response.data);
                 setFiltereData(response.data);
@@ -37,13 +36,13 @@ const Main = () => {
 
     return (
         <>
-            <div className='d-flex border m-2'>
-                <div className=' border container-width p-4 bg-paleblue'>
+            <div className='d-flex'>
+                <div className='container-width bg-paleblue pt-3'>
                     <div>
-                        <input className="form-control me-2  rounded-pill" type="search" placeholder="Search.." aria-label="Search" onChange={SearchHandle} />
+                        <input className="form-control me-2 rounded-pill" type="search" placeholder="Search.." aria-label="Search" onChange={SearchHandle} />
                         <hr className='mb-0' />
                     </div>
-
+                    <div className='list'>
                     {filtereData.map((obj, index) => (
                         <div>
                             <div className='px-2 pt-1 d-flex pointer section'>
@@ -59,11 +58,9 @@ const Main = () => {
                             <hr className='w-100 my-0' />
                         </div>
                     ))}
+                    </div>
                 </div>
-
-                <ChatDisplay />
             </div>
-
         </>
     )
 }
