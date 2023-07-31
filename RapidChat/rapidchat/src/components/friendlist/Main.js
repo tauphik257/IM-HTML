@@ -7,6 +7,8 @@ const Main = () => {
 
     const [data, setData] = useState([]);
     const [filtereData, setFiltereData] = useState([]);
+    const [showLargeImage, setShowLargeImage] = useState(false);
+    const [largeImageSrc, setLargeImageSrc] = useState('');
 
     useEffect(() => {
         axios
@@ -34,6 +36,15 @@ const Main = () => {
 
     };
 
+    const SizeHandle = (imageSrc) => {
+        setShowLargeImage(true);
+        setLargeImageSrc(imageSrc);
+    };
+
+    const hideLargeImage = () => {
+        setShowLargeImage(false);
+    };
+
     return (
         <>
             <div className='d-flex'>
@@ -46,7 +57,7 @@ const Main = () => {
                     {filtereData.map((obj, index) => (
                         <div>
                             <div className='px-2 pt-1 d-flex pointer section'>
-                                <img className='me-2 img-size rounded-circle ' src={obj.image} alt="profile-1" />
+                                <img className='me-2 img-size rounded-circle ' src={obj.image} alt="profile-1" onClick={() => SizeHandle(obj.image)} />
                                 <div className='ms-2 w-100'>
                                     <div className='d-flex justify-content-between'>
                                         <h5 className=''>{obj.name}</h5>
@@ -61,6 +72,16 @@ const Main = () => {
                     </div>
                 </div>
             </div>
+
+             {/* popup image */}
+
+             {showLargeImage && (
+                <div className='modal-container' onClick={hideLargeImage}>
+                    <div className='modal-content'>
+                        <img src={largeImageSrc} alt='Large size' />
+                    </div>
+                </div>
+            )}
         </>
     )
 }

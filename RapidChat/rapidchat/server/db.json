@@ -78,15 +78,5 @@
       "time": "5.40pm",
       "recent": "hello there...."
     }
-  ],
-  "signupdata":[
-    {
-      "username":"",
-      "mobile":"",
-      "password":""
-    }
-  ],
-  "logindata":[
-
   ]
 }

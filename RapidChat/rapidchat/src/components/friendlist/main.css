@@ -43,3 +43,30 @@
     border-bottom: none;
   
   }
+
+
+  /* popup container */
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 160px;
+  padding-left: 500px;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+}
+
+
+.modal-content {
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.modal-content img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
