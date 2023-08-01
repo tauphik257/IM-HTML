@@ -10,6 +10,7 @@ const About = () => {
 
   useEffect(() => {
     getProductList();
+    console.log("QQ About Updated once more");
   }, []);
 
   const getProductList = () => {
