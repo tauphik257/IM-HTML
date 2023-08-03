@@ -363,11 +363,11 @@ const About = () => {
     axios
       .put(`http://localhost:3000/product/${inputValue.id}`, inputValue)
       .then((res) => {
-        console.log("QQ res", res);
+        // console.log("QQ res", res);
         getProductList();
       })
       .catch((err) => {
-        console.log("QQ err", err);
+        // console.log("QQ err", err);
       });
     //http://localhost:3000/product
   };

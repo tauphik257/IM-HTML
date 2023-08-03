@@ -1,6 +1,36 @@
+import { useState } from "react";
+import { ComponentA } from "./ComponentA/ComponentA";
 import "./services.css";
-
+/**
+ *
+ * Hooks
+ *
+ * 1. useCallback() // similar useEffect
+ * 2. useMemo() // similar useEffect
+ * 3. useLayoutEffect() // similar useEffect
+ *
+ * 3. useContext()
+ * 4. useReducer()
+ * 5. customHooks()  /// you will create
+ *
+ * 1. Component A => Child Component A1 // Props => Parent to child and child to parent as well
+ * 2. Component B => Child Component B1 // Prop drilling =>
+ *
+ * RootParent => Component A and Component B
+ *
+ * RootParent => Component C => Component C1 => Component C2 => Component C3  => Component C4  // Prop drilling =>
+ *
+ * independent Component => that will store the data
+ *
+ * element.current
+ */
 const Services = () => {
+  const [propsData, setPropsData] = useState("props Data from Parent");
+
+  const handleProps = () => {
+    setPropsData("props Data Updated From Child");
+  };
+
   return (
     <section id="values" className="values">
       <div className="container" data-aos="fade-up">
@@ -52,6 +82,7 @@ const Services = () => {
           </div>
         </div>
       </div>
+      <ComponentA innerProps={propsData} setInnerProps={handleProps} />
     </section>
   );
 };

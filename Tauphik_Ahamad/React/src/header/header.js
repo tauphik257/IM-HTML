@@ -48,7 +48,7 @@
  *
  */
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Logo from "./logo";
 import axios from "axios";
 
@@ -85,13 +85,37 @@ import axios from "axios";
  *
  */
 
+const empData = {
+  name: "Emp Name",
+  address: [
+    {
+      address: "South Delhi",
+    },
+    {
+      address: "South Delhi",
+    },
+    {
+      address: "South Delhi",
+    },
+  ],
+};
+
 const Header = () => {
   const [joinby, setJoinby] = useState("Google"); // => [variable-Contain-value, set the value]
   const [count, setCount] = useState(1);
   const [countMultiByTwo, setCountMultiByTwo] = useState(2);
 
+  const h3Ref = useRef();
+
   useEffect(() => {
-    setCountMultiByTwo(count * 2);
+    // setCountMultiByTwo(count * 2);
+
+    const updateCount = 3;
+    setCount(updateCount); // count + 1
+
+    // console.log("QQ Use Effect", count);
+
+    //
   }, [count]);
 
   /**
@@ -99,6 +123,26 @@ const Header = () => {
    * [value] => every time when value will change
    * [value-1, value-2, value-3, value-4] => every time when either value-1, OR value-2 OR value-3 OR value-4  will change
    *
+   * Hooks
+   *
+   * 1. useCallback() // similar useEffect
+   * 2. useMemo() // similar useEffect
+   * 3. useLayoutEffect() // similar useEffect
+   *
+   * 3. useContext()
+   * 4. useReducer()
+   * 5. customHooks()  /// you will create
+   *
+   * 1. Component A => Child Component A1 // Props => Parent to child and child to parent as well
+   * 2. Component B => Child Component B1 // Prop drilling =>
+   *
+   * RootParent => Component A and Component B
+   *
+   * RootParent => Component C => Component C1 => Component C2 => Component C3  => Component C4  // Prop drilling =>
+   *
+   * independent Component => that will store the data
+   *
+   * element.current
    */
 
   // const handleDataValue = async () => {
@@ -134,6 +178,10 @@ const Header = () => {
 
   // console.log("QQ", name, address, empAge, mobile);
 
+  const handleClick = () => {
+    console.log("QQ", h3Ref);
+  };
+
   return (
     <>
       <div className="container-fluid bg-light position-relative shadow">
@@ -151,7 +199,10 @@ const Header = () => {
             id="navbarCollapse"
           >
             <div className="navbar-nav font-weight-bold mx-auto py-0">
+              {/* <span style={{top: '10px', left: '20px'}}>Tool tip text</span> */}
               <a href="index.html" className="nav-item nav-link active">
+                {" "}
+                {/* top: 10px, left: 20px */}
                 Home
               </a>
               <a href="about.html" className="nav-item nav-link">
@@ -195,11 +246,11 @@ const Header = () => {
         </nav>
       </div>
       <div className="w-100 mt-4 text-center">
-        <h3>Update the value on useEffect</h3>
+        <h3 ref={h3Ref}>Update the value on useEffect</h3>
         <button
           type="button"
           className="btn btn-primary"
-          onClick={() => setCount(count + 1)}
+          onClick={() => handleClick()}
         >
           Update Count by 1
         </button>
