@@ -3,10 +3,14 @@ import React, { useEffect, useState } from "react";
 
 const About = () => {
   const [productList, setProductList] = useState([]);
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState({
+    productName: "",
+    productDes: "",
+  });
 
   useEffect(() => {
-    // getProductList();
+    getProductList();
+    console.log("QQ About Updated once more");
   }, []);
 
   const getProductList = () => {
@@ -182,9 +186,9 @@ const About = () => {
 
   const addNewProduct = () => {
     const addNew = {
-      id: 4,
+      id: 6,
       productName: inputValue,
-      productId: 4,
+      productId: 6,
     };
     axios
       .post("http://localhost:3000/product", addNew)
@@ -208,12 +212,12 @@ const About = () => {
 
   if (dataArray.length) {
     // only if array have some value
-    console.log("QQ If block run successfully");
+    // console.log("QQ If block run successfully");
   }
 
   if (Object.keys(dataObject).length > 0) {
     // only if Object have some value
-    console.log("QQ If block run successfully");
+    // console.log("QQ If block run successfully");
   }
 
   // if (dataValue === 1) {
@@ -274,12 +278,99 @@ const About = () => {
     const name = empData.name;
     const age = empData.age;
     const address = empData.address; // undefined
-    console.log("QQ Try block", empData.edu.first);
+    // console.log("QQ Try block", empData.edu.first);
   } catch (err) {
-    console.log("QQ Error block run", err);
+    // console.log("QQ Error block run", err);
   } finally {
-    console.log("QQ Finally block run");
+    // console.log("QQ Finally block run");
   }
+
+  /**
+   * JavaScript Events
+   *
+   * 1. click()
+   * 2. doubleClick()
+   * 3. mouseHover()
+   * 4. mouseOut()
+   * 5. onChange()
+   * 6. onScroll()
+   * 7. onHover()
+   * 8. resize()
+   * 9.
+   *
+   * // Form
+   * 1. keyPress()
+   * 2. focus()
+   * 3. blur()
+   * 4. submit()
+   * 5. onChange()
+   * 6. onSelect()
+   * 7. invalid()
+   * 8. reset()
+   * 9.
+   *
+   * // Keyboard and mouse
+   *
+   * 1. copy()
+   * 2. paste()
+   * 3. cut()
+   * 4. enter()
+   * 5. keyUp()
+   * 6. keyDown()
+   * 7. keyPress()
+   * 8. mouseDown()
+   * 9. mouseUp()
+   * 10. mouseMove()
+   * 11. mouseOver()
+   * 12. mouseEnter()
+   * 13. mouseOut()
+   *
+   *
+   *
+   *
+   *
+   */
+
+  const handleChange = (e) => {
+    setInputValue({
+      ...inputValue,
+      [e.target.name]: e.target.value,
+    });
+
+    /**
+     * {
+     *  name: '', e.target.value
+     *  description: '' e.target.value
+     *  name: 'Bottom', e.target.value
+     * }
+     *
+     */
+
+    // let res = /^[a-zA-Z]+$/.test(e.target.value);
+    // console.log("QQ", res);
+    /**
+     * value = hello 1
+     * 1. split('')  => ['h','e', 'l', 'l', 'o', '', '1']
+     */
+  };
+
+  const handleEdit = (editItem) => {
+    setInputValue(editItem);
+  };
+
+  const updateProduct = () => {
+    console.log("QQ", inputValue);
+    axios
+      .put(`http://localhost:3000/product/${inputValue.id}`, inputValue)
+      .then((res) => {
+        // console.log("QQ res", res);
+        getProductList();
+      })
+      .catch((err) => {
+        // console.log("QQ err", err);
+      });
+    //http://localhost:3000/product
+  };
 
   return (
     <div className="d-flex flex-wrap justify-content-center my-5 w-100">
@@ -293,10 +384,22 @@ const About = () => {
             <label className="form-label">Enter product Name</label>
             <input
               type="text"
+              name="productName"
               className="form-control"
               placeholder="Enter product Name"
-              value={inputValue}
-              onChange={(e) => setInputValue(e.target.value)}
+              value={inputValue.productName}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="mb-3">
+            <label className="form-label">Enter product description</label>
+            <input
+              type="text"
+              name="productDes"
+              className="form-control"
+              placeholder="Enter product description"
+              value={inputValue.productDes}
+              onChange={handleChange}
             />
           </div>
           <div>
@@ -307,6 +410,13 @@ const About = () => {
             >
               Add
             </button>
+            <button
+              type="button"
+              className="btn btn-primary ms-3"
+              onClick={updateProduct}
+            >
+              Update Product
+            </button>
           </div>
         </div>
       </div>
@@ -315,9 +425,17 @@ const About = () => {
           <div className="card col-8 mb-3 position-relative" key={item.id}>
             <div className="card-body">
               <h4>{item.productName}</h4>
+              <p className="m-0">{item.productDes}</p>
               <span className="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger">
                 {item.id}
               </span>
+              <button
+                type="button"
+                className="btn btn-primary position-absolute top-0 end-0"
+                onClick={() => handleEdit(item)}
+              >
+                Edit
+              </button>
             </div>
           </div>
         ))}
