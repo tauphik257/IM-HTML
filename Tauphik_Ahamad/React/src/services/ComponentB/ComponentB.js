@@ -1,9 +1,13 @@
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
+import { AppContext } from "../../appContext/appContext";
 
 export const ComponentB = ({ innerProps2, setInnerProps }) => {
-  // useEffect(()=>{
-  //     setInnerProps()
-  // },[])
+  const getAppContextData = useContext(AppContext);
+
+  useEffect(() => {
+    console.log("QQ Context Comp-B : ", getAppContextData);
+  }, [getAppContextData]);
+
   return (
     <div className="w-100 text-center py-5">
       {" "}
