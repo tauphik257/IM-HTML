@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ComponentA } from "./ComponentA/ComponentA";
 import "./services.css";
+import { AppContext } from "../appContext/appContext";
 /**
  *
  * Hooks
@@ -23,6 +24,12 @@ import "./services.css";
  * independent Component => that will store the data
  *
  * element.current
+ *
+ * useContext() => Context API
+ *
+ *
+ *
+ *
  */
 const Services = () => {
   const [propsData, setPropsData] = useState("props Data from Parent");
