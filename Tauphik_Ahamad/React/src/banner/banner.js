@@ -2,6 +2,11 @@
 
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { Link, Outlet, Route, Routes } from "react-router-dom";
+import { ComponentA } from "./ComponentA/ComponentA";
+import { ComponentB } from "./ComponentB/ComponentB";
+import { ComponentC } from "./ComponentC/ComponentC";
+import { ComponentD } from "./ComponentD/ComponentD";
 
 // const students = [
 //   {
@@ -333,7 +338,25 @@ const Banner = () => {
   return (
     //jsx
     <div className="d-flex flex-wrap justify-content-center my-5 w-100">
-      <div className="w-100 mb-4 d-flex justify-content-center">
+      <div className="w-100 mb-4 d-flex justify-content-center flex-wrap">
+        <h2 className="w-100 text-center">Banner Component child routing</h2>
+        <div className="d-flex w-100 bg-body-secondary justify-content-center my-3">
+          <Link to="/" className="nav-item me-3 nav-link active">
+            Home
+          </Link>
+          <Link to="/home/compB" className="nav-item me-3 nav-link active">
+            Component B
+          </Link>
+          <Link to="/home/compC" className="nav-item me-3 nav-link active">
+            Component C
+          </Link>
+          <Link to="/home/compD" className="nav-item me-3 nav-link active">
+            Component D
+          </Link>
+        </div>
+        <div className="w-100 py-3">
+          <Outlet />
+        </div>
         {/* <div className="mb-3 col-8">
           <label className="form-label">Search Name</label>
           <input type="text" className="form-control" onChange={handleChange} />

@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { ComponentA } from "./ComponentA/ComponentA";
 import "./services.css";
 import { AppContext } from "../appContext/appContext";
+import { useNavigate } from "react-router-dom";
 /**
  *
  * Hooks
@@ -33,6 +34,13 @@ import { AppContext } from "../appContext/appContext";
  */
 const Services = () => {
   const [propsData, setPropsData] = useState("props Data from Parent");
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const serviceId = window.location.pathname;
+    console.log("QQ", serviceId.split("/").pop());
+    // navigate("/about");
+  }, []);
 
   const handleProps = () => {
     setPropsData("props Data Updated From Child");
@@ -40,9 +48,10 @@ const Services = () => {
 
   return (
     <section id="values" className="values">
+      <h2 className="w-100 text-center p-4">Classes Component</h2>
       <div className="container" data-aos="fade-up">
         <header className="section-header">
-          <h2>Our Values</h2>
+          <h2 id="ourValues">Our Values</h2>
           <p>Odit est perspiciatis laborum et dicta</p>
         </header>
 

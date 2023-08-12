@@ -51,6 +51,7 @@
 import { useEffect, useRef, useState } from "react";
 import Logo from "./logo";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 // function Header() {
 
@@ -200,17 +201,15 @@ const Header = () => {
           >
             <div className="navbar-nav font-weight-bold mx-auto py-0">
               {/* <span style={{top: '10px', left: '20px'}}>Tool tip text</span> */}
-              <a href="index.html" className="nav-item nav-link active">
-                {" "}
-                {/* top: 10px, left: 20px */}
+              <Link to="/home" className="nav-item nav-link active">
                 Home
-              </a>
-              <a href="about.html" className="nav-item nav-link">
+              </Link>
+              <Link to="/about" className="nav-item nav-link active">
                 About
-              </a>
-              <a href="class.html" className="nav-item nav-link">
+              </Link>
+              <Link to="/services" className="nav-item nav-link active">
                 Classes
-              </a>
+              </Link>
               <a href="team.html" className="nav-item nav-link">
                 Teachers
               </a>

@@ -374,6 +374,7 @@ const About = () => {
 
   return (
     <div className="d-flex flex-wrap justify-content-center my-5 w-100">
+      <h2 className="w-100 text-center p-4">About Component</h2>
       {!!dataArray.length && <h3>condition true for Array !!</h3>}
       {Object.keys(dataObject).length > 0 && (
         <h3>condition true for Object !!</h3>
