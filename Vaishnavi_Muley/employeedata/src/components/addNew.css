@@ -1,0 +1,12 @@
+input{
+    border-radius: 0;
+    /* background-color: rgba(234, 228, 228, 0.995); */
+    border:1px solid black;
+}
+input:focus{
+    background-color: white;
+}
+.text-start{
+    background-color: rgba(247, 245, 245, 0.995);
+
+}
